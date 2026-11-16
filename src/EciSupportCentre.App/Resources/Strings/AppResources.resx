@@ -283,4 +283,22 @@
   <data name="Item_Signed" xml:space="preserve">
     <value>Signed</value>
   </data>
+  <data name="Tab_News" xml:space="preserve">
+    <value>News</value>
+  </data>
+  <data name="News_Title" xml:space="preserve">
+    <value>Latest news</value>
+  </data>
+  <data name="News_Empty" xml:space="preserve">
+    <value>No news yet. Pull down to refresh.</value>
+  </data>
+  <data name="News_New" xml:space="preserve">
+    <value>New</value>
+  </data>
+  <data name="News_OpenHint" xml:space="preserve">
+    <value>Opens the full article on the official website</value>
+  </data>
+  <data name="News_Source" xml:space="preserve">
+    <value>News from the official European Citizens’ Initiative website.</value>
+  </data>
 </root>

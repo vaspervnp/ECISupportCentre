@@ -2,7 +2,7 @@
 
 An Android app (phone and tablet) for following the **European Citizens' Initiatives** published on [citizens-initiative.europa.eu](https://citizens-initiative.europa.eu/index_en).
 
-> Status: **M4 done**: Home and Initiatives tabs, initiative details, tablet layout, and signing on the official collection page. News and notifications follow in M5–M6. See [milestones.md](milestones.md) for the roadmap.
+> Status: **M5 done**: Home, Initiatives and News tabs, initiative details, tablet layout, and signing on the official collection page. Background sync and notifications follow in M6. See [milestones.md](milestones.md) for the roadmap.
 
 ## Project structure
 

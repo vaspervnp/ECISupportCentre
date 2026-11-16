@@ -273,6 +273,31 @@ public class EciDatabaseTests : DatabaseTest
     }
 
     [Fact]
+    public async Task News_falls_back_to_English_when_nothing_is_stored_in_the_language()
+    {
+        Assert.Empty(await Db.GetNewsAsync("de"));
+
+        await Db.SaveNewsAsync([FakeNews.Item(1), FakeNews.Item(2)], Time.Now);
+        await Db.SaveNewsAsync([FakeNews.Item(2, "el")], Time.Now);
+
+        Assert.Equal(["el"], (await Db.GetNewsAsync("el")).Select(n => n.Language));
+        Assert.Equal(["en", "en"], (await Db.GetNewsAsync("mt")).Select(n => n.Language));
+    }
+
+    [Fact]
+    public async Task Read_mark_is_kept_across_languages_and_refreshes()
+    {
+        await Db.SaveNewsAsync([FakeNews.Item(1), FakeNews.Item(2), FakeNews.Item(2, "el")], Time.Now);
+
+        await Db.SetNewsReadAsync(FakeNews.Item(2).Id);
+        await Db.SaveNewsAsync([FakeNews.Item(2) with { Title = "Edited" }], Time.Now);
+
+        var english = await Db.GetNewsAsync("en");
+        Assert.Equal([("Edited", true), ("News 1", false)], english.Select(n => (n.Title, n.IsRead)));
+        Assert.True(Assert.Single(await Db.GetNewsAsync("el")).IsRead);
+    }
+
+    [Fact]
     public async Task State_values_are_stored()
     {
         Assert.Null(await Db.GetStateAsync("x"));

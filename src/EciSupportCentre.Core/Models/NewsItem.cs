@@ -21,4 +21,7 @@ public sealed record NewsItem
 
     /// <summary>Language of the feed the item came from.</summary>
     public required string Language { get; init; }
+
+    /// <summary>The user opened the article (stored only on the device).</summary>
+    public bool IsRead { get; init; }
 }

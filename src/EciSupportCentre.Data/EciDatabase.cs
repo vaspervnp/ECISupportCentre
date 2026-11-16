@@ -382,18 +382,40 @@ public sealed class EciDatabase : IEciStore
         await command.ExecuteNonQueryAsync(cancellationToken).ConfigureAwait(false);
     }
 
-    /// <summary>Latest news in <paramref name="language"/>, newest first.</summary>
+    /// <summary>
+    /// Latest news in <paramref name="language"/>, newest first. Falls back to English when nothing is stored
+    /// in that language (its feed was missing, or the language was never synced).
+    /// </summary>
     public async Task<IReadOnlyList<NewsItem>> GetNewsAsync(string language, int limit = 50, CancellationToken cancellationToken = default)
+    {
+        var code = EciSources.Normalize(language);
+        var items = await ReadNewsAsync(code, limit, cancellationToken).ConfigureAwait(false);
+        return items.Count == 0 && code != EciSources.DefaultLanguage
+            ? await ReadNewsAsync(EciSources.DefaultLanguage, limit, cancellationToken).ConfigureAwait(false)
+            : items;
+    }
+
+    /// <summary>Marks an article as read in every language it is stored in.</summary>
+    public async Task SetNewsReadAsync(string newsId, CancellationToken cancellationToken = default)
+    {
+        await using var connection = await OpenAsync(cancellationToken).ConfigureAwait(false);
+        await using var command = connection.CreateCommand();
+        command.CommandText = "UPDATE news_item SET is_read = 1 WHERE id = $id;";
+        command.Parameters.AddWithValue("$id", newsId);
+        await command.ExecuteNonQueryAsync(cancellationToken).ConfigureAwait(false);
+    }
+
+    private async Task<List<NewsItem>> ReadNewsAsync(string language, int limit, CancellationToken cancellationToken)
     {
         await using var connection = await OpenAsync(cancellationToken).ConfigureAwait(false);
         await using var command = connection.CreateCommand();
         command.CommandText = """
-            SELECT id, language, title, link, published_utc, description_html, category, image_url
+            SELECT id, language, title, link, published_utc, description_html, category, image_url, is_read
             FROM news_item WHERE language = $lang
             ORDER BY published_utc DESC, id
             LIMIT $limit;
             """;
-        command.Parameters.AddWithValue("$lang", EciSources.Normalize(language));
+        command.Parameters.AddWithValue("$lang", language);
         command.Parameters.AddWithValue("$limit", limit);
 
         var items = new List<NewsItem>();
@@ -410,6 +432,7 @@ public sealed class EciDatabase : IEciStore
                 DescriptionHtml = reader.IsDBNull(5) ? null : reader.GetString(5),
                 Category = reader.IsDBNull(6) ? null : reader.GetString(6),
                 ImageUrl = Db.ToUri(reader, 7),
+                IsRead = reader.GetBoolean(8),
             });
         }
 

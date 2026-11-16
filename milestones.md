@@ -110,11 +110,12 @@ tests/
 
 **Done when:** every collecting initiative opens its official collection page.
 
-## M5 — News
-- [ ] News tab from the RSS feed, cached in SQLite
-- [ ] Clean the HTML in descriptions, show images from `enclosure`
-- [ ] Open the full article in a Custom Tab
-- [ ] News in the user's language where a feed exists, with English as the fallback
+## M5 — News ✅
+- [x] News tab from the RSS feed, cached in SQLite and refreshed by every sync (pull to refresh, and in the background when the data is older than six hours)
+- [x] Clean the HTML in descriptions into a short plain-text summary; show images from `enclosure` (kept exactly as the feed gives them: some file names really contain `%20`)
+- [x] Open the full article in a Custom Tab (https only); opened articles lose their "New" badge (unread and at most 14 days old)
+- [x] News in the user's language where a feed exists, with English as the fallback (when the feed is missing, or nothing is stored in that language yet)
+- [x] Two columns on tablets; checked on the emulator in portrait, landscape and with the network off
 
 **Done when:** the news shows offline and refreshes during sync.
 

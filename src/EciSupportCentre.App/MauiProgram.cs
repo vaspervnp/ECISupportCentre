@@ -38,10 +38,12 @@ public static class MauiProgram
         services.AddSingleton<HomeViewModel>();
         services.AddSingleton<InitiativesViewModel>();
         services.AddTransient<InitiativeDetailViewModel>();
+        services.AddSingleton<NewsViewModel>();
 
         services.AddTransient<HomePage>();
         services.AddTransient<InitiativesPage>();
         services.AddTransient<InitiativeDetailPage>();
+        services.AddTransient<NewsPage>();
 
 #if DEBUG
         builder.Logging.AddDebug();

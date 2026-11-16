@@ -186,19 +186,7 @@ public sealed partial class InitiativeDetailViewModel : ObservableObject, IQuery
 
     /// <summary>Opens the Commission's collection system in a Custom Tab. Signing happens there, not in the app.</summary>
     [RelayCommand]
-    private async Task SignAsync()
-    {
-        if (SigningPage is not null)
-        {
-            await Browser.Default.OpenAsync(SigningPage, new BrowserLaunchOptions
-            {
-                LaunchMode = BrowserLaunchMode.SystemPreferred,
-                TitleMode = BrowserTitleMode.Show,
-                PreferredToolbarColor = Color.FromArgb("#003399"),
-                PreferredControlColor = Colors.White,
-            });
-        }
-    }
+    private Task SignAsync() => AppBrowser.OpenAsync(SigningPage);
 
     /// <summary>Saves the switch state; the binding has already set <see cref="IsSigned"/>.</summary>
     partial void OnIsSignedChanged(bool value)

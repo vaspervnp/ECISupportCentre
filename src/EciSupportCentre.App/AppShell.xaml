@@ -20,6 +20,10 @@
                       Icon="tab_list.png"
                       Route="initiatives"
                       ContentTemplate="{DataTemplate views:InitiativesPage}" />
+        <ShellContent Title="{l:Translate Tab_News}"
+                      Icon="tab_news.png"
+                      Route="news"
+                      ContentTemplate="{DataTemplate views:NewsPage}" />
     </TabBar>
 
 </Shell>
