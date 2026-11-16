@@ -1,3 +1,4 @@
+using EciSupportCentre.App.Services;
 using EciSupportCentre.App.ViewModels;
 
 namespace EciSupportCentre.App.Views;
@@ -16,6 +17,7 @@ public partial class HomePage : ContentPage
     protected override async void OnAppearing()
     {
         base.OnAppearing();
+        NotificationLaunch.OpenPending();
         await _viewModel.OnAppearingAsync();
     }
 }

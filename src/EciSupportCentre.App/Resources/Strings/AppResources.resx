@@ -301,4 +301,61 @@
   <data name="News_Source" xml:space="preserve">
     <value>News from the official European Citizens’ Initiative website.</value>
   </data>
+  <data name="Home_NotifyAll" xml:space="preserve">
+    <value>Notify me about every initiative</value>
+  </data>
+  <data name="Home_NotifyAllHint" xml:space="preserve">
+    <value>When off, only initiatives you follow notify you about results and deadlines. New initiatives and news are always announced; turn any kind off in the system notification settings.</value>
+  </data>
+  <data name="Notif_Channel_New" xml:space="preserve">
+    <value>New initiatives</value>
+  </data>
+  <data name="Notif_Channel_Ending" xml:space="preserve">
+    <value>Collection ending</value>
+  </data>
+  <data name="Notif_Channel_Results" xml:space="preserve">
+    <value>Results</value>
+  </data>
+  <data name="Notif_Channel_News" xml:space="preserve">
+    <value>News</value>
+  </data>
+  <data name="Notif_NewInitiative" xml:space="preserve">
+    <value>New initiative registered</value>
+  </data>
+  <data name="Notif_CollectionStarted" xml:space="preserve">
+    <value>Signature collection has started</value>
+  </data>
+  <data name="Notif_EndingDays" xml:space="preserve">
+    <value>{0} days left to sign</value>
+  </data>
+  <data name="Notif_EndingTomorrow" xml:space="preserve">
+    <value>Signature collection ends tomorrow</value>
+  </data>
+  <data name="Notif_EndingToday" xml:space="preserve">
+    <value>Last day to sign</value>
+  </data>
+  <data name="Notif_CollectionEnded" xml:space="preserve">
+    <value>Signature collection has ended</value>
+  </data>
+  <data name="Notif_Milestone" xml:space="preserve">
+    <value>{0:N0} signatures reached</value>
+  </data>
+  <data name="Notif_Successful" xml:space="preserve">
+    <value>Successful: submitted to the European Commission</value>
+  </data>
+  <data name="Notif_Answered" xml:space="preserve">
+    <value>The European Commission has answered</value>
+  </data>
+  <data name="Notif_Failed" xml:space="preserve">
+    <value>Not successful: not enough support</value>
+  </data>
+  <data name="Notif_Withdrawn" xml:space="preserve">
+    <value>Withdrawn by the organisers</value>
+  </data>
+  <data name="Notif_NewsOne" xml:space="preserve">
+    <value>New article</value>
+  </data>
+  <data name="Notif_NewsMany" xml:space="preserve">
+    <value>{0} new articles</value>
+  </data>
 </root>

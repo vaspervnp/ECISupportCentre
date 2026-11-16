@@ -87,14 +87,14 @@ public sealed class SyncEngine(
         }
 
         // 4. News. A failure is reported, not thrown: the register data is already saved.
-        int? newsAdded = null;
+        IReadOnlyList<NewsItem>? newArticles = null;
         string? newsError = null;
         if (includeNews)
         {
             try
             {
                 var items = await news.GetLatestAsync(lang, cancellationToken).ConfigureAwait(false);
-                newsAdded = await store.SaveNewsAsync(items, _time.GetUtcNow(), cancellationToken).ConfigureAwait(false);
+                newArticles = await store.SaveNewsAsync(items, _time.GetUtcNow(), cancellationToken).ConfigureAwait(false);
                 await store.SetStateAsync(StateKeys.LastNewsSync, Iso(_time.GetUtcNow()), cancellationToken).ConfigureAwait(false);
             }
             catch (Exception ex) when (ex is EciApiException or HttpRequestException)
@@ -118,7 +118,7 @@ public sealed class SyncEngine(
             DetailsFetched = fetched,
             DetailsFailed = failed,
             DetailsPending = Math.Max(0, queue.Count - MaxDetailsPerSync),
-            NewsAdded = newsAdded,
+            NewArticles = newArticles,
             NewsError = newsError,
         };
     }
@@ -238,8 +238,11 @@ public sealed record SyncReport
     /// <summary>Details left for later syncs because of <see cref="SyncEngine.MaxDetailsPerSync"/>.</summary>
     public int DetailsPending { get; init; }
 
-    /// <summary>New news items; null when news were skipped or failed.</summary>
-    public int? NewsAdded { get; init; }
+    /// <summary>Articles never stored before, newest first; null when news were skipped or failed.</summary>
+    public IReadOnlyList<NewsItem>? NewArticles { get; init; }
+
+    /// <summary>Number of <see cref="NewArticles"/>; null when news were skipped or failed.</summary>
+    public int? NewsAdded => NewArticles?.Count;
 
     public string? NewsError { get; init; }
 }

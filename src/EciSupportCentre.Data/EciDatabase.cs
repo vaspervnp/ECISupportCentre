@@ -229,7 +229,7 @@ public sealed class EciDatabase : IEciStore
         await tx.CommitAsync(cancellationToken).ConfigureAwait(false);
     }
 
-    public async Task<int> SaveNewsAsync(IReadOnlyList<NewsItem> items, DateTimeOffset now, CancellationToken cancellationToken = default)
+    public async Task<IReadOnlyList<NewsItem>> SaveNewsAsync(IReadOnlyList<NewsItem> items, DateTimeOffset now, CancellationToken cancellationToken = default)
     {
         ArgumentNullException.ThrowIfNull(items);
 
@@ -238,8 +238,8 @@ public sealed class EciDatabase : IEciStore
 
         await using var exists = connection.CreateCommand();
         exists.Transaction = tx;
-        exists.CommandText = "SELECT 1 FROM news_item WHERE id = $id AND language = $lang;";
-        var e = Db.Parameters(exists, "$id", "$lang");
+        exists.CommandText = "SELECT 1 FROM news_item WHERE id = $id;";
+        var e = Db.Parameters(exists, "$id");
 
         await using var upsert = connection.CreateCommand();
         upsert.Transaction = tx;
@@ -252,15 +252,14 @@ public sealed class EciDatabase : IEciStore
             """;
         var p = Db.Parameters(upsert, "$id", "$lang", "$title", "$link", "$published", "$description", "$category", "$image", "$now");
 
-        var added = 0;
+        var added = new List<NewsItem>();
         foreach (var item in items)
         {
             var lang = EciSources.Normalize(item.Language);
             e["$id"].Value = item.Id;
-            e["$lang"].Value = lang;
             if (await exists.ExecuteScalarAsync(cancellationToken).ConfigureAwait(false) is null)
             {
-                added++;
+                added.Add(item);
             }
 
             p["$id"].Value = item.Id;
@@ -352,6 +351,63 @@ public sealed class EciDatabase : IEciStore
         {
             id.Value = changeId;
             await command.ExecuteNonQueryAsync(cancellationToken).ConfigureAwait(false);
+        }
+
+        await tx.CommitAsync(cancellationToken).ConfigureAwait(false);
+    }
+
+    /// <summary>Keys of the deadline reminders already shown.</summary>
+    public async Task<IReadOnlySet<string>> GetRemindersSentAsync(CancellationToken cancellationToken = default)
+    {
+        await using var connection = await OpenAsync(cancellationToken).ConfigureAwait(false);
+        await using var command = connection.CreateCommand();
+        command.CommandText = "SELECT key FROM reminder_sent;";
+
+        var keys = new HashSet<string>(StringComparer.Ordinal);
+        await using var reader = await command.ExecuteReaderAsync(cancellationToken).ConfigureAwait(false);
+        while (await reader.ReadAsync(cancellationToken).ConfigureAwait(false))
+        {
+            keys.Add(reader.GetString(0));
+        }
+
+        return keys;
+    }
+
+    /// <summary>
+    /// Records what one round of notifications handled, in one transaction: the changes are marked notified
+    /// and the reminders remembered, so a crash cannot show them twice or lose half of them.
+    /// </summary>
+    public async Task CompleteNotificationsAsync(
+        IEnumerable<long> changeIds,
+        IEnumerable<string> remindersSent,
+        DateTimeOffset now,
+        CancellationToken cancellationToken = default)
+    {
+        ArgumentNullException.ThrowIfNull(changeIds);
+        ArgumentNullException.ThrowIfNull(remindersSent);
+
+        await using var connection = await OpenAsync(cancellationToken).ConfigureAwait(false);
+        await using var tx = (SqliteTransaction)await connection.BeginTransactionAsync(cancellationToken).ConfigureAwait(false);
+
+        await using var change = connection.CreateCommand();
+        change.Transaction = tx;
+        change.CommandText = "UPDATE initiative_change SET notified = 1 WHERE id = $id;";
+        var id = change.Parameters.Add("$id", SqliteType.Integer);
+        foreach (var changeId in changeIds)
+        {
+            id.Value = changeId;
+            await change.ExecuteNonQueryAsync(cancellationToken).ConfigureAwait(false);
+        }
+
+        await using var reminder = connection.CreateCommand();
+        reminder.Transaction = tx;
+        reminder.CommandText = "INSERT OR IGNORE INTO reminder_sent (key, sent_utc) VALUES ($key, $now);";
+        var key = reminder.Parameters.Add("$key", SqliteType.Text);
+        reminder.Parameters.AddWithValue("$now", Db.From(now));
+        foreach (var k in remindersSent)
+        {
+            key.Value = k;
+            await reminder.ExecuteNonQueryAsync(cancellationToken).ConfigureAwait(false);
         }
 
         await tx.CommitAsync(cancellationToken).ConfigureAwait(false);

@@ -50,9 +50,16 @@ public sealed partial class HomeViewModel : ObservableObject
     [ObservableProperty]
     public partial bool IsRefreshing { get; set; }
 
+    /// <summary>Notify about every initiative; off means only followed ones.</summary>
+    [ObservableProperty]
+    public partial bool NotifyAll { get; set; } = AppSettings.FollowAll;
+
+    partial void OnNotifyAllChanged(bool value) => AppSettings.FollowAll = value;
+
     public async Task OnAppearingAsync()
     {
         await LoadAsync();
+        await AskForNotificationsOnceAsync();
 
         // Refresh in the background when the data is older than six hours.
         _ = _data.SyncIfStaleAsync(TimeSpan.FromHours(6));
@@ -68,6 +75,22 @@ public sealed partial class HomeViewModel : ObservableObject
         finally
         {
             IsRefreshing = false;
+        }
+    }
+
+    /// <summary>Android 13+ needs the user's permission to show notifications; ask once, after the first data arrived.</summary>
+    private static async Task AskForNotificationsOnceAsync()
+    {
+        const string askedKey = "asked_notification_permission";
+        if (Preferences.Default.Get(askedKey, false))
+        {
+            return;
+        }
+
+        Preferences.Default.Set(askedKey, true);
+        if (await Permissions.CheckStatusAsync<Permissions.PostNotifications>() != PermissionStatus.Granted)
+        {
+            await Permissions.RequestAsync<Permissions.PostNotifications>();
         }
     }
 

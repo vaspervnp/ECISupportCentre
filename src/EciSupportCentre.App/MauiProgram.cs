@@ -1,4 +1,4 @@
-﻿using EciSupportCentre.App.Services;
+using EciSupportCentre.App.Services;
 using EciSupportCentre.App.ViewModels;
 using EciSupportCentre.App.Views;
 using EciSupportCentre.Core.Api;
@@ -33,6 +33,8 @@ public static class MauiProgram
             sp.GetRequiredService<INewsFeedClient>(),
             sp.GetRequiredService<IEciStore>()));
         services.AddSingleton(Connectivity.Current);
+        services.AddSingleton<INotificationPoster, AndroidNotificationPoster>();
+        services.AddSingleton<NotificationService>();
         services.AddSingleton<DataService>();
 
         services.AddSingleton<HomeViewModel>();

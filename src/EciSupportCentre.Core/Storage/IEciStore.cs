@@ -20,8 +20,11 @@ public interface IEciStore
     /// <summary>Stores the full record, including the titles of every language version.</summary>
     Task SaveDetailsAsync(InitiativeDetails details, DateTimeOffset now, CancellationToken cancellationToken = default);
 
-    /// <summary>Stores news items and returns how many were not stored before.</summary>
-    Task<int> SaveNewsAsync(IReadOnlyList<NewsItem> items, DateTimeOffset now, CancellationToken cancellationToken = default);
+    /// <summary>
+    /// Stores news items and returns the articles never stored before in any language
+    /// (so switching the app language does not make every article new).
+    /// </summary>
+    Task<IReadOnlyList<NewsItem>> SaveNewsAsync(IReadOnlyList<NewsItem> items, DateTimeOffset now, CancellationToken cancellationToken = default);
 
     Task<string?> GetStateAsync(string key, CancellationToken cancellationToken = default);
 

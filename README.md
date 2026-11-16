@@ -2,7 +2,7 @@
 
 An Android app (phone and tablet) for following the **European Citizens' Initiatives** published on [citizens-initiative.europa.eu](https://citizens-initiative.europa.eu/index_en).
 
-> Status: **M5 done**: Home, Initiatives and News tabs, initiative details, tablet layout, and signing on the official collection page. Background sync and notifications follow in M6. See [milestones.md](milestones.md) for the roadmap.
+> Status: **M6 done**: Home, Initiatives and News tabs, initiative details, tablet layout, signing on the official collection page, background sync and notifications. The 24 languages follow in M7. See [milestones.md](milestones.md) for the roadmap.
 
 ## Project structure
 
@@ -78,6 +78,12 @@ dotnet test tests/EciSupportCentre.Core.Tests
 
 ```bash
 dotnet test tests/EciSupportCentre.Data.Tests
+```
+
+Try the background sync without waiting for its 12-hour period (Debug builds only): the app queues one `SyncWorker` run 15 seconds later; press Home to put the app in the background meanwhile.
+
+```bash
+adb shell am start -n io.github.vaspervnp.ecisupportcentre/crc641f9ab5b7e96c61fb.MainActivity --ez eci_debug_sync true
 ```
 
 Run the live tests against the real ECI services (bash):

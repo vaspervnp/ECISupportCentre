@@ -8,7 +8,7 @@ namespace EciSupportCentre.App.Services;
 /// Single entry point of the UI to the local database and the sync. Runs at most one sync at a time
 /// and tells the pages when stored data changed.
 /// </summary>
-public sealed class DataService(EciDatabase database, SyncEngine sync, IConnectivity connectivity) : IDisposable
+public sealed class DataService(EciDatabase database, SyncEngine sync, NotificationService notifications, IConnectivity connectivity) : IDisposable
 {
     private readonly SemaphoreSlim _initLock = new(1, 1);
     private readonly SemaphoreSlim _syncLock = new(1, 1);
@@ -50,7 +50,11 @@ public sealed class DataService(EciDatabase database, SyncEngine sync, IConnecti
     }
 
     /// <summary>Syncs now. If a sync is already running, waits for it and returns null.</summary>
-    public async Task<SyncReport?> SyncAsync(CancellationToken cancellationToken = default)
+    /// <param name="checkConnectivity">
+    /// False for background jobs: WorkManager starts them only with a network, but the connectivity API reports
+    /// background apps as offline. A real network failure still ends in <see cref="LastError"/>.
+    /// </param>
+    public async Task<SyncReport?> SyncAsync(bool checkConnectivity = true, CancellationToken cancellationToken = default)
     {
         await EnsureReadyAsync().ConfigureAwait(false);
 
@@ -63,7 +67,7 @@ public sealed class DataService(EciDatabase database, SyncEngine sync, IConnecti
 
         try
         {
-            if (connectivity.NetworkAccess != NetworkAccess.Internet)
+            if (checkConnectivity && connectivity.NetworkAccess != NetworkAccess.Internet)
             {
                 SetState(false, Loc.Get("Sync_Offline"));
                 return null;
@@ -71,6 +75,7 @@ public sealed class DataService(EciDatabase database, SyncEngine sync, IConnecti
 
             SetState(true, null);
             var report = await sync.SyncAsync(Loc.Instance.Language, cancellationToken: cancellationToken).ConfigureAwait(false);
+            await notifications.NotifyAsync(report, cancellationToken).ConfigureAwait(false);
             SetState(false, null);
             DataChanged?.Invoke(this, EventArgs.Empty);
             return report;

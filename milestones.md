@@ -119,12 +119,15 @@ tests/
 
 **Done when:** the news shows offline and refreshes during sync.
 
-## M6 — Background sync and notifications
-- [ ] Periodic WorkManager job (default every 12 hours, adjustable, only on Wi-Fi if the user chooses)
-- [ ] Notification channels: *New initiatives*, *Collection ending*, *Results*, *News*
-- [ ] Notifications for: a new initiative registered, collection ending soon (7 days and 1 day before), collection ended, success (1 million signatures and thresholds met, then submitted or answered), failure (insufficient support), and the Commission's answer
-- [ ] **Follow** an initiative to get notifications for it only, or follow all
-- [ ] Tapping a notification opens the initiative's details
+## M6 — Background sync and notifications ✅
+- [x] Periodic WorkManager job (`SyncWorker`, default every 12 hours, only with a network; Wi-Fi only and the interval are stored settings, their screen comes in M8). WorkManager 2.10.3, the last line that matches MAUI's AndroidX Lifecycle 2.9.
+- [x] Notification channels: *New initiatives*, *Collection ending*, *Results*, *News* (news are silent); channel names follow the app language
+- [x] Notifications for: a new initiative registered, collection started, collection ending soon (7 days and 1 day before, each once), collection ended, signature milestones (100k to 1 million), success (submitted), failure (insufficient support), withdrawal, the Commission's answer, and new articles (one notification for all)
+- [x] Rules in Core (`NotificationPlanner`, tested): after missed syncs only the latest status worth telling and the highest milestone are shown; a result replaces the milestone reached on the way; later notifications for the same initiative replace earlier ones
+- [x] **Follow** an initiative to get notifications for it only, or follow all (switch on Home, on by default). New initiatives and news are always announced.
+- [x] Tapping a notification opens the initiative's details (or the News tab), also when the app was closed
+- [x] Android 13+ permission asked once, after the first data arrived; handled events are recorded even without permission, so allowing it later brings no flood of old events
+- [x] Checked on the emulator: changes simulated in the database (success, failure, collection started, new initiative, 7 days left, 100k signatures, new article) all notified from the background job; taps open the right initiative
 
 **Done when:** a simulated status change in the database triggers the right notification on a device.
 

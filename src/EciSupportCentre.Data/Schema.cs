@@ -87,6 +87,14 @@ internal static class Schema
             signed_utc    TEXT NOT NULL
         );
         """,
+
+        // v3: deadline reminders already shown, e.g. "ending:42:7"
+        """
+        CREATE TABLE reminder_sent (
+            key      TEXT PRIMARY KEY,
+            sent_utc TEXT NOT NULL
+        );
+        """,
     ];
 
     public static int CurrentVersion => Migrations.Length;

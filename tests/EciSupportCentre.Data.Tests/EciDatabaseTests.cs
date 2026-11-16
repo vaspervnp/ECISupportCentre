@@ -195,8 +195,10 @@ public class EciDatabaseTests : DatabaseTest
         var upgraded = new EciDatabase(path);
         await upgraded.InitializeAsync();
         await upgraded.SetSignedAsync(7, true, Time.Now);
+        await upgraded.CompleteNotificationsAsync([], ["ending:7:7"], Time.Now);
 
-        Assert.Equal(2, await upgraded.GetSchemaVersionAsync());
+        Assert.Equal(Schema.CurrentVersion, await upgraded.GetSchemaVersionAsync());
+        Assert.Equal(["ending:7:7"], await upgraded.GetRemindersSentAsync());
         var item = await upgraded.GetInitiativeAsync(7, "en");
         Assert.Equal(("Old", true, true), (item!.Title, item.IsFollowed, item.IsSigned));
     }
@@ -263,7 +265,9 @@ public class EciDatabaseTests : DatabaseTest
         var again = await Db.SaveNewsAsync([FakeNews.Item(12) with { Title = "Edited" }, FakeNews.Item(14)], Time.Now);
         var greek = await Db.SaveNewsAsync([FakeNews.Item(12, "el")], Time.Now);
 
-        Assert.Equal((3, 1, 1), (first, again, greek));
+        // An article already stored in another language is not new.
+        Assert.Equal((3, 1, 0), (first.Count, again.Count, greek.Count));
+        Assert.Equal("News 14", Assert.Single(again).Title);
 
         var news = await Db.GetNewsAsync("en");
         Assert.Equal(["News 14", "Edited", "News 7", "News 3"], news.Select(n => n.Title));
@@ -295,6 +299,27 @@ public class EciDatabaseTests : DatabaseTest
         var english = await Db.GetNewsAsync("en");
         Assert.Equal([("Edited", true), ("News 1", false)], english.Select(n => (n.Title, n.IsRead)));
         Assert.True(Assert.Single(await Db.GetNewsAsync("el")).IsRead);
+    }
+
+    [Fact]
+    public async Task Completing_notifications_marks_changes_and_remembers_reminders_once()
+    {
+        await Db.SaveSummariesAsync("en", [Make.Summary(1, "ONGOING")], [], Time.Now);
+        await Db.SaveSummariesAsync(
+            "en",
+            [Make.Summary(1, "CLOSED")],
+            [
+                new InitiativeChange { InitiativeId = 1, Kind = ChangeKind.StatusChanged, OldValue = "ONGOING", NewValue = "CLOSED", DetectedAt = Time.Now },
+                new InitiativeChange { InitiativeId = 1, Kind = ChangeKind.LastCall, DetectedAt = Time.Now },
+            ],
+            Time.Now);
+        var pending = await Db.GetPendingChangesAsync();
+
+        await Db.CompleteNotificationsAsync([pending[0].Id], ["ending:1:7", "ending:1:1"], Time.Now);
+        await Db.CompleteNotificationsAsync([], ["ending:1:7"], Time.Now);
+
+        Assert.Equal(ChangeKind.LastCall, Assert.Single(await Db.GetPendingChangesAsync()).Kind);
+        Assert.Equal(["ending:1:1", "ending:1:7"], (await Db.GetRemindersSentAsync()).Order());
     }
 
     [Fact]
