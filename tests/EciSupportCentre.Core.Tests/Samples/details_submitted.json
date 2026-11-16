@@ -1,0 +1,167 @@
+{
+ "id": 9055,
+ "comRegNum": "ECI(2025)000005",
+ "status": "SUBMITTED",
+ "latestUpdateDate": "12/11/2026 10:41",
+ "lastCall": false,
+ "registrationDate": "25/11/2025",
+ "deadline": "",
+ "startCollectionDate": "13/01/2026",
+ "earlyClosureDate": "15/07/2026",
+ "partiallyRegistered": false,
+ "linguisticVersions": [
+  {
+   "original": true,
+   "languageCode": "EN",
+   "title": "Demand the full suspension of the EU-Israel Association Agreement in view of Israel’s violations of human rights",
+   "objectives": "<p>According to the European Commission, the State of Israel is responsible for an unprecedented level of killing and injury of civilians, a large-scale displacement of population and the systematic destruction of hospitals and medical facilities in Gaza. [1] Israel also implemented a blockade of humanitarian aid that could amount to starvation as a method of war. Israel is in breach of multiple…</p>",
+   "annexText": "<p>In 1995, the EU has concluded an Association agreement with the State of Israel, aiming at facilitating and increasing trade, providing a framework for bilateral political dialogue, and fostering scientific, technologic and cultural cooperation.</p><p>With more than 34% of Israel's imports originating from the EU, and 28.8% of Israeli exports flowing to the EU, the EU is Israel’s first trade…</p>",
+   "treaties": "Article 3 (5) of the Treaty on the European Union (TEU), Article 21 TEU, Article 205 TFEU , Article 207 TFEU ",
+   "website": "https://www.justiceforpalestine.eu/",
+   "supportLink": "https://eci.ec.europa.eu/055/public/?lg=en",
+   "commissionDecision": {
+    "celex": "32025D2460",
+    "url": "http://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32025D2460&from=EN"
+   }
+  },
+  {
+   "original": false,
+   "languageCode": "DE",
+   "title": "Wir fordern angesichts Israels Menschenrechtsverletzungen die vollständige Aussetzung des Assoziierungsabkommens zwischen der EU und Israel",
+   "objectives": "<p>Laut der Europäischen Kommission ist der Staat Israel für die beispiellose massenhafte Tötung und Verletzung von Zivilistinnen und Zivilisten sowie für die massenhafte Vertreibung der Bevölkerung und die systematische Zerstörung von Krankenhäusern und medizinischen Einrichtungen in Gaza verantwortlich [1]. Israel blockiert zudem die Bereitstellung humanitärer Hilfe; dieses Vorgehen könnte als…</p>",
+   "annexText": "<p>Im Jahr&nbsp;1995 schloss die EU ein Assoziierungsabkommen mit dem Staat Israel zur Verbesserung und Stärkung der Handelsbeziehungen, zur Schaffung eines Rahmens für den bilateralen politischen Dialog und zur Förderung der wissenschaftlichen, technologischen und kulturellen Zusammenarbeit.</p><p>Mehr als 34&nbsp;% der Importe nach Israel stammen aus der EU und 28,8&nbsp;% der israelischen…</p>",
+   "treaties": "Article 3 (5) of the Treaty on the European Union (TEU), Article 21 TEU, Article 205 TFEU , Article 207 TFEU ",
+   "website": "https://www.justiceforpalestine.eu/",
+   "supportLink": "https://eci.ec.europa.eu/055/public/?lg=de",
+   "commissionDecision": {
+    "celex": "32025D2460",
+    "url": "http://eur-lex.europa.eu/legal-content/DE/TXT/PDF/?uri=CELEX:32025D2460&from=DE"
+   }
+  },
+  {
+   "original": false,
+   "languageCode": "EL",
+   "title": "Απαίτηση πλήρους αναστολής της συμφωνίας σύνδεσης ΕΕ-Ισραήλ λόγω των παραβιάσεων των ανθρωπίνων δικαιωμάτων από το Ισραήλ",
+   "objectives": "<p>Σύμφωνα με την Ευρωπαϊκή Επιτροπή, το κράτος του Ισραήλ ευθύνεται για επίπεδα θανάτων και τραυματισμού αμάχων που ξεπερνούν κάθε προηγούμενο, για μεγάλης κλίμακας εκτοπισμό πληθυσμού και για τη συστηματική καταστροφή νοσοκομείων και ιατρικών εγκαταστάσεων στη Γάζα [1]. Το Ισραήλ επέβαλε επίσης αποκλεισμό της ανθρωπιστικής βοήθειας, ο οποίος θα μπορούσε να θεωρηθεί ως χρήση της λιμοκτονίας ως…</p>",
+   "annexText": "<p>Το 1995 η ΕΕ σύναψε συμφωνία σύνδεσης με το κράτος του Ισραήλ με στόχο τη διευκόλυνση και την αύξηση του εμπορίου, την παροχή ενός πλαισίου για διμερή πολιτικό διάλογο, καθώς και την προώθηση της επιστημονικής, τεχνολογικής και πολιτιστικής συνεργασίας.</p><p>Δεδομένου ότι πάνω από το 34&nbsp;% των εισαγωγών του Ισραήλ προέρχονται από την ΕΕ και το 28,8&nbsp;% των ισραηλινών εξαγωγών ρέουν…</p>",
+   "treaties": "Article 3 (5) of the Treaty on the European Union (TEU), Article 21 TEU, Article 205 TFEU , Article 207 TFEU ",
+   "website": "https://www.justiceforpalestine.eu/",
+   "supportLink": "https://eci.ec.europa.eu/055/public/?lg=el",
+   "commissionDecision": {
+    "celex": "32025D2460",
+    "url": "http://eur-lex.europa.eu/legal-content/EL/TXT/PDF/?uri=CELEX:32025D2460&from=EL"
+   }
+  }
+ ],
+ "members": [
+  {
+   "type": "REPRESENTATIVE",
+   "fullName": "Member 1",
+   "residenceCountry": "be",
+   "privacyApplied": false
+  },
+  {
+   "type": "SUBSTITUTE",
+   "fullName": "Member 2",
+   "privacyApplied": false
+  },
+  {
+   "type": "MEMBER",
+   "fullName": "Member 3",
+   "privacyApplied": false
+  }
+ ],
+ "progress": [
+  {
+   "name": "REGISTERED",
+   "active": false,
+   "date": "25/11/2025"
+  },
+  {
+   "name": "SUBMITTED",
+   "active": true,
+   "date": "12/11/2026"
+  },
+  {
+   "name": "CLOSED",
+   "active": false,
+   "date": "15/07/2026",
+   "footnoteType": "COLLECTION_EARLY_CLOSURE"
+  },
+  {
+   "name": "VERIFICATION",
+   "active": false,
+   "date": "22/07/2026"
+  },
+  {
+   "name": "COLLECTION_START_DATE",
+   "active": false,
+   "date": "13/01/2026"
+  }
+ ],
+ "funding": {
+  "lastUpdate": "09/11/2026",
+  "sponsors": [
+   {
+    "name": "Sponsor 1",
+    "date": "09/11/2026",
+    "amount": 41622,
+    "privateSponsor": false,
+    "anonymized": false
+   },
+   {
+    "name": "Sponsor 2",
+    "date": "02/06/2026",
+    "amount": 174339,
+    "privateSponsor": false,
+    "anonymized": false
+   }
+  ],
+  "totalAmount": 265592
+ },
+ "submission": {
+  "totalSignatures": 1117104,
+  "entry": [
+   {
+    "countryCodeType": "LU",
+    "total": 2326,
+    "afterSubmission": false
+   },
+   {
+    "countryCodeType": "SK",
+    "total": 1917,
+    "afterSubmission": false
+   },
+   {
+    "countryCodeType": "PT",
+    "total": 18289,
+    "afterSubmission": false
+   },
+   {
+    "countryCodeType": "BG",
+    "total": 5339,
+    "afterSubmission": false
+   },
+   {
+    "countryCodeType": "BE",
+    "total": 35317,
+    "afterSubmission": false
+   }
+  ]
+ },
+ "logo": {
+  "id": 9055,
+  "name": "ELAECI_JusticeforPalestine_43logo.png",
+  "mimeType": "image/png",
+  "size": 16539
+ },
+ "preAnswer": {
+  "links": [
+   {
+    "defaultLanguageCode": "EN",
+    "defaultName": "EXAMIN_STEPS",
+    "defaultLink": "https://citizens-initiative.europa.eu/demand-full-suspension-eu-israel-association-agreement-view-israels-violations-human-rights"
+   }
+  ]
+ }
+}

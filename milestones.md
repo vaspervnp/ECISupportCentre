@@ -11,24 +11,37 @@ Android app (phone and tablet) in C# on .NET 10. It tracks every European Citize
 5. **Notify** the user when an initiative's collection period ends and whether it **succeeded or failed**.
 6. Ship the UI in **all 24 official EU languages**, with English as the default.
 
-## Data sources (checked 2026-11-16)
+## Data sources (verified in M1, 2026-11-16)
+
+Register API base: `https://register.eci.ec.europa.eu/core/api/register/` (public, JSON, no key).
+
+| Endpoint | Use | Notes |
+|---|---|---|
+| `search/{FILTER}/{LANG}/{OFFSET}/{SIZE}` | Initiative list | `FILTER` is `ALL`, `ONGOING` or `ANSWERED` (anything else is a 400). `LANG` is any of the 24 EU codes in upper case; titles and `supportLink` (`?lg=xx`) follow it. `OFFSET` is an **index**, not a page number. `ALL` and `ANSWERED` apply offset and size; `ONGOING` ignores them and returns every ongoing initiative. The envelope holds register-wide totals. |
+| `details/{year}/{number}` | One initiative | All 24 language versions (title, objectives, annex, treaties, support link), dates (`registrationDate`, `startCollectionDate`, `deadline`, `earlyClosureDate`), `progress` steps with dates, signatures per country (`sosReport`, then `submission` after verification), Commission `answer`, `funding`, organisers. About 230 KB, so the sync should fetch it only when `latestUpdateDate` changes. |
+| `statistics` | Home totals | `registered`, `ongoing`, `answered`, `rejected`, `unsuccessful`, `withdrawn`, `startingSoon`, ... |
+| `logo/{id}` | Logo image | Served as `application/octet-stream` |
+| `document/{id}` | PDFs (e.g. draft legal act) | Not used yet |
+
+Statuses: `REGISTERED`, `ONGOING`, `CLOSED`, `VERIFICATION`, `SUBMITTED`, `ANSWERED`, `INSUFFICIENT_SUPPORT`, `INSUFFICIENT_SUPPORT_AFTER_VERIFICATION`, `WITHDRAWN`.
+Dates are `dd/MM/yyyy` or `dd/MM/yyyy HH:mm` (Brussels time); a missing date is often an empty string.
+
+Other sources:
 
 | Purpose | Source | Notes |
 |---|---|---|
-| Initiative list | `https://register.eci.ec.europa.eu/core/api/register/search/{STATUS}/{LANG}/{OFFSET}/{SIZE}` | JSON. `ALL` and `ONGOING` were checked. Fields: `id`, `pubRegNum`, `year`, `number`, `status`, `languageCode`, `title`, `totalSupporters`, `supportLink`, `latestUpdateDate` (`dd/MM/yyyy HH:mm`), `lastCall`, `logo`. The envelope also holds register-wide totals. |
-| Status values seen | — | `ONGOING`, `REGISTERED`, `SUBMITTED`, `ANSWERED`, `INSUFFICIENT_SUPPORT`, `INSUFFICIENT_SUPPORT_AFTER_VERIFICATION` (the list may be incomplete) |
-| Signing | `supportLink` of each entry (e.g. `https://eci.ec.europa.eu/069/public/?lg=en`) | Opened in the browser or a Custom Tab. The app never collects signatures itself. |
-| News | `https://citizens-initiative.europa.eu/node/418/rss_en` | RSS 2.0 |
-| Website (per language) | `https://citizens-initiative.europa.eu/index_{lang}` | 24 language suffixes |
+| Signing | `supportLink` of each initiative (e.g. `https://eci.ec.europa.eu/069/public/?lg=el`) | Opened in the browser or a Custom Tab. The app never collects signatures itself. Initiatives that collected only on paper have no link. |
+| News | `https://citizens-initiative.europa.eu/node/418/rss_{lang}` | RSS 2.0 in every EU language; articles that are not translated appear in English. |
+| Website | `https://citizens-initiative.europa.eu/index_{lang}` | |
 
-Not checked yet: the API with languages other than `EN`, paging past the first page, a per-initiative detail endpoint (needed for collection start and end dates), and whether there are RSS feeds in other languages. Milestone 1 covers these.
+The servers rate-limit with **429** and a fractional `Retry-After` (e.g. `0.809`), so the client must retry politely.
 
 ## Technology
 
 - **.NET 10 MAUI**, target `net10.0-android` (minimum API 24). Layouts adapt to phones and tablets.
 - **MVVM** with `CommunityToolkit.Mvvm`, and `CommunityToolkit.Maui` for UI helpers.
 - **SQLite** through `sqlite-net-pcl` for the local database.
-- `HttpClient` with `System.Text.Json` source generators, and **Polly** for retries.
+- `HttpClient` with `System.Text.Json` source generators, and a small built-in retry handler (429 / `Retry-After`, 5xx, network errors) instead of Polly.
 - **AndroidX WorkManager** for periodic background sync.
 - **Local notifications** through `NotificationCompat` with notification channels (Android 13+ asks for `POST_NOTIFICATIONS`).
 - **Localization** with `.resx` resources for 24 languages.
@@ -56,13 +69,13 @@ tests/
 
 **Done when:** an empty app runs on an emulator and CI is green.
 
-## M1 — Check the data sources and build the API client
-- [ ] Check the register API with every language code, with paging, and with every status filter
-- [ ] Find the per-initiative detail endpoint (registration date, collection start and end, objectives, organisers, answer of the Commission)
-- [ ] Typed models and a `RegisterApiClient` with paging, cancellation, retries and timeouts
-- [ ] `NewsFeedClient` (RSS) and a check for feeds in other languages
-- [ ] Map the API statuses to an app status: `Collecting`, `Upcoming`, `Verification`, `Submitted`, `Answered` (success), `Failed`, `Withdrawn`
-- [ ] Tests against recorded JSON and RSS samples
+## M1 — Check the data sources and build the API client ✅
+- [x] Check the register API with every language code, with paging, and with every status filter
+- [x] Find the per-initiative detail endpoint (`details/{year}/{number}`), plus `statistics` and `logo/{id}`
+- [x] Typed models and a `RegisterApiClient` with paging, cancellation, retries and timeouts
+- [x] `NewsFeedClient` (RSS) with per-language feeds and an English fallback
+- [x] Map the API statuses to a phase (`Upcoming`, `Collecting`, `Verification`, `Submitted`, `Answered`, `Failed`, `Withdrawn`) and an outcome (`Pending`, `Successful`, `Failed`, `Withdrawn`)
+- [x] Tests against recorded JSON and RSS samples (66 offline tests), plus live tests behind `ECI_LIVE_TESTS=1`
 
 **Done when:** the Core library downloads and parses all initiatives and the news, and the tests pass offline.
 

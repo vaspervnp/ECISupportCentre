@@ -1,0 +1,62 @@
+{
+ "requests": 162,
+ "registered": 136,
+ "successful": 15,
+ "ongoing": 13,
+ "answered": 14,
+ "all": 136,
+ "recordsFound": 3,
+ "entries": [
+  {
+   "id": 9186,
+   "pubRegNum": "ECI(2026)000009",
+   "year": "2026",
+   "number": "000009",
+   "status": "ONGOING",
+   "languageCode": "EL",
+   "title": "Κάθε άνθρωπος δεκτός — Για το δικαίωμά σου στην ιθαγένεια χωρίς σύνορα",
+   "totalSupporters": 134,
+   "supportLink": "https://eci.ec.europa.eu/069/public/?lg=el",
+   "latestUpdateDate": "13/11/2026 00:00",
+   "lastCall": false,
+   "logo": {
+    "id": 9186,
+    "name": "AllOnBoardLogo1.png",
+    "mimeType": "image/png",
+    "size": 20693
+   }
+  },
+  {
+   "id": 9055,
+   "pubRegNum": "ECI(2025)000005",
+   "year": "2025",
+   "number": "000005",
+   "status": "SUBMITTED",
+   "languageCode": "EL",
+   "title": "Απαίτηση πλήρους αναστολής της συμφωνίας σύνδεσης ΕΕ-Ισραήλ λόγω των παραβιάσεων των ανθρωπίνων δικαιωμάτων από το Ισραήλ",
+   "totalSupporters": 1117104,
+   "supportLink": "https://eci.ec.europa.eu/055/public/?lg=el",
+   "latestUpdateDate": "12/11/2026 10:41",
+   "lastCall": false,
+   "logo": {
+    "id": 9055,
+    "name": "ELAECI_JusticeforPalestine_43logo.png",
+    "mimeType": "image/png",
+    "size": 16539
+   }
+  },
+  {
+   "id": 9023,
+   "pubRegNum": "ECI(2025)000003",
+   "year": "2025",
+   "number": "000003",
+   "status": "INSUFFICIENT_SUPPORT",
+   "languageCode": "EL",
+   "title": "Save your right, save your flight! (Υπερασπίσου τα δικαιώματά σου, σώσε την πτήση σου!)",
+   "totalSupporters": 6548,
+   "supportLink": "https://eci.ec.europa.eu/054/public/?lg=el",
+   "latestUpdateDate": "10/11/2026 00:00",
+   "lastCall": false
+  }
+ ]
+}

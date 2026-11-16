@@ -1,0 +1,161 @@
+{
+ "id": 8846,
+ "comRegNum": "ECI(2024)000008",
+ "status": "INSUFFICIENT_SUPPORT_AFTER_VERIFICATION",
+ "latestUpdateDate": "20/05/2026 10:05",
+ "lastCall": false,
+ "registrationDate": "24/07/2024",
+ "deadline": "",
+ "startCollectionDate": "24/09/2024",
+ "partiallyRegistered": false,
+ "linguisticVersions": [
+  {
+   "original": true,
+   "languageCode": "IT",
+   "title": "Stop Cruelty Stop Slaughter",
+   "objectives": "<p>Gli allevamenti intensivi e i macelli sono <strong>in conflitto con la Dichiarazione di Parigi e il Trattato di Lisbona i quali riconoscono a Tutti gli Animali gli stessi diritti all’esistenza e li definiscono esseri senzienti.</strong></p><p><strong>Gli allevamenti intensivi e i macelli rappresentano una costante minaccia alla salute pubblica </strong>per la diffusione di sempre nuove…</p>",
+   "annexText": "<p>Gli allevamenti intensivi e i macelli sono <strong>in conflitto con la Dichiarazione di Parigi e il Trattato di Lisbona i quali riconoscono a Tutti gli Animali gli stessi diritti all’esistenza e li definiscono esseri senzienti.</strong></p><p><strong>Gli allevamenti intensivi e i macelli, inoltre, rappresentano una costante minaccia alla salute pubblica, </strong>per la diffusione di sempre…</p>",
+   "treaties": "Riteniamo le richieste idonee alla registrazione e nei poteri della Commissione (Art. 42-43 TFUE, Reg.1307/2013, reg. 1308/2013, 1305/2013 e 1306/2013 , Reg. 2015/2283, Reg.CE n. 178/2002 , altri). Lo  spostamento dei fondi PAC verso l’agricoltura cellulare è uno strumento attuativo praticabile.",
+   "website": "https://www.stopcrueltystopslaughter.eu",
+   "additionalDocument": {
+    "id": 5653766571294469,
+    "name": "STOP CRUELTY STOP SLAUGHTER. Testo ICE (7).pdf",
+    "mimeType": "application/pdf",
+    "size": 255731
+   },
+   "supportLink": "https://eci.ec.europa.eu/047/public/?lg=it",
+   "commissionDecision": {
+    "celex": "32024D2126",
+    "url": "http://eur-lex.europa.eu/legal-content/IT/TXT/PDF/?uri=CELEX:32024D2126&from=IT"
+   }
+  },
+  {
+   "original": false,
+   "languageCode": "EN",
+   "title": "Stop Cruelty Stop Slaughter",
+   "objectives": "<p>Factory farming and slaughterhouses are <strong>at odds with the 1978 Universal Declaration of Animal Rights and the Treaty of Lisbon, which grant all animals the same rights to existence and define them as sentient beings.</strong></p><p><strong>Factory farming and slaughterhouses pose a constant threat to public health</strong> in the form of the spread of ever new pandemics and health and…</p>",
+   "annexText": "<p>Factory farming and slaughterhouses are <strong>at odds with the 1978 Universal Declaration of Animal Rights and the Treaty of Lisbon, which grant all animals the same rights to existence and define them as sentient beings.</strong></p><p><strong>Factory farming and slaughterhouses also pose a constant threat to public health</strong> in the form of the spread of ever new pandemics and health…</p>",
+   "treaties": "Riteniamo le richieste idonee alla registrazione e nei poteri della Commissione (Art. 42-43 TFUE, Reg.1307/2013, reg. 1308/2013, 1305/2013 e 1306/2013 , Reg. 2015/2283, Reg.CE n. 178/2002 , altri). Lo  spostamento dei fondi PAC verso l’agricoltura cellulare è uno strumento attuativo praticabile.",
+   "website": "https://www.stopcrueltystopslaughter.eu",
+   "supportLink": "https://eci.ec.europa.eu/047/public/?lg=en",
+   "commissionDecision": {
+    "celex": "32024D2126",
+    "url": "http://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32024D2126&from=EN"
+   }
+  },
+  {
+   "original": false,
+   "languageCode": "DE",
+   "title": "Stop Cruelty Stop Slaughter (Tierquälerei und Schlachtungen stoppen)",
+   "objectives": "<p>Massentierhaltung und Schlachthöfe <strong>stehen im Widerspruch zur Universellen Erklärung der Tierrechte von 1978 und zum Vertrag von Lissabon, die allen Tieren das gleiche Recht auf Leben einräumen und sie als fühlende Wesen definieren.</strong></p><p><strong>Massentierhaltung und Schlachthöfe stellen eine ständige Bedrohung für die öffentliche Gesundheit</strong> durch die Ausbreitung…</p>",
+   "annexText": "<p>Massentierhaltung und Schlachthöfe <strong>stehen im Widerspruch zur Universellen Erklärung der Tierrechte von 1978 und zum Vertrag von Lissabon, die allen Tieren das gleiche Recht auf Leben einräumen und sie als fühlende Wesen definieren.</strong></p>\n<p><strong>Massentierhaltung und Schlachthöfe stellen zudem eine ständige Bedrohung für die öffentliche Gesundheit</strong> durch die…</p>",
+   "treaties": "Riteniamo le richieste idonee alla registrazione e nei poteri della Commissione (Art. 42-43 TFUE, Reg.1307/2013, reg. 1308/2013, 1305/2013 e 1306/2013 , Reg. 2015/2283, Reg.CE n. 178/2002 , altri). Lo  spostamento dei fondi PAC verso l’agricoltura cellulare è uno strumento attuativo praticabile.",
+   "website": "https://www.stopcrueltystopslaughter.eu",
+   "supportLink": "https://eci.ec.europa.eu/047/public/?lg=de",
+   "commissionDecision": {
+    "celex": "32024D2126",
+    "url": "http://eur-lex.europa.eu/legal-content/DE/TXT/PDF/?uri=CELEX:32024D2126&from=DE"
+   }
+  }
+ ],
+ "categories": [
+  {
+   "categoryType": "SANTE"
+  },
+  {
+   "categoryType": "ENV"
+  },
+  {
+   "categoryType": "AGRI"
+  }
+ ],
+ "members": [
+  {
+   "type": "SUBSTITUTE",
+   "fullName": "Member 1",
+   "privacyApplied": false
+  },
+  {
+   "type": "MEMBER",
+   "fullName": "Member 2",
+   "privacyApplied": false
+  },
+  {
+   "type": "MEMBER",
+   "fullName": "Member 3",
+   "privacyApplied": false
+  }
+ ],
+ "progress": [
+  {
+   "name": "REGISTERED",
+   "active": false,
+   "date": "24/07/2024"
+  },
+  {
+   "name": "CLOSED",
+   "active": false,
+   "date": "24/09/2025"
+  },
+  {
+   "name": "INSUFFICIENT_SUPPORT_AFTER_VERIFICATION",
+   "active": true,
+   "date": "20/05/2026"
+  },
+  {
+   "name": "VERIFICATION",
+   "active": false,
+   "date": "20/11/2025"
+  },
+  {
+   "name": "ONGOING",
+   "active": false,
+   "date": "24/09/2024"
+  },
+  {
+   "name": "COLLECTION_START_DATE",
+   "active": false,
+   "date": "24/09/2024"
+  }
+ ],
+ "funding": {
+  "sponsors": []
+ },
+ "submission": {
+  "totalSignatures": 590368,
+  "declaredByOrganisers": false,
+  "entry": [
+   {
+    "countryCodeType": "FR",
+    "total": 230654,
+    "afterSubmission": false
+   },
+   {
+    "countryCodeType": "EE",
+    "total": 74,
+    "afterSubmission": false
+   },
+   {
+    "countryCodeType": "IT",
+    "total": 13910,
+    "afterSubmission": false
+   },
+   {
+    "countryCodeType": "BE",
+    "total": 564,
+    "afterSubmission": false
+   },
+   {
+    "countryCodeType": "GR",
+    "total": 7144,
+    "afterSubmission": false
+   }
+  ]
+ },
+ "logo": {
+  "id": 8846,
+  "name": "SCSS LOGO.png",
+  "mimeType": "image/png",
+  "size": 54883
+ }
+}

@@ -1,0 +1,99 @@
+{
+ "id": 9124,
+ "comRegNum": "ECI(2026)000012",
+ "status": "REGISTERED",
+ "latestUpdateDate": "06/10/2026 16:41",
+ "lastCall": false,
+ "registrationDate": "06/10/2026",
+ "deadline": "",
+ "partiallyRegistered": false,
+ "linguisticVersions": [
+  {
+   "original": true,
+   "languageCode": "ES",
+   "title": "Creación del Distrito Digital Europeo (.IA) para la Gobernanza de la IA Soberana",
+   "objectives": "<p>Instar a la Comision a proponer un marco para espacios digitales de alta confianza y ejercer la iniciativa europea ante la ISO y la ICANN para salvaguardar el dominio .IA.</p><p>Objetivos:</p><p>1. Proponer un marco comunitario que promueva \"Distritos Digitales de Alta Confianza\" y entornos de prueba (sandboxes) para IA etica en la UE. Se impulsara su localizacion en islas perifericas (como…</p>",
+   "annexText": "<p>ANEXO: ASUNTO, OBJETIVOS Y ANTECEDENTES DE LA INICIATIVA </p><p>1. EL DESAFIO: LA NECESIDAD DE ESPACIOS DIGITALES SOBERANOS </p><p>La gobernanza actual de la Inteligencia Artificial depende critica y mayoritariamente del dominio \".AI\", perteneciente al territorio de Anguila, fuera de la jurisdiccion comunitaria. Esto expone la infraestructura europea de IA a marcos regulatorios opacos e…</p>",
+   "treaties": "Art. 11 TUE (democracia participativa); Art. 114 TFUE (Mercado Único Digital); Art. 173 TFUE (competitividad); Arts. 174-178 TFUE (cohesión de regiones insulares); Reg. (UE) 2019/517 (precedente .eu)",
+   "website": "https://anticitera.deft.work",
+   "supportLink": "https://eci.ec.europa.eu/068/public/?lg=es",
+   "commissionDecision": {
+    "celex": "32026D2308",
+    "url": "http://eur-lex.europa.eu/legal-content/ES/TXT/PDF/?uri=CELEX:32026D2308&from=ES"
+   }
+  },
+  {
+   "original": false,
+   "languageCode": "EN",
+   "title": "Creation of a European Digital Space (.IA) for Sovereign AI Governance",
+   "objectives": "<p>To call on the Commission to propose a framework for high-trust digital spaces and to take the initiative at European level to negotiate with ISO and ICANN to safeguard the .IA domain</p><p>Objectives:</p><p>1. To propose an EU framework that promotes ‘High-Trust Digital Spaces’ and testing environments (sandboxes) for ethical AI in the EU. Establishing such spaces on remote islands (such as…</p>",
+   "annexText": "<p>ANNEX: SUBJECT-MATTER, OBJECTIVES AND BACKGROUND TO THE INITIATIVE </p><p>1. THE CHALLENGE: THE NEED FOR SOVEREIGN DIGITAL SPACES </p><p>Current governance of artificial intelligence depends, critically and predominantly, on the ‘.AI’ domain, which belongs to the territory of Anguilla, outside the EU’s jurisdiction. This exposes Europe’s AI infrastructure to opaque regulatory frameworks and…</p>",
+   "treaties": "Art. 11 TUE (democracia participativa); Art. 114 TFUE (Mercado Único Digital); Art. 173 TFUE (competitividad); Arts. 174-178 TFUE (cohesión de regiones insulares); Reg. (UE) 2019/517 (precedente .eu)",
+   "website": "https://anticitera.deft.work",
+   "supportLink": "https://eci.ec.europa.eu/068/public/?lg=en",
+   "commissionDecision": {
+    "celex": "32026D2308",
+    "url": "http://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32026D2308&from=EN"
+   }
+  },
+  {
+   "original": false,
+   "languageCode": "DE",
+   "title": "Schaffung des europäischen digitalen Raums (.IA) für eine souveräne KI-Governance",
+   "objectives": "<p><sig data-segment-id=\"6902a19c-20bb-4c78-8393-a6849e995defDELIMITER5\">Die Kommission aufzufordern, einen Rahmen für hoch vertrauenswürdige digitale Räume vorzuschlagen und auf europäischer Ebene Verhandlungen mit der ISO und der ICANN aufzunehmen, um die Domain „.IA“ zu schützen.</sig></p><p><sig data-segment-id=\"16254092-2932-4b67-8118-2854f3d9abcdDELIMITER6\">Ziele:</sig></p><p><sig…</p>",
+   "annexText": "<p><sig data-segment-id=\"3d61318d-6a49-4740-8129-f6ff773e3488DELIMITER15\">ANHANG:</sig> <sig data-segment-id=\"3d61318d-6a49-4740-8129-f6ff773e3488DELIMITER16\">GEGENSTAND, ZIELE UND HINTERGRUND DER INITIATIVE</sig> </p><p><sig data-segment-id=\"e778843d-1154-4219-8e5d-41175373b87cDELIMITER17\">1.</sig> <sig data-segment-id=\"e778843d-1154-4219-8e5d-41175373b87cDELIMITER18\">DIE HERAUSFORDERUNG:</sig>…</p>",
+   "treaties": "Art. 11 TUE (democracia participativa); Art. 114 TFUE (Mercado Único Digital); Art. 173 TFUE (competitividad); Arts. 174-178 TFUE (cohesión de regiones insulares); Reg. (UE) 2019/517 (precedente .eu)",
+   "website": "https://anticitera.deft.work",
+   "supportLink": "https://eci.ec.europa.eu/068/public/?lg=de",
+   "commissionDecision": {
+    "celex": "32026D2308",
+    "url": "http://eur-lex.europa.eu/legal-content/DE/TXT/PDF/?uri=CELEX:32026D2308&from=DE"
+   }
+  }
+ ],
+ "categories": [
+  {
+   "categoryType": "RSH"
+  },
+  {
+   "categoryType": "REGIO"
+  },
+  {
+   "categoryType": "DECO"
+  }
+ ],
+ "members": [
+  {
+   "type": "REPRESENTATIVE",
+   "fullName": "Member 1",
+   "residenceCountry": "es",
+   "privacyApplied": false
+  },
+  {
+   "type": "DPO",
+   "fullName": "Member 2",
+   "privacyApplied": false
+  },
+  {
+   "type": "SUBSTITUTE",
+   "fullName": "Member 3",
+   "privacyApplied": false
+  }
+ ],
+ "progress": [
+  {
+   "name": "REGISTERED",
+   "active": true,
+   "date": "06/10/2026"
+  }
+ ],
+ "funding": {
+  "sponsors": []
+ },
+ "logo": {
+  "id": 9124,
+  "name": "eci_ai_logo_es_1784066452898-mini.png",
+  "mimeType": "image/png",
+  "size": 75032
+ }
+}

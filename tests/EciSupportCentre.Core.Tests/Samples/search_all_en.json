@@ -1,0 +1,245 @@
+{
+ "requests": 162,
+ "registered": 136,
+ "successful": 15,
+ "ongoing": 13,
+ "answered": 14,
+ "all": 136,
+ "recordsFound": 13,
+ "entries": [
+  {
+   "id": 9186,
+   "pubRegNum": "ECI(2026)000009",
+   "year": "2026",
+   "number": "000009",
+   "status": "ONGOING",
+   "languageCode": "EN",
+   "title": "All On Board - For your right to citizenship without borders",
+   "totalSupporters": 134,
+   "supportLink": "https://eci.ec.europa.eu/069/public/?lg=en",
+   "latestUpdateDate": "13/11/2026 00:00",
+   "lastCall": false,
+   "logo": {
+    "id": 9186,
+    "name": "AllOnBoardLogo1.png",
+    "mimeType": "image/png",
+    "size": 20693
+   }
+  },
+  {
+   "id": 9055,
+   "pubRegNum": "ECI(2025)000005",
+   "year": "2025",
+   "number": "000005",
+   "status": "SUBMITTED",
+   "languageCode": "EN",
+   "title": "Demand the full suspension of the EU-Israel Association Agreement in view of Israel’s violations of human rights",
+   "totalSupporters": 1117104,
+   "supportLink": "https://eci.ec.europa.eu/055/public/?lg=en",
+   "latestUpdateDate": "12/11/2026 10:41",
+   "lastCall": false,
+   "logo": {
+    "id": 9055,
+    "name": "ELAECI_JusticeforPalestine_43logo.png",
+    "mimeType": "image/png",
+    "size": 16539
+   }
+  },
+  {
+   "id": 9023,
+   "pubRegNum": "ECI(2025)000003",
+   "year": "2025",
+   "number": "000003",
+   "status": "INSUFFICIENT_SUPPORT",
+   "languageCode": "EN",
+   "title": "Save your right, save your flight!",
+   "totalSupporters": 6548,
+   "supportLink": "https://eci.ec.europa.eu/054/public/?lg=en",
+   "latestUpdateDate": "10/11/2026 00:00",
+   "lastCall": false
+  },
+  {
+   "id": 9167,
+   "pubRegNum": "ECI(2026)000007",
+   "year": "2026",
+   "number": "000007",
+   "status": "ONGOING",
+   "languageCode": "EN",
+   "title": "Reconnecting nature through the creation of European biodiversity corridors",
+   "totalSupporters": 7440,
+   "supportLink": "https://eci.ec.europa.eu/063/public/?lg=en",
+   "latestUpdateDate": "05/11/2026 09:16",
+   "lastCall": false,
+   "logo": {
+    "id": 9167,
+    "name": "ICE-NHNB-immagineprofilo-4x3.jpg",
+    "mimeType": "image/jpeg",
+    "size": 72607
+   }
+  },
+  {
+   "id": 9124,
+   "pubRegNum": "ECI(2026)000012",
+   "year": "2026",
+   "number": "000012",
+   "status": "REGISTERED",
+   "languageCode": "EN",
+   "title": "Creation of a European Digital Space (.IA) for Sovereign AI Governance",
+   "totalSupporters": 0,
+   "supportLink": "https://eci.ec.europa.eu/068/public/?lg=en",
+   "latestUpdateDate": "06/10/2026 16:41",
+   "lastCall": false,
+   "logo": {
+    "id": 9124,
+    "name": "eci_ai_logo_es_1784066452898-mini.png",
+    "mimeType": "image/png",
+    "size": 75032
+   }
+  },
+  {
+   "id": 9152,
+   "pubRegNum": "ECI(2026)000008",
+   "year": "2026",
+   "number": "000008",
+   "status": "REGISTERED",
+   "languageCode": "EN",
+   "title": "Introduction of Unconditional Basic Income (UBI) throughout the EU",
+   "totalSupporters": 0,
+   "supportLink": "https://eci.ec.europa.eu/062/public/?lg=en",
+   "latestUpdateDate": "07/08/2026 16:55",
+   "lastCall": false,
+   "logo": {
+    "id": 9152,
+    "name": "logo43small.png",
+    "mimeType": "image/png",
+    "size": 70367
+   }
+  },
+  {
+   "id": 8807,
+   "pubRegNum": "ECI(2024)000007",
+   "year": "2024",
+   "number": "000007",
+   "status": "ANSWERED",
+   "languageCode": "EN",
+   "title": "Stop Destroying Videogames",
+   "totalSupporters": 1294188,
+   "supportLink": "https://eci.ec.europa.eu/045/public/?lg=en",
+   "latestUpdateDate": "16/06/2026 15:12",
+   "lastCall": false,
+   "logo": {
+    "id": 8807,
+    "name": "skglogo.jpg",
+    "mimeType": "image/jpeg",
+    "size": 73624
+   }
+  },
+  {
+   "id": 8846,
+   "pubRegNum": "ECI(2024)000008",
+   "year": "2024",
+   "number": "000008",
+   "status": "INSUFFICIENT_SUPPORT_AFTER_VERIFICATION",
+   "languageCode": "EN",
+   "title": "Stop Cruelty Stop Slaughter",
+   "totalSupporters": 590368,
+   "supportLink": "https://eci.ec.europa.eu/047/public/?lg=en",
+   "latestUpdateDate": "20/05/2026 10:05",
+   "lastCall": false,
+   "logo": {
+    "id": 8846,
+    "name": "SCSS LOGO.png",
+    "mimeType": "image/png",
+    "size": 54883
+   }
+  },
+  {
+   "id": 8632,
+   "pubRegNum": "ECI(2024)000001",
+   "year": "2024",
+   "number": "000001",
+   "status": "ANSWERED",
+   "languageCode": "EN",
+   "title": "Ban on conversion practices in the European Union",
+   "totalSupporters": 1128063,
+   "supportLink": "https://eci.ec.europa.eu/043/public/?lg=en",
+   "latestUpdateDate": "13/05/2026 14:20",
+   "lastCall": false,
+   "logo": {
+    "id": 8632,
+    "name": "2560px-Europe_Gay_flag.svg.png",
+    "mimeType": "image/png",
+    "size": 69725
+   }
+  },
+  {
+   "id": 8641,
+   "pubRegNum": "ECI(2024)000011",
+   "year": "2024",
+   "number": "000011",
+   "status": "INSUFFICIENT_SUPPORT",
+   "languageCode": "EN",
+   "title": "PsychedeliCare",
+   "totalSupporters": 69045,
+   "supportLink": "https://eci.ec.europa.eu/050/public/?lg=en",
+   "latestUpdateDate": "16/04/2026 00:00",
+   "lastCall": false,
+   "logo": {
+    "id": 8641,
+    "name": "25fe5abb-17d1-44a8-93f1-efaff082f183.jpeg",
+    "mimeType": "image/jpeg",
+    "size": 57593
+   }
+  },
+  {
+   "id": 8789,
+   "pubRegNum": "ECI(2024)000005",
+   "year": "2024",
+   "number": "000005",
+   "status": "WITHDRAWN",
+   "languageCode": "EN",
+   "title": "Save the Planet by shifting taxation from labour to greenhouse gas emissions",
+   "totalSupporters": 0,
+   "latestUpdateDate": "18/10/2024 14:34",
+   "lastCall": false
+  },
+  {
+   "id": 8026,
+   "pubRegNum": "ECI(2023)000003",
+   "year": "2023",
+   "number": "000003",
+   "status": "WITHDRAWN",
+   "languageCode": "EN",
+   "title": " End The Horse Slaughter Age",
+   "totalSupporters": 14739,
+   "supportLink": "https://eci.ec.europa.eu/033/public/?lg=en",
+   "latestUpdateDate": "18/09/2024 21:26",
+   "lastCall": false,
+   "logo": {
+    "id": 8026,
+    "name": "iso-republic-horse-pasture-fence-trees_11zon.jpg",
+    "mimeType": "image/jpeg",
+    "size": 52438
+   }
+  },
+  {
+   "id": 149,
+   "pubRegNum": "ECI(2017)000007",
+   "year": "2017",
+   "number": "000007",
+   "status": "VERIFICATION",
+   "languageCode": "EN",
+   "title": "Stop Extremism",
+   "totalSupporters": 1068793,
+   "supportLink": "https://ocs.stopextremism.eu/oct-web-public/",
+   "latestUpdateDate": "11/06/2018 17:31",
+   "lastCall": false,
+   "logo": {
+    "id": 149,
+    "name": "LOGO-ECI-StopExtremism.png",
+    "mimeType": "image/png",
+    "size": 399507
+   }
+  }
+ ]
+}

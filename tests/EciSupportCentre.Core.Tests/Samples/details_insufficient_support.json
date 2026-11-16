@@ -1,0 +1,134 @@
+{
+ "id": 9023,
+ "comRegNum": "ECI(2025)000003",
+ "status": "INSUFFICIENT_SUPPORT",
+ "latestUpdateDate": "10/11/2026 00:00",
+ "lastCall": false,
+ "registrationDate": "16/07/2025",
+ "deadline": "",
+ "startCollectionDate": "08/08/2025",
+ "partiallyRegistered": false,
+ "linguisticVersions": [
+  {
+   "original": true,
+   "languageCode": "EN",
+   "title": "Save your right, save your flight!",
+   "objectives": "<p>The Council is trying to push through devastating changes to passenger rights that will water down protections travellers have relied on for two decades. </p><p>What We're Losing:</p><p>Time – Under the current proposal, compensation will only be granted after delays of at least 4 hours up from at least 2 hours.</p><p>Money – Compensations are being slashed by €100 for medium and long-haul…</p>",
+   "annexText": "<p>In addition to our proposal, we welcome the increased transparency and additional protections proposed by the Council, such as: </p><p>- Introducing a deadline for processing compensation claims (up to 14 days).</p><p>- Guaranteeing the consumer's right to information about the causes of delay.</p><p>- Establishing a definitive list of cases eligible for compensation, based on established case…</p>",
+   "treaties": "Article 91(1) of the Treaty on the Functioning of the European Union (TFEU) serves as the legal basis for the adoption of EU legislation related to a common transport policy. This provision is the legal basis for the passenger rights Regulations currently in force.",
+   "supportLink": "https://eci.ec.europa.eu/054/public/?lg=en",
+   "commissionDecision": {
+    "celex": "32025D1502",
+    "url": "http://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32025D1502&from=EN"
+   }
+  },
+  {
+   "original": false,
+   "languageCode": "DE",
+   "title": "„Save your right, save your flight!“ (Rette dein Recht, rette deinen Flug!)",
+   "objectives": "<p>Der Rat versucht, verheerende Änderungen der Fluggastrechte einzuführen, die den Schutz verwässern würden, der Reisenden in den vergangenen zwei Jahrzehnten gewährt wurde.</p><p>Was wir verlieren:</p><p>Zeit – Nach dem vorliegenden Vorschlag würde eine Entschädigung erst bei Verspätungen von mindestens 4&nbsp;Stunden statt wie bisher ab 2&nbsp;Stunden gewährt.</p><p>Geld – Die…</p>",
+   "annexText": "<p>Abgesehen von unserem Vorschlag begrüßen wir die erhöhte Transparenz und die zusätzlichen Schutzmaßnahmen, die vom Rat vorgeschlagen werden, wie zum Beispiel:</p><p>– die Einführung einer Frist für die Bearbeitung von Entschädigungsanträgen (bis zu 14&nbsp;Tage),</p><p>– den Rechtsanspruch der Verbraucher auf Unterrichtung über die Ursachen einer etwaigen Verzögerung und</p><p>– die…</p>",
+   "treaties": "Article 91(1) of the Treaty on the Functioning of the European Union (TFEU) serves as the legal basis for the adoption of EU legislation related to a common transport policy. This provision is the legal basis for the passenger rights Regulations currently in force.",
+   "supportLink": "https://eci.ec.europa.eu/054/public/?lg=de",
+   "commissionDecision": {
+    "celex": "32025D1502",
+    "url": "http://eur-lex.europa.eu/legal-content/DE/TXT/PDF/?uri=CELEX:32025D1502&from=DE"
+   }
+  },
+  {
+   "original": false,
+   "languageCode": "EL",
+   "title": "Save your right, save your flight! (Υπερασπίσου τα δικαιώματά σου, σώσε την πτήση σου!)",
+   "objectives": "<p>Το Συμβούλιο προσπαθεί να προωθήσει συντριπτικές αλλαγές στα δικαιώματα των επιβατών οι οποίες θα αποδυναμώσουν μέτρα προστασίας των ταξιδιωτών που ισχύουν εδώ και δύο δεκαετίες.</p><p>Αυτά που χάνουμε:</p><p>Χρόνος — Σύμφωνα με την παρούσα πρόταση, η αποζημίωση θα χορηγείται μόνο για καθυστερήσεις τουλάχιστον 4 ωρών, σε σχέση με τις καθυστερήσεις τουλάχιστον 2 ωρών.</p><p>Χρήματα — Οι…</p>",
+   "annexText": "<p>Επιπλέον της πρότασής μας, εκφράζουμε ικανοποίησή για την αυξημένη διαφάνεια και τα πρόσθετα μέτρα προστασίας που πρότεινε το Συμβούλιο, όπως:</p><p>— Η καθιέρωση προθεσμίας για τη διεκπεραίωση των αιτήσεων αποζημίωσης (έως 14 ημέρες).</p><p>— Η εγγύηση του δικαιώματος ενημέρωσης των καταναλωτών σχετικά με τις αιτίες της καθυστέρησης.</p><p>— Η κατάρτιση οριστικού καταλόγου των υποθέσεων που…</p>",
+   "treaties": "Article 91(1) of the Treaty on the Functioning of the European Union (TFEU) serves as the legal basis for the adoption of EU legislation related to a common transport policy. This provision is the legal basis for the passenger rights Regulations currently in force.",
+   "supportLink": "https://eci.ec.europa.eu/054/public/?lg=el",
+   "commissionDecision": {
+    "celex": "32025D1502",
+    "url": "http://eur-lex.europa.eu/legal-content/EL/TXT/PDF/?uri=CELEX:32025D1502&from=EL"
+   }
+  }
+ ],
+ "categories": [
+  {
+   "categoryType": "SANTE"
+  },
+  {
+   "categoryType": "TRA"
+  }
+ ],
+ "members": [
+  {
+   "type": "MEMBER",
+   "fullName": "Member 1",
+   "privacyApplied": false
+  },
+  {
+   "type": "MEMBER",
+   "fullName": "Member 2",
+   "privacyApplied": false
+  },
+  {
+   "type": "MEMBER",
+   "fullName": "Member 3",
+   "privacyApplied": false
+  }
+ ],
+ "progress": [
+  {
+   "name": "REGISTERED",
+   "active": false,
+   "date": "16/07/2025"
+  },
+  {
+   "name": "CLOSED",
+   "active": false,
+   "date": "08/08/2026"
+  },
+  {
+   "name": "INSUFFICIENT_SUPPORT",
+   "active": true,
+   "date": "10/11/2026"
+  },
+  {
+   "name": "ONGOING",
+   "active": false,
+   "date": "08/08/2025"
+  },
+  {
+   "name": "COLLECTION_START_DATE",
+   "active": false,
+   "date": "08/08/2025"
+  }
+ ],
+ "funding": {
+  "sponsors": []
+ },
+ "sosReport": {
+  "totalSignatures": 6548,
+  "updateDate": "10/11/2026",
+  "onlineSosUpdateDate": "10/11/2026 00:00",
+  "entry": [
+   {
+    "countryCodeType": "SE",
+    "total": 178
+   },
+   {
+    "countryCodeType": "HR",
+    "total": 73
+   },
+   {
+    "countryCodeType": "CZ",
+    "total": 61
+   },
+   {
+    "countryCodeType": "IE",
+    "total": 170
+   },
+   {
+    "countryCodeType": "NL",
+    "total": 979
+   }
+  ]
+ }
+}

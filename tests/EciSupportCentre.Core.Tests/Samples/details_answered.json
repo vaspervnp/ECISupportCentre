@@ -1,0 +1,289 @@
+{
+ "id": 8807,
+ "comRegNum": "ECI(2024)000007",
+ "status": "ANSWERED",
+ "latestUpdateDate": "16/06/2026 15:12",
+ "lastCall": false,
+ "registrationDate": "19/06/2024",
+ "deadline": "",
+ "startCollectionDate": "31/07/2024",
+ "partiallyRegistered": false,
+ "linguisticVersions": [
+  {
+   "original": true,
+   "languageCode": "EN",
+   "title": "Stop Destroying Videogames",
+   "objectives": "<p>This initiative calls to require publishers that sell or license videogames to consumers in the European Union (or related features and assets sold for videogames they operate) to leave said videogames in a functional (playable) state.</p><p>Specifically, the initiative seeks to prevent the remote disabling of videogames by the publishers, before providing reasonable means to continue…</p>",
+   "annexText": "<p>Videogames have grown into an industry with billions of customers worth hundreds of billions of euros. During this time, a specific business practice in the industry has been slowly emerging that is not only an assault on basic consumer rights but is destroying the medium itself.</p><p>An increasing number of publishers are selling videogames that are required to connect through the internet…</p>",
+   "treaties": "Article 17 §1 of the Charter of Fundamental Rights of the European Union; Title XV of the Treaty on the Functioning of the European Union (TFEU) - Art. 169 §1, Art. 12, Art. 114 §3,  Art. 26",
+   "supportLink": "https://eci.ec.europa.eu/045/public/?lg=en",
+   "commissionDecision": {
+    "celex": "32024D1824",
+    "url": "http://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32024D1824&from=EN"
+   }
+  },
+  {
+   "original": false,
+   "languageCode": "EL",
+   "title": "Τέρμα στην καταστροφή των βιντεοπαιχνιδιών",
+   "objectives": "<p>Με την παρούσα πρωτοβουλία ζητείται να υποχρεωθούν οι εκδότες που πωλούν ή χορηγούν άδειες για βιντεοπαιχνίδια σε καταναλωτές στην Ευρωπαϊκή Ένωση (ή συναφή αγαθά και λειτουργικά στοιχεία που πωλούνται για βιντεοπαιχνίδια τα οποία εκμεταλλεύονται) να αφήνουν τα εν λόγω βιντεοπαιχνίδια σε λειτουργική κατάσταση, δηλαδή να μπορεί κανείς να εξακολουθήσει να παίζει με αυτά.</p><p>Ειδικότερα, η…</p>",
+   "annexText": "<p>Τα βιντεοπαιχνίδια έχουν εξελιχθεί σε κλάδο με δισεκατομμύρια πελάτες αξίας εκατοντάδων δισεκατομμυρίων ευρώ. Κατά τη διάρκεια αυτής της περιόδου, αναδύθηκε βαθμιαία μια συγκεκριμένη επιχειρηματική πρακτική στον κλάδο, η οποία όχι μόνο συνιστά επίθεση στα βασικά δικαιώματα των καταναλωτών, αλλά καταστρέφει το ίδιο το μέσο.</p><p>Όλο και περισσότεροι εκδότες πωλούν βιντεοπαιχνίδια τα οποία,…</p>",
+   "treaties": "Article 17 §1 of the Charter of Fundamental Rights of the European Union; Title XV of the Treaty on the Functioning of the European Union (TFEU) - Art. 169 §1, Art. 12, Art. 114 §3,  Art. 26",
+   "supportLink": "https://eci.ec.europa.eu/045/public/?lg=el",
+   "commissionDecision": {
+    "celex": "32024D1824",
+    "url": "http://eur-lex.europa.eu/legal-content/EL/TXT/PDF/?uri=CELEX:32024D1824&from=EL"
+   }
+  },
+  {
+   "original": false,
+   "languageCode": "DE",
+   "title": "Stop Destroying Videogames (Videospielzerstörung stoppen)",
+   "objectives": "<p>Die Initiative fordert, Herausgeber, die Videospiele (oder damit zusammenhängende Funktionen und Güter) an Verbraucher in der Europäischen Union verkaufen oder lizenzieren, zu verpflichten, diese Videospiele in einem funktionalen (spielbaren) Zustand zu belassen.</p><p>Insbesondere soll die Initiative verhindern, dass Videospiele aus der Ferne abgeschaltet werden, bevor die Möglichkeit geboten…</p>",
+   "annexText": "<p>Videospiele haben sich zu einem Wirtschaftszweig mit einer Kundschaft und Umsätzen jeweils in Milliardenhöhen entwickelt. Dabei hat sich eine Geschäftspraxis in der Branche etabliert, die nicht nur einen Angriff auf die Grundrechte von Verbrauchern, sondern auch eine Zerstörung des Mediums selbst darstellt.</p><p>Immer mehr Herausgeber bringen Spiele auf den Markt, die nur mit einer…</p>",
+   "treaties": "Article 17 §1 of the Charter of Fundamental Rights of the European Union; Title XV of the Treaty on the Functioning of the European Union (TFEU) - Art. 169 §1, Art. 12, Art. 114 §3,  Art. 26",
+   "supportLink": "https://eci.ec.europa.eu/045/public/?lg=de",
+   "commissionDecision": {
+    "celex": "32024D1824",
+    "url": "http://eur-lex.europa.eu/legal-content/DE/TXT/PDF/?uri=CELEX:32024D1824&from=DE"
+   }
+  }
+ ],
+ "categories": [
+  {
+   "categoryType": "CULT"
+  },
+  {
+   "categoryType": "DECO"
+  },
+  {
+   "categoryType": "SANTE"
+  }
+ ],
+ "members": [
+  {
+   "type": "REPRESENTATIVE",
+   "fullName": "Member 1",
+   "residenceCountry": "de",
+   "privacyApplied": false
+  },
+  {
+   "type": "SUBSTITUTE",
+   "fullName": "Member 2",
+   "privacyApplied": false
+  },
+  {
+   "type": "MEMBER",
+   "fullName": "Member 3",
+   "privacyApplied": false
+  }
+ ],
+ "progress": [
+  {
+   "name": "REGISTERED",
+   "active": false,
+   "date": "19/06/2024"
+  },
+  {
+   "name": "SUBMITTED",
+   "active": false,
+   "date": "26/01/2026"
+  },
+  {
+   "name": "CLOSED",
+   "active": false,
+   "date": "31/07/2025"
+  },
+  {
+   "name": "VERIFICATION",
+   "active": false,
+   "date": "11/08/2025"
+  },
+  {
+   "name": "ANSWERED",
+   "active": true,
+   "date": "16/06/2026"
+  },
+  {
+   "name": "COLLECTION_START_DATE",
+   "active": false,
+   "date": "31/07/2024"
+  }
+ ],
+ "funding": {
+  "lastUpdate": "04/01/2026",
+  "sponsors": [
+   {
+    "name": "Sponsor 1",
+    "date": "01/08/2024",
+    "amount": 0,
+    "privateSponsor": false,
+    "anonymized": false,
+    "otherSupport": "Voluntary support provided by various parties that is not economically quantifiable"
+   },
+   {
+    "name": "Sponsor 2",
+    "date": "01/08/2025",
+    "amount": 24000,
+    "privateSponsor": true,
+    "anonymized": true
+   }
+  ],
+  "totalAmount": 24000
+ },
+ "submission": {
+  "totalSignatures": 1294188,
+  "entry": [
+   {
+    "countryCodeType": "LU",
+    "total": 2465,
+    "afterSubmission": false
+   },
+   {
+    "countryCodeType": "AT",
+    "total": 20714,
+    "afterSubmission": false
+   },
+   {
+    "countryCodeType": "ES",
+    "total": 121616,
+    "afterSubmission": false
+   },
+   {
+    "countryCodeType": "EE",
+    "total": 9296,
+    "afterSubmission": false
+   },
+   {
+    "countryCodeType": "LV",
+    "total": 7526,
+    "afterSubmission": false
+   }
+  ]
+ },
+ "logo": {
+  "id": 8807,
+  "name": "skglogo.jpg",
+  "mimeType": "image/jpeg",
+  "size": 73624
+ },
+ "answer": {
+  "id": 14,
+  "decisionDate": "16/06/2026",
+  "links": [
+   {
+    "defaultLanguageCode": "EN",
+    "defaultName": "COMMUNICATION",
+    "defaultLink": "https://citizens-initiative.europa.eu/document/download/75d642bc-6ff5-4713-b1cf-14f4aaf15869_en?filename=C_2026_4110_EN.pdf",
+    "link": [
+     {
+      "languageCode": "LT",
+      "link": "https://eur-lex.europa.eu/legal-content/LT/TXT/?uri=pi_com%3AC%282026%294110"
+     },
+     {
+      "languageCode": "HU",
+      "link": "https://eur-lex.europa.eu/legal-content/HU/TXT/?uri=pi_com%3AC%282026%294110"
+     },
+     {
+      "languageCode": "SK",
+      "link": "https://eur-lex.europa.eu/legal-content/SK/TXT/?uri=pi_com%3AC%282026%294110"
+     },
+     {
+      "languageCode": "RO",
+      "link": "https://eur-lex.europa.eu/legal-content/RO/TXT/?uri=pi_com%3AC%282026%294110"
+     },
+     {
+      "languageCode": "MT",
+      "link": "https://eur-lex.europa.eu/legal-content/MT/TXT/?uri=pi_com%3AC%282026%294110"
+     },
+     {
+      "languageCode": "DA",
+      "link": "https://eur-lex.europa.eu/legal-content/DA/TXT/?uri=pi_com%3AC%282026%294110"
+     },
+     {
+      "languageCode": "SV",
+      "link": "https://eur-lex.europa.eu/legal-content/SV/TXT/?uri=pi_com%3AC%282026%294110"
+     },
+     {
+      "languageCode": "LV",
+      "link": "https://eur-lex.europa.eu/legal-content/LV/TXT/?uri=pi_com%3AC%282026%294110"
+     },
+     {
+      "languageCode": "FR",
+      "link": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=pi_com%3AC%282026%294110"
+     },
+     {
+      "languageCode": "HR",
+      "link": "https://eur-lex.europa.eu/legal-content/HR/TXT/?uri=pi_com%3AC%282026%294110"
+     },
+     {
+      "languageCode": "IT",
+      "link": "https://eur-lex.europa.eu/legal-content/IT/TXT/?uri=pi_com%3AC%282026%294110"
+     },
+     {
+      "languageCode": "NL",
+      "link": "https://eur-lex.europa.eu/legal-content/NL/TXT/?uri=pi_com%3AC%282026%294110"
+     },
+     {
+      "languageCode": "ES",
+      "link": "https://eur-lex.europa.eu/legal-content/ES/TXT/?uri=pi_com%3AC%282026%294110"
+     },
+     {
+      "languageCode": "ET",
+      "link": "https://eur-lex.europa.eu/legal-content/ET/TXT/?uri=pi_com%3AC%282026%294110"
+     },
+     {
+      "languageCode": "EN",
+      "link": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=pi_com%3AC%282026%294110"
+     },
+     {
+      "languageCode": "BG",
+      "link": "https://eur-lex.europa.eu/legal-content/BG/TXT/?uri=pi_com%3AC%282026%294110"
+     },
+     {
+      "languageCode": "GA",
+      "link": "https://eur-lex.europa.eu/legal-content/GA/TXT/?uri=pi_com%3AC%282026%294110"
+     },
+     {
+      "languageCode": "DE",
+      "link": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=pi_com%3AC%282026%294110"
+     },
+     {
+      "languageCode": "SL",
+      "link": "https://eur-lex.europa.eu/legal-content/SL/TXT/?uri=pi_com%3AC%282026%294110"
+     },
+     {
+      "languageCode": "EL",
+      "link": "https://eur-lex.europa.eu/legal-content/EL/TXT/?uri=pi_com%3AC%282026%294110"
+     },
+     {
+      "languageCode": "CS",
+      "link": "https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=pi_com%3AC%282026%294110"
+     },
+     {
+      "languageCode": "PL",
+      "link": "https://eur-lex.europa.eu/legal-content/PL/TXT/?uri=pi_com%3AC%282026%294110"
+     },
+     {
+      "languageCode": "PT",
+      "link": "https://eur-lex.europa.eu/legal-content/PT/TXT/?uri=pi_com%3AC%282026%294110"
+     },
+     {
+      "languageCode": "FI",
+      "link": "https://eur-lex.europa.eu/legal-content/FI/TXT/?uri=pi_com%3AC%282026%294110"
+     }
+    ]
+   },
+   {
+    "defaultLanguageCode": "EN",
+    "defaultName": "PRESS_RELEASE",
+    "defaultLink": "https://ec.europa.eu/commission/presscorner/detail/en/IP_26_1369"
+   },
+   {
+    "defaultLanguageCode": "EN",
+    "defaultName": "FOLLOW_UP",
+    "defaultLink": "https://citizens-initiative.europa.eu/stop-destroying-videogames"
+   }
+  ]
+ }
+}

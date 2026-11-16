@@ -1,0 +1,13 @@
+{
+ "registered": 136,
+ "ongoing": 13,
+ "answered": 14,
+ "rejected": 26,
+ "unsuccessful": 76,
+ "unsuccessfulAfterVerification": 2,
+ "closed": 0,
+ "withdrawn": 27,
+ "submitted": 1,
+ "verification": 1,
+ "startingSoon": 2
+}

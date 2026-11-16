@@ -1,0 +1,91 @@
+{
+ "id": 8789,
+ "comRegNum": "ECI(2024)000005",
+ "status": "WITHDRAWN",
+ "latestUpdateDate": "18/10/2024 14:34",
+ "lastCall": false,
+ "registrationDate": "13/05/2024",
+ "deadline": "",
+ "partiallyRegistered": false,
+ "linguisticVersions": [
+  {
+   "original": true,
+   "languageCode": "EN",
+   "title": "Save the Planet by shifting taxation from labour to greenhouse gas emissions",
+   "objectives": "<p>With this initiative, we ask the Commission:</p><ol><li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span>to strengthen the Fit for 55 Package, with a view to achieving carbon neutrality by 2045.</li><li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span>to strengthen the EU carbon pricing system (ETS) by setting a faster phase-out of free allowances…</p>",
+   "annexText": "<p>Explanatory annex</p><p>Global warming is a global challenge and an environmental and economic emergency,. The EU’s Copernicus Climate Change Service states that the atmospheric temperature in 2020 was already 1.25°C above the pre-industrial period. And calculations by the experts contributing to the Intergovernmental Panel on Climate Change (IPCC) show that a global warming of 1.5°C can be…</p>",
+   "treaties": "Article 191, 192, 193 of “The treaty on European union and the treaty on the functioning of the European Union”.",
+   "additionalDocument": {
+    "id": 5653783800577797,
+    "name": "ECI on Carbon Pricing - Text and Context.pdf",
+    "mimeType": "application/pdf",
+    "size": 201950
+   },
+   "commissionDecision": {
+    "celex": "32024D1316",
+    "url": "http://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32024D1316&from=EN"
+   }
+  },
+  {
+   "original": false,
+   "languageCode": "EL",
+   "title": "Σωτηρία του πλανήτη με μετατόπιση της φορολογίας που βαρύνει την εργασία στις εκπομπές αερίων του θερμοκηπίου",
+   "objectives": "<p>Με την πρωτοβουλία αυτή, ζητούμε από την Επιτροπή:</p><ol><li data-list=\"ordered\"><span class=\"ql-ui\" contenteditable=\"false\"></span>να ενισχύσει τη δέσμη προσαρμογής στον στόχο του 55 % με σκοπό την επίτευξη ουδέτερου ισοζυγίου άνθρακα έως το 2045.</li><li data-list=\"ordered\"><span class=\"ql-ui\" contenteditable=\"false\"></span>να ενισχύσει το σύστημα τιμολόγησης των ανθρακούχων εκπομπών της ΕΕ…</p>",
+   "annexText": "<p>Επεξηγηματικό παράρτημα</p><p>Η υπερθέρμανση του πλανήτη αποτελεί μια παγκόσμια πρόκληση και μια περιβαλλοντική και οικονομική κατάσταση έκτακτης ανάγκης. Σύμφωνα με την υπηρεσία κλιματικής αλλαγής Copernicus η θερμοκρασία της ατμόσφαιρας το 2020 ήταν ήδη κατά 1,25 °C πάνω από αυτήν της προβιομηχανικής περιόδου. Και οι υπολογισμοί των εμπειρογνωμόνων οι οποίοι συνεισφέρουν στη Διακυβερνητική…</p>",
+   "treaties": "Article 191, 192, 193 of “The treaty on European union and the treaty on the functioning of the European Union”.",
+   "commissionDecision": {
+    "celex": "32024D1316",
+    "url": "http://eur-lex.europa.eu/legal-content/EL/TXT/PDF/?uri=CELEX:32024D1316&from=EL"
+   }
+  },
+  {
+   "original": false,
+   "languageCode": "DE",
+   "title": "Den Planeten retten – Arbeit steuerlich entlasten und Treibhausgasemissionen stärker besteuern",
+   "objectives": "<p>Mit dieser Initiative ersuchen wir die Kommission,</p><ol><li data-list=\"ordered\"><span class=\"ql-ui\" contenteditable=\"false\"></span>das Paket „Fit für 55“ zu stärken, um bis 2045 CO2-Neutralität zu erreichen,</li><li data-list=\"ordered\"><span class=\"ql-ui\" contenteditable=\"false\"></span>das EU-System zur CO2-Bepreisung (EHS) durch eine schnellere Abschaffung kostenloser Zertifikate (bis 2030)…</p>",
+   "annexText": "<p>Erläuternder Anhang</p><p>Die Erderwärmung ist eine globale Herausforderung und stellt eine ernsthafte Bedrohung für Umwelt und Wirtschaft dar. Laut Daten des Copernicus-Dienstes der EU zur Überwachung des Klimawandels lag die Temperatur der Atmosphäre im Jahr 2020 bereits 1,25 °C höher als in der vorindustriellen Zeit. Berechnungen der Sachverständigen des Weltklimarats (IPCC) zufolge wird…</p>",
+   "treaties": "Article 191, 192, 193 of “The treaty on European union and the treaty on the functioning of the European Union”.",
+   "commissionDecision": {
+    "celex": "32024D1316",
+    "url": "http://eur-lex.europa.eu/legal-content/DE/TXT/PDF/?uri=CELEX:32024D1316&from=DE"
+   }
+  }
+ ],
+ "members": [
+  {
+   "type": "REPRESENTATIVE",
+   "fullName": "Member 1",
+   "residenceCountry": "it",
+   "privacyApplied": false
+  },
+  {
+   "type": "SUBSTITUTE",
+   "fullName": "Member 2",
+   "privacyApplied": false
+  },
+  {
+   "type": "MEMBER",
+   "fullName": "Member 3",
+   "privacyApplied": false
+  }
+ ],
+ "progress": [
+  {
+   "name": "REGISTERED",
+   "active": false,
+   "date": "13/05/2024"
+  },
+  {
+   "name": "WITHDRAWN",
+   "active": true,
+   "date": "18/10/2024"
+  },
+  {
+   "name": "COLLECTION_START_DATE",
+   "active": false
+  }
+ ],
+ "funding": {
+  "sponsors": []
+ }
+}

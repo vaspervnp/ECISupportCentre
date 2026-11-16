@@ -1,0 +1,148 @@
+{
+ "id": 149,
+ "comRegNum": "ECI(2017)000007",
+ "status": "VERIFICATION",
+ "latestUpdateDate": "11/06/2018 17:31",
+ "lastCall": false,
+ "registrationDate": "12/06/2017",
+ "deadline": "",
+ "startCollectionDate": "12/06/2017",
+ "partiallyRegistered": false,
+ "linguisticVersions": [
+  {
+   "original": true,
+   "languageCode": "DE",
+   "title": "Stop Extremism",
+   "objectives": "Wir fordern die Europäische Kommission zur Vorlage eines Gesetzesvorschlags auf, mit dem die negativen Konsequenzen von Extremismus – vor allem für den Binnenmarkt – verhindert werden sollen.<br>Die vorgeschlagenen Bestimmungen des Unionsrechts sollten die Mitgliedstaaten verpflichten:\r\n1) durch positive Motivation darauf hinzuwirken, dass Extremismus im Binnenmarkt gekennzeichnet und…</p>",
+   "treaties": "Artikel 114, 153 und 325 AEUV",
+   "draftLegal": {
+    "id": 24271382314756,
+    "name": "Anti-Extremismus-Richtlinie-20170405.pdf",
+    "mimeType": "application/pdf",
+    "size": 802637
+   },
+   "supportLink": "https://ocs.stopextremism.eu/oct-web-public/",
+   "commissionDecision": {
+    "celex": "32017D1002",
+    "url": "http://eur-lex.europa.eu/legal-content/DE/TXT/PDF/?uri=CELEX:32017D1002&from=DE"
+   }
+  },
+  {
+   "original": false,
+   "languageCode": "EN",
+   "title": "Stop Extremism",
+   "objectives": "We call on the European Commission to draft a bill to prevent and reduce the negative consequences of extremism, particularly on the Single Market.<br>The proposed provisions under European Union Law should oblige the Member States to: 1) use positive motivation to identify and eliminate extremism within the Single Market; 2) use transparency to ensure that financial support of extremism is…</p>",
+   "supportLink": "https://ocs.stopextremism.eu/oct-web-public/",
+   "commissionDecision": {
+    "celex": "32017D1002",
+    "url": "http://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32017D1002&from=EN"
+   }
+  },
+  {
+   "original": false,
+   "languageCode": "EL",
+   "title": "Τροχοπέδη στον εξτρεμισμό",
+   "objectives": "Καλούμε την Ευρωπαϊκή Επιτροπή να υποβάλει νομοθετική πρόταση με στόχο την αποτροπή των επιπτώσεων του εξτρεμισμού, ιδίως για την ενιαία αγορά.<br>Η ενωσιακή νομοθετική πρόταση πρέπει να περιλαμβάνει διατάξεις οι οποίες να υποχρεώνουν τα κράτη μέλη: 1) να επιδιώκουν, μέσω θετικών κινήτρων, τον εντοπισμό και τον αποκλεισμό του εξτρεμισμού στην εσωτερική αγορά, 2) με διαφάνεια, να διευκολύνουν…</p>",
+   "treaties": "Άρθρα 114, 153 και 325 της ΣΛΕΕ",
+   "commissionDecision": {
+    "celex": "32017D1002",
+    "url": "http://eur-lex.europa.eu/legal-content/EL/TXT/PDF/?uri=CELEX:32017D1002&from=EL"
+   }
+  }
+ ],
+ "members": [
+  {
+   "type": "MEMBER",
+   "fullName": "Member 1",
+   "privacyApplied": false
+  },
+  {
+   "type": "MEMBER",
+   "fullName": "Member 2",
+   "privacyApplied": false
+  },
+  {
+   "type": "SUBSTITUTE",
+   "fullName": "Member 3",
+   "privacyApplied": false
+  }
+ ],
+ "progress": [
+  {
+   "name": "REGISTERED",
+   "active": false,
+   "date": "12/06/2017"
+  },
+  {
+   "name": "CLOSED",
+   "active": false,
+   "date": "12/06/2018"
+  },
+  {
+   "name": "VERIFICATION",
+   "active": true,
+   "date": "17/04/2020"
+  },
+  {
+   "name": "COLLECTION_START_DATE",
+   "active": false,
+   "date": "12/06/2017"
+  }
+ ],
+ "funding": {
+  "lastUpdate": "21/06/2018",
+  "sponsors": [
+   {
+    "name": "Sponsor 1",
+    "date": "13/07/2017",
+    "amount": 77489,
+    "privateSponsor": false,
+    "anonymized": false
+   },
+   {
+    "name": "Sponsor 2",
+    "date": "01/08/2017",
+    "amount": 43700,
+    "privateSponsor": false,
+    "anonymized": false
+   }
+  ],
+  "totalAmount": 241989
+ },
+ "submission": {
+  "totalSignatures": 1068793,
+  "entry": [
+   {
+    "countryCodeType": "LT",
+    "total": 0,
+    "afterSubmission": false
+   },
+   {
+    "countryCodeType": "LV",
+    "total": 4,
+    "afterSubmission": false
+   },
+   {
+    "countryCodeType": "DE",
+    "total": 118857,
+    "afterSubmission": false
+   },
+   {
+    "countryCodeType": "FI",
+    "total": 10291,
+    "afterSubmission": false
+   },
+   {
+    "countryCodeType": "ES",
+    "total": 42,
+    "afterSubmission": false
+   }
+  ]
+ },
+ "logo": {
+  "id": 149,
+  "name": "LOGO-ECI-StopExtremism.png",
+  "mimeType": "image/png",
+  "size": 399507
+ }
+}

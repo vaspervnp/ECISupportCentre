@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+  <channel>
+    <title>European Citizens' Initiative | Latest news</title>
+    <link>https://citizens-initiative.europa.eu/latest-news_en</link>
+    <atom:link href="https://citizens-initiative.europa.eu/node/418/rss_en" rel="self" type="application/rss+xml"/>
+    <description>European Citizens' Initiative | Latest news</description>
+    <language>en</language>
+    <copyright>© European Union, 1995-2026</copyright>
+          <image>
+        <url>https://citizens-initiative.europa.eu/themes/contrib/oe_theme/dist/eu/images/logo/standard-version/positive/logo-eu--en.svg</url>
+        <title>European Union logo</title>
+        <link>https://citizens-initiative.europa.eu/latest-news_en</link>
+      </image>
+        
+    <item>
+  <title>15th valid initiative submitted to the Commission for examination </title>
+  <atom:id>https://citizens-initiative.europa.eu/node/460</atom:id>
+  <link>https://citizens-initiative.europa.eu/news/15th-valid-initiative-submitted-commission-examination-2026-11-12_en</link>
+  <guid>https://citizens-initiative.europa.eu/news/15th-valid-initiative-submitted-commission-examination-2026-11-12_en</guid>
+  <description>&lt;p&gt;On 12 November 2026, the organisers of the European citizens' initiative&amp;nbsp;‘Demand the full suspension of the EU-Israel Association Agreement in view of Israel’s violations of human rights’  submitted it to the European Commission for examination, after the verification phase was successfully complete&lt;/p&gt;
+</description>
+  <pubDate>Thu, 12 Nov 2026 00:00:00 +0100</pubDate>
+<enclosure url="https://citizens-initiative.europa.eu/sites/default/files/2022-11/ECI_ICONS-09%2520Initiative%2520submitted%2520to%2520the%2520EC.png" length="18087" type="image/png"/>
+<category domain="http://publications.europa.eu/resource/authority/corporate-body">Secretariat-General</category>
+<category domain="http://publications.europa.eu/resource/authority/resource-type">News article</category>
+<category domain="http://data.europa.eu/uxp/det">citizens' Europe</category>
+<category domain="http://data.europa.eu/uxp/det">international cooperation</category>
+
+</item>
+<item>
+  <title>New initiative registered – for sovereign European AI domains</title>
+  <atom:id>https://citizens-initiative.europa.eu/node/457</atom:id>
+  <link>https://citizens-initiative.europa.eu/news/new-initiative-registered-sovereign-european-ai-domains-2026-10-06_en</link>
+  <guid>https://citizens-initiative.europa.eu/news/new-initiative-registered-sovereign-european-ai-domains-2026-10-06_en</guid>
+  <description>&lt;p&gt;On 6 October, the European Commission registered a European citizens' initiative entitled&amp;nbsp;'Creation of a European Digital Space (.IA) for Sovereign AI Governance'.&lt;/p&gt;
+</description>
+  <pubDate>Tue, 06 Oct 2026 00:00:00 +0200</pubDate>
+<enclosure url="https://citizens-initiative.europa.eu/sites/default/files/2022-10/Registration-new.png" length="34509" type="image/png"/>
+<category domain="http://publications.europa.eu/resource/authority/corporate-body">Secretariat-General</category>
+<category domain="http://publications.europa.eu/resource/authority/resource-type">News article</category>
+<category domain="http://data.europa.eu/uxp/det">citizens' Europe</category>
+<category domain="http://data.europa.eu/uxp/det">artificial intelligence</category>
+
+</item>
+<item>
+  <title>Survey on the European citizens’ initiative open for EU citizens and organisations</title>
+  <atom:id>https://citizens-initiative.europa.eu/node/454</atom:id>
+  <link>https://citizens-initiative.europa.eu/news/survey-european-citizens-initiative-open-eu-citizens-and-organisations-2026-09-14_en</link>
+  <guid>https://citizens-initiative.europa.eu/news/survey-european-citizens-initiative-open-eu-citizens-and-organisations-2026-09-14_en</guid>
+  <description>&lt;p&gt;Calling all EU citizens and civil society organisations: share your experience and perspective regarding the European citizens’ initiative!&amp;nbsp;&lt;/p&gt;
+</description>
+  <pubDate>Mon, 14 Sep 2026 00:00:00 +0200</pubDate>
+<enclosure url="https://citizens-initiative.europa.eu/sites/default/files/2022-11/ECI_ICONS-23%2520Survey-Questionnaire.png" length="20089" type="image/png"/>
+<category domain="http://publications.europa.eu/resource/authority/corporate-body">Secretariat-General</category>
+<category domain="http://publications.europa.eu/resource/authority/resource-type">News article</category>
+<category domain="http://data.europa.eu/uxp/det">citizens' Europe</category>
+
+</item>
+
+  </channel>
+</rss>

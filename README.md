@@ -2,7 +2,7 @@
 
 An Android app (phone and tablet) for following the **European Citizens' Initiatives** published on [citizens-initiative.europa.eu](https://citizens-initiative.europa.eu/index_en).
 
-> Status: **M0 done**: project skeleton and CI. See [milestones.md](milestones.md) for the roadmap.
+> Status: **M1 done**: API clients for the register and the news feed. See [milestones.md](milestones.md) for the roadmap.
 
 ## Project structure
 
@@ -33,16 +33,21 @@ tests/
 | Platform | .NET 10 MAUI (`net10.0-android`), C# |
 | Architecture | MVVM (`CommunityToolkit.Mvvm`) |
 | Local database | SQLite (`sqlite-net-pcl`) |
-| Network | `HttpClient`, `System.Text.Json`, Polly |
+| Network | `HttpClient`, `System.Text.Json` (source-generated), built-in retry handler |
 | Background work | AndroidX WorkManager |
 | Localization | `.resx` resources (bg, cs, da, de, el, en, es, et, fi, fr, ga, hr, hu, it, lt, lv, mt, nl, pl, pt, ro, sk, sl, sv) |
 | Tests | xUnit |
 
 ## Data sources
 
-- Register API (JSON): `https://register.eci.ec.europa.eu/core/api/register/search/{STATUS}/{LANG}/{OFFSET}/{SIZE}`
-- News (RSS): `https://citizens-initiative.europa.eu/node/418/rss_en`
+- Register API (JSON): `https://register.eci.ec.europa.eu/core/api/register/`
+  - `search/{ALL|ONGOING|ANSWERED}/{LANG}/{OFFSET}/{SIZE}`: list of initiatives
+  - `details/{year}/{number}`: one initiative in all languages, with dates, signatures per country and the Commission's answer
+  - `statistics`, `logo/{id}`
+- News (RSS, per language): `https://citizens-initiative.europa.eu/node/418/rss_{lang}`
 - Signing: the `supportLink` field of each initiative, which points to `https://eci.ec.europa.eu/...`
+
+See [milestones.md](milestones.md#data-sources-verified-in-m1-2026-11-16) for the details and quirks of each endpoint.
 
 All data belongs to the European Commission. The app only reads public data.
 
@@ -64,10 +69,16 @@ Run on a connected device or a running emulator:
 dotnet build src/EciSupportCentre.App -f net10.0-android -t:Run
 ```
 
-Run the tests:
+Run the tests (offline, using recorded samples):
 
 ```bash
 dotnet test
+```
+
+Run the live tests against the real ECI services (bash):
+
+```bash
+ECI_LIVE_TESTS=1 dotnet test --filter Category=Live
 ```
 
 ## Disclaimer

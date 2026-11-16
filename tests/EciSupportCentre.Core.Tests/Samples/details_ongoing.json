@@ -1,0 +1,133 @@
+{
+ "id": 9186,
+ "comRegNum": "ECI(2026)000009",
+ "status": "ONGOING",
+ "latestUpdateDate": "13/11/2026 00:00",
+ "lastCall": false,
+ "registrationDate": "17/07/2026",
+ "deadline": "13/11/2027",
+ "startCollectionDate": "13/11/2026",
+ "partiallyRegistered": false,
+ "linguisticVersions": [
+  {
+   "original": true,
+   "languageCode": "EN",
+   "title": "All On Board - For your right to citizenship without borders",
+   "objectives": "<p>The EU should close the gap between its aim that “the Union shall observe the principle of the equality of its citizens, who shall receive equal attention…” (Art. 9 TEU) and the reality that it addresses only a privileged minority of European citizens, fuelling anti-EU extremism. This ECI demands an all-of-society approach for a democratic Europe, resting on education and universal…</p>",
+   "annexText": "<p>The idea that people across Europe should truly enjoy their rights only becomes meaningful when everyone understands those rights, has the opportunity to exercise them, and experiences their benefits in everyday life. With the Erasmus programme now approaching its 40th anniversary, it’s high time to democratise European citizenship and mobility. This and other programmes have allowed millions…</p>",
+   "treaties": "Articles 21 and 25 (TFEU) (EU citizenship); Articles 43, 53 and 62 (Internal market); Articles 165 and 166 (Education and training)",
+   "draftLegal": {
+    "id": 5651619036856069,
+    "name": "AllOnBoardRightRegulation.pdf",
+    "mimeType": "application/pdf",
+    "size": 189895
+   },
+   "supportLink": "https://eci.ec.europa.eu/069/public/?lg=en",
+   "commissionDecision": {
+    "celex": "32026D1870",
+    "url": "http://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32026D1870&from=EN"
+   }
+  },
+  {
+   "original": false,
+   "languageCode": "EL",
+   "title": "Κάθε άνθρωπος δεκτός — Για το δικαίωμά σου στην ιθαγένεια χωρίς σύνορα",
+   "objectives": "<p>Η ΕΕ θα πρέπει να γεφυρώσει το χάσμα μεταξύ του στόχου της να «σέβεται την αρχή της ισότητας των πολιτών της, οι οποίοι τυγχάνουν ίσης προσοχής...» (άρθρο 9 της ΣΕΕ) και της πραγματικότητας, σύμφωνα με την οποία απευθύνεται αποκλειστικά σε μια προνομιούχο μειονότητα Ευρωπαίων πολιτών, τροφοδοτώντας έτσι τον εξτρεμισμό που στρέφεται κατά της ΕΕ. Η παρούσα ΕΠΠ ζητά μια προσέγγιση που να…</p>",
+   "annexText": "<p>Η ιδέα ότι οι άνθρωποι σε ολόκληρη την Ευρώπη θα πρέπει να απολαύουν πραγματικά των δικαιωμάτων τους αποκτά νόημα μόνον όταν όλες και όλοι κατανοούν τα δικαιώματα αυτά, έχουν την ευκαιρία να τα ασκήσουν και βιώνουν τα οφέλη τους στην καθημερινή τους ζωή. Καθώς το πρόγραμμα Erasmus συμπληρώνει 40 χρόνια, είναι πλέον καιρός να εκδημοκρατιστεί η ευρωπαϊκή ιθαγένεια και η κινητικότητα. Αυτό και…</p>",
+   "treaties": "Articles 21 and 25 (TFEU) (EU citizenship); Articles 43, 53 and 62 (Internal market); Articles 165 and 166 (Education and training)",
+   "supportLink": "https://eci.ec.europa.eu/069/public/?lg=el",
+   "commissionDecision": {
+    "celex": "32026D1870",
+    "url": "http://eur-lex.europa.eu/legal-content/EL/TXT/PDF/?uri=CELEX:32026D1870&from=EL"
+   }
+  },
+  {
+   "original": false,
+   "languageCode": "DE",
+   "title": "Alle dabei – Für Ihr Recht auf eine Bürgerschaft ohne Grenzen",
+   "objectives": "<p>Die EU soll die Lücke schließen zwischen ihrem Ziel, „in ihrem gesamten Handeln den Grundsatz der Gleichheit ihrer Bürgerinnen und Bürger [zu achten], denen ein gleiches Maß an Aufmerksamkeit … zuteil wird“ (Artikel 9 EUV) und der Wirklichkeit, in der sie sich nur an eine privilegierte Minderheit der europäischen Bevölkerung richtet, wodurch extreme Anti-EU-Ansichten erstarken. Wir fordern…</p>",
+   "annexText": "<p>Die Menschen in Europa können ihre Rechte erst dann voll ausschöpfen, wenn alle sie verstehen, sie ausüben und ihre Vorteile im Alltag erleben können. Das Erasmus-Programm besteht bald seit 40 Jahren– höchste Zeit also, die europäische Bürgerschaft und Mobilität zu demokratisieren. Durch dieses und andere Programme hatten bereits Millionen junger Menschen die Möglichkeit, ihren Horizont zu…</p>",
+   "treaties": "Articles 21 and 25 (TFEU) (EU citizenship); Articles 43, 53 and 62 (Internal market); Articles 165 and 166 (Education and training)",
+   "supportLink": "https://eci.ec.europa.eu/069/public/?lg=de",
+   "commissionDecision": {
+    "celex": "32026D1870",
+    "url": "http://eur-lex.europa.eu/legal-content/DE/TXT/PDF/?uri=CELEX:32026D1870&from=DE"
+   }
+  }
+ ],
+ "categories": [
+  {
+   "categoryType": "EDU"
+  },
+  {
+   "categoryType": "EMPL"
+  },
+  {
+   "categoryType": "JUST"
+  }
+ ],
+ "members": [
+  {
+   "type": "MEMBER",
+   "fullName": "Member 1",
+   "privacyApplied": false
+  },
+  {
+   "type": "MEMBER",
+   "fullName": "Member 2",
+   "privacyApplied": false
+  },
+  {
+   "type": "MEMBER",
+   "fullName": "Member 3",
+   "privacyApplied": false
+  }
+ ],
+ "progress": [
+  {
+   "name": "REGISTERED",
+   "active": false,
+   "date": "17/07/2026"
+  },
+  {
+   "name": "ONGOING",
+   "active": true,
+   "date": "13/11/2026"
+  }
+ ],
+ "funding": {
+  "sponsors": []
+ },
+ "sosReport": {
+  "totalSignatures": 134,
+  "onlineSosUpdateDate": "16/11/2026 13:45",
+  "entry": [
+   {
+    "countryCodeType": "ES",
+    "total": 7
+   },
+   {
+    "countryCodeType": "LU",
+    "total": 0
+   },
+   {
+    "countryCodeType": "SI",
+    "total": 0
+   },
+   {
+    "countryCodeType": "HU",
+    "total": 0
+   },
+   {
+    "countryCodeType": "LT",
+    "total": 3
+   }
+  ]
+ },
+ "logo": {
+  "id": 9186,
+  "name": "AllOnBoardLogo1.png",
+  "mimeType": "image/png",
+  "size": 20693
+ }
+}
