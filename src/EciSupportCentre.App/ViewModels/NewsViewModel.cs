@@ -20,7 +20,9 @@ public sealed partial class NewsViewModel : ObservableObject
         Loc.Instance.LanguageChanged += (_, _) => MainThread.BeginInvokeOnMainThread(() => _ = LoadAsync());
     }
 
-    public ObservableCollection<NewsItemViewModel> Items { get; } = [];
+    /// <summary>Replaced as a whole on each reload: one change for the list instead of one per article.</summary>
+    [ObservableProperty]
+    public partial ObservableCollection<NewsItemViewModel> Items { get; set; } = [];
 
     [ObservableProperty]
     public partial bool IsRefreshing { get; set; }
@@ -48,16 +50,25 @@ public sealed partial class NewsViewModel : ObservableObject
         }
     }
 
+    /// <summary>
+    /// Counts loads; a load that finishes after a newer one started drops its (older) results. Without it, a load
+    /// begun before the first sync saved the list could finish last and show the app as empty again.
+    /// </summary>
+    private int _loadVersion;
+
     private async Task LoadAsync()
     {
+        var version = ++_loadVersion;
         await _data.EnsureReadyAsync();
-        var news = await _data.Database.GetNewsAsync(Loc.Instance.Language);
-
-        Items.Clear();
-        foreach (var item in news)
+        // Microsoft.Data.Sqlite runs its "async" calls synchronously: read on a pool thread, not the UI thread.
+        var language = Loc.Instance.Language;
+        var news = await Task.Run(() => _data.Database.GetNewsAsync(language));
+        if (version != _loadVersion)
         {
-            Items.Add(new NewsItemViewModel(item, OpenAsync));
+            return;
         }
+
+        Items = new ObservableCollection<NewsItemViewModel>(news.Select(item => new NewsItemViewModel(item, OpenAsync)));
 
         IsEmpty = Items.Count == 0;
     }

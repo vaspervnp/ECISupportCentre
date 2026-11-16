@@ -62,7 +62,9 @@ public sealed partial class InitiativesViewModel : ObservableObject
         Loc.Instance.LanguageChanged += (_, _) => MainThread.BeginInvokeOnMainThread(OnLanguageChanged);
     }
 
-    public ObservableCollection<InitiativeItemViewModel> Items { get; } = [];
+    /// <summary>Replaced as a whole on each reload: one change for the list instead of one per initiative.</summary>
+    [ObservableProperty]
+    public partial ObservableCollection<InitiativeItemViewModel> Items { get; set; } = [];
 
     public IReadOnlyList<FilterOption> Filters { get; }
 
@@ -134,10 +136,25 @@ public sealed partial class InitiativesViewModel : ObservableObject
         }
     }
 
+    /// <summary>
+    /// Counts loads; a load that finishes after a newer one started drops its (older) results. Without it, a load
+    /// begun before the first sync saved the list could finish last and show the app as empty again.
+    /// </summary>
+    private int _loadVersion;
+
     private async Task LoadAsync()
     {
+        var version = ++_loadVersion;
         await _data.EnsureReadyAsync();
-        _all = await _data.Database.GetInitiativesAsync(Loc.Instance.Language);
+        // Microsoft.Data.Sqlite runs its "async" calls synchronously: read on a pool thread, not the UI thread.
+        var language = Loc.Instance.Language;
+        var all = await Task.Run(() => _data.Database.GetInitiativesAsync(language));
+        if (version != _loadVersion)
+        {
+            return;
+        }
+
+        _all = all;
         ApplyQuery();
     }
 
@@ -154,11 +171,8 @@ public sealed partial class InitiativesViewModel : ObservableObject
         };
 
         var results = query.Apply(_all);
-        Items.Clear();
-        foreach (var item in results)
-        {
-            Items.Add(new InitiativeItemViewModel(item, OpenAsync) { IsSelected = item.Id == SelectedId });
-        }
+        Items = new ObservableCollection<InitiativeItemViewModel>(
+            results.Select(item => new InitiativeItemViewModel(item, OpenAsync) { IsSelected = item.Id == SelectedId }));
 
         CountText = Loc.Format("List_Count", results.Count);
         IsEmpty = results.Count == 0;

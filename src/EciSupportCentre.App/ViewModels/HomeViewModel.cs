@@ -110,11 +110,24 @@ public sealed partial class HomeViewModel : ObservableObject
     [RelayCommand]
     private static Task SeeAllAsync() => Shell.Current.GoToAsync("//initiatives");
 
+    /// <summary>
+    /// Counts loads; a load that finishes after a newer one started drops its (older) results. Without it, a load
+    /// begun before the first sync saved the list could finish last and show the app as empty again.
+    /// </summary>
+    private int _loadVersion;
+
     private async Task LoadAsync()
     {
+        var version = ++_loadVersion;
         await _data.EnsureReadyAsync();
-        var items = await _data.Database.GetInitiativesAsync(Loc.Instance.Language);
-        var lastSync = await _data.Database.GetLastSyncAsync();
+        // Microsoft.Data.Sqlite runs its "async" calls synchronously: read on a pool thread, not the UI thread.
+        var language = Loc.Instance.Language;
+        var (items, lastSync) = await Task.Run(async () =>
+            (await _data.Database.GetInitiativesAsync(language), await _data.Database.GetLastSyncAsync()));
+        if (version != _loadVersion)
+        {
+            return;
+        }
 
         int Count(params InitiativePhase[] phases) => items.Count(i => phases.Contains(i.Phase));
         string N(int n) => n.ToString("N0", Loc.Instance.Culture);

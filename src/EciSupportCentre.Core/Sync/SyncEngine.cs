@@ -112,7 +112,8 @@ public sealed class SyncEngine(
                 newArticles = await store.SaveNewsAsync(items, _time.GetUtcNow(), cancellationToken).ConfigureAwait(false);
                 await store.SetStateAsync(StateKeys.LastNewsSync, Iso(_time.GetUtcNow()), cancellationToken).ConfigureAwait(false);
             }
-            catch (Exception ex) when (ex is EciApiException or HttpRequestException)
+            catch (Exception ex) when (ex is EciApiException or HttpRequestException
+                                       || (ex is OperationCanceledException && !cancellationToken.IsCancellationRequested))
             {
                 newsError = ex.Message;
             }
@@ -151,7 +152,8 @@ public sealed class SyncEngine(
             {
                 return (summary, await register.GetDetailsAsync(summary.Year, summary.Number, cancellationToken).ConfigureAwait(false));
             }
-            catch (Exception ex) when (ex is EciApiException or HttpRequestException)
+            catch (Exception ex) when (ex is EciApiException or HttpRequestException
+                                       || (ex is OperationCanceledException && !cancellationToken.IsCancellationRequested))
             {
                 return (summary, null);
             }

@@ -30,6 +30,9 @@ public sealed class RetryHandler : DelegatingHandler
     /// <summary>Longest wait between attempts, even if the server asks for more.</summary>
     public TimeSpan MaxDelay { get; init; } = TimeSpan.FromSeconds(30);
 
+    /// <summary>Gives up on one attempt after this long (until its response headers) and retries; null waits forever.</summary>
+    public TimeSpan? AttemptTimeout { get; init; }
+
     protected override async Task<HttpResponseMessage> SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
     {
         ArgumentNullException.ThrowIfNull(request);
@@ -42,9 +45,23 @@ public sealed class RetryHandler : DelegatingHandler
         for (var attempt = 0; ; attempt++)
         {
             HttpResponseMessage response;
+            using var attemptCts = CancellationTokenSource.CreateLinkedTokenSource(cancellationToken);
+            if (AttemptTimeout is { } limit)
+            {
+                attemptCts.CancelAfter(limit);
+            }
+
             try
             {
-                response = await base.SendAsync(request, cancellationToken).ConfigureAwait(false);
+                response = await base.SendAsync(request, attemptCts.Token).ConfigureAwait(false);
+            }
+            catch (OperationCanceledException) when (attemptCts.IsCancellationRequested && !cancellationToken.IsCancellationRequested
+                                                     && attempt >= MaxRetries)
+            {
+                // An HttpRequestException, so callers treat it like any other network failure.
+                throw new HttpRequestException(
+                    $"No response from {request.RequestUri} after {MaxRetries + 1} attempts.",
+                    new TimeoutException());
             }
             catch (Exception ex) when (attempt < MaxRetries && IsTransient(ex, cancellationToken))
             {

@@ -81,6 +81,54 @@ public class RetryHandlerTests
     }
 
     [Fact]
+    public async Task A_slow_attempt_times_out_and_is_retried()
+    {
+        var inner = new HangOnceHandler();
+        using var client = new HttpClient(new RetryHandler(inner, (_, _) => Task.CompletedTask)
+        {
+            AttemptTimeout = TimeSpan.FromMilliseconds(100),
+        });
+
+        using var response = await client.GetAsync(new Uri("https://example.test/a"));
+
+        Assert.Equal(HttpStatusCode.OK, response.StatusCode);
+        Assert.Equal(2, inner.Calls);
+    }
+
+    [Fact]
+    public async Task Attempts_that_all_time_out_end_in_a_timeout()
+    {
+        var inner = new HangOnceHandler { HangForever = true };
+        using var client = new HttpClient(new RetryHandler(inner, (_, _) => Task.CompletedTask)
+        {
+            AttemptTimeout = TimeSpan.FromMilliseconds(50),
+            MaxRetries = 2,
+        });
+
+        var ex = await Assert.ThrowsAsync<HttpRequestException>(() => client.GetAsync(new Uri("https://example.test/a")));
+        Assert.IsType<TimeoutException>(ex.InnerException);
+        Assert.Equal(3, inner.Calls);
+    }
+
+    /// <summary>Never answers the first request (or any, with HangForever) until it is cancelled; then answers 200.</summary>
+    private sealed class HangOnceHandler : HttpMessageHandler
+    {
+        public bool HangForever { get; init; }
+
+        public int Calls { get; private set; }
+
+        protected override async Task<HttpResponseMessage> SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+        {
+            if (++Calls == 1 || HangForever)
+            {
+                await Task.Delay(Timeout.Infinite, cancellationToken);
+            }
+
+            return new HttpResponseMessage(HttpStatusCode.OK);
+        }
+    }
+
+    [Fact]
     public async Task Caller_cancellation_is_not_retried()
     {
         using var cts = new CancellationTokenSource();

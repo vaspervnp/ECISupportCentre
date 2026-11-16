@@ -62,7 +62,10 @@ public sealed class DataService(EciDatabase database, SyncEngine sync, Notificat
     /// False for background jobs: WorkManager starts them only with a network, but the connectivity API reports
     /// background apps as offline. A real network failure still ends in <see cref="LastError"/>.
     /// </param>
-    public async Task<SyncReport?> SyncAsync(bool checkConnectivity = true, CancellationToken cancellationToken = default)
+    public Task<SyncReport?> SyncAsync(bool checkConnectivity = true, CancellationToken cancellationToken = default) =>
+        OffMainThread(() => SyncCoreAsync(checkConnectivity, cancellationToken));
+
+    private async Task<SyncReport?> SyncCoreAsync(bool checkConnectivity, CancellationToken cancellationToken)
     {
         await EnsureReadyAsync().ConfigureAwait(false);
 
@@ -105,7 +108,9 @@ public sealed class DataService(EciDatabase database, SyncEngine sync, Notificat
     /// Syncs when the data is older than <paramref name="maxAge"/>, or was never synced. With "Wi-Fi only" this
     /// automatic sync waits for Wi-Fi, except the very first one, without which the app would stay empty.
     /// </summary>
-    public async Task SyncIfStaleAsync(TimeSpan maxAge)
+    public Task SyncIfStaleAsync(TimeSpan maxAge) => OffMainThread(() => SyncIfStaleCoreAsync(maxAge));
+
+    private async Task SyncIfStaleCoreAsync(TimeSpan maxAge)
     {
         await EnsureReadyAsync().ConfigureAwait(false);
         var last = await database.GetLastSyncAsync().ConfigureAwait(false);
@@ -116,12 +121,14 @@ public sealed class DataService(EciDatabase database, SyncEngine sync, Notificat
 
         if (last is null || DateTimeOffset.UtcNow - last > maxAge)
         {
-            await SyncAsync().ConfigureAwait(false);
+            await SyncCoreAsync(checkConnectivity: true, CancellationToken.None).ConfigureAwait(false);
         }
     }
 
     /// <summary>Downloads missing or outdated details of one initiative. Returns false when offline or on error.</summary>
-    public async Task<bool> EnsureDetailsAsync(long initiativeId)
+    public Task<bool> EnsureDetailsAsync(long initiativeId) => OffMainThread(() => EnsureDetailsCoreAsync(initiativeId));
+
+    private async Task<bool> EnsureDetailsCoreAsync(long initiativeId)
     {
         await EnsureReadyAsync().ConfigureAwait(false);
         if (connectivity.NetworkAccess != NetworkAccess.Internet)
@@ -139,6 +146,14 @@ public sealed class DataService(EciDatabase database, SyncEngine sync, Notificat
             return false;
         }
     }
+
+    /// <summary>
+    /// Runs on a pool thread. Microsoft.Data.Sqlite and the first HTTPS connection do their work synchronously inside
+    /// "async" calls, so when the pages started a sync on the UI thread it froze for seconds on a slow device.
+    /// </summary>
+    private static Task<T> OffMainThread<T>(Func<Task<T>> work) => Task.Run(work);
+
+    private static Task OffMainThread(Func<Task> work) => Task.Run(work);
 
     public async Task SetFollowedAsync(long initiativeId, bool followed)
     {

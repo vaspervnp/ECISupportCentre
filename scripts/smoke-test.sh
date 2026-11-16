@@ -39,6 +39,20 @@ PY
 
 app_alive() { [ -n "$("$ADB" shell pidof "$PKG" | tr -d '\r')" ]; }
 
+# True when one of the app's windows has the focus (not the launcher or another app).
+app_in_front() { "$ADB" shell dumpsys window | grep -E "mCurrentFocus|mFocusedApp" | grep -q "$PKG"; }
+
+# Waits up to $1 seconds for a UI dump with a line matching the awk program $2; prints its output.
+wait_for_ui() {
+    local until=$(( $(date +%s) + $1 )) found
+    while [ "$(date +%s)" -lt "$until" ]; do
+        found=$(dump_ui | awk -F'|' "$2")
+        [ -n "$found" ] && { printf '%s\n' "$found"; return 0; }
+        sleep 2
+    done
+    return 1
+}
+
 check_log() {
     if "$ADB" logcat -d | grep -E "FATAL EXCEPTION|ANR in $PKG|Abort message" | grep -q -E "$PKG|FATAL|Abort"; then
         "$ADB" logcat -d | grep -E -A15 "FATAL EXCEPTION|ANR in $PKG|Abort message" | head -40 >&2
@@ -68,7 +82,12 @@ cards=0
 while [ $(( $(date +%s) - started )) -lt "$SYNC_TIMEOUT" ]; do
     "$ADB" shell input tap "$ix" "$iy"; sleep 3
     app_alive || fail "the app is not running"
-    cards=$(dump_ui | awk -F'|' '$2 ~ /\. .*\. / { n++ } END { print n + 0 }')
+    # Count cards only on the Initiatives tab: Home also shows up to five "ending soon" cards.
+    # The selected tab is the one whose label is the large one.
+    cards=$(dump_ui | awk -F'|' -v x="$ix" '
+        $4 ~ /navigation_bar_item_large_label_view/ { sel = ($5 - x < 0 ? x - $5 : $5 - x) < 100 }
+        $2 ~ /\. .*\. / { n++ }
+        END { print (sel ? n + 0 : 0) }')
     [ "$cards" -ge 2 ] && break
     sleep 5
 done
@@ -77,15 +96,27 @@ echo "first sync: $(( $(date +%s) - started ))s, $cards cards on screen"
 check_log "list"
 
 step "Open an initiative"
-read -r cx cy < <(dump_ui | awk -F'|' '$2 ~ /\. .*\. / { print $5, $6; exit }')
-"$ADB" shell input tap "$cx" "$cy"; sleep 4
+card=$(wait_for_ui 20 '$2 ~ /\. .*\. / { print $2 "|" $5 "|" $6; exit }') || fail "no card to open"
+IFS="|" read -r _ cx cy <<< "$card"
+"$ADB" shell input tap "$cx" "$cy"
+# The details page is pushed on the tab, so its toolbar gets an up button (top left, clickable, with a description);
+# the list, a tab root, has none. A slow device may take a while.
+opened=0
+for _ in $(seq 1 15); do
+    sleep 2
+    app_in_front || fail "the app left the screen opening an initiative"
+    dump_ui | awk -F'|' '$1 == "true" && $2 != "" && $5 < 250 && $6 < 300 { f = 1 } END { exit !f }' && { opened=1; break; }
+done
+[ "$opened" = 1 ] || fail "the initiative did not open"
 app_alive || fail "the app died opening an initiative"
 check_log "details"
-"$ADB" shell input keyevent KEYCODE_BACK; sleep 2
+"$ADB" shell input keyevent KEYCODE_BACK
+wait_for_ui 20 '$2 ~ /\. .*\. / { print; exit }' >/dev/null || fail "back did not return to the list"
 
 for i in 2 3 0; do
     step "Tab $((i + 1))"
     read -r tx ty <<< "${TABS[$i]}"
+    app_in_front || fail "the app is not in front before tab $((i + 1))"
     "$ADB" shell input tap "$tx" "$ty"; sleep 3
     app_alive || fail "the app died on tab $((i + 1))"
     check_log "tab $((i + 1))"
@@ -95,7 +126,7 @@ step "Rotate and come back"
 "$ADB" shell settings put system accelerometer_rotation 0
 "$ADB" shell settings put system user_rotation 1; sleep 3
 "$ADB" shell settings put system user_rotation 0; sleep 3
-app_alive || fail "the app died on rotation"
+{ app_alive && app_in_front; } || fail "the app died or left the screen on rotation"
 check_log "rotation"
 
 printf '\nPASS: smoke test\n'
