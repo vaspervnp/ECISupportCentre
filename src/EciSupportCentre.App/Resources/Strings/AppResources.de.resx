@@ -382,4 +382,115 @@
   <data name="Settings_About" xml:space="preserve">
     <value>Über die App</value>
   </data>
+  <data name="Settings_Appearance" xml:space="preserve">
+    <value>Darstellung</value>
+  </data>
+  <data name="Settings_Theme" xml:space="preserve">
+    <value>Design</value>
+  </data>
+  <data name="Theme_System" xml:space="preserve">
+    <value>Wie das Gerät</value>
+  </data>
+  <data name="Theme_Light" xml:space="preserve">
+    <value>Hell</value>
+  </data>
+  <data name="Theme_Dark" xml:space="preserve">
+    <value>Dunkel</value>
+  </data>
+  <data name="Settings_Sync" xml:space="preserve">
+    <value>Aktualisierungen</value>
+  </data>
+  <data name="Settings_SyncFrequency" xml:space="preserve">
+    <value>Nach Aktualisierungen suchen</value>
+  </data>
+  <data name="Sync_Every3h" xml:space="preserve">
+    <value>Alle 3 Stunden</value>
+  </data>
+  <data name="Sync_Every6h" xml:space="preserve">
+    <value>Alle 6 Stunden</value>
+  </data>
+  <data name="Sync_Every12h" xml:space="preserve">
+    <value>Zweimal täglich</value>
+  </data>
+  <data name="Sync_Every24h" xml:space="preserve">
+    <value>Einmal täglich</value>
+  </data>
+  <data name="Settings_SyncHint" xml:space="preserve">
+    <value>Wie oft die App im Hintergrund nach Neuigkeiten und Änderungen sucht. Android kann dies verzögern, um Akku zu sparen.</value>
+  </data>
+  <data name="Settings_WifiOnly" xml:space="preserve">
+    <value>Nur über WLAN</value>
+  </data>
+  <data name="Settings_WifiOnlyHint" xml:space="preserve">
+    <value>Automatische Aktualisierungen warten auf WLAN. Zum Aktualisieren nach unten ziehen funktioniert immer.</value>
+  </data>
+  <data name="About_Open" xml:space="preserve">
+    <value>Über diese App</value>
+  </data>
+  <data name="About_Intro" xml:space="preserve">
+    <value>Eine unabhängige App, um die Europäischen Bürgerinitiativen zu verfolgen: Stöbern Sie, unterzeichnen Sie auf der offiziellen Website und erfahren Sie, wann eine Sammlung endet und wie sie ausgegangen ist.</value>
+  </data>
+  <data name="About_NotOfficial" xml:space="preserve">
+    <value>Keine offizielle App</value>
+  </data>
+  <data name="About_NotOfficialText" xml:space="preserve">
+    <value>Diese App wurde nicht von der Europäischen Union oder der Europäischen Kommission erstellt, gebilligt oder geprüft. Unterzeichnet wird immer auf der offiziellen Website der Kommission.</value>
+  </data>
+  <data name="About_Sources" xml:space="preserve">
+    <value>Datenquellen</value>
+  </data>
+  <data name="About_SourcesText" xml:space="preserve">
+    <value>Die Initiativen stammen aus dem öffentlichen Register der Europäischen Bürgerinitiative, die Meldungen von der offiziellen Website citizens-initiative.europa.eu. © Europäische Union. Bis zur nächsten Aktualisierung kann die App der offiziellen Website hinterherhinken.</value>
+  </data>
+  <data name="About_Website" xml:space="preserve">
+    <value>Offizielle Website</value>
+  </data>
+  <data name="About_Privacy" xml:space="preserve">
+    <value>Datenschutz</value>
+  </data>
+  <data name="About_PrivacyText" xml:space="preserve">
+    <value>Kein Konto, keine Werbung, kein Tracking. Was Sie verfolgen oder als unterzeichnet markieren, bleibt auf diesem Gerät. Die App lädt Daten nur von Websites der Europäischen Kommission herunter.</value>
+  </data>
+  <data name="About_Licence" xml:space="preserve">
+    <value>Lizenz</value>
+  </data>
+  <data name="About_LicenceText" xml:space="preserve">
+    <value>Open Source unter der MIT-Lizenz.</value>
+  </data>
+  <data name="About_SourceCode" xml:space="preserve">
+    <value>Quellcode</value>
+  </data>
+  <data name="About_Translations" xml:space="preserve">
+    <value>Übersetzungen</value>
+  </data>
+  <data name="About_TranslationsText" xml:space="preserve">
+    <value>Die Texte der App wurden maschinell übersetzt und werden überprüft. Die Texte der Initiativen sind die offiziellen Übersetzungen aus dem Register.</value>
+  </data>
+  <data name="Home_EmptyTitle" xml:space="preserve">
+    <value>Noch keine Initiativen</value>
+  </data>
+  <data name="Home_Empty" xml:space="preserve">
+    <value>Laden Sie die Liste der Initiativen herunter, um zu beginnen. Sie können auch nach unten ziehen, um zu aktualisieren.</value>
+  </data>
+  <data name="Home_EmptyOffline" xml:space="preserve">
+    <value>Stellen Sie eine Internetverbindung her, um die Liste der Initiativen herunterzuladen.</value>
+  </data>
+  <data name="Home_Download" xml:space="preserve">
+    <value>Herunterladen</value>
+  </data>
+  <data name="Home_Downloading" xml:space="preserve">
+    <value>Die Initiativen werden heruntergeladen. Beim ersten Mal dauert es einen Moment.</value>
+  </data>
+  <data name="List_NoData" xml:space="preserve">
+    <value>Noch keine Initiativen gespeichert. Zum Herunterladen nach unten ziehen.</value>
+  </data>
+  <data name="Sync_Retry" xml:space="preserve">
+    <value>Erneut versuchen</value>
+  </data>
+  <data name="Item_OpenHint" xml:space="preserve">
+    <value>Öffnet die Details</value>
+  </data>
+  <data name="A11y_Selected" xml:space="preserve">
+    <value>{0}, ausgewählt</value>
+  </data>
 </root>

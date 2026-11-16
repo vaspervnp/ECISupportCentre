@@ -18,6 +18,7 @@ public sealed partial class HomeViewModel : ObservableObject
         _data = data;
         _data.DataChanged += (_, _) => MainThread.BeginInvokeOnMainThread(() => _ = LoadAsync());
         _data.SyncStateChanged += (_, _) => MainThread.BeginInvokeOnMainThread(UpdateSyncState);
+        Connectivity.Current.ConnectivityChanged += (_, _) => MainThread.BeginInvokeOnMainThread(UpdateSyncState);
         Loc.Instance.LanguageChanged += (_, _) => MainThread.BeginInvokeOnMainThread(() => _ = LoadAsync());
     }
 
@@ -44,8 +45,26 @@ public sealed partial class HomeViewModel : ObservableObject
     [ObservableProperty]
     public partial string SyncText { get; set; } = "";
 
+    /// <summary>At least one initiative is stored.</summary>
     [ObservableProperty]
-    public partial string? ErrorText { get; set; }
+    [NotifyPropertyChangedFor(nameof(ShowEmptyState), nameof(CanDownload))]
+    public partial bool HasData { get; set; } = true;
+
+    [ObservableProperty]
+    public partial bool HasEndingSoon { get; set; }
+
+    /// <summary>No data yet and the first sync is running.</summary>
+    [ObservableProperty]
+    [NotifyPropertyChangedFor(nameof(CanDownload))]
+    public partial bool IsDownloading { get; set; }
+
+    public bool ShowEmptyState => !HasData;
+
+    public bool CanDownload => !HasData && !IsDownloading;
+
+    /// <summary>How to get the data: pull or tap, or first connect to the internet.</summary>
+    [ObservableProperty]
+    public partial string EmptyText { get; set; } = "";
 
     [ObservableProperty]
     public partial bool IsRefreshing { get; set; }
@@ -119,17 +138,25 @@ public sealed partial class HomeViewModel : ObservableObject
             EndingSoon.Add(new InitiativeItemViewModel(item, i => AppRoutes.OpenInitiativeAsync(i.Id)));
         }
 
+        HasData = items.Count > 0;
+        HasEndingSoon = EndingSoon.Count > 0;
+
         SyncText = lastSync is { } at ? Loc.Format("Sync_Last", Presentation.RelativeTime(at)) : Loc.Get("Sync_Never");
         UpdateSyncState();
     }
 
     private void UpdateSyncState()
     {
-        ErrorText = _data.LastError;
         if (_data.IsSyncing)
         {
             SyncText = Loc.Get("Sync_Running");
         }
+
+        IsDownloading = _data.IsSyncing && !HasData;
+        // The banner is hidden while there is no data, so a failed first download is explained here.
+        EmptyText = _data.IsOffline ? Loc.Get("Home_EmptyOffline")
+            : _data.LastError is { } error && !_data.LastErrorIsOffline ? error
+            : Loc.Get("Home_Empty");
     }
 }
 
@@ -137,6 +164,8 @@ public sealed partial class HomeViewModel : ObservableObject
 internal static class AppRoutes
 {
     public const string InitiativeRoute = "initiative";
+
+    public const string AboutRoute = "about";
 
     public static Task OpenInitiativeAsync(long id) =>
         Shell.Current.GoToAsync($"{InitiativeRoute}?id={id.ToString(CultureInfo.InvariantCulture)}");

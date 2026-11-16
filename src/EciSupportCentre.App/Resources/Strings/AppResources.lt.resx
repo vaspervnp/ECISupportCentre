@@ -382,4 +382,115 @@
   <data name="Settings_About" xml:space="preserve">
     <value>Apie programėlę</value>
   </data>
+  <data name="Settings_Appearance" xml:space="preserve">
+    <value>Išvaizda</value>
+  </data>
+  <data name="Settings_Theme" xml:space="preserve">
+    <value>Tema</value>
+  </data>
+  <data name="Theme_System" xml:space="preserve">
+    <value>Kaip įrenginyje</value>
+  </data>
+  <data name="Theme_Light" xml:space="preserve">
+    <value>Šviesi</value>
+  </data>
+  <data name="Theme_Dark" xml:space="preserve">
+    <value>Tamsi</value>
+  </data>
+  <data name="Settings_Sync" xml:space="preserve">
+    <value>Atnaujinimai</value>
+  </data>
+  <data name="Settings_SyncFrequency" xml:space="preserve">
+    <value>Tikrinti, ar yra naujinių</value>
+  </data>
+  <data name="Sync_Every3h" xml:space="preserve">
+    <value>Kas 3 val.</value>
+  </data>
+  <data name="Sync_Every6h" xml:space="preserve">
+    <value>Kas 6 val.</value>
+  </data>
+  <data name="Sync_Every12h" xml:space="preserve">
+    <value>Du kartus per dieną</value>
+  </data>
+  <data name="Sync_Every24h" xml:space="preserve">
+    <value>Kartą per dieną</value>
+  </data>
+  <data name="Settings_SyncHint" xml:space="preserve">
+    <value>Kaip dažnai programėlė fone tikrina naujienas ir pakeitimus. Android gali tai atidėti, kad taupytų bateriją.</value>
+  </data>
+  <data name="Settings_WifiOnly" xml:space="preserve">
+    <value>Tik per Wi-Fi</value>
+  </data>
+  <data name="Settings_WifiOnlyHint" xml:space="preserve">
+    <value>Automatiniai atnaujinimai laukia Wi-Fi ryšio. Atnaujinti patraukus žemyn galima visada.</value>
+  </data>
+  <data name="About_Open" xml:space="preserve">
+    <value>Apie programėlę</value>
+  </data>
+  <data name="About_Intro" xml:space="preserve">
+    <value>Nepriklausoma programėlė Europos piliečių iniciatyvoms sekti: naršykite jas, pasirašykite oficialioje svetainėje ir sužinokite, kada baigiasi rinkimas ir kuo jis baigėsi.</value>
+  </data>
+  <data name="About_NotOfficial" xml:space="preserve">
+    <value>Neoficiali programėlė</value>
+  </data>
+  <data name="About_NotOfficialText" xml:space="preserve">
+    <value>Šios programėlės nekūrė, nepatvirtino ir netikrino Europos Sąjunga ar Europos Komisija. Pasirašoma visada oficialioje Komisijos svetainėje.</value>
+  </data>
+  <data name="About_Sources" xml:space="preserve">
+    <value>Duomenų šaltiniai</value>
+  </data>
+  <data name="About_SourcesText" xml:space="preserve">
+    <value>Iniciatyvos gaunamos iš viešo Europos piliečių iniciatyvos registro, naujienos – iš oficialios svetainės citizens-initiative.europa.eu. © Europos Sąjunga. Iki kito naujinio programėlėje gali būti pasenusių duomenų, palyginti su oficialia svetaine.</value>
+  </data>
+  <data name="About_Website" xml:space="preserve">
+    <value>Oficiali svetainė</value>
+  </data>
+  <data name="About_Privacy" xml:space="preserve">
+    <value>Privatumas</value>
+  </data>
+  <data name="About_PrivacyText" xml:space="preserve">
+    <value>Jokios paskyros, reklamos ar sekimo. Tai, ką stebite ar pažymite kaip pasirašytą, lieka šiame įrenginyje. Programėlė atsisiunčia duomenis tik iš Europos Komisijos svetainių.</value>
+  </data>
+  <data name="About_Licence" xml:space="preserve">
+    <value>Licencija</value>
+  </data>
+  <data name="About_LicenceText" xml:space="preserve">
+    <value>Atvirasis kodas pagal MIT licenciją.</value>
+  </data>
+  <data name="About_SourceCode" xml:space="preserve">
+    <value>Šaltinio kodas</value>
+  </data>
+  <data name="About_Translations" xml:space="preserve">
+    <value>Vertimai</value>
+  </data>
+  <data name="About_TranslationsText" xml:space="preserve">
+    <value>Programėlės tekstai išversti automatiniu būdu ir šiuo metu peržiūrimi. Iniciatyvų tekstai yra oficialūs registro vertimai.</value>
+  </data>
+  <data name="Home_EmptyTitle" xml:space="preserve">
+    <value>Iniciatyvų dar nėra</value>
+  </data>
+  <data name="Home_Empty" xml:space="preserve">
+    <value>Atsisiųskite iniciatyvų sąrašą, kad pradėtumėte. Taip pat galite patraukti žemyn, kad atnaujintumėte.</value>
+  </data>
+  <data name="Home_EmptyOffline" xml:space="preserve">
+    <value>Prisijunkite prie interneto, kad atsisiųstumėte iniciatyvų sąrašą.</value>
+  </data>
+  <data name="Home_Download" xml:space="preserve">
+    <value>Atsisiųsti</value>
+  </data>
+  <data name="Home_Downloading" xml:space="preserve">
+    <value>Siunčiamos iniciatyvos. Pirmą kartą užtrunka akimirką.</value>
+  </data>
+  <data name="List_NoData" xml:space="preserve">
+    <value>Išsaugotų iniciatyvų dar nėra. Patraukite žemyn, kad jas atsisiųstumėte.</value>
+  </data>
+  <data name="Sync_Retry" xml:space="preserve">
+    <value>Bandyti dar kartą</value>
+  </data>
+  <data name="Item_OpenHint" xml:space="preserve">
+    <value>Atidaro išsamią informaciją</value>
+  </data>
+  <data name="A11y_Selected" xml:space="preserve">
+    <value>{0}, pasirinkta</value>
+  </data>
 </root>

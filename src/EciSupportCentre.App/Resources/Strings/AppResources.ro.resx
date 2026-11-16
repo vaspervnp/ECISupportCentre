@@ -382,4 +382,115 @@
   <data name="Settings_About" xml:space="preserve">
     <value>Despre</value>
   </data>
+  <data name="Settings_Appearance" xml:space="preserve">
+    <value>Aspect</value>
+  </data>
+  <data name="Settings_Theme" xml:space="preserve">
+    <value>Temă</value>
+  </data>
+  <data name="Theme_System" xml:space="preserve">
+    <value>La fel ca dispozitivul</value>
+  </data>
+  <data name="Theme_Light" xml:space="preserve">
+    <value>Luminoasă</value>
+  </data>
+  <data name="Theme_Dark" xml:space="preserve">
+    <value>Întunecată</value>
+  </data>
+  <data name="Settings_Sync" xml:space="preserve">
+    <value>Actualizări</value>
+  </data>
+  <data name="Settings_SyncFrequency" xml:space="preserve">
+    <value>Verificare actualizări</value>
+  </data>
+  <data name="Sync_Every3h" xml:space="preserve">
+    <value>La fiecare 3 ore</value>
+  </data>
+  <data name="Sync_Every6h" xml:space="preserve">
+    <value>La fiecare 6 ore</value>
+  </data>
+  <data name="Sync_Every12h" xml:space="preserve">
+    <value>De două ori pe zi</value>
+  </data>
+  <data name="Sync_Every24h" xml:space="preserve">
+    <value>O dată pe zi</value>
+  </data>
+  <data name="Settings_SyncHint" xml:space="preserve">
+    <value>Cât de des verifică aplicația, în fundal, știrile și modificările. Android poate amâna verificarea pentru a economisi bateria.</value>
+  </data>
+  <data name="Settings_WifiOnly" xml:space="preserve">
+    <value>Doar prin Wi-Fi</value>
+  </data>
+  <data name="Settings_WifiOnlyHint" xml:space="preserve">
+    <value>Actualizările automate așteaptă o conexiune Wi-Fi. Tragerea în jos pentru actualizare funcționează întotdeauna.</value>
+  </data>
+  <data name="About_Open" xml:space="preserve">
+    <value>Despre această aplicație</value>
+  </data>
+  <data name="About_Intro" xml:space="preserve">
+    <value>O aplicație independentă pentru a urmări inițiativele cetățenești europene: răsfoiți-le, semnați-le pe site-ul oficial și aflați când se încheie o colectare și cu ce rezultat.</value>
+  </data>
+  <data name="About_NotOfficial" xml:space="preserve">
+    <value>Aplicație neoficială</value>
+  </data>
+  <data name="About_NotOfficialText" xml:space="preserve">
+    <value>Această aplicație nu este creată, susținută sau verificată de Uniunea Europeană sau de Comisia Europeană. Semnarea are loc întotdeauna pe site-ul oficial al Comisiei.</value>
+  </data>
+  <data name="About_Sources" xml:space="preserve">
+    <value>Surse de date</value>
+  </data>
+  <data name="About_SourcesText" xml:space="preserve">
+    <value>Inițiativele provin din registrul public al inițiativei cetățenești europene, iar știrile de pe site-ul oficial citizens-initiative.europa.eu. © Uniunea Europeană. Până la următoarea actualizare, aplicația poate fi în urma site-ului oficial.</value>
+  </data>
+  <data name="About_Website" xml:space="preserve">
+    <value>Site oficial</value>
+  </data>
+  <data name="About_Privacy" xml:space="preserve">
+    <value>Confidențialitate</value>
+  </data>
+  <data name="About_PrivacyText" xml:space="preserve">
+    <value>Fără cont, fără reclame, fără urmărire. Ce urmăriți sau marcați ca semnat rămâne pe acest dispozitiv. Aplicația descarcă date doar de pe site-urile Comisiei Europene.</value>
+  </data>
+  <data name="About_Licence" xml:space="preserve">
+    <value>Licență</value>
+  </data>
+  <data name="About_LicenceText" xml:space="preserve">
+    <value>Cod sursă deschis, sub licența MIT.</value>
+  </data>
+  <data name="About_SourceCode" xml:space="preserve">
+    <value>Cod sursă</value>
+  </data>
+  <data name="About_Translations" xml:space="preserve">
+    <value>Traduceri</value>
+  </data>
+  <data name="About_TranslationsText" xml:space="preserve">
+    <value>Textele aplicației au fost traduse automat și sunt în curs de revizuire. Textele inițiativelor sunt traducerile oficiale din registru.</value>
+  </data>
+  <data name="Home_EmptyTitle" xml:space="preserve">
+    <value>Nicio inițiativă încă</value>
+  </data>
+  <data name="Home_Empty" xml:space="preserve">
+    <value>Descărcați lista de inițiative pentru a începe. Puteți și să trageți în jos pentru a actualiza.</value>
+  </data>
+  <data name="Home_EmptyOffline" xml:space="preserve">
+    <value>Conectați-vă la internet pentru a descărca lista de inițiative.</value>
+  </data>
+  <data name="Home_Download" xml:space="preserve">
+    <value>Descărcați</value>
+  </data>
+  <data name="Home_Downloading" xml:space="preserve">
+    <value>Se descarcă inițiativele. Prima dată durează puțin.</value>
+  </data>
+  <data name="List_NoData" xml:space="preserve">
+    <value>Nicio inițiativă salvată încă. Trageți în jos pentru a le descărca.</value>
+  </data>
+  <data name="Sync_Retry" xml:space="preserve">
+    <value>Încercați din nou</value>
+  </data>
+  <data name="Item_OpenHint" xml:space="preserve">
+    <value>Deschide detaliile</value>
+  </data>
+  <data name="A11y_Selected" xml:space="preserve">
+    <value>{0}, selectat</value>
+  </data>
 </root>

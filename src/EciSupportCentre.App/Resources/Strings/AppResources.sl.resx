@@ -382,4 +382,115 @@
   <data name="Settings_About" xml:space="preserve">
     <value>O aplikaciji</value>
   </data>
+  <data name="Settings_Appearance" xml:space="preserve">
+    <value>Videz</value>
+  </data>
+  <data name="Settings_Theme" xml:space="preserve">
+    <value>Tema</value>
+  </data>
+  <data name="Theme_System" xml:space="preserve">
+    <value>Kot v napravi</value>
+  </data>
+  <data name="Theme_Light" xml:space="preserve">
+    <value>Svetla</value>
+  </data>
+  <data name="Theme_Dark" xml:space="preserve">
+    <value>Temna</value>
+  </data>
+  <data name="Settings_Sync" xml:space="preserve">
+    <value>Posodobitve</value>
+  </data>
+  <data name="Settings_SyncFrequency" xml:space="preserve">
+    <value>Preverjanje posodobitev</value>
+  </data>
+  <data name="Sync_Every3h" xml:space="preserve">
+    <value>Vsake 3 ure</value>
+  </data>
+  <data name="Sync_Every6h" xml:space="preserve">
+    <value>Vsakih 6 ur</value>
+  </data>
+  <data name="Sync_Every12h" xml:space="preserve">
+    <value>Dvakrat na dan</value>
+  </data>
+  <data name="Sync_Every24h" xml:space="preserve">
+    <value>Enkrat na dan</value>
+  </data>
+  <data name="Settings_SyncHint" xml:space="preserve">
+    <value>Kako pogosto aplikacija v ozadju preveri novice in spremembe. Android lahko preverjanje zakasni, da prihrani baterijo.</value>
+  </data>
+  <data name="Settings_WifiOnly" xml:space="preserve">
+    <value>Samo prek Wi-Fi</value>
+  </data>
+  <data name="Settings_WifiOnlyHint" xml:space="preserve">
+    <value>Samodejne posodobitve počakajo na Wi-Fi. Osvežitev z vlečenjem navzdol vedno deluje.</value>
+  </data>
+  <data name="About_Open" xml:space="preserve">
+    <value>O tej aplikaciji</value>
+  </data>
+  <data name="About_Intro" xml:space="preserve">
+    <value>Neodvisna aplikacija za spremljanje evropskih državljanskih pobud: prebrskajte jih, podpišite jih na uradnem spletišču in izvedite, kdaj se zbiranje konča in kakšen je bil izid.</value>
+  </data>
+  <data name="About_NotOfficial" xml:space="preserve">
+    <value>Neuradna aplikacija</value>
+  </data>
+  <data name="About_NotOfficialText" xml:space="preserve">
+    <value>Te aplikacije ni izdelala, potrdila ali preverila Evropska unija ali Evropska komisija. Podpisovanje vedno poteka na uradnem spletišču Komisije.</value>
+  </data>
+  <data name="About_Sources" xml:space="preserve">
+    <value>Viri podatkov</value>
+  </data>
+  <data name="About_SourcesText" xml:space="preserve">
+    <value>Pobude so iz javnega registra evropske državljanske pobude, novice pa z uradnega spletišča citizens-initiative.europa.eu. © Evropska unija. Do naslednje posodobitve lahko aplikacija zaostaja za uradnim spletiščem.</value>
+  </data>
+  <data name="About_Website" xml:space="preserve">
+    <value>Uradno spletišče</value>
+  </data>
+  <data name="About_Privacy" xml:space="preserve">
+    <value>Zasebnost</value>
+  </data>
+  <data name="About_PrivacyText" xml:space="preserve">
+    <value>Brez računa, brez oglasov, brez sledenja. Kar spremljate ali označite kot podpisano, ostane v tej napravi. Aplikacija prenaša podatke samo s spletišč Evropske komisije.</value>
+  </data>
+  <data name="About_Licence" xml:space="preserve">
+    <value>Licenca</value>
+  </data>
+  <data name="About_LicenceText" xml:space="preserve">
+    <value>Odprta koda pod licenco MIT.</value>
+  </data>
+  <data name="About_SourceCode" xml:space="preserve">
+    <value>Izvorna koda</value>
+  </data>
+  <data name="About_Translations" xml:space="preserve">
+    <value>Prevodi</value>
+  </data>
+  <data name="About_TranslationsText" xml:space="preserve">
+    <value>Besedila aplikacije so bila strojno prevedena in se pregledujejo. Besedila pobud so uradni prevodi iz registra.</value>
+  </data>
+  <data name="Home_EmptyTitle" xml:space="preserve">
+    <value>Še ni pobud</value>
+  </data>
+  <data name="Home_Empty" xml:space="preserve">
+    <value>Za začetek prenesite seznam pobud. Lahko tudi povlečete navzdol za osvežitev.</value>
+  </data>
+  <data name="Home_EmptyOffline" xml:space="preserve">
+    <value>Za prenos seznama pobud se povežite z internetom.</value>
+  </data>
+  <data name="Home_Download" xml:space="preserve">
+    <value>Prenesi</value>
+  </data>
+  <data name="Home_Downloading" xml:space="preserve">
+    <value>Prenašanje pobud. Prvič traja nekaj časa.</value>
+  </data>
+  <data name="List_NoData" xml:space="preserve">
+    <value>Shranjenih pobud še ni. Povlecite navzdol za prenos.</value>
+  </data>
+  <data name="Sync_Retry" xml:space="preserve">
+    <value>Poskusi znova</value>
+  </data>
+  <data name="Item_OpenHint" xml:space="preserve">
+    <value>Odpre podrobnosti</value>
+  </data>
+  <data name="A11y_Selected" xml:space="preserve">
+    <value>{0}, izbrano</value>
+  </data>
 </root>

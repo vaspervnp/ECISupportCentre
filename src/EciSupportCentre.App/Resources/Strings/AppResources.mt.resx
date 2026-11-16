@@ -382,4 +382,115 @@
   <data name="Settings_About" xml:space="preserve">
     <value>Dwar l-app</value>
   </data>
+  <data name="Settings_Appearance" xml:space="preserve">
+    <value>Dehra</value>
+  </data>
+  <data name="Settings_Theme" xml:space="preserve">
+    <value>Tema</value>
+  </data>
+  <data name="Theme_System" xml:space="preserve">
+    <value>Bħall-apparat</value>
+  </data>
+  <data name="Theme_Light" xml:space="preserve">
+    <value>Ċara</value>
+  </data>
+  <data name="Theme_Dark" xml:space="preserve">
+    <value>Skura</value>
+  </data>
+  <data name="Settings_Sync" xml:space="preserve">
+    <value>Aġġornamenti</value>
+  </data>
+  <data name="Settings_SyncFrequency" xml:space="preserve">
+    <value>Iċċekkja għall-aġġornamenti</value>
+  </data>
+  <data name="Sync_Every3h" xml:space="preserve">
+    <value>Kull 3 sigħat</value>
+  </data>
+  <data name="Sync_Every6h" xml:space="preserve">
+    <value>Kull 6 sigħat</value>
+  </data>
+  <data name="Sync_Every12h" xml:space="preserve">
+    <value>Darbtejn kuljum</value>
+  </data>
+  <data name="Sync_Every24h" xml:space="preserve">
+    <value>Darba kuljum</value>
+  </data>
+  <data name="Settings_SyncHint" xml:space="preserve">
+    <value>Kemm-il darba l-app tiċċekkja għall-aħbarijiet u t-tibdil fl-isfond. Android jista' jdewwem dan biex jiffranka l-batterija.</value>
+  </data>
+  <data name="Settings_WifiOnly" xml:space="preserve">
+    <value>Fuq Wi-Fi biss</value>
+  </data>
+  <data name="Settings_WifiOnlyHint" xml:space="preserve">
+    <value>L-aġġornamenti awtomatiċi jistennew il-Wi-Fi. L-aġġornar billi tiġbed 'l isfel dejjem jaħdem.</value>
+  </data>
+  <data name="About_Open" xml:space="preserve">
+    <value>Dwar din l-app</value>
+  </data>
+  <data name="About_Intro" xml:space="preserve">
+    <value>App indipendenti biex issegwi l-Inizjattivi taċ-Ċittadini Ewropej: ibbrawżjahom, iffirmahom fuq is-sit uffiċjali u sib meta jagħlaq il-ġbir u kif intemm.</value>
+  </data>
+  <data name="About_NotOfficial" xml:space="preserve">
+    <value>Mhix app uffiċjali</value>
+  </data>
+  <data name="About_NotOfficialText" xml:space="preserve">
+    <value>Din l-app ma saritx, ma ġietx approvata u lanqas ivverifikata mill-Unjoni Ewropea jew mill-Kummissjoni Ewropea. Il-firma dejjem issir fuq is-sit uffiċjali tal-Kummissjoni.</value>
+  </data>
+  <data name="About_Sources" xml:space="preserve">
+    <value>Sorsi tad-data</value>
+  </data>
+  <data name="About_SourcesText" xml:space="preserve">
+    <value>L-inizjattivi ġejjin mir-reġistru pubbliku tal-Inizjattiva taċ-Ċittadini Ewropej, l-aħbarijiet mis-sit uffiċjali citizens-initiative.europa.eu. © Unjoni Ewropea. Sal-aġġornament li jmiss, l-app tista' tkun lura mis-sit uffiċjali.</value>
+  </data>
+  <data name="About_Website" xml:space="preserve">
+    <value>Sit uffiċjali</value>
+  </data>
+  <data name="About_Privacy" xml:space="preserve">
+    <value>Privatezza</value>
+  </data>
+  <data name="About_PrivacyText" xml:space="preserve">
+    <value>L-ebda kont, reklami jew traċċar. Dak li tissegwi jew timmarka bħala ffirmat jibqa' f'dan l-apparat. L-app tniżżel data biss mis-siti tal-Kummissjoni Ewropea.</value>
+  </data>
+  <data name="About_Licence" xml:space="preserve">
+    <value>Liċenzja</value>
+  </data>
+  <data name="About_LicenceText" xml:space="preserve">
+    <value>Sors miftuħ taħt il-liċenzja MIT.</value>
+  </data>
+  <data name="About_SourceCode" xml:space="preserve">
+    <value>Kodiċi sors</value>
+  </data>
+  <data name="About_Translations" xml:space="preserve">
+    <value>Traduzzjonijiet</value>
+  </data>
+  <data name="About_TranslationsText" xml:space="preserve">
+    <value>It-testi tal-app ġew tradotti awtomatikament u qed jiġu rieżaminati. It-testi tal-inizjattivi huma t-traduzzjonijiet uffiċjali mir-reġistru.</value>
+  </data>
+  <data name="Home_EmptyTitle" xml:space="preserve">
+    <value>Għad m'hemm l-ebda inizjattiva</value>
+  </data>
+  <data name="Home_Empty" xml:space="preserve">
+    <value>Niżżel il-lista tal-inizjattivi biex tibda. Tista' wkoll iġbed 'l isfel biex taġġorna.</value>
+  </data>
+  <data name="Home_EmptyOffline" xml:space="preserve">
+    <value>Qabbad mal-internet biex tniżżel il-lista tal-inizjattivi.</value>
+  </data>
+  <data name="Home_Download" xml:space="preserve">
+    <value>Niżżel</value>
+  </data>
+  <data name="Home_Downloading" xml:space="preserve">
+    <value>Qed jitniżżlu l-inizjattivi. L-ewwel darba tieħu ftit.</value>
+  </data>
+  <data name="List_NoData" xml:space="preserve">
+    <value>Għad m'hemm l-ebda inizjattiva maħżuna. Iġbed 'l isfel biex tniżżilhom.</value>
+  </data>
+  <data name="Sync_Retry" xml:space="preserve">
+    <value>Erġa' pprova</value>
+  </data>
+  <data name="Item_OpenHint" xml:space="preserve">
+    <value>Jiftaħ id-dettalji</value>
+  </data>
+  <data name="A11y_Selected" xml:space="preserve">
+    <value>{0}, magħżul</value>
+  </data>
 </root>

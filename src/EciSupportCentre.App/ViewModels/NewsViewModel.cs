@@ -17,7 +17,6 @@ public sealed partial class NewsViewModel : ObservableObject
     {
         _data = data;
         _data.DataChanged += (_, _) => MainThread.BeginInvokeOnMainThread(() => _ = LoadAsync());
-        _data.SyncStateChanged += (_, _) => MainThread.BeginInvokeOnMainThread(() => ErrorText = _data.LastError);
         Loc.Instance.LanguageChanged += (_, _) => MainThread.BeginInvokeOnMainThread(() => _ = LoadAsync());
     }
 
@@ -25,9 +24,6 @@ public sealed partial class NewsViewModel : ObservableObject
 
     [ObservableProperty]
     public partial bool IsRefreshing { get; set; }
-
-    [ObservableProperty]
-    public partial string? ErrorText { get; set; }
 
     /// <summary>Set once the database was read, so the empty message does not flash while loading.</summary>
     [ObservableProperty]
@@ -64,7 +60,6 @@ public sealed partial class NewsViewModel : ObservableObject
         }
 
         IsEmpty = Items.Count == 0;
-        ErrorText = _data.LastError;
     }
 
     private async Task OpenAsync(NewsItemViewModel item)

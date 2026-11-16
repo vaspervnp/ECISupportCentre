@@ -14,8 +14,6 @@ namespace EciSupportCentre.App.ViewModels;
 public sealed record TimelineEntry(string Text, string Date, bool IsActive)
 {
     public FontAttributes Font => IsActive ? FontAttributes.Bold : FontAttributes.None;
-
-    public Color Dot => IsActive ? Color.FromArgb("#003399") : Color.FromArgb("#ACACAC");
 }
 
 public sealed record CountryEntry(string Name, string Count, double Fraction);

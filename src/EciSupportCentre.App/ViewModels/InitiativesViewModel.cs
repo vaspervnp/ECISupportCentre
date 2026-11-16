@@ -19,15 +19,19 @@ public sealed partial class FilterOption(string labelKey, IReadOnlySet<Initiativ
 
     public bool FollowedOnly { get; } = followedOnly;
 
+    /// <summary>Drawn filled when selected (a trigger in <c>InitiativesPage.xaml</c>, so it follows the theme).</summary>
     [ObservableProperty]
-    [NotifyPropertyChangedFor(nameof(Background), nameof(Foreground))]
+    [NotifyPropertyChangedFor(nameof(AccessibleText))]
     public partial bool IsSelected { get; set; }
 
-    public Color Background => IsSelected ? Color.FromArgb("#003399") : Colors.Transparent;
+    /// <summary>TalkBack cannot see the fill colour, so a selected chip says so.</summary>
+    public string AccessibleText => IsSelected ? Loc.Format("A11y_Selected", Label) : Label;
 
-    public Color Foreground => IsSelected ? Colors.White : Color.FromArgb("#003399");
-
-    public void RefreshLabel() => OnPropertyChanged(nameof(Label));
+    public void RefreshLabel()
+    {
+        OnPropertyChanged(nameof(Label));
+        OnPropertyChanged(nameof(AccessibleText));
+    }
 }
 
 public sealed partial class InitiativesViewModel : ObservableObject
@@ -79,6 +83,10 @@ public sealed partial class InitiativesViewModel : ObservableObject
 
     [ObservableProperty]
     public partial bool IsEmpty { get; set; }
+
+    /// <summary>Nothing stored yet, or the filters exclude everything.</summary>
+    [ObservableProperty]
+    public partial string EmptyText { get; set; } = "";
 
     [ObservableProperty]
     public partial bool IsRefreshing { get; set; }
@@ -154,6 +162,7 @@ public sealed partial class InitiativesViewModel : ObservableObject
 
         CountText = Loc.Format("List_Count", results.Count);
         IsEmpty = results.Count == 0;
+        EmptyText = Loc.Get(_all.Count == 0 ? "List_NoData" : "List_Empty");
     }
 
     private async Task OpenAsync(InitiativeItemViewModel item)

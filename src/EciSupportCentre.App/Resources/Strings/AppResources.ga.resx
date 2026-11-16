@@ -382,4 +382,115 @@
   <data name="Settings_About" xml:space="preserve">
     <value>Maidir leis an aip</value>
   </data>
+  <data name="Settings_Appearance" xml:space="preserve">
+    <value>Cuma</value>
+  </data>
+  <data name="Settings_Theme" xml:space="preserve">
+    <value>Téama</value>
+  </data>
+  <data name="Theme_System" xml:space="preserve">
+    <value>Mar an ngléas</value>
+  </data>
+  <data name="Theme_Light" xml:space="preserve">
+    <value>Éadrom</value>
+  </data>
+  <data name="Theme_Dark" xml:space="preserve">
+    <value>Dorcha</value>
+  </data>
+  <data name="Settings_Sync" xml:space="preserve">
+    <value>Nuashonruithe</value>
+  </data>
+  <data name="Settings_SyncFrequency" xml:space="preserve">
+    <value>Seiceáil le haghaidh nuashonruithe</value>
+  </data>
+  <data name="Sync_Every3h" xml:space="preserve">
+    <value>Gach 3 uair an chloig</value>
+  </data>
+  <data name="Sync_Every6h" xml:space="preserve">
+    <value>Gach 6 uair an chloig</value>
+  </data>
+  <data name="Sync_Every12h" xml:space="preserve">
+    <value>Dhá uair sa lá</value>
+  </data>
+  <data name="Sync_Every24h" xml:space="preserve">
+    <value>Uair sa lá</value>
+  </data>
+  <data name="Settings_SyncHint" xml:space="preserve">
+    <value>Cé chomh minic a sheiceálann an aip nuacht agus athruithe sa chúlra. D'fhéadfadh Android moill a chur air chun cumhacht cadhnra a shábháil.</value>
+  </data>
+  <data name="Settings_WifiOnly" xml:space="preserve">
+    <value>Ar Wi-Fi amháin</value>
+  </data>
+  <data name="Settings_WifiOnlyHint" xml:space="preserve">
+    <value>Fanann nuashonruithe uathoibríocha le Wi-Fi. Oibríonn tarraingt anuas chun athnuachan i gcónaí.</value>
+  </data>
+  <data name="About_Open" xml:space="preserve">
+    <value>Maidir leis an aip seo</value>
+  </data>
+  <data name="About_Intro" xml:space="preserve">
+    <value>Aip neamhspleách chun Tionscnaimh Eorpacha na Saoránach a leanúint: brabhsáil iad, sínigh iad ar an suíomh gréasáin oifigiúil, agus faigh amach cathain a chríochnaíonn bailiú agus conas a chuaigh sé.</value>
+  </data>
+  <data name="About_NotOfficial" xml:space="preserve">
+    <value>Ní aip oifigiúil í</value>
+  </data>
+  <data name="About_NotOfficialText" xml:space="preserve">
+    <value>Ní hé an tAontas Eorpach ná an Coimisiún Eorpach a rinne an aip seo, ná níor thacaigh ná níor sheiceáil siad í. Tarlaíonn an síniú i gcónaí ar shuíomh gréasáin oifigiúil an Choimisiúin.</value>
+  </data>
+  <data name="About_Sources" xml:space="preserve">
+    <value>Foinsí sonraí</value>
+  </data>
+  <data name="About_SourcesText" xml:space="preserve">
+    <value>Tagann na tionscnaimh ó chlár poiblí Thionscnamh Eorpach na Saoránach, agus an nuacht ón suíomh gréasáin oifigiúil citizens-initiative.europa.eu. © An tAontas Eorpach. Go dtí an chéad nuashonrú eile, d'fhéadfadh an aip a bheith ar gcúl i gcomparáid leis an suíomh gréasáin oifigiúil.</value>
+  </data>
+  <data name="About_Website" xml:space="preserve">
+    <value>Suíomh gréasáin oifigiúil</value>
+  </data>
+  <data name="About_Privacy" xml:space="preserve">
+    <value>Príobháideacht</value>
+  </data>
+  <data name="About_PrivacyText" xml:space="preserve">
+    <value>Gan cuntas, gan fógraí, gan rianú. Fanann na tionscnaimh a leanann tú nó a mharcálann tú mar shínithe ar an ngléas seo. Ní íoslódálann an aip sonraí ach ó shuíomhanna gréasáin an Choimisiúin Eorpaigh.</value>
+  </data>
+  <data name="About_Licence" xml:space="preserve">
+    <value>Ceadúnas</value>
+  </data>
+  <data name="About_LicenceText" xml:space="preserve">
+    <value>Foinse oscailte faoin gceadúnas MIT.</value>
+  </data>
+  <data name="About_SourceCode" xml:space="preserve">
+    <value>Cód foinseach</value>
+  </data>
+  <data name="About_Translations" xml:space="preserve">
+    <value>Aistriúcháin</value>
+  </data>
+  <data name="About_TranslationsText" xml:space="preserve">
+    <value>Aistríodh téacsanna na haipe go meaisíniúil agus tá siad á athbhreithniú. Is aistriúcháin oifigiúla ón gclár iad téacsanna na dtionscnamh.</value>
+  </data>
+  <data name="Home_EmptyTitle" xml:space="preserve">
+    <value>Gan aon tionscnamh fós</value>
+  </data>
+  <data name="Home_Empty" xml:space="preserve">
+    <value>Íoslódáil liosta na dtionscnamh le tosú. Is féidir leat tarraingt anuas chun athnuachan freisin.</value>
+  </data>
+  <data name="Home_EmptyOffline" xml:space="preserve">
+    <value>Ceangail leis an idirlíon chun liosta na dtionscnamh a íoslódáil.</value>
+  </data>
+  <data name="Home_Download" xml:space="preserve">
+    <value>Íoslódáil</value>
+  </data>
+  <data name="Home_Downloading" xml:space="preserve">
+    <value>Tionscnaimh á n-íoslódáil. Tógann sé tamall an chéad uair.</value>
+  </data>
+  <data name="List_NoData" xml:space="preserve">
+    <value>Níl aon tionscnamh sábháilte fós. Tarraing anuas chun iad a íoslódáil.</value>
+  </data>
+  <data name="Sync_Retry" xml:space="preserve">
+    <value>Bain triail eile as</value>
+  </data>
+  <data name="Item_OpenHint" xml:space="preserve">
+    <value>Osclaíonn sé na sonraí</value>
+  </data>
+  <data name="A11y_Selected" xml:space="preserve">
+    <value>{0}, roghnaithe</value>
+  </data>
 </root>

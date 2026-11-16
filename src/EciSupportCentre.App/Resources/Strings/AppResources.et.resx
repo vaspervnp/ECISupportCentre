@@ -382,4 +382,115 @@
   <data name="Settings_About" xml:space="preserve">
     <value>Teave</value>
   </data>
+  <data name="Settings_Appearance" xml:space="preserve">
+    <value>Välimus</value>
+  </data>
+  <data name="Settings_Theme" xml:space="preserve">
+    <value>Teema</value>
+  </data>
+  <data name="Theme_System" xml:space="preserve">
+    <value>Sama mis seadmel</value>
+  </data>
+  <data name="Theme_Light" xml:space="preserve">
+    <value>Hele</value>
+  </data>
+  <data name="Theme_Dark" xml:space="preserve">
+    <value>Tume</value>
+  </data>
+  <data name="Settings_Sync" xml:space="preserve">
+    <value>Uuendused</value>
+  </data>
+  <data name="Settings_SyncFrequency" xml:space="preserve">
+    <value>Uuenduste kontrollimine</value>
+  </data>
+  <data name="Sync_Every3h" xml:space="preserve">
+    <value>Iga 3 tunni järel</value>
+  </data>
+  <data name="Sync_Every6h" xml:space="preserve">
+    <value>Iga 6 tunni järel</value>
+  </data>
+  <data name="Sync_Every12h" xml:space="preserve">
+    <value>Kaks korda päevas</value>
+  </data>
+  <data name="Sync_Every24h" xml:space="preserve">
+    <value>Kord päevas</value>
+  </data>
+  <data name="Settings_SyncHint" xml:space="preserve">
+    <value>Kui sageli rakendus taustal uudiseid ja muudatusi kontrollib. Android võib akusäästu huvides kontrollimist edasi lükata.</value>
+  </data>
+  <data name="Settings_WifiOnly" xml:space="preserve">
+    <value>Ainult Wi-Fi kaudu</value>
+  </data>
+  <data name="Settings_WifiOnlyHint" xml:space="preserve">
+    <value>Automaatsed uuendused ootavad Wi-Fi-ühendust. Allatõmbamisega värskendamine töötab alati.</value>
+  </data>
+  <data name="About_Open" xml:space="preserve">
+    <value>Teave rakenduse kohta</value>
+  </data>
+  <data name="About_Intro" xml:space="preserve">
+    <value>Sõltumatu rakendus Euroopa kodanikualgatuste jälgimiseks: sirvige algatusi, allkirjastage need ametlikul veebisaidil ning uurige, millal kogumine lõpeb ja kuidas see lõppes.</value>
+  </data>
+  <data name="About_NotOfficial" xml:space="preserve">
+    <value>Mitteametlik rakendus</value>
+  </data>
+  <data name="About_NotOfficialText" xml:space="preserve">
+    <value>Selle rakenduse ei ole loonud, heaks kiitnud ega kontrollinud Euroopa Liit ega Euroopa Komisjon. Allkirjastamine toimub alati komisjoni ametlikul veebisaidil.</value>
+  </data>
+  <data name="About_Sources" xml:space="preserve">
+    <value>Andmeallikad</value>
+  </data>
+  <data name="About_SourcesText" xml:space="preserve">
+    <value>Algatused pärinevad Euroopa kodanikualgatuse avalikust registrist, uudised ametlikult veebisaidilt citizens-initiative.europa.eu. © Euroopa Liit. Kuni järgmise uuendamiseni võib rakenduse info ametlikust veebisaidist maha jääda.</value>
+  </data>
+  <data name="About_Website" xml:space="preserve">
+    <value>Ametlik veebisait</value>
+  </data>
+  <data name="About_Privacy" xml:space="preserve">
+    <value>Privaatsus</value>
+  </data>
+  <data name="About_PrivacyText" xml:space="preserve">
+    <value>Kontot, reklaame ega jälgimist ei ole. Teie jälgitavad ja allkirjastatuks märgitud algatused jäävad sellesse seadmesse. Rakendus laadib andmeid alla ainult Euroopa Komisjoni veebisaitidelt.</value>
+  </data>
+  <data name="About_Licence" xml:space="preserve">
+    <value>Litsents</value>
+  </data>
+  <data name="About_LicenceText" xml:space="preserve">
+    <value>Avatud lähtekoodiga, MIT-litsents.</value>
+  </data>
+  <data name="About_SourceCode" xml:space="preserve">
+    <value>Lähtekood</value>
+  </data>
+  <data name="About_Translations" xml:space="preserve">
+    <value>Tõlked</value>
+  </data>
+  <data name="About_TranslationsText" xml:space="preserve">
+    <value>Rakenduse tekstid on masintõlgitud ja neid kontrollitakse. Algatuste tekstid on registri ametlikud tõlked.</value>
+  </data>
+  <data name="Home_EmptyTitle" xml:space="preserve">
+    <value>Algatusi veel ei ole</value>
+  </data>
+  <data name="Home_Empty" xml:space="preserve">
+    <value>Alustamiseks laadige algatuste loend alla. Võite ka värskendamiseks alla tõmmata.</value>
+  </data>
+  <data name="Home_EmptyOffline" xml:space="preserve">
+    <value>Algatuste loendi allalaadimiseks looge internetiühendus.</value>
+  </data>
+  <data name="Home_Download" xml:space="preserve">
+    <value>Laadi alla</value>
+  </data>
+  <data name="Home_Downloading" xml:space="preserve">
+    <value>Algatuste allalaadimine. Esimene kord võtab veidi aega.</value>
+  </data>
+  <data name="List_NoData" xml:space="preserve">
+    <value>Algatusi pole veel salvestatud. Allalaadimiseks tõmmake alla.</value>
+  </data>
+  <data name="Sync_Retry" xml:space="preserve">
+    <value>Proovi uuesti</value>
+  </data>
+  <data name="Item_OpenHint" xml:space="preserve">
+    <value>Avab üksikasjad</value>
+  </data>
+  <data name="A11y_Selected" xml:space="preserve">
+    <value>{0}, valitud</value>
+  </data>
 </root>

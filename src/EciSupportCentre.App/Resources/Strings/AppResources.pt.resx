@@ -382,4 +382,115 @@
   <data name="Settings_About" xml:space="preserve">
     <value>Acerca de</value>
   </data>
+  <data name="Settings_Appearance" xml:space="preserve">
+    <value>Aspeto</value>
+  </data>
+  <data name="Settings_Theme" xml:space="preserve">
+    <value>Tema</value>
+  </data>
+  <data name="Theme_System" xml:space="preserve">
+    <value>Igual ao dispositivo</value>
+  </data>
+  <data name="Theme_Light" xml:space="preserve">
+    <value>Claro</value>
+  </data>
+  <data name="Theme_Dark" xml:space="preserve">
+    <value>Escuro</value>
+  </data>
+  <data name="Settings_Sync" xml:space="preserve">
+    <value>Atualizações</value>
+  </data>
+  <data name="Settings_SyncFrequency" xml:space="preserve">
+    <value>Verificar atualizações</value>
+  </data>
+  <data name="Sync_Every3h" xml:space="preserve">
+    <value>A cada 3 horas</value>
+  </data>
+  <data name="Sync_Every6h" xml:space="preserve">
+    <value>A cada 6 horas</value>
+  </data>
+  <data name="Sync_Every12h" xml:space="preserve">
+    <value>Duas vezes por dia</value>
+  </data>
+  <data name="Sync_Every24h" xml:space="preserve">
+    <value>Uma vez por dia</value>
+  </data>
+  <data name="Settings_SyncHint" xml:space="preserve">
+    <value>Frequência com que a aplicação verifica, em segundo plano, se há notícias e alterações. O Android pode atrasar a verificação para poupar bateria.</value>
+  </data>
+  <data name="Settings_WifiOnly" xml:space="preserve">
+    <value>Só com Wi-Fi</value>
+  </data>
+  <data name="Settings_WifiOnlyHint" xml:space="preserve">
+    <value>As atualizações automáticas aguardam por uma rede Wi-Fi. Deslizar para baixo para atualizar funciona sempre.</value>
+  </data>
+  <data name="About_Open" xml:space="preserve">
+    <value>Acerca desta aplicação</value>
+  </data>
+  <data name="About_Intro" xml:space="preserve">
+    <value>Uma aplicação independente para acompanhar as Iniciativas de Cidadania Europeia: consulte-as, assine-as no sítio Web oficial e saiba quando termina uma recolha e qual foi o resultado.</value>
+  </data>
+  <data name="About_NotOfficial" xml:space="preserve">
+    <value>Não é uma aplicação oficial</value>
+  </data>
+  <data name="About_NotOfficialText" xml:space="preserve">
+    <value>Esta aplicação não é criada, aprovada nem verificada pela União Europeia ou pela Comissão Europeia. A assinatura é sempre feita no sítio Web oficial da Comissão.</value>
+  </data>
+  <data name="About_Sources" xml:space="preserve">
+    <value>Fontes de dados</value>
+  </data>
+  <data name="About_SourcesText" xml:space="preserve">
+    <value>As iniciativas provêm do registo público da Iniciativa de Cidadania Europeia e as notícias do sítio Web oficial citizens-initiative.europa.eu. © União Europeia. Até à próxima atualização, a aplicação pode estar desfasada do sítio Web oficial.</value>
+  </data>
+  <data name="About_Website" xml:space="preserve">
+    <value>Sítio Web oficial</value>
+  </data>
+  <data name="About_Privacy" xml:space="preserve">
+    <value>Privacidade</value>
+  </data>
+  <data name="About_PrivacyText" xml:space="preserve">
+    <value>Sem conta, sem anúncios, sem rastreamento. O que segue ou marca como assinado fica neste dispositivo. A aplicação só transfere dados dos sítios Web da Comissão Europeia.</value>
+  </data>
+  <data name="About_Licence" xml:space="preserve">
+    <value>Licença</value>
+  </data>
+  <data name="About_LicenceText" xml:space="preserve">
+    <value>Código aberto sob a licença MIT.</value>
+  </data>
+  <data name="About_SourceCode" xml:space="preserve">
+    <value>Código-fonte</value>
+  </data>
+  <data name="About_Translations" xml:space="preserve">
+    <value>Traduções</value>
+  </data>
+  <data name="About_TranslationsText" xml:space="preserve">
+    <value>Os textos da aplicação foram traduzidos automaticamente e estão a ser revistos. Os textos das iniciativas são as traduções oficiais do registo.</value>
+  </data>
+  <data name="Home_EmptyTitle" xml:space="preserve">
+    <value>Ainda não há iniciativas</value>
+  </data>
+  <data name="Home_Empty" xml:space="preserve">
+    <value>Transfira a lista de iniciativas para começar. Também pode deslizar para baixo para atualizar.</value>
+  </data>
+  <data name="Home_EmptyOffline" xml:space="preserve">
+    <value>Ligue-se à Internet para transferir a lista de iniciativas.</value>
+  </data>
+  <data name="Home_Download" xml:space="preserve">
+    <value>Transferir</value>
+  </data>
+  <data name="Home_Downloading" xml:space="preserve">
+    <value>A transferir as iniciativas. A primeira vez demora um pouco.</value>
+  </data>
+  <data name="List_NoData" xml:space="preserve">
+    <value>Ainda não há iniciativas guardadas. Deslize para baixo para as transferir.</value>
+  </data>
+  <data name="Sync_Retry" xml:space="preserve">
+    <value>Tentar novamente</value>
+  </data>
+  <data name="Item_OpenHint" xml:space="preserve">
+    <value>Abre os detalhes</value>
+  </data>
+  <data name="A11y_Selected" xml:space="preserve">
+    <value>{0}, selecionado</value>
+  </data>
 </root>

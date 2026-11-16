@@ -141,13 +141,15 @@ tests/
 
 **Done when:** the whole UI and the data switch language at run time without a restart. Checked on the emulator in Greek, Italian and Hungarian (the longest tab labels).
 
-## M8 — Settings, accessibility and polish
-- [ ] Settings (language and notifications are done in M7): sync frequency, Wi-Fi only, notification types, light, dark or system theme
-- [ ] Accessibility: TalkBack labels, dynamic font size, contrast
-- [ ] Empty, error and offline states
-- [ ] An About page with data sources, a disclaimer (not an official EU app) and the licence
+## M8 — Settings, accessibility and polish ✅
+- [x] Settings: sync frequency (every 3 or 6 hours, twice or once a day) and "Wi-Fi only", both applied to the WorkManager job at once; "Wi-Fi only" also holds back the automatic sync on opening the app (but never the very first one, nor pull to refresh). Notification types are the Android channels, opened from Settings (M7). Light, dark or system theme, applied without a restart
+- [x] Dark theme: theme-aware colours for the status numbers, chips, outlines, timeline and progress bars, and a card colour that stands out on the dark page
+- [x] Accessibility: each initiative card is read as one item (title, phase, badges, supporters, date) with a hint; selected filter chips say "selected"; decorative images are hidden from TalkBack; search and pickers have labels. Checked at font scale 1.5: the home tiles and the card details wrap instead of being cut off
+- [x] Empty, error and offline states: a shared banner on Home, Initiatives and News (offline, or the last sync failed, with "Try again"); a first-start card on Home (downloading, or how to get the data, or why it failed); a separate empty text when nothing is stored yet. Back online, a stale app syncs by itself
+- [x] An About page (Settings → About this app) with what the app is, the disclaimer, data sources, privacy, the MIT licence with a link to the source code, and a note on the machine translations
+- [x] The new texts in all 24 languages (machine translations, to be reviewed with the M7 ones)
 
-**Done when:** the accessibility scanner reports nothing serious and all settings take effect.
+**Done when:** the accessibility scanner reports nothing serious and all settings take effect. Checked on the emulator with the accessibility tree (`uiautomator dump`), font scale 1.5, light and dark theme, and the job's interval and network constraint in `dumpsys jobscheduler`. The Accessibility Scanner app itself was not run (it needs a Play Store device); to do before the release in M9.
 
 ## M9 — Quality and release
 - [ ] Unit tests for Core and Data, UI smoke tests on an emulator

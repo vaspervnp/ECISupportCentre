@@ -382,4 +382,115 @@
   <data name="Settings_About" xml:space="preserve">
     <value>Tietoja</value>
   </data>
+  <data name="Settings_Appearance" xml:space="preserve">
+    <value>Ulkoasu</value>
+  </data>
+  <data name="Settings_Theme" xml:space="preserve">
+    <value>Teema</value>
+  </data>
+  <data name="Theme_System" xml:space="preserve">
+    <value>Sama kuin laitteessa</value>
+  </data>
+  <data name="Theme_Light" xml:space="preserve">
+    <value>Vaalea</value>
+  </data>
+  <data name="Theme_Dark" xml:space="preserve">
+    <value>Tumma</value>
+  </data>
+  <data name="Settings_Sync" xml:space="preserve">
+    <value>Päivitykset</value>
+  </data>
+  <data name="Settings_SyncFrequency" xml:space="preserve">
+    <value>Tarkista päivitykset</value>
+  </data>
+  <data name="Sync_Every3h" xml:space="preserve">
+    <value>3 tunnin välein</value>
+  </data>
+  <data name="Sync_Every6h" xml:space="preserve">
+    <value>6 tunnin välein</value>
+  </data>
+  <data name="Sync_Every12h" xml:space="preserve">
+    <value>Kaksi kertaa päivässä</value>
+  </data>
+  <data name="Sync_Every24h" xml:space="preserve">
+    <value>Kerran päivässä</value>
+  </data>
+  <data name="Settings_SyncHint" xml:space="preserve">
+    <value>Kuinka usein sovellus tarkistaa uutiset ja muutokset taustalla. Android voi lykätä tarkistusta akun säästämiseksi.</value>
+  </data>
+  <data name="Settings_WifiOnly" xml:space="preserve">
+    <value>Vain Wi-Fi-yhteydellä</value>
+  </data>
+  <data name="Settings_WifiOnlyHint" xml:space="preserve">
+    <value>Automaattiset päivitykset odottavat Wi-Fi-yhteyttä. Päivitys vetämällä alas toimii aina.</value>
+  </data>
+  <data name="About_Open" xml:space="preserve">
+    <value>Tietoja sovelluksesta</value>
+  </data>
+  <data name="About_Intro" xml:space="preserve">
+    <value>Riippumaton sovellus eurooppalaisten kansalaisaloitteiden seuraamiseen: selaa aloitteita, allekirjoita ne virallisella verkkosivustolla ja katso, milloin keräys päättyy ja miten se päättyi.</value>
+  </data>
+  <data name="About_NotOfficial" xml:space="preserve">
+    <value>Ei virallinen sovellus</value>
+  </data>
+  <data name="About_NotOfficialText" xml:space="preserve">
+    <value>Euroopan unioni tai Euroopan komissio ei ole tehnyt, hyväksynyt tai tarkastanut tätä sovellusta. Allekirjoittaminen tapahtuu aina komission virallisella verkkosivustolla.</value>
+  </data>
+  <data name="About_Sources" xml:space="preserve">
+    <value>Tietolähteet</value>
+  </data>
+  <data name="About_SourcesText" xml:space="preserve">
+    <value>Aloitteet tulevat eurooppalaisen kansalaisaloitteen julkisesta rekisteristä ja uutiset virallisilta verkkosivuilta citizens-initiative.europa.eu. © Euroopan unioni. Seuraavaan päivitykseen asti sovelluksen tiedot voivat jäädä jälkeen virallisesta verkkosivustosta.</value>
+  </data>
+  <data name="About_Website" xml:space="preserve">
+    <value>Virallinen verkkosivusto</value>
+  </data>
+  <data name="About_Privacy" xml:space="preserve">
+    <value>Yksityisyys</value>
+  </data>
+  <data name="About_PrivacyText" xml:space="preserve">
+    <value>Ei tiliä, ei mainoksia, ei seurantaa. Seuraamasi ja allekirjoitetuiksi merkitsemäsi aloitteet pysyvät tässä laitteessa. Sovellus lataa tietoja vain Euroopan komission verkkosivustoilta.</value>
+  </data>
+  <data name="About_Licence" xml:space="preserve">
+    <value>Lisenssi</value>
+  </data>
+  <data name="About_LicenceText" xml:space="preserve">
+    <value>Avoin lähdekoodi, MIT-lisenssi.</value>
+  </data>
+  <data name="About_SourceCode" xml:space="preserve">
+    <value>Lähdekoodi</value>
+  </data>
+  <data name="About_Translations" xml:space="preserve">
+    <value>Käännökset</value>
+  </data>
+  <data name="About_TranslationsText" xml:space="preserve">
+    <value>Sovelluksen tekstit on käännetty koneellisesti, ja niitä tarkistetaan. Aloitteiden tekstit ovat rekisterin viralliset käännökset.</value>
+  </data>
+  <data name="Home_EmptyTitle" xml:space="preserve">
+    <value>Ei vielä aloitteita</value>
+  </data>
+  <data name="Home_Empty" xml:space="preserve">
+    <value>Aloita lataamalla aloitteiden luettelo. Voit myös päivittää vetämällä alas.</value>
+  </data>
+  <data name="Home_EmptyOffline" xml:space="preserve">
+    <value>Muodosta internetyhteys ladataksesi aloitteiden luettelon.</value>
+  </data>
+  <data name="Home_Download" xml:space="preserve">
+    <value>Lataa</value>
+  </data>
+  <data name="Home_Downloading" xml:space="preserve">
+    <value>Ladataan aloitteita. Ensimmäisellä kerralla kestää hetken.</value>
+  </data>
+  <data name="List_NoData" xml:space="preserve">
+    <value>Aloitteita ei ole vielä tallennettu. Lataa ne vetämällä alas.</value>
+  </data>
+  <data name="Sync_Retry" xml:space="preserve">
+    <value>Yritä uudelleen</value>
+  </data>
+  <data name="Item_OpenHint" xml:space="preserve">
+    <value>Avaa tiedot</value>
+  </data>
+  <data name="A11y_Selected" xml:space="preserve">
+    <value>{0}, valittu</value>
+  </data>
 </root>

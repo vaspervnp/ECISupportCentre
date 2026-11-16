@@ -48,6 +48,12 @@ public static class BackgroundSync
 #endif
 }
 
+/// <summary>Reschedules <see cref="BackgroundSync"/> after the user changed the sync settings.</summary>
+public sealed class AndroidSyncScheduler : ISyncScheduler
+{
+    public void Reschedule() => BackgroundSync.Schedule(Android.App.Application.Context);
+}
+
 /// <summary>One background sync: register, details, news, then notifications (inside <see cref="DataService.SyncAsync"/>).</summary>
 [Register("io.github.vaspervnp.ecisupportcentre.SyncWorker")]
 public sealed class SyncWorker(Context context, WorkerParameters parameters) : Worker(context, parameters)

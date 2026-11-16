@@ -382,4 +382,115 @@
   <data name="Settings_About" xml:space="preserve">
     <value>O aplikaci</value>
   </data>
+  <data name="Settings_Appearance" xml:space="preserve">
+    <value>Vzhled</value>
+  </data>
+  <data name="Settings_Theme" xml:space="preserve">
+    <value>Motiv</value>
+  </data>
+  <data name="Theme_System" xml:space="preserve">
+    <value>Podle zařízení</value>
+  </data>
+  <data name="Theme_Light" xml:space="preserve">
+    <value>Světlý</value>
+  </data>
+  <data name="Theme_Dark" xml:space="preserve">
+    <value>Tmavý</value>
+  </data>
+  <data name="Settings_Sync" xml:space="preserve">
+    <value>Aktualizace</value>
+  </data>
+  <data name="Settings_SyncFrequency" xml:space="preserve">
+    <value>Kontrolovat aktualizace</value>
+  </data>
+  <data name="Sync_Every3h" xml:space="preserve">
+    <value>Každé 3 hodiny</value>
+  </data>
+  <data name="Sync_Every6h" xml:space="preserve">
+    <value>Každých 6 hodin</value>
+  </data>
+  <data name="Sync_Every12h" xml:space="preserve">
+    <value>Dvakrát denně</value>
+  </data>
+  <data name="Sync_Every24h" xml:space="preserve">
+    <value>Jednou denně</value>
+  </data>
+  <data name="Settings_SyncHint" xml:space="preserve">
+    <value>Jak často aplikace na pozadí kontroluje novinky a změny. Android to může odložit kvůli úspoře baterie.</value>
+  </data>
+  <data name="Settings_WifiOnly" xml:space="preserve">
+    <value>Pouze přes Wi-Fi</value>
+  </data>
+  <data name="Settings_WifiOnlyHint" xml:space="preserve">
+    <value>Automatické aktualizace počkají na Wi-Fi. Obnovení stažením dolů funguje vždy.</value>
+  </data>
+  <data name="About_Open" xml:space="preserve">
+    <value>O této aplikaci</value>
+  </data>
+  <data name="About_Intro" xml:space="preserve">
+    <value>Nezávislá aplikace pro sledování evropských občanských iniciativ: procházejte je, podepisujte je na oficiálních stránkách a zjistěte, kdy sběr končí a jak dopadl.</value>
+  </data>
+  <data name="About_NotOfficial" xml:space="preserve">
+    <value>Neoficiální aplikace</value>
+  </data>
+  <data name="About_NotOfficialText" xml:space="preserve">
+    <value>Tuto aplikaci nevytvořila, neschválila ani nezkontrolovala Evropská unie ani Evropská komise. Podepisování vždy probíhá na oficiálních stránkách Komise.</value>
+  </data>
+  <data name="About_Sources" xml:space="preserve">
+    <value>Zdroje dat</value>
+  </data>
+  <data name="About_SourcesText" xml:space="preserve">
+    <value>Iniciativy pocházejí z veřejného registru evropské občanské iniciativy, zprávy z oficiálních stránek citizens-initiative.europa.eu. © Evropská unie. Do další aktualizace může aplikace za oficiálními stránkami zaostávat.</value>
+  </data>
+  <data name="About_Website" xml:space="preserve">
+    <value>Oficiální stránky</value>
+  </data>
+  <data name="About_Privacy" xml:space="preserve">
+    <value>Soukromí</value>
+  </data>
+  <data name="About_PrivacyText" xml:space="preserve">
+    <value>Žádný účet, žádné reklamy, žádné sledování. To, co sledujete nebo označíte jako podepsané, zůstává v tomto zařízení. Aplikace stahuje data pouze z webů Evropské komise.</value>
+  </data>
+  <data name="About_Licence" xml:space="preserve">
+    <value>Licence</value>
+  </data>
+  <data name="About_LicenceText" xml:space="preserve">
+    <value>Open source pod licencí MIT.</value>
+  </data>
+  <data name="About_SourceCode" xml:space="preserve">
+    <value>Zdrojový kód</value>
+  </data>
+  <data name="About_Translations" xml:space="preserve">
+    <value>Překlady</value>
+  </data>
+  <data name="About_TranslationsText" xml:space="preserve">
+    <value>Texty aplikace byly přeloženy strojově a postupně se kontrolují. Texty iniciativ jsou oficiální překlady z registru.</value>
+  </data>
+  <data name="Home_EmptyTitle" xml:space="preserve">
+    <value>Zatím žádné iniciativy</value>
+  </data>
+  <data name="Home_Empty" xml:space="preserve">
+    <value>Pro začátek stáhněte seznam iniciativ. Můžete také stáhnout obrazovku dolů.</value>
+  </data>
+  <data name="Home_EmptyOffline" xml:space="preserve">
+    <value>Pro stažení seznamu iniciativ se připojte k internetu.</value>
+  </data>
+  <data name="Home_Download" xml:space="preserve">
+    <value>Stáhnout</value>
+  </data>
+  <data name="Home_Downloading" xml:space="preserve">
+    <value>Stahují se iniciativy. Poprvé to chvíli trvá.</value>
+  </data>
+  <data name="List_NoData" xml:space="preserve">
+    <value>Zatím nejsou uloženy žádné iniciativy. Stáhnete je stažením dolů.</value>
+  </data>
+  <data name="Sync_Retry" xml:space="preserve">
+    <value>Zkusit znovu</value>
+  </data>
+  <data name="Item_OpenHint" xml:space="preserve">
+    <value>Otevře podrobnosti</value>
+  </data>
+  <data name="A11y_Selected" xml:space="preserve">
+    <value>{0}, vybráno</value>
+  </data>
 </root>

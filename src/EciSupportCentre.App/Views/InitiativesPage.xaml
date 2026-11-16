@@ -11,37 +11,47 @@
     <!-- One column on phones; list and details side by side when the page is wide (set in code-behind). -->
     <Grid x:Name="Root" ColumnDefinitions="*,0">
 
-        <Grid RowDefinitions="Auto,Auto,Auto,*" Padding="12,8,12,0" RowSpacing="8">
-            <SearchBar Placeholder="{l:Translate List_Search}" Text="{Binding SearchText}" />
+        <Grid RowDefinitions="Auto,Auto,Auto,Auto,*" Padding="12,8,12,0" RowSpacing="8">
+            <views:StatusBanner />
+            <SearchBar Grid.Row="1" Placeholder="{l:Translate List_Search}" Text="{Binding SearchText}"
+                       SemanticProperties.Description="{l:Translate List_Search}" />
 
-            <ScrollView Grid.Row="1" Orientation="Horizontal" HorizontalScrollBarVisibility="Never">
+            <ScrollView Grid.Row="2" Orientation="Horizontal" HorizontalScrollBarVisibility="Never">
                 <HorizontalStackLayout BindableLayout.ItemsSource="{Binding Filters}" Spacing="8">
                     <BindableLayout.ItemTemplate>
                         <DataTemplate x:DataType="vm:FilterOption">
                             <Button Text="{Binding Label}"
-                                    BackgroundColor="{Binding Background}"
-                                    TextColor="{Binding Foreground}"
-                                    BorderColor="{StaticResource Primary}"
+                                    SemanticProperties.Description="{Binding AccessibleText}"
+                                    BackgroundColor="Transparent"
+                                    TextColor="{AppThemeBinding Light={StaticResource Primary}, Dark={StaticResource PrimaryDark}}"
+                                    BorderColor="{AppThemeBinding Light={StaticResource Primary}, Dark={StaticResource PrimaryDark}}"
                                     BorderWidth="1"
                                     CornerRadius="16"
                                     Padding="14,4"
                                     MinimumHeightRequest="36"
                                     FontSize="13"
                                     Command="{Binding SelectFilterCommand, Source={RelativeSource AncestorType={x:Type vm:InitiativesViewModel}}, x:DataType=vm:InitiativesViewModel}"
-                                    CommandParameter="{Binding .}" />
+                                    CommandParameter="{Binding .}">
+                                <Button.Triggers>
+                                    <DataTrigger TargetType="Button" Binding="{Binding IsSelected}" Value="True">
+                                        <Setter Property="BackgroundColor" Value="{AppThemeBinding Light={StaticResource Primary}, Dark={StaticResource PrimaryDark}}" />
+                                        <Setter Property="TextColor" Value="{AppThemeBinding Light={StaticResource White}, Dark={StaticResource PrimaryDarkText}}" />
+                                    </DataTrigger>
+                                </Button.Triggers>
+                            </Button>
                         </DataTemplate>
                     </BindableLayout.ItemTemplate>
                 </HorizontalStackLayout>
             </ScrollView>
 
-            <Grid Grid.Row="2" ColumnDefinitions="*,Auto" ColumnSpacing="8">
+            <Grid Grid.Row="3" ColumnDefinitions="*,Auto" ColumnSpacing="8">
                 <Label Text="{Binding CountText}" VerticalOptions="Center" FontSize="13"
                        TextColor="{AppThemeBinding Light={StaticResource Gray500}, Dark={StaticResource Gray300}}" />
                 <Picker Grid.Column="1" Title="{l:Translate List_Sort}" ItemsSource="{Binding SortOptions}"
                         SelectedIndex="{Binding SortIndex}" MinimumWidthRequest="160" FontSize="14" />
             </Grid>
 
-            <RefreshView Grid.Row="3" IsRefreshing="{Binding IsRefreshing}" Command="{Binding RefreshCommand}">
+            <RefreshView Grid.Row="4" IsRefreshing="{Binding IsRefreshing}" Command="{Binding RefreshCommand}">
                 <CollectionView ItemsSource="{Binding Items}" SelectionMode="None">
                     <CollectionView.ItemTemplate>
                         <DataTemplate x:DataType="vm:InitiativeItemViewModel">
@@ -49,7 +59,8 @@
                         </DataTemplate>
                     </CollectionView.ItemTemplate>
                     <CollectionView.EmptyView>
-                        <Label Text="{l:Translate List_Empty}" HorizontalTextAlignment="Center" Margin="24" />
+                        <Label Text="{Binding EmptyText, Source={RelativeSource AncestorType={x:Type vm:InitiativesViewModel}}, x:DataType=vm:InitiativesViewModel}"
+                               HorizontalTextAlignment="Center" Margin="24" />
                     </CollectionView.EmptyView>
                     <CollectionView.Footer>
                         <BoxView HeightRequest="16" Color="Transparent" />

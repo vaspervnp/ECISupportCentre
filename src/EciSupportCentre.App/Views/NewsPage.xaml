@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:vm="clr-namespace:EciSupportCentre.App.ViewModels"
              xmlns:l="clr-namespace:EciSupportCentre.App.Localization"
+             xmlns:views="clr-namespace:EciSupportCentre.App.Views"
              x:Class="EciSupportCentre.App.Views.NewsPage"
              x:DataType="vm:NewsViewModel"
              Title="{l:Translate Tab_News}">
@@ -14,13 +15,7 @@
                         <Label Text="{l:Translate News_Title}" Style="{StaticResource Headline}"
                                HorizontalTextAlignment="Start" HorizontalOptions="Start"
                                SemanticProperties.HeadingLevel="Level1" />
-                        <Label Text="{Binding ErrorText}" FontSize="13" TextColor="#B42318">
-                            <Label.Triggers>
-                                <DataTrigger TargetType="Label" Binding="{Binding ErrorText}" Value="{x:Null}">
-                                    <Setter Property="IsVisible" Value="False" />
-                                </DataTrigger>
-                            </Label.Triggers>
-                        </Label>
+                        <views:StatusBanner />
                     </VerticalStackLayout>
                 </CollectionView.Header>
                 <CollectionView.ItemsLayout>
@@ -50,7 +45,8 @@
                                         StrokeThickness="0"
                                         StrokeShape="RoundRectangle 8"
                                         BackgroundColor="{AppThemeBinding Light={StaticResource Secondary}, Dark={StaticResource Gray600}}">
-                                    <Image Source="{Binding Image}" Aspect="AspectFill" IsVisible="{Binding HasImage}" />
+                                    <Image Source="{Binding Image}" Aspect="AspectFill" IsVisible="{Binding HasImage}"
+                                           AutomationProperties.IsInAccessibleTree="False" />
                                 </Border>
 
                                 <Label Grid.Column="1"

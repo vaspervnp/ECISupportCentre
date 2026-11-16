@@ -382,4 +382,115 @@
   <data name="Settings_About" xml:space="preserve">
     <value>Over deze app</value>
   </data>
+  <data name="Settings_Appearance" xml:space="preserve">
+    <value>Weergave</value>
+  </data>
+  <data name="Settings_Theme" xml:space="preserve">
+    <value>Thema</value>
+  </data>
+  <data name="Theme_System" xml:space="preserve">
+    <value>Zoals het apparaat</value>
+  </data>
+  <data name="Theme_Light" xml:space="preserve">
+    <value>Licht</value>
+  </data>
+  <data name="Theme_Dark" xml:space="preserve">
+    <value>Donker</value>
+  </data>
+  <data name="Settings_Sync" xml:space="preserve">
+    <value>Updates</value>
+  </data>
+  <data name="Settings_SyncFrequency" xml:space="preserve">
+    <value>Controleren op updates</value>
+  </data>
+  <data name="Sync_Every3h" xml:space="preserve">
+    <value>Elke 3 uur</value>
+  </data>
+  <data name="Sync_Every6h" xml:space="preserve">
+    <value>Elke 6 uur</value>
+  </data>
+  <data name="Sync_Every12h" xml:space="preserve">
+    <value>Twee keer per dag</value>
+  </data>
+  <data name="Sync_Every24h" xml:space="preserve">
+    <value>Eén keer per dag</value>
+  </data>
+  <data name="Settings_SyncHint" xml:space="preserve">
+    <value>Hoe vaak de app op de achtergrond controleert op nieuws en wijzigingen. Android kan dit uitstellen om de batterij te sparen.</value>
+  </data>
+  <data name="Settings_WifiOnly" xml:space="preserve">
+    <value>Alleen via wifi</value>
+  </data>
+  <data name="Settings_WifiOnlyHint" xml:space="preserve">
+    <value>Automatische updates wachten op wifi. Omlaag trekken om te vernieuwen werkt altijd.</value>
+  </data>
+  <data name="About_Open" xml:space="preserve">
+    <value>Over deze app</value>
+  </data>
+  <data name="About_Intro" xml:space="preserve">
+    <value>Een onafhankelijke app om de Europese burgerinitiatieven te volgen: bekijk ze, onderteken ze op de officiële website en ontdek wanneer een inzameling eindigt en hoe het afliep.</value>
+  </data>
+  <data name="About_NotOfficial" xml:space="preserve">
+    <value>Geen officiële app</value>
+  </data>
+  <data name="About_NotOfficialText" xml:space="preserve">
+    <value>Deze app is niet gemaakt, goedgekeurd of gecontroleerd door de Europese Unie of de Europese Commissie. Ondertekenen gebeurt altijd op de officiële website van de Commissie.</value>
+  </data>
+  <data name="About_Sources" xml:space="preserve">
+    <value>Gegevensbronnen</value>
+  </data>
+  <data name="About_SourcesText" xml:space="preserve">
+    <value>Initiatieven komen uit het openbare register van het Europees burgerinitiatief, nieuws van de officiële website citizens-initiative.europa.eu. © Europese Unie. Tot de volgende update kan de app achterlopen op de officiële website.</value>
+  </data>
+  <data name="About_Website" xml:space="preserve">
+    <value>Officiële website</value>
+  </data>
+  <data name="About_Privacy" xml:space="preserve">
+    <value>Privacy</value>
+  </data>
+  <data name="About_PrivacyText" xml:space="preserve">
+    <value>Geen account, geen advertenties, geen tracking. Wat u volgt of als ondertekend markeert, blijft op dit apparaat. De app downloadt alleen gegevens van de websites van de Europese Commissie.</value>
+  </data>
+  <data name="About_Licence" xml:space="preserve">
+    <value>Licentie</value>
+  </data>
+  <data name="About_LicenceText" xml:space="preserve">
+    <value>Open source onder de MIT-licentie.</value>
+  </data>
+  <data name="About_SourceCode" xml:space="preserve">
+    <value>Broncode</value>
+  </data>
+  <data name="About_Translations" xml:space="preserve">
+    <value>Vertalingen</value>
+  </data>
+  <data name="About_TranslationsText" xml:space="preserve">
+    <value>De teksten van de app zijn machinaal vertaald en worden nog nagekeken. De teksten van initiatieven zijn de officiële vertalingen uit het register.</value>
+  </data>
+  <data name="Home_EmptyTitle" xml:space="preserve">
+    <value>Nog geen initiatieven</value>
+  </data>
+  <data name="Home_Empty" xml:space="preserve">
+    <value>Download de lijst met initiatieven om te beginnen. U kunt ook omlaag trekken om te vernieuwen.</value>
+  </data>
+  <data name="Home_EmptyOffline" xml:space="preserve">
+    <value>Maak verbinding met internet om de lijst met initiatieven te downloaden.</value>
+  </data>
+  <data name="Home_Download" xml:space="preserve">
+    <value>Downloaden</value>
+  </data>
+  <data name="Home_Downloading" xml:space="preserve">
+    <value>De initiatieven worden gedownload. De eerste keer duurt even.</value>
+  </data>
+  <data name="List_NoData" xml:space="preserve">
+    <value>Nog geen initiatieven opgeslagen. Trek omlaag om ze te downloaden.</value>
+  </data>
+  <data name="Sync_Retry" xml:space="preserve">
+    <value>Opnieuw proberen</value>
+  </data>
+  <data name="Item_OpenHint" xml:space="preserve">
+    <value>Opent de details</value>
+  </data>
+  <data name="A11y_Selected" xml:space="preserve">
+    <value>{0}, geselecteerd</value>
+  </data>
 </root>

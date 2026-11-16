@@ -382,4 +382,115 @@
   <data name="Settings_About" xml:space="preserve">
     <value>Om appen</value>
   </data>
+  <data name="Settings_Appearance" xml:space="preserve">
+    <value>Udseende</value>
+  </data>
+  <data name="Settings_Theme" xml:space="preserve">
+    <value>Tema</value>
+  </data>
+  <data name="Theme_System" xml:space="preserve">
+    <value>Som enheden</value>
+  </data>
+  <data name="Theme_Light" xml:space="preserve">
+    <value>Lyst</value>
+  </data>
+  <data name="Theme_Dark" xml:space="preserve">
+    <value>Mørkt</value>
+  </data>
+  <data name="Settings_Sync" xml:space="preserve">
+    <value>Opdateringer</value>
+  </data>
+  <data name="Settings_SyncFrequency" xml:space="preserve">
+    <value>Søg efter opdateringer</value>
+  </data>
+  <data name="Sync_Every3h" xml:space="preserve">
+    <value>Hver 3. time</value>
+  </data>
+  <data name="Sync_Every6h" xml:space="preserve">
+    <value>Hver 6. time</value>
+  </data>
+  <data name="Sync_Every12h" xml:space="preserve">
+    <value>To gange om dagen</value>
+  </data>
+  <data name="Sync_Every24h" xml:space="preserve">
+    <value>Én gang om dagen</value>
+  </data>
+  <data name="Settings_SyncHint" xml:space="preserve">
+    <value>Hvor ofte appen i baggrunden søger efter nyheder og ændringer. Android kan udskyde det for at spare på batteriet.</value>
+  </data>
+  <data name="Settings_WifiOnly" xml:space="preserve">
+    <value>Kun på Wi-Fi</value>
+  </data>
+  <data name="Settings_WifiOnlyHint" xml:space="preserve">
+    <value>Automatiske opdateringer venter på Wi-Fi. Træk ned for at opdatere virker altid.</value>
+  </data>
+  <data name="About_Open" xml:space="preserve">
+    <value>Om denne app</value>
+  </data>
+  <data name="About_Intro" xml:space="preserve">
+    <value>En uafhængig app til at følge de europæiske borgerinitiativer: gennemse dem, skriv under på det officielle websted, og se, hvornår en indsamling slutter, og hvordan det gik.</value>
+  </data>
+  <data name="About_NotOfficial" xml:space="preserve">
+    <value>Ikke en officiel app</value>
+  </data>
+  <data name="About_NotOfficialText" xml:space="preserve">
+    <value>Denne app er ikke lavet, godkendt eller kontrolleret af Den Europæiske Union eller Europa-Kommissionen. Man skriver altid under på Kommissionens officielle websted.</value>
+  </data>
+  <data name="About_Sources" xml:space="preserve">
+    <value>Datakilder</value>
+  </data>
+  <data name="About_SourcesText" xml:space="preserve">
+    <value>Initiativerne kommer fra det offentlige register over det europæiske borgerinitiativ, nyhederne fra det officielle websted citizens-initiative.europa.eu. © Den Europæiske Union. Indtil næste opdatering kan appen være bagud i forhold til det officielle websted.</value>
+  </data>
+  <data name="About_Website" xml:space="preserve">
+    <value>Officielt websted</value>
+  </data>
+  <data name="About_Privacy" xml:space="preserve">
+    <value>Privatliv</value>
+  </data>
+  <data name="About_PrivacyText" xml:space="preserve">
+    <value>Ingen konto, ingen reklamer, ingen sporing. Det, du følger eller markerer som underskrevet, bliver på denne enhed. Appen henter kun data fra Europa-Kommissionens websteder.</value>
+  </data>
+  <data name="About_Licence" xml:space="preserve">
+    <value>Licens</value>
+  </data>
+  <data name="About_LicenceText" xml:space="preserve">
+    <value>Open source under MIT-licensen.</value>
+  </data>
+  <data name="About_SourceCode" xml:space="preserve">
+    <value>Kildekode</value>
+  </data>
+  <data name="About_Translations" xml:space="preserve">
+    <value>Oversættelser</value>
+  </data>
+  <data name="About_TranslationsText" xml:space="preserve">
+    <value>Appens tekster er maskinoversat og bliver gennemgået. Initiativernes tekster er de officielle oversættelser fra registret.</value>
+  </data>
+  <data name="Home_EmptyTitle" xml:space="preserve">
+    <value>Ingen initiativer endnu</value>
+  </data>
+  <data name="Home_Empty" xml:space="preserve">
+    <value>Hent listen over initiativer for at komme i gang. Du kan også trække ned for at opdatere.</value>
+  </data>
+  <data name="Home_EmptyOffline" xml:space="preserve">
+    <value>Opret forbindelse til internettet for at hente listen over initiativer.</value>
+  </data>
+  <data name="Home_Download" xml:space="preserve">
+    <value>Hent</value>
+  </data>
+  <data name="Home_Downloading" xml:space="preserve">
+    <value>Henter initiativerne. Første gang tager et øjeblik.</value>
+  </data>
+  <data name="List_NoData" xml:space="preserve">
+    <value>Ingen initiativer er gemt endnu. Træk ned for at hente dem.</value>
+  </data>
+  <data name="Sync_Retry" xml:space="preserve">
+    <value>Prøv igen</value>
+  </data>
+  <data name="Item_OpenHint" xml:space="preserve">
+    <value>Åbner detaljerne</value>
+  </data>
+  <data name="A11y_Selected" xml:space="preserve">
+    <value>{0}, valgt</value>
+  </data>
 </root>

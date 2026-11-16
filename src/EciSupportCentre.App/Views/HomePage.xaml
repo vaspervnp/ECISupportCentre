@@ -19,11 +19,9 @@
         </Style>
         <Style x:Key="Tile" TargetType="Border">
             <Setter Property="Padding" Value="12" />
-            <Setter Property="Margin" Value="0,0,8,8" />
-            <Setter Property="WidthRequest" Value="150" />
             <Setter Property="StrokeShape" Value="RoundRectangle 12" />
             <Setter Property="StrokeThickness" Value="0" />
-            <Setter Property="BackgroundColor" Value="{AppThemeBinding Light={StaticResource Secondary}, Dark={StaticResource Gray900}}" />
+            <Setter Property="BackgroundColor" Value="{AppThemeBinding Light={StaticResource Secondary}, Dark={StaticResource CardDark}}" />
         </Style>
     </ContentPage.Resources>
 
@@ -35,55 +33,71 @@
                 <Label Text="{l:Translate Home_Intro}" FontSize="15" />
 
                 <Label Text="{Binding SyncText}" FontSize="13" TextColor="{AppThemeBinding Light={StaticResource Gray500}, Dark={StaticResource Gray300}}" />
-                <Label Text="{Binding ErrorText}" FontSize="13" TextColor="#B42318">
-                    <Label.Triggers>
-                        <DataTrigger TargetType="Label" Binding="{Binding ErrorText}" Value="{x:Null}">
-                            <Setter Property="IsVisible" Value="False" />
-                        </DataTrigger>
-                    </Label.Triggers>
-                </Label>
+                <!-- "Showing saved data" only makes sense once there is some; before that the empty card explains. -->
+                <ContentView IsVisible="{Binding HasData}">
+                    <views:StatusBanner />
+                </ContentView>
 
-                <FlexLayout Wrap="Wrap" JustifyContent="Start">
+                <!-- First start, before any data: what is happening, or how to get the data. -->
+                <Border IsVisible="{Binding ShowEmptyState}" Padding="16" StrokeThickness="0" StrokeShape="RoundRectangle 12"
+                        BackgroundColor="{AppThemeBinding Light={StaticResource Secondary}, Dark={StaticResource CardDark}}">
+                    <VerticalStackLayout Spacing="8">
+                        <Grid ColumnDefinitions="Auto,*" ColumnSpacing="12" IsVisible="{Binding IsDownloading}">
+                            <ActivityIndicator IsRunning="{Binding IsDownloading}" HeightRequest="24" WidthRequest="24"
+                                               Color="{AppThemeBinding Light={StaticResource Primary}, Dark={StaticResource PrimaryDark}}" />
+                            <Label Grid.Column="1" Text="{l:Translate Home_Downloading}" FontSize="15" VerticalOptions="Center" />
+                        </Grid>
+                        <VerticalStackLayout Spacing="8" IsVisible="{Binding CanDownload}">
+                            <Label Text="{l:Translate Home_EmptyTitle}" FontFamily="OpenSansSemibold" FontSize="17"
+                                   SemanticProperties.HeadingLevel="Level2" />
+                            <Label Text="{Binding EmptyText}" FontSize="15" />
+                            <Button Text="{l:Translate Home_Download}" Command="{Binding RefreshCommand}" HorizontalOptions="Start" />
+                        </VerticalStackLayout>
+                    </VerticalStackLayout>
+                </Border>
+
+                <Grid ColumnDefinitions="*,*" RowDefinitions="Auto,Auto,Auto" ColumnSpacing="8" RowSpacing="8"
+                      IsVisible="{Binding HasData}">
                     <Border Style="{StaticResource Tile}">
                         <VerticalStackLayout>
                             <Label Text="{Binding Registered}" Style="{StaticResource TileNumber}" />
                             <Label Text="{l:Translate Home_Registered}" Style="{StaticResource TileLabel}" />
                         </VerticalStackLayout>
                     </Border>
-                    <Border Style="{StaticResource Tile}">
+                    <Border Grid.Column="1" Style="{StaticResource Tile}">
                         <VerticalStackLayout>
-                            <Label Text="{Binding Collecting}" Style="{StaticResource TileNumber}" TextColor="#1B7F3B" />
+                            <Label Text="{Binding Collecting}" Style="{StaticResource TileNumber}" TextColor="{AppThemeBinding Light={StaticResource Success}, Dark={StaticResource SuccessDark}}" />
                             <Label Text="{l:Translate Home_Collecting}" Style="{StaticResource TileLabel}" />
                         </VerticalStackLayout>
                     </Border>
-                    <Border Style="{StaticResource Tile}">
+                    <Border Grid.Row="1" Style="{StaticResource Tile}">
                         <VerticalStackLayout>
                             <Label Text="{Binding Successful}" Style="{StaticResource TileNumber}" />
                             <Label Text="{l:Translate Home_Successful}" Style="{StaticResource TileLabel}" />
                         </VerticalStackLayout>
                     </Border>
-                    <Border Style="{StaticResource Tile}">
+                    <Border Grid.Row="1" Grid.Column="1" Style="{StaticResource Tile}">
                         <VerticalStackLayout>
                             <Label Text="{Binding Answered}" Style="{StaticResource TileNumber}" />
                             <Label Text="{l:Translate Home_Answered}" Style="{StaticResource TileLabel}" />
                         </VerticalStackLayout>
                     </Border>
-                    <Border Style="{StaticResource Tile}">
+                    <Border Grid.Row="2" Style="{StaticResource Tile}">
                         <VerticalStackLayout>
-                            <Label Text="{Binding Failed}" Style="{StaticResource TileNumber}" TextColor="#B42318" />
+                            <Label Text="{Binding Failed}" Style="{StaticResource TileNumber}" TextColor="{AppThemeBinding Light={StaticResource Danger}, Dark={StaticResource DangerDark}}" />
                             <Label Text="{l:Translate Home_Failed}" Style="{StaticResource TileLabel}" />
                         </VerticalStackLayout>
                     </Border>
-                    <Border Style="{StaticResource Tile}">
+                    <Border Grid.Row="2" Grid.Column="1" Style="{StaticResource Tile}">
                         <VerticalStackLayout>
-                            <Label Text="{Binding Withdrawn}" Style="{StaticResource TileNumber}" TextColor="#5F6368" />
+                            <Label Text="{Binding Withdrawn}" Style="{StaticResource TileNumber}" TextColor="{AppThemeBinding Light={StaticResource Muted}, Dark={StaticResource MutedDark}}" />
                             <Label Text="{l:Translate Home_Withdrawn}" Style="{StaticResource TileLabel}" />
                         </VerticalStackLayout>
                     </Border>
-                </FlexLayout>
+                </Grid>
 
                 <Label Text="{l:Translate Home_EndingSoon}" FontFamily="OpenSansSemibold" FontSize="18" Margin="0,8,0,0"
-                       SemanticProperties.HeadingLevel="Level2" />
+                       SemanticProperties.HeadingLevel="Level2" IsVisible="{Binding HasEndingSoon}" />
                 <VerticalStackLayout BindableLayout.ItemsSource="{Binding EndingSoon}">
                     <BindableLayout.ItemTemplate>
                         <DataTemplate x:DataType="vm:InitiativeItemViewModel">
@@ -92,7 +106,7 @@
                     </BindableLayout.ItemTemplate>
                 </VerticalStackLayout>
 
-                <Button Text="{l:Translate Home_SeeAll}" Command="{Binding SeeAllCommand}" />
+                <Button Text="{l:Translate Home_SeeAll}" Command="{Binding SeeAllCommand}" IsVisible="{Binding HasData}" />
 
                 <Label Text="{l:Translate Disclaimer}" FontSize="12" Margin="0,16,0,0"
                        TextColor="{AppThemeBinding Light={StaticResource Gray500}, Dark={StaticResource Gray300}}" />

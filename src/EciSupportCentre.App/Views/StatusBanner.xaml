@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Offline / sync failed. The binding context is the shared SyncStatusViewModel (set in code-behind). -->
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:EciSupportCentre.App.ViewModels"
+             xmlns:l="clr-namespace:EciSupportCentre.App.Localization"
+             x:Class="EciSupportCentre.App.Views.StatusBanner"
+             x:DataType="vm:SyncStatusViewModel"
+             IsVisible="{Binding IsVisible}">
+
+    <Border Padding="12,8" StrokeThickness="0" StrokeShape="RoundRectangle 10"
+            BackgroundColor="{AppThemeBinding Light={StaticResource WarningBackground}, Dark={StaticResource WarningBackgroundDark}}">
+        <Border.Triggers>
+            <DataTrigger TargetType="Border" Binding="{Binding IsError}" Value="True">
+                <Setter Property="BackgroundColor" Value="{AppThemeBinding Light={StaticResource DangerBackground}, Dark={StaticResource DangerBackgroundDark}}" />
+            </DataTrigger>
+        </Border.Triggers>
+        <Grid ColumnDefinitions="*,Auto" ColumnSpacing="8">
+            <Label Text="{Binding Message}" FontSize="14" VerticalOptions="Center"
+                   TextColor="{AppThemeBinding Light={StaticResource Warning}, Dark={StaticResource WarningDark}}"
+                   SemanticProperties.Description="{Binding Message}">
+                <Label.Triggers>
+                    <DataTrigger TargetType="Label" Binding="{Binding IsError}" Value="True">
+                        <Setter Property="TextColor" Value="{AppThemeBinding Light={StaticResource Danger}, Dark={StaticResource DangerDark}}" />
+                    </DataTrigger>
+                </Label.Triggers>
+            </Label>
+            <Button Grid.Column="1" Text="{l:Translate Sync_Retry}" Command="{Binding RetryCommand}"
+                    IsVisible="{Binding IsError}" VerticalOptions="Center" FontSize="13" Padding="12,6" />
+        </Grid>
+    </Border>
+</ContentView>

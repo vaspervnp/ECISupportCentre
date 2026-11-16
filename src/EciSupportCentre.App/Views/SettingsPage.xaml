@@ -22,7 +22,7 @@
             <Setter Property="Padding" Value="16,12" />
             <Setter Property="StrokeShape" Value="RoundRectangle 12" />
             <Setter Property="StrokeThickness" Value="0" />
-            <Setter Property="BackgroundColor" Value="{AppThemeBinding Light={StaticResource Secondary}, Dark={StaticResource Gray900}}" />
+            <Setter Property="BackgroundColor" Value="{AppThemeBinding Light={StaticResource Secondary}, Dark={StaticResource CardDark}}" />
         </Style>
     </ContentPage.Resources>
 
@@ -42,12 +42,44 @@
                 </VerticalStackLayout>
             </Border>
 
+            <Label Text="{l:Translate Settings_Appearance}" Style="{StaticResource SectionHeading}" />
+            <Border Style="{StaticResource Card}">
+                <Picker ItemsSource="{Binding Themes}"
+                        ItemDisplayBinding="{Binding Name, x:DataType=vm:Choice}"
+                        SelectedItem="{Binding SelectedTheme}"
+                        Title="{l:Translate Settings_Theme}"
+                        FontSize="16"
+                        SemanticProperties.Description="{l:Translate Settings_Theme}" />
+            </Border>
+
+            <Label Text="{l:Translate Settings_Sync}" Style="{StaticResource SectionHeading}" />
+            <Border Style="{StaticResource Card}">
+                <VerticalStackLayout Spacing="4">
+                    <Picker ItemsSource="{Binding SyncIntervals}"
+                            ItemDisplayBinding="{Binding Name, x:DataType=vm:Choice}"
+                            SelectedItem="{Binding SelectedSyncInterval}"
+                            Title="{l:Translate Settings_SyncFrequency}"
+                            FontSize="16"
+                            SemanticProperties.Description="{l:Translate Settings_SyncFrequency}" />
+                    <Label Text="{l:Translate Settings_SyncHint}" Style="{StaticResource Hint}" />
+                </VerticalStackLayout>
+            </Border>
+            <Border Style="{StaticResource Card}">
+                <Grid ColumnDefinitions="*,Auto" RowDefinitions="Auto,Auto" ColumnSpacing="12">
+                    <Label Text="{l:Translate Settings_WifiOnly}" FontFamily="OpenSansSemibold" FontSize="15" VerticalOptions="Center" />
+                    <Switch Grid.Column="1" Grid.RowSpan="2" IsToggled="{Binding WifiOnly}" VerticalOptions="Center"
+                            OnColor="{AppThemeBinding Light={StaticResource Primary}, Dark={StaticResource PrimaryDark}}" ThumbColor="{StaticResource White}"
+                            SemanticProperties.Description="{l:Translate Settings_WifiOnly}" />
+                    <Label Grid.Row="1" Text="{l:Translate Settings_WifiOnlyHint}" Style="{StaticResource Hint}" />
+                </Grid>
+            </Border>
+
             <Label Text="{l:Translate Settings_Notifications}" Style="{StaticResource SectionHeading}" />
             <Border Style="{StaticResource Card}">
                 <Grid ColumnDefinitions="*,Auto" RowDefinitions="Auto,Auto" ColumnSpacing="12">
                     <Label Text="{l:Translate Settings_NotifyAll}" FontFamily="OpenSansSemibold" FontSize="15" VerticalOptions="Center" />
                     <Switch Grid.Column="1" Grid.RowSpan="2" IsToggled="{Binding NotifyAll}" VerticalOptions="Center"
-                            OnColor="{StaticResource Primary}" ThumbColor="{StaticResource White}"
+                            OnColor="{AppThemeBinding Light={StaticResource Primary}, Dark={StaticResource PrimaryDark}}" ThumbColor="{StaticResource White}"
                             SemanticProperties.Description="{l:Translate Settings_NotifyAll}" />
                     <Label Grid.Row="1" Text="{l:Translate Settings_NotifyAllHint}" Style="{StaticResource Hint}" />
                 </Grid>
@@ -61,8 +93,17 @@
             </Border>
 
             <Label Text="{l:Translate Settings_About}" Style="{StaticResource SectionHeading}" />
-            <Label Text="{Binding VersionText}" FontSize="15" />
-            <Label Text="{l:Translate Disclaimer}" Style="{StaticResource Hint}" />
+            <Border Style="{StaticResource Card}" SemanticProperties.Description="{l:Translate About_Open}">
+                <Border.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding OpenAboutCommand}" />
+                </Border.GestureRecognizers>
+                <Grid ColumnDefinitions="*,Auto" RowDefinitions="Auto,Auto" ColumnSpacing="12">
+                    <Label Text="{l:Translate About_Open}" FontFamily="OpenSansSemibold" FontSize="15" />
+                    <Label Grid.Row="1" Text="{Binding VersionText}" Style="{StaticResource Hint}" />
+                    <Label Grid.Column="1" Grid.RowSpan="2" Text="›" FontSize="28" VerticalOptions="Center"
+                           AutomationProperties.IsInAccessibleTree="False" />
+                </Grid>
+            </Border>
         </VerticalStackLayout>
     </ScrollView>
 </ContentPage>

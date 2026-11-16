@@ -2,7 +2,7 @@
 
 An Android app (phone and tablet) for following the **European Citizens' Initiatives** published on [citizens-initiative.europa.eu](https://citizens-initiative.europa.eu/index_en).
 
-> Status: **M7 done**: Home, Initiatives, News and Settings tabs, initiative details, tablet layout, signing on the official collection page, background sync and notifications, all in the 24 EU languages (machine translations, not yet reviewed by native speakers). See [milestones.md](milestones.md) for the roadmap.
+> Status: **M8 done**: Home, Initiatives, News and Settings tabs, initiative details, tablet layout, signing on the official collection page, background sync and notifications, settings (language, theme, sync frequency, Wi-Fi only), offline and empty states, TalkBack support and an About page, all in the 24 EU languages (machine translations, not yet reviewed by native speakers). Next: M9, quality and release. See [milestones.md](milestones.md) for the roadmap.
 
 ## Project structure
 
@@ -18,7 +18,7 @@ tests/
 .github/workflows/ci.yml        tests and an installable APK on every push and pull request
 ```
 
-## Features (planned)
+## Features
 
 - **All initiatives**: ongoing, registered, submitted, answered and failed, with search, filters and sorting.
 - **Works offline**: a local SQLite database is kept in sync with the official register in the background.
@@ -26,6 +26,8 @@ tests/
 - **Sign**: opens the official online collection page of the initiative. The app never collects signatures or personal data.
 - **Notifications** for new initiatives, collection periods ending, success or failure, and the European Commission's answer.
 - **24 EU languages**, with English as the default.
+- **Settings**: language, light or dark theme, how often to sync, Wi-Fi only.
+- **Accessible**: TalkBack labels and layouts that follow the system font size.
 
 ## Technology
 
@@ -98,4 +100,4 @@ This is **not** an official app of the European Union or the European Commission
 
 ## Licence
 
-To be decided.
+[MIT](LICENSE). The initiative data and news are © European Union and come from the Commission's public websites.

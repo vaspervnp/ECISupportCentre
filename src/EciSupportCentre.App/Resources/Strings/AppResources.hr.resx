@@ -382,4 +382,115 @@
   <data name="Settings_About" xml:space="preserve">
     <value>O aplikaciji</value>
   </data>
+  <data name="Settings_Appearance" xml:space="preserve">
+    <value>Izgled</value>
+  </data>
+  <data name="Settings_Theme" xml:space="preserve">
+    <value>Tema</value>
+  </data>
+  <data name="Theme_System" xml:space="preserve">
+    <value>Isto kao na uređaju</value>
+  </data>
+  <data name="Theme_Light" xml:space="preserve">
+    <value>Svijetla</value>
+  </data>
+  <data name="Theme_Dark" xml:space="preserve">
+    <value>Tamna</value>
+  </data>
+  <data name="Settings_Sync" xml:space="preserve">
+    <value>Ažuriranja</value>
+  </data>
+  <data name="Settings_SyncFrequency" xml:space="preserve">
+    <value>Provjera ažuriranja</value>
+  </data>
+  <data name="Sync_Every3h" xml:space="preserve">
+    <value>Svaka 3 sata</value>
+  </data>
+  <data name="Sync_Every6h" xml:space="preserve">
+    <value>Svakih 6 sati</value>
+  </data>
+  <data name="Sync_Every12h" xml:space="preserve">
+    <value>Dvaput dnevno</value>
+  </data>
+  <data name="Sync_Every24h" xml:space="preserve">
+    <value>Jednom dnevno</value>
+  </data>
+  <data name="Settings_SyncHint" xml:space="preserve">
+    <value>Koliko često aplikacija u pozadini provjerava vijesti i promjene. Android to može odgoditi radi štednje baterije.</value>
+  </data>
+  <data name="Settings_WifiOnly" xml:space="preserve">
+    <value>Samo putem Wi-Fi-ja</value>
+  </data>
+  <data name="Settings_WifiOnlyHint" xml:space="preserve">
+    <value>Automatska ažuriranja čekaju Wi-Fi. Povlačenje prema dolje za osvježavanje uvijek radi.</value>
+  </data>
+  <data name="About_Open" xml:space="preserve">
+    <value>O aplikaciji</value>
+  </data>
+  <data name="About_Intro" xml:space="preserve">
+    <value>Neovisna aplikacija za praćenje europskih građanskih inicijativa: pregledajte ih, potpišite na službenim mrežnim stranicama i saznajte kada prikupljanje završava i kakav je bio ishod.</value>
+  </data>
+  <data name="About_NotOfficial" xml:space="preserve">
+    <value>Nije službena aplikacija</value>
+  </data>
+  <data name="About_NotOfficialText" xml:space="preserve">
+    <value>Ovu aplikaciju nisu izradile, odobrile ni provjerile Europska unija ili Europska komisija. Potpisivanje se uvijek odvija na službenim mrežnim stranicama Komisije.</value>
+  </data>
+  <data name="About_Sources" xml:space="preserve">
+    <value>Izvori podataka</value>
+  </data>
+  <data name="About_SourcesText" xml:space="preserve">
+    <value>Inicijative potječu iz javnog registra europske građanske inicijative, a vijesti sa službenih mrežnih stranica citizens-initiative.europa.eu. © Europska unija. Do sljedećeg ažuriranja aplikacija može zaostajati za službenim mrežnim stranicama.</value>
+  </data>
+  <data name="About_Website" xml:space="preserve">
+    <value>Službene mrežne stranice</value>
+  </data>
+  <data name="About_Privacy" xml:space="preserve">
+    <value>Privatnost</value>
+  </data>
+  <data name="About_PrivacyText" xml:space="preserve">
+    <value>Bez računa, bez oglasa, bez praćenja. Inicijative koje pratite ili označite kao potpisane ostaju na ovom uređaju. Aplikacija preuzima podatke samo s mrežnih stranica Europske komisije.</value>
+  </data>
+  <data name="About_Licence" xml:space="preserve">
+    <value>Licencija</value>
+  </data>
+  <data name="About_LicenceText" xml:space="preserve">
+    <value>Otvoreni kôd pod licencijom MIT.</value>
+  </data>
+  <data name="About_SourceCode" xml:space="preserve">
+    <value>Izvorni kôd</value>
+  </data>
+  <data name="About_Translations" xml:space="preserve">
+    <value>Prijevodi</value>
+  </data>
+  <data name="About_TranslationsText" xml:space="preserve">
+    <value>Tekstovi aplikacije strojno su prevedeni i u tijeku je njihova provjera. Tekstovi inicijativa službeni su prijevodi iz registra.</value>
+  </data>
+  <data name="Home_EmptyTitle" xml:space="preserve">
+    <value>Još nema inicijativa</value>
+  </data>
+  <data name="Home_Empty" xml:space="preserve">
+    <value>Preuzmite popis inicijativa za početak. Možete i povući prema dolje za osvježavanje.</value>
+  </data>
+  <data name="Home_EmptyOffline" xml:space="preserve">
+    <value>Povežite se s internetom za preuzimanje popisa inicijativa.</value>
+  </data>
+  <data name="Home_Download" xml:space="preserve">
+    <value>Preuzmi</value>
+  </data>
+  <data name="Home_Downloading" xml:space="preserve">
+    <value>Preuzimanje inicijativa. Prvi put traje malo dulje.</value>
+  </data>
+  <data name="List_NoData" xml:space="preserve">
+    <value>Još nema spremljenih inicijativa. Povucite prema dolje za preuzimanje.</value>
+  </data>
+  <data name="Sync_Retry" xml:space="preserve">
+    <value>Pokušaj ponovo</value>
+  </data>
+  <data name="Item_OpenHint" xml:space="preserve">
+    <value>Otvara pojedinosti</value>
+  </data>
+  <data name="A11y_Selected" xml:space="preserve">
+    <value>{0}, odabrano</value>
+  </data>
 </root>

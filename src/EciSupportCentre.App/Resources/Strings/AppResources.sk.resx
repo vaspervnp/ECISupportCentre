@@ -382,4 +382,115 @@
   <data name="Settings_About" xml:space="preserve">
     <value>O aplikácii</value>
   </data>
+  <data name="Settings_Appearance" xml:space="preserve">
+    <value>Vzhľad</value>
+  </data>
+  <data name="Settings_Theme" xml:space="preserve">
+    <value>Motív</value>
+  </data>
+  <data name="Theme_System" xml:space="preserve">
+    <value>Podľa zariadenia</value>
+  </data>
+  <data name="Theme_Light" xml:space="preserve">
+    <value>Svetlý</value>
+  </data>
+  <data name="Theme_Dark" xml:space="preserve">
+    <value>Tmavý</value>
+  </data>
+  <data name="Settings_Sync" xml:space="preserve">
+    <value>Aktualizácie</value>
+  </data>
+  <data name="Settings_SyncFrequency" xml:space="preserve">
+    <value>Kontrolovať aktualizácie</value>
+  </data>
+  <data name="Sync_Every3h" xml:space="preserve">
+    <value>Každé 3 hodiny</value>
+  </data>
+  <data name="Sync_Every6h" xml:space="preserve">
+    <value>Každých 6 hodín</value>
+  </data>
+  <data name="Sync_Every12h" xml:space="preserve">
+    <value>Dvakrát denne</value>
+  </data>
+  <data name="Sync_Every24h" xml:space="preserve">
+    <value>Raz denne</value>
+  </data>
+  <data name="Settings_SyncHint" xml:space="preserve">
+    <value>Ako často aplikácia na pozadí kontroluje novinky a zmeny. Android môže kontrolu oddialiť, aby šetril batériu.</value>
+  </data>
+  <data name="Settings_WifiOnly" xml:space="preserve">
+    <value>Iba cez Wi-Fi</value>
+  </data>
+  <data name="Settings_WifiOnlyHint" xml:space="preserve">
+    <value>Automatické aktualizácie počkajú na Wi-Fi. Potiahnutie nadol na obnovenie funguje vždy.</value>
+  </data>
+  <data name="About_Open" xml:space="preserve">
+    <value>O tejto aplikácii</value>
+  </data>
+  <data name="About_Intro" xml:space="preserve">
+    <value>Nezávislá aplikácia na sledovanie európskych iniciatív občanov: prezerajte si ich, podpisujte ich na oficiálnom webovom sídle a zistite, kedy zber končí a ako dopadol.</value>
+  </data>
+  <data name="About_NotOfficial" xml:space="preserve">
+    <value>Neoficiálna aplikácia</value>
+  </data>
+  <data name="About_NotOfficialText" xml:space="preserve">
+    <value>Túto aplikáciu nevytvorila, neschválila ani nekontrolovala Európska únia ani Európska komisia. Podpisuje sa vždy na oficiálnom webovom sídle Komisie.</value>
+  </data>
+  <data name="About_Sources" xml:space="preserve">
+    <value>Zdroje údajov</value>
+  </data>
+  <data name="About_SourcesText" xml:space="preserve">
+    <value>Iniciatívy pochádzajú z verejného registra európskej iniciatívy občanov, novinky z oficiálneho webového sídla citizens-initiative.europa.eu. © Európska únia. Do ďalšej aktualizácie môže byť aplikácia oneskorená oproti oficiálnemu webovému sídlu.</value>
+  </data>
+  <data name="About_Website" xml:space="preserve">
+    <value>Oficiálne webové sídlo</value>
+  </data>
+  <data name="About_Privacy" xml:space="preserve">
+    <value>Súkromie</value>
+  </data>
+  <data name="About_PrivacyText" xml:space="preserve">
+    <value>Bez účtu, bez reklám, bez sledovania. To, čo sledujete alebo označíte ako podpísané, zostáva v tomto zariadení. Aplikácia sťahuje údaje iba z webových sídel Európskej komisie.</value>
+  </data>
+  <data name="About_Licence" xml:space="preserve">
+    <value>Licencia</value>
+  </data>
+  <data name="About_LicenceText" xml:space="preserve">
+    <value>Open source pod licenciou MIT.</value>
+  </data>
+  <data name="About_SourceCode" xml:space="preserve">
+    <value>Zdrojový kód</value>
+  </data>
+  <data name="About_Translations" xml:space="preserve">
+    <value>Preklady</value>
+  </data>
+  <data name="About_TranslationsText" xml:space="preserve">
+    <value>Texty aplikácie boli preložené strojovo a prebieha ich kontrola. Texty iniciatív sú oficiálne preklady z registra.</value>
+  </data>
+  <data name="Home_EmptyTitle" xml:space="preserve">
+    <value>Zatiaľ žiadne iniciatívy</value>
+  </data>
+  <data name="Home_Empty" xml:space="preserve">
+    <value>Na začiatok si stiahnite zoznam iniciatív. Môžete tiež potiahnuť nadol a obnoviť.</value>
+  </data>
+  <data name="Home_EmptyOffline" xml:space="preserve">
+    <value>Zoznam iniciatív si stiahnete po pripojení na internet.</value>
+  </data>
+  <data name="Home_Download" xml:space="preserve">
+    <value>Stiahnuť</value>
+  </data>
+  <data name="Home_Downloading" xml:space="preserve">
+    <value>Sťahujú sa iniciatívy. Prvýkrát to chvíľu trvá.</value>
+  </data>
+  <data name="List_NoData" xml:space="preserve">
+    <value>Zatiaľ nie sú uložené žiadne iniciatívy. Potiahnutím nadol ich stiahnete.</value>
+  </data>
+  <data name="Sync_Retry" xml:space="preserve">
+    <value>Skúsiť znova</value>
+  </data>
+  <data name="Item_OpenHint" xml:space="preserve">
+    <value>Otvorí podrobnosti</value>
+  </data>
+  <data name="A11y_Selected" xml:space="preserve">
+    <value>{0}, vybrané</value>
+  </data>
 </root>

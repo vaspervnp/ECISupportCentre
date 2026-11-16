@@ -382,4 +382,115 @@
   <data name="Settings_About" xml:space="preserve">
     <value>За приложението</value>
   </data>
+  <data name="Settings_Appearance" xml:space="preserve">
+    <value>Външен вид</value>
+  </data>
+  <data name="Settings_Theme" xml:space="preserve">
+    <value>Тема</value>
+  </data>
+  <data name="Theme_System" xml:space="preserve">
+    <value>Като на устройството</value>
+  </data>
+  <data name="Theme_Light" xml:space="preserve">
+    <value>Светла</value>
+  </data>
+  <data name="Theme_Dark" xml:space="preserve">
+    <value>Тъмна</value>
+  </data>
+  <data name="Settings_Sync" xml:space="preserve">
+    <value>Актуализации</value>
+  </data>
+  <data name="Settings_SyncFrequency" xml:space="preserve">
+    <value>Проверка за актуализации</value>
+  </data>
+  <data name="Sync_Every3h" xml:space="preserve">
+    <value>На всеки 3 часа</value>
+  </data>
+  <data name="Sync_Every6h" xml:space="preserve">
+    <value>На всеки 6 часа</value>
+  </data>
+  <data name="Sync_Every12h" xml:space="preserve">
+    <value>Два пъти дневно</value>
+  </data>
+  <data name="Sync_Every24h" xml:space="preserve">
+    <value>Веднъж дневно</value>
+  </data>
+  <data name="Settings_SyncHint" xml:space="preserve">
+    <value>Колко често приложението проверява във фонов режим за новини и промени. Android може да го отложи, за да спести батерия.</value>
+  </data>
+  <data name="Settings_WifiOnly" xml:space="preserve">
+    <value>Само през Wi-Fi</value>
+  </data>
+  <data name="Settings_WifiOnlyHint" xml:space="preserve">
+    <value>Автоматичните актуализации изчакват Wi-Fi. Опресняването с плъзгане надолу винаги работи.</value>
+  </data>
+  <data name="About_Open" xml:space="preserve">
+    <value>За това приложение</value>
+  </data>
+  <data name="About_Intro" xml:space="preserve">
+    <value>Независимо приложение за следене на европейските граждански инициативи: разглеждайте ги, подписвайте ги в официалния уебсайт и научавайте кога приключва събирането и с какъв резултат.</value>
+  </data>
+  <data name="About_NotOfficial" xml:space="preserve">
+    <value>Не е официално приложение</value>
+  </data>
+  <data name="About_NotOfficialText" xml:space="preserve">
+    <value>Това приложение не е създадено, одобрено или проверено от Европейския съюз или Европейската комисия. Подписването винаги става в официалния уебсайт на Комисията.</value>
+  </data>
+  <data name="About_Sources" xml:space="preserve">
+    <value>Източници на данни</value>
+  </data>
+  <data name="About_SourcesText" xml:space="preserve">
+    <value>Инициативите идват от публичния регистър на европейската гражданска инициатива, а новините – от официалния уебсайт citizens-initiative.europa.eu. © Европейски съюз. До следващата актуализация приложението може да изостава от официалния уебсайт.</value>
+  </data>
+  <data name="About_Website" xml:space="preserve">
+    <value>Официален уебсайт</value>
+  </data>
+  <data name="About_Privacy" xml:space="preserve">
+    <value>Поверителност</value>
+  </data>
+  <data name="About_PrivacyText" xml:space="preserve">
+    <value>Без профил, без реклами, без проследяване. Какво следите или сте отбелязали като подписано остава на това устройство. Приложението изтегля данни само от уебсайтове на Европейската комисия.</value>
+  </data>
+  <data name="About_Licence" xml:space="preserve">
+    <value>Лиценз</value>
+  </data>
+  <data name="About_LicenceText" xml:space="preserve">
+    <value>Отворен код под лиценза MIT.</value>
+  </data>
+  <data name="About_SourceCode" xml:space="preserve">
+    <value>Изходен код</value>
+  </data>
+  <data name="About_Translations" xml:space="preserve">
+    <value>Преводи</value>
+  </data>
+  <data name="About_TranslationsText" xml:space="preserve">
+    <value>Текстовете на приложението са преведени машинно и се преглеждат. Текстовете на инициативите са официалните преводи от регистъра.</value>
+  </data>
+  <data name="Home_EmptyTitle" xml:space="preserve">
+    <value>Все още няма инициативи</value>
+  </data>
+  <data name="Home_Empty" xml:space="preserve">
+    <value>Изтеглете списъка с инициативи, за да започнете. Можете и да плъзнете надолу, за да опресните.</value>
+  </data>
+  <data name="Home_EmptyOffline" xml:space="preserve">
+    <value>Свържете се с интернет, за да изтеглите списъка с инициативи.</value>
+  </data>
+  <data name="Home_Download" xml:space="preserve">
+    <value>Изтегляне</value>
+  </data>
+  <data name="Home_Downloading" xml:space="preserve">
+    <value>Инициативите се изтеглят. Първия път отнема малко време.</value>
+  </data>
+  <data name="List_NoData" xml:space="preserve">
+    <value>Все още няма запазени инициативи. Плъзнете надолу, за да ги изтеглите.</value>
+  </data>
+  <data name="Sync_Retry" xml:space="preserve">
+    <value>Опитайте отново</value>
+  </data>
+  <data name="Item_OpenHint" xml:space="preserve">
+    <value>Отваря подробностите</value>
+  </data>
+  <data name="A11y_Selected" xml:space="preserve">
+    <value>{0}, избрано</value>
+  </data>
 </root>

@@ -382,4 +382,115 @@
   <data name="Settings_About" xml:space="preserve">
     <value>Par lietotni</value>
   </data>
+  <data name="Settings_Appearance" xml:space="preserve">
+    <value>Izskats</value>
+  </data>
+  <data name="Settings_Theme" xml:space="preserve">
+    <value>Motīvs</value>
+  </data>
+  <data name="Theme_System" xml:space="preserve">
+    <value>Tāpat kā ierīcē</value>
+  </data>
+  <data name="Theme_Light" xml:space="preserve">
+    <value>Gaišs</value>
+  </data>
+  <data name="Theme_Dark" xml:space="preserve">
+    <value>Tumšs</value>
+  </data>
+  <data name="Settings_Sync" xml:space="preserve">
+    <value>Atjauninājumi</value>
+  </data>
+  <data name="Settings_SyncFrequency" xml:space="preserve">
+    <value>Pārbaudīt atjauninājumus</value>
+  </data>
+  <data name="Sync_Every3h" xml:space="preserve">
+    <value>Ik pēc 3 stundām</value>
+  </data>
+  <data name="Sync_Every6h" xml:space="preserve">
+    <value>Ik pēc 6 stundām</value>
+  </data>
+  <data name="Sync_Every12h" xml:space="preserve">
+    <value>Divreiz dienā</value>
+  </data>
+  <data name="Sync_Every24h" xml:space="preserve">
+    <value>Reizi dienā</value>
+  </data>
+  <data name="Settings_SyncHint" xml:space="preserve">
+    <value>Cik bieži lietotne fonā pārbauda jaunumus un izmaiņas. Android var aizkavēt pārbaudi, lai taupītu akumulatoru.</value>
+  </data>
+  <data name="Settings_WifiOnly" xml:space="preserve">
+    <value>Tikai Wi-Fi tīklā</value>
+  </data>
+  <data name="Settings_WifiOnlyHint" xml:space="preserve">
+    <value>Automātiskie atjauninājumi gaida Wi-Fi savienojumu. Atsvaidzināšana ar vilkšanu uz leju darbojas vienmēr.</value>
+  </data>
+  <data name="About_Open" xml:space="preserve">
+    <value>Par lietotni</value>
+  </data>
+  <data name="About_Intro" xml:space="preserve">
+    <value>Neatkarīga lietotne, lai sekotu Eiropas pilsoņu iniciatīvām: pārlūkojiet tās, parakstiet oficiālajā tīmekļa vietnē un uzziniet, kad beidzas parakstu vākšana un kāds ir rezultāts.</value>
+  </data>
+  <data name="About_NotOfficial" xml:space="preserve">
+    <value>Nav oficiāla lietotne</value>
+  </data>
+  <data name="About_NotOfficialText" xml:space="preserve">
+    <value>Šo lietotni nav izstrādājusi, apstiprinājusi vai pārbaudījusi Eiropas Savienība vai Eiropas Komisija. Parakstīšana vienmēr notiek Komisijas oficiālajā tīmekļa vietnē.</value>
+  </data>
+  <data name="About_Sources" xml:space="preserve">
+    <value>Datu avoti</value>
+  </data>
+  <data name="About_SourcesText" xml:space="preserve">
+    <value>Iniciatīvas tiek iegūtas no Eiropas pilsoņu iniciatīvas publiskā reģistra, jaunumi – no oficiālās tīmekļa vietnes citizens-initiative.europa.eu. © Eiropas Savienība. Līdz nākamajam atjauninājumam lietotnes dati var atpalikt no oficiālās tīmekļa vietnes.</value>
+  </data>
+  <data name="About_Website" xml:space="preserve">
+    <value>Oficiālā tīmekļa vietne</value>
+  </data>
+  <data name="About_Privacy" xml:space="preserve">
+    <value>Privātums</value>
+  </data>
+  <data name="About_PrivacyText" xml:space="preserve">
+    <value>Nav konta, reklāmu vai izsekošanas. Tas, kam sekojat vai ko atzīmējat kā parakstītu, paliek šajā ierīcē. Lietotne lejupielādē datus tikai no Eiropas Komisijas tīmekļa vietnēm.</value>
+  </data>
+  <data name="About_Licence" xml:space="preserve">
+    <value>Licence</value>
+  </data>
+  <data name="About_LicenceText" xml:space="preserve">
+    <value>Atvērtā koda lietotne ar MIT licenci.</value>
+  </data>
+  <data name="About_SourceCode" xml:space="preserve">
+    <value>Pirmkods</value>
+  </data>
+  <data name="About_Translations" xml:space="preserve">
+    <value>Tulkojumi</value>
+  </data>
+  <data name="About_TranslationsText" xml:space="preserve">
+    <value>Lietotnes teksti tulkoti automātiski, un tiek pārskatīti. Iniciatīvu teksti ir oficiālie tulkojumi no reģistra.</value>
+  </data>
+  <data name="Home_EmptyTitle" xml:space="preserve">
+    <value>Iniciatīvu vēl nav</value>
+  </data>
+  <data name="Home_Empty" xml:space="preserve">
+    <value>Lejupielādējiet iniciatīvu sarakstu, lai sāktu. Varat arī vilkt uz leju, lai atsvaidzinātu.</value>
+  </data>
+  <data name="Home_EmptyOffline" xml:space="preserve">
+    <value>Izveidojiet savienojumu ar internetu, lai lejupielādētu iniciatīvu sarakstu.</value>
+  </data>
+  <data name="Home_Download" xml:space="preserve">
+    <value>Lejupielādēt</value>
+  </data>
+  <data name="Home_Downloading" xml:space="preserve">
+    <value>Notiek iniciatīvu lejupielāde. Pirmajā reizē tas aizņem brīdi.</value>
+  </data>
+  <data name="List_NoData" xml:space="preserve">
+    <value>Vēl nav saglabātu iniciatīvu. Velciet uz leju, lai tās lejupielādētu.</value>
+  </data>
+  <data name="Sync_Retry" xml:space="preserve">
+    <value>Mēģināt vēlreiz</value>
+  </data>
+  <data name="Item_OpenHint" xml:space="preserve">
+    <value>Atver detalizētu informāciju</value>
+  </data>
+  <data name="A11y_Selected" xml:space="preserve">
+    <value>{0}, atlasīts</value>
+  </data>
 </root>

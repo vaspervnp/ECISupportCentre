@@ -11,10 +11,11 @@
             StrokeThickness="1"
             Stroke="{AppThemeBinding Light={StaticResource Gray100}, Dark={StaticResource Gray600}}"
             StrokeShape="RoundRectangle 12"
-            SemanticProperties.Description="{Binding Title}">
+            SemanticProperties.Description="{Binding AccessibleText}"
+            SemanticProperties.Hint="{l:Translate Item_OpenHint}">
         <Border.Triggers>
             <DataTrigger TargetType="Border" Binding="{Binding IsSelected}" Value="True">
-                <Setter Property="Stroke" Value="{StaticResource Primary}" />
+                <Setter Property="Stroke" Value="{AppThemeBinding Light={StaticResource Primary}, Dark={StaticResource PrimaryDark}}" />
                 <Setter Property="StrokeThickness" Value="2" />
             </DataTrigger>
         </Border.Triggers>
@@ -29,7 +30,8 @@
                     StrokeThickness="0"
                     StrokeShape="RoundRectangle 8"
                     BackgroundColor="{AppThemeBinding Light={StaticResource Secondary}, Dark={StaticResource Gray600}}">
-                <Image Source="{Binding Logo}" Aspect="AspectFit" IsVisible="{Binding HasLogo}" />
+                <Image Source="{Binding Logo}" Aspect="AspectFit" IsVisible="{Binding HasLogo}"
+                       AutomationProperties.IsInAccessibleTree="False" />
             </Border>
 
             <Label Grid.Column="1"
@@ -39,25 +41,22 @@
                    MaxLines="3"
                    LineBreakMode="TailTruncation" />
 
-            <HorizontalStackLayout Grid.Column="1" Grid.Row="1" Spacing="6">
-                <Border BackgroundColor="{Binding PhaseColor}" StrokeThickness="0" StrokeShape="RoundRectangle 10" Padding="8,2">
+            <FlexLayout Grid.Column="1" Grid.Row="1" Wrap="Wrap" AlignItems="Center">
+                <Border BackgroundColor="{Binding PhaseColor}" StrokeThickness="0" StrokeShape="RoundRectangle 10" Padding="8,2" Margin="0,0,6,4">
                     <Label Text="{Binding PhaseText}" TextColor="White" FontSize="12" />
                 </Border>
-                <Border BackgroundColor="#B42318" StrokeThickness="0" StrokeShape="RoundRectangle 10" Padding="8,2" IsVisible="{Binding LastCall}">
+                <Border BackgroundColor="#B42318" StrokeThickness="0" StrokeShape="RoundRectangle 10" Padding="8,2" Margin="0,0,6,4" IsVisible="{Binding LastCall}">
                     <Label Text="{l:Translate Item_LastCall}" TextColor="White" FontSize="12" />
                 </Border>
-                <Border BackgroundColor="#1B7F3B" StrokeThickness="0" StrokeShape="RoundRectangle 10" Padding="8,2" IsVisible="{Binding IsSigned}">
+                <Border BackgroundColor="#1B7F3B" StrokeThickness="0" StrokeShape="RoundRectangle 10" Padding="8,2" Margin="0,0,6,4" IsVisible="{Binding IsSigned}">
                     <Label Text="{l:Translate Item_Signed}" TextColor="White" FontSize="12" />
                 </Border>
-                <Label Text="★" TextColor="{StaticResource Primary}" FontSize="14" VerticalOptions="Center" IsVisible="{Binding IsFollowed}"
+                <Label Text="★" TextColor="{AppThemeBinding Light={StaticResource Primary}, Dark={StaticResource PrimaryDark}}" FontSize="14" VerticalOptions="Center" IsVisible="{Binding IsFollowed}"
                        SemanticProperties.Description="{l:Translate Item_Followed}" />
-            </HorizontalStackLayout>
+            </FlexLayout>
 
-            <HorizontalStackLayout Grid.Column="1" Grid.Row="2" Spacing="12">
-                <Label Text="{Binding SupportersText}" FontSize="13" TextColor="{AppThemeBinding Light={StaticResource Gray600}, Dark={StaticResource Gray200}}" />
-                <Label Text="{Binding DateText}" FontSize="13" IsVisible="{Binding HasDateText}"
-                       TextColor="{AppThemeBinding Light={StaticResource Gray600}, Dark={StaticResource Gray200}}" />
-            </HorizontalStackLayout>
+            <Label Grid.Column="1" Grid.Row="2" Text="{Binding MetaText}" FontSize="13"
+                   TextColor="{AppThemeBinding Light={StaticResource Gray600}, Dark={StaticResource Gray200}}" />
         </Grid>
     </Border>
 </ContentView>

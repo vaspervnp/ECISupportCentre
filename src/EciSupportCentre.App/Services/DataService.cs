@@ -18,8 +18,16 @@ public sealed class DataService(EciDatabase database, SyncEngine sync, Notificat
 
     public bool IsSyncing { get; private set; }
 
+    /// <summary>True when the device has no internet access (as seen by the app in the foreground).</summary>
+    public bool IsOffline => connectivity.NetworkAccess != NetworkAccess.Internet;
+
+    private bool IsUnmetered => connectivity.ConnectionProfiles.Any(p => p is ConnectionProfile.WiFi or ConnectionProfile.Ethernet);
+
     /// <summary>Message of the last failed sync, cleared by a successful one.</summary>
     public string? LastError { get; private set; }
+
+    /// <summary>The last sync did not start because the device was offline (a state, not a failure).</summary>
+    public bool LastErrorIsOffline { get; private set; }
 
     /// <summary>Raised (on any thread) after a sync or a user action changed stored data.</summary>
     public event EventHandler? DataChanged;
@@ -69,7 +77,7 @@ public sealed class DataService(EciDatabase database, SyncEngine sync, Notificat
         {
             if (checkConnectivity && connectivity.NetworkAccess != NetworkAccess.Internet)
             {
-                SetState(false, Loc.Get("Sync_Offline"));
+                SetState(false, Loc.Get("Sync_Offline"), offline: true);
                 return null;
             }
 
@@ -91,11 +99,19 @@ public sealed class DataService(EciDatabase database, SyncEngine sync, Notificat
         }
     }
 
-    /// <summary>Syncs when the data is older than <paramref name="maxAge"/>, or was never synced.</summary>
+    /// <summary>
+    /// Syncs when the data is older than <paramref name="maxAge"/>, or was never synced. With "Wi-Fi only" this
+    /// automatic sync waits for Wi-Fi, except the very first one, without which the app would stay empty.
+    /// </summary>
     public async Task SyncIfStaleAsync(TimeSpan maxAge)
     {
         await EnsureReadyAsync().ConfigureAwait(false);
         var last = await database.GetLastSyncAsync().ConfigureAwait(false);
+        if (last is not null && AppSettings.WifiOnly && !IsUnmetered)
+        {
+            return;
+        }
+
         if (last is null || DateTimeOffset.UtcNow - last > maxAge)
         {
             await SyncAsync().ConfigureAwait(false);
@@ -142,10 +158,11 @@ public sealed class DataService(EciDatabase database, SyncEngine sync, Notificat
         _syncLock.Dispose();
     }
 
-    private void SetState(bool syncing, string? error)
+    private void SetState(bool syncing, string? error, bool offline = false)
     {
         IsSyncing = syncing;
         LastError = error;
+        LastErrorIsOffline = offline;
         SyncStateChanged?.Invoke(this, EventArgs.Empty);
     }
 }

@@ -37,20 +37,24 @@ public static class MauiProgram
             sp.GetRequiredService<IEciStore>()));
         services.AddSingleton(Connectivity.Current);
         services.AddSingleton<INotificationPoster, AndroidNotificationPoster>();
+        services.AddSingleton<ISyncScheduler, AndroidSyncScheduler>();
         services.AddSingleton<NotificationService>();
         services.AddSingleton<DataService>();
 
+        services.AddSingleton<SyncStatusViewModel>();
         services.AddSingleton<HomeViewModel>();
         services.AddSingleton<InitiativesViewModel>();
         services.AddTransient<InitiativeDetailViewModel>();
         services.AddSingleton<NewsViewModel>();
         services.AddSingleton<SettingsViewModel>();
+        services.AddSingleton<AboutViewModel>();
 
         services.AddTransient<HomePage>();
         services.AddTransient<InitiativesPage>();
         services.AddTransient<InitiativeDetailPage>();
         services.AddTransient<NewsPage>();
         services.AddTransient<SettingsPage>();
+        services.AddTransient<AboutPage>();
 
 #if DEBUG
         builder.Logging.AddDebug();

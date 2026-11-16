@@ -382,4 +382,115 @@
   <data name="Settings_About" xml:space="preserve">
     <value>Névjegy</value>
   </data>
+  <data name="Settings_Appearance" xml:space="preserve">
+    <value>Megjelenés</value>
+  </data>
+  <data name="Settings_Theme" xml:space="preserve">
+    <value>Téma</value>
+  </data>
+  <data name="Theme_System" xml:space="preserve">
+    <value>Az eszközével megegyező</value>
+  </data>
+  <data name="Theme_Light" xml:space="preserve">
+    <value>Világos</value>
+  </data>
+  <data name="Theme_Dark" xml:space="preserve">
+    <value>Sötét</value>
+  </data>
+  <data name="Settings_Sync" xml:space="preserve">
+    <value>Frissítések</value>
+  </data>
+  <data name="Settings_SyncFrequency" xml:space="preserve">
+    <value>Frissítések keresése</value>
+  </data>
+  <data name="Sync_Every3h" xml:space="preserve">
+    <value>3 óránként</value>
+  </data>
+  <data name="Sync_Every6h" xml:space="preserve">
+    <value>6 óránként</value>
+  </data>
+  <data name="Sync_Every12h" xml:space="preserve">
+    <value>Naponta kétszer</value>
+  </data>
+  <data name="Sync_Every24h" xml:space="preserve">
+    <value>Naponta egyszer</value>
+  </data>
+  <data name="Settings_SyncHint" xml:space="preserve">
+    <value>Milyen gyakran ellenőrzi az alkalmazás a háttérben a híreket és a változásokat. Az Android az akkumulátor kímélése miatt késleltetheti.</value>
+  </data>
+  <data name="Settings_WifiOnly" xml:space="preserve">
+    <value>Csak Wi-Fi-n</value>
+  </data>
+  <data name="Settings_WifiOnlyHint" xml:space="preserve">
+    <value>Az automatikus frissítések Wi-Fi-re várnak. A lehúzással történő frissítés mindig működik.</value>
+  </data>
+  <data name="About_Open" xml:space="preserve">
+    <value>Az alkalmazásról</value>
+  </data>
+  <data name="About_Intro" xml:space="preserve">
+    <value>Független alkalmazás az európai polgári kezdeményezések követéséhez: böngéssze őket, írja alá a hivatalos weboldalon, és tudja meg, mikor ér véget a gyűjtés, és mi lett az eredménye.</value>
+  </data>
+  <data name="About_NotOfficial" xml:space="preserve">
+    <value>Nem hivatalos alkalmazás</value>
+  </data>
+  <data name="About_NotOfficialText" xml:space="preserve">
+    <value>Ezt az alkalmazást nem az Európai Unió vagy az Európai Bizottság készítette, hagyta jóvá vagy ellenőrizte. Az aláírás mindig a Bizottság hivatalos weboldalán történik.</value>
+  </data>
+  <data name="About_Sources" xml:space="preserve">
+    <value>Adatforrások</value>
+  </data>
+  <data name="About_SourcesText" xml:space="preserve">
+    <value>A kezdeményezések az európai polgári kezdeményezés nyilvános nyilvántartásából, a hírek a hivatalos citizens-initiative.europa.eu weboldalról származnak. © Európai Unió. A következő frissítésig az alkalmazás adatai elmaradhatnak a hivatalos weboldaltól.</value>
+  </data>
+  <data name="About_Website" xml:space="preserve">
+    <value>Hivatalos weboldal</value>
+  </data>
+  <data name="About_Privacy" xml:space="preserve">
+    <value>Adatvédelem</value>
+  </data>
+  <data name="About_PrivacyText" xml:space="preserve">
+    <value>Nincs fiók, nincs hirdetés, nincs követés. Az Ön által követett vagy aláírtként megjelölt kezdeményezések ezen az eszközön maradnak. Az alkalmazás csak az Európai Bizottság weboldalairól tölt le adatokat.</value>
+  </data>
+  <data name="About_Licence" xml:space="preserve">
+    <value>Licenc</value>
+  </data>
+  <data name="About_LicenceText" xml:space="preserve">
+    <value>Nyílt forráskódú, MIT licenc alatt.</value>
+  </data>
+  <data name="About_SourceCode" xml:space="preserve">
+    <value>Forráskód</value>
+  </data>
+  <data name="About_Translations" xml:space="preserve">
+    <value>Fordítások</value>
+  </data>
+  <data name="About_TranslationsText" xml:space="preserve">
+    <value>Az alkalmazás szövegeit gépi fordítással készítettük, és ellenőrzés alatt állnak. A kezdeményezések szövegei a nyilvántartás hivatalos fordításai.</value>
+  </data>
+  <data name="Home_EmptyTitle" xml:space="preserve">
+    <value>Még nincs kezdeményezés</value>
+  </data>
+  <data name="Home_Empty" xml:space="preserve">
+    <value>A kezdéshez töltse le a kezdeményezések listáját. A frissítéshez lefelé is húzhat.</value>
+  </data>
+  <data name="Home_EmptyOffline" xml:space="preserve">
+    <value>Csatlakozzon az internethez a kezdeményezések listájának letöltéséhez.</value>
+  </data>
+  <data name="Home_Download" xml:space="preserve">
+    <value>Letöltés</value>
+  </data>
+  <data name="Home_Downloading" xml:space="preserve">
+    <value>A kezdeményezések letöltése folyamatban. Első alkalommal eltarthat egy ideig.</value>
+  </data>
+  <data name="List_NoData" xml:space="preserve">
+    <value>Még nincs mentett kezdeményezés. A letöltéshez húzza lefelé.</value>
+  </data>
+  <data name="Sync_Retry" xml:space="preserve">
+    <value>Újra</value>
+  </data>
+  <data name="Item_OpenHint" xml:space="preserve">
+    <value>Megnyitja a részleteket</value>
+  </data>
+  <data name="A11y_Selected" xml:space="preserve">
+    <value>{0}, kiválasztva</value>
+  </data>
 </root>

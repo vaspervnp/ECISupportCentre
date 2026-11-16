@@ -382,4 +382,115 @@
   <data name="Settings_About" xml:space="preserve">
     <value>About</value>
   </data>
+  <data name="Settings_Appearance" xml:space="preserve">
+    <value>Appearance</value>
+  </data>
+  <data name="Settings_Theme" xml:space="preserve">
+    <value>Theme</value>
+  </data>
+  <data name="Theme_System" xml:space="preserve">
+    <value>Same as the device</value>
+  </data>
+  <data name="Theme_Light" xml:space="preserve">
+    <value>Light</value>
+  </data>
+  <data name="Theme_Dark" xml:space="preserve">
+    <value>Dark</value>
+  </data>
+  <data name="Settings_Sync" xml:space="preserve">
+    <value>Updates</value>
+  </data>
+  <data name="Settings_SyncFrequency" xml:space="preserve">
+    <value>Check for updates</value>
+  </data>
+  <data name="Sync_Every3h" xml:space="preserve">
+    <value>Every 3 hours</value>
+  </data>
+  <data name="Sync_Every6h" xml:space="preserve">
+    <value>Every 6 hours</value>
+  </data>
+  <data name="Sync_Every12h" xml:space="preserve">
+    <value>Twice a day</value>
+  </data>
+  <data name="Sync_Every24h" xml:space="preserve">
+    <value>Once a day</value>
+  </data>
+  <data name="Settings_SyncHint" xml:space="preserve">
+    <value>How often the app checks for news and changes in the background. Android may delay it to save battery.</value>
+  </data>
+  <data name="Settings_WifiOnly" xml:space="preserve">
+    <value>Only on Wi-Fi</value>
+  </data>
+  <data name="Settings_WifiOnlyHint" xml:space="preserve">
+    <value>Automatic updates wait for Wi-Fi. Pulling down to refresh always works.</value>
+  </data>
+  <data name="About_Open" xml:space="preserve">
+    <value>About this app</value>
+  </data>
+  <data name="About_Intro" xml:space="preserve">
+    <value>An independent app to follow the European Citizens' Initiatives: browse them, sign them on the official website, and find out when a collection ends and how it turned out.</value>
+  </data>
+  <data name="About_NotOfficial" xml:space="preserve">
+    <value>Not an official app</value>
+  </data>
+  <data name="About_NotOfficialText" xml:space="preserve">
+    <value>This app is not made, endorsed or checked by the European Union or the European Commission. Signing always happens on the Commission's official website.</value>
+  </data>
+  <data name="About_Sources" xml:space="preserve">
+    <value>Data sources</value>
+  </data>
+  <data name="About_SourcesText" xml:space="preserve">
+    <value>Initiatives come from the public register of the European Citizens' Initiative, news from the official website citizens-initiative.europa.eu. © European Union. Until the next update, the app may lag behind the official website.</value>
+  </data>
+  <data name="About_Website" xml:space="preserve">
+    <value>Official website</value>
+  </data>
+  <data name="About_Privacy" xml:space="preserve">
+    <value>Privacy</value>
+  </data>
+  <data name="About_PrivacyText" xml:space="preserve">
+    <value>No account, no ads, no tracking. What you follow or mark as signed stays on this device. The app downloads data only from the European Commission's websites.</value>
+  </data>
+  <data name="About_Licence" xml:space="preserve">
+    <value>Licence</value>
+  </data>
+  <data name="About_LicenceText" xml:space="preserve">
+    <value>Open source under the MIT licence.</value>
+  </data>
+  <data name="About_SourceCode" xml:space="preserve">
+    <value>Source code</value>
+  </data>
+  <data name="About_Translations" xml:space="preserve">
+    <value>Translations</value>
+  </data>
+  <data name="About_TranslationsText" xml:space="preserve">
+    <value>The texts of the app were machine translated and are being reviewed. Initiative texts are the official translations from the register.</value>
+  </data>
+  <data name="Home_EmptyTitle" xml:space="preserve">
+    <value>No initiatives yet</value>
+  </data>
+  <data name="Home_Empty" xml:space="preserve">
+    <value>Download the list of initiatives to get started. You can also pull down to refresh.</value>
+  </data>
+  <data name="Home_EmptyOffline" xml:space="preserve">
+    <value>Connect to the internet to download the list of initiatives.</value>
+  </data>
+  <data name="Home_Download" xml:space="preserve">
+    <value>Download</value>
+  </data>
+  <data name="Home_Downloading" xml:space="preserve">
+    <value>Downloading the initiatives. The first time takes a moment.</value>
+  </data>
+  <data name="List_NoData" xml:space="preserve">
+    <value>No initiatives saved yet. Pull down to download them.</value>
+  </data>
+  <data name="Sync_Retry" xml:space="preserve">
+    <value>Try again</value>
+  </data>
+  <data name="Item_OpenHint" xml:space="preserve">
+    <value>Opens the details</value>
+  </data>
+  <data name="A11y_Selected" xml:space="preserve">
+    <value>{0}, selected</value>
+  </data>
 </root>

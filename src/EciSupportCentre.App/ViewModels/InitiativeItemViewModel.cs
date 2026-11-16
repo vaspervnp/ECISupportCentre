@@ -36,6 +36,9 @@ public sealed partial class InitiativeItemViewModel : ObservableObject
 
     public bool HasDateText => DateText.Length > 0;
 
+    /// <summary>Supporters and date on one line that wraps at large font sizes.</summary>
+    public string MetaText => HasDateText ? $"{SupportersText} · {DateText}" : SupportersText;
+
     public ImageSource? Logo { get; }
 
     public bool HasLogo => Logo is not null;
@@ -47,6 +50,18 @@ public sealed partial class InitiativeItemViewModel : ObservableObject
     public bool IsSigned => Item.IsSigned;
 
     public IAsyncRelayCommand OpenCommand { get; }
+
+    /// <summary>What TalkBack reads for the whole card: everything the card shows, in reading order.</summary>
+    public string AccessibleText => string.Join(". ", new[]
+    {
+        Title,
+        PhaseText,
+        LastCall ? Loc.Get("Item_LastCall") : null,
+        IsSigned ? Loc.Get("Item_Signed") : null,
+        IsFollowed ? Loc.Get("Item_Followed") : null,
+        SupportersText,
+        DateText,
+    }.Where(s => !string.IsNullOrWhiteSpace(s)));
 
     /// <summary>Highlighted in the tablet layout while its details are shown.</summary>
     [ObservableProperty]
