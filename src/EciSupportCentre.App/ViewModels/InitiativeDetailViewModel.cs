@@ -26,6 +26,7 @@ public sealed partial class InitiativeDetailViewModel : ObservableObject, IQuery
 {
     private readonly DataService _data;
     private long _id;
+    private bool _showing;
     private int _loadVersion;
 
     public InitiativeDetailViewModel(DataService data)
@@ -68,6 +69,23 @@ public sealed partial class InitiativeDetailViewModel : ObservableObject, IQuery
 
     [ObservableProperty]
     public partial string FollowText { get; set; } = "";
+
+    /// <summary>Official signing page in the app language; null when the initiative cannot be signed.</summary>
+    [ObservableProperty]
+    [NotifyPropertyChangedFor(nameof(CanSign), nameof(ShowSignedMark))]
+    public partial Uri? SigningPage { get; set; }
+
+    public bool CanSign => SigningPage is not null;
+
+    [ObservableProperty]
+    [NotifyPropertyChangedFor(nameof(ShowSignedMark))]
+    public partial bool IsSigned { get; set; }
+
+    /// <summary>The mark is offered while signing is possible, and kept visible afterwards if set.</summary>
+    public bool ShowSignedMark => CanSign || IsSigned;
+
+    [ObservableProperty]
+    public partial string? DeadlineText { get; set; }
 
     [ObservableProperty]
     public partial bool IsLoadingDetails { get; set; }
@@ -166,6 +184,33 @@ public sealed partial class InitiativeDetailViewModel : ObservableObject, IQuery
         FollowText = Loc.Get(IsFollowed ? "Detail_Unfollow" : "Detail_Follow");
     }
 
+    /// <summary>Opens the Commission's collection system in a Custom Tab. Signing happens there, not in the app.</summary>
+    [RelayCommand]
+    private async Task SignAsync()
+    {
+        if (SigningPage is not null)
+        {
+            await Browser.Default.OpenAsync(SigningPage, new BrowserLaunchOptions
+            {
+                LaunchMode = BrowserLaunchMode.SystemPreferred,
+                TitleMode = BrowserTitleMode.Show,
+                PreferredToolbarColor = Color.FromArgb("#003399"),
+                PreferredControlColor = Colors.White,
+            });
+        }
+    }
+
+    /// <summary>Saves the switch state; the binding has already set <see cref="IsSigned"/>.</summary>
+    partial void OnIsSignedChanged(bool value)
+    {
+        if (_showing)
+        {
+            return;
+        }
+
+        _ = _data.SetSignedAsync(_id, value);
+    }
+
     [RelayCommand]
     private async Task OpenOfficialPageAsync()
     {
@@ -212,6 +257,17 @@ public sealed partial class InitiativeDetailViewModel : ObservableObject, IQuery
         IsFollowed = item.IsFollowed;
         FollowText = Loc.Get(item.IsFollowed ? "Detail_Unfollow" : "Detail_Follow");
         OfficialPage = EciSources.InitiativePage(item.Year, item.Number, language);
+
+        _showing = true;
+        IsSigned = item.IsSigned;
+        _showing = false;
+        SigningPage = item.Status.CanBeSigned() ? EciSources.SigningPage(item.SupportLink, language) : null;
+        DeadlineText = item.DaysLeft(DateOnly.FromDateTime(DateTime.Today)) switch
+        {
+            null => null,
+            0 => Loc.Get("Sign_LastDay"),
+            var days => Loc.Format("Sign_DaysLeft", days, item.CollectionEndDate!.Value.ToDateTime(TimeOnly.MinValue)),
+        };
 
         var dates = new List<string>();
         if (item.RegistrationDate is { } registered)

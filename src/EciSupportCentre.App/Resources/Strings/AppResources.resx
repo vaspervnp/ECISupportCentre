@@ -262,4 +262,25 @@
   <data name="Doc_Other" xml:space="preserve">
     <value>Document</value>
   </data>
+  <data name="Sign_Button" xml:space="preserve">
+    <value>Sign this initiative</value>
+  </data>
+  <data name="Sign_DaysLeft" xml:space="preserve">
+    <value>{0} days left to sign (until {1:d})</value>
+  </data>
+  <data name="Sign_LastDay" xml:space="preserve">
+    <value>Last day to sign</value>
+  </data>
+  <data name="Sign_Note" xml:space="preserve">
+    <value>You sign on the European Commission's official website. This app never sees your data.</value>
+  </data>
+  <data name="Sign_Mark" xml:space="preserve">
+    <value>I signed this initiative</value>
+  </data>
+  <data name="Sign_MarkHint" xml:space="preserve">
+    <value>Only stored on this device</value>
+  </data>
+  <data name="Item_Signed" xml:space="preserve">
+    <value>Signed</value>
+  </data>
 </root>

@@ -44,6 +44,8 @@ public sealed partial class InitiativeItemViewModel : ObservableObject
 
     public bool IsFollowed => Item.IsFollowed;
 
+    public bool IsSigned => Item.IsSigned;
+
     public IAsyncRelayCommand OpenCommand { get; }
 
     /// <summary>Highlighted in the tablet layout while its details are shown.</summary>

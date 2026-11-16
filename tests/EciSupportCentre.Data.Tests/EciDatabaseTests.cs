@@ -160,6 +160,80 @@ public class EciDatabaseTests : DatabaseTest
     }
 
     [Fact]
+    public async Task Signed_mark_is_stored()
+    {
+        await Db.SaveSummariesAsync("en", [Make.Summary(1), Make.Summary(2)], [], Time.Now);
+
+        await Db.SetSignedAsync(1, true, Time.Now);
+        await Db.SetSignedAsync(1, true, Time.Now);
+
+        Assert.True((await Db.GetInitiativeAsync(1, "en"))!.IsSigned);
+        Assert.False((await Db.GetInitiativeAsync(2, "en"))!.IsSigned);
+
+        await Db.SetSignedAsync(1, false, Time.Now);
+        Assert.False((await Db.GetInitiativeAsync(1, "en"))!.IsSigned);
+    }
+
+    [Fact]
+    public async Task A_version_1_database_is_upgraded_without_losing_data()
+    {
+        var path = System.IO.Path.Combine(System.IO.Path.GetDirectoryName(Db.Path)!, "v1.db");
+        await using (var connection = new SqliteConnection($"Data Source={path}"))
+        {
+            await connection.OpenAsync();
+            await using var command = connection.CreateCommand();
+            command.CommandText = Schema.Migrations[0] + """
+                PRAGMA user_version = 1;
+                INSERT INTO initiative (id, pub_reg_num, year, number, status, first_seen_utc, updated_utc)
+                VALUES (7, 'ECI(2026)000007', '2026', '000007', 'ONGOING', '2026-11-01T00:00:00.000Z', '2026-11-01T00:00:00.000Z');
+                INSERT INTO initiative_text (initiative_id, language, title) VALUES (7, 'en', 'Old');
+                INSERT INTO follow (initiative_id, followed_utc) VALUES (7, '2026-11-01T00:00:00.000Z');
+                """;
+            await command.ExecuteNonQueryAsync();
+        }
+
+        var upgraded = new EciDatabase(path);
+        await upgraded.InitializeAsync();
+        await upgraded.SetSignedAsync(7, true, Time.Now);
+
+        Assert.Equal(2, await upgraded.GetSchemaVersionAsync());
+        var item = await upgraded.GetInitiativeAsync(7, "en");
+        Assert.Equal(("Old", true, true), (item!.Title, item.IsFollowed, item.IsSigned));
+    }
+
+    [Theory]
+    [InlineData("ONGOING", "2026-11-26", 10)]
+    [InlineData("ONGOING", "2026-11-16", 0)]
+    [InlineData("ONGOING", "2026-11-15", null)]
+    [InlineData("ONGOING", null, null)]
+    [InlineData("ANSWERED", "2026-11-26", null)]
+    public void Days_left_only_while_collecting(string status, string? end, int? expected)
+    {
+        var item = new InitiativeListItem
+        {
+            Id = 1,
+            PubRegNum = "",
+            Year = "",
+            Number = "",
+            Title = "",
+            TitleLanguage = "en",
+            Status = EciStatusExtensions.ParseStatus(status),
+            CollectionEndDate = end is null ? null : DateOnly.Parse(end, System.Globalization.CultureInfo.InvariantCulture),
+        };
+
+        Assert.Equal(expected, item.DaysLeft(new DateOnly(2026, 11, 16)));
+    }
+
+    [Fact]
+    public async Task Only_official_links_can_be_signed()
+    {
+        await Db.SaveSummariesAsync("en", [Make.Summary(1) with { SupportLink = new Uri("https://example.org/sign") }, Make.Summary(2)], [], Time.Now);
+
+        Assert.False((await Db.GetInitiativeAsync(1, "en"))!.CanBeSigned);
+        Assert.True((await Db.GetInitiativeAsync(2, "en"))!.CanBeSigned);
+    }
+
+    [Fact]
     public async Task Changes_stay_pending_until_notified()
     {
         await Db.SaveSummariesAsync(

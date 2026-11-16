@@ -369,6 +369,19 @@ public sealed class EciDatabase : IEciStore
         await command.ExecuteNonQueryAsync(cancellationToken).ConfigureAwait(false);
     }
 
+    /// <summary>Stores or removes the user's "I signed this" mark. It never leaves the device.</summary>
+    public async Task SetSignedAsync(long initiativeId, bool hasSigned, DateTimeOffset now, CancellationToken cancellationToken = default)
+    {
+        await using var connection = await OpenAsync(cancellationToken).ConfigureAwait(false);
+        await using var command = connection.CreateCommand();
+        command.CommandText = hasSigned
+            ? "INSERT OR IGNORE INTO signed (initiative_id, signed_utc) VALUES ($id, $now);"
+            : "DELETE FROM signed WHERE initiative_id = $id;";
+        command.Parameters.AddWithValue("$id", initiativeId);
+        command.Parameters.AddWithValue("$now", Db.From(now));
+        await command.ExecuteNonQueryAsync(cancellationToken).ConfigureAwait(false);
+    }
+
     /// <summary>Latest news in <paramref name="language"/>, newest first.</summary>
     public async Task<IReadOnlyList<NewsItem>> GetNewsAsync(string language, int limit = 50, CancellationToken cancellationToken = default)
     {
@@ -464,9 +477,10 @@ public sealed class EciDatabase : IEciStore
             command.CommandText = """
                 SELECT i.id, i.pub_reg_num, i.year, i.number, i.status, i.total_supporters, i.last_call, i.latest_update,
                        i.logo_id, i.original_language, i.registration_date, i.start_collection_date, i.collection_end_date,
-                       i.details_fetched_utc IS NOT NULL, f.initiative_id IS NOT NULL
+                       i.details_fetched_utc IS NOT NULL, f.initiative_id IS NOT NULL, s.initiative_id IS NOT NULL
                 FROM initiative i
                 LEFT JOIN follow f ON f.initiative_id = i.id
+                LEFT JOIN signed s ON s.initiative_id = i.id
                 """ + (id is null ? ";" : " WHERE i.id = $id;");
             command.Parameters.AddWithValue("$id", (object?)id ?? DBNull.Value);
             await using var reader = await command.ExecuteReaderAsync(cancellationToken).ConfigureAwait(false);
@@ -493,6 +507,7 @@ public sealed class EciDatabase : IEciStore
                     CollectionEndDate = Db.ToDate(reader, 12),
                     HasDetails = reader.GetBoolean(13),
                     IsFollowed = reader.GetBoolean(14),
+                    IsSigned = reader.GetBoolean(15),
                     Title = title,
                     TitleLanguage = titleLanguage,
                     SupportLink = link,

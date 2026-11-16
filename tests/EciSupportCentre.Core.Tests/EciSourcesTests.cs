@@ -21,6 +21,22 @@ public class EciSourcesTests
     public void Normalize_maps_cultures_to_eu_languages(string? input, string expected) =>
         Assert.Equal(expected, EciSources.Normalize(input));
 
+    [Theory]
+    [InlineData("https://eci.ec.europa.eu/069/public/?lg=en", "el-GR", "https://eci.ec.europa.eu/069/public/?lg=el")]
+    [InlineData("https://eci.ec.europa.eu/069/public/", "de", "https://eci.ec.europa.eu/069/public/?lg=de")]
+    [InlineData("https://eci.ec.europa.eu/069/public/?x=1&LG=fr", "ja", "https://eci.ec.europa.eu/069/public/?x=1&lg=en")]
+    [InlineData("https://ECI.EC.EUROPA.EU/045/public/#/screen/home?lg=en", "pt", "https://eci.ec.europa.eu/045/public/?lg=pt#/screen/home?lg=en")]
+    public void Signing_page_uses_the_language(string link, string language, string expected) =>
+        Assert.Equal(new Uri(expected), EciSources.SigningPage(new Uri(link), language));
+
+    [Theory]
+    [InlineData("http://eci.ec.europa.eu/069/public/?lg=en")]
+    [InlineData("https://eci.ec.europa.eu.evil.example/069/public/")]
+    [InlineData("https://example.org/sign")]
+    [InlineData(null)]
+    public void Signing_page_accepts_only_the_official_collection_system(string? link) =>
+        Assert.Null(EciSources.SigningPage(link is null ? null : new Uri(link), "en"));
+
     [Fact]
     public void Website_uses_language_suffix() =>
         Assert.Equal("https://citizens-initiative.europa.eu/index_fr", EciSources.Website("fr-BE").ToString());

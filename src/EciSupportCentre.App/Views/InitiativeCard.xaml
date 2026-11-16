@@ -46,6 +46,9 @@
                 <Border BackgroundColor="#B42318" StrokeThickness="0" StrokeShape="RoundRectangle 10" Padding="8,2" IsVisible="{Binding LastCall}">
                     <Label Text="{l:Translate Item_LastCall}" TextColor="White" FontSize="12" />
                 </Border>
+                <Border BackgroundColor="#1B7F3B" StrokeThickness="0" StrokeShape="RoundRectangle 10" Padding="8,2" IsVisible="{Binding IsSigned}">
+                    <Label Text="{l:Translate Item_Signed}" TextColor="White" FontSize="12" />
+                </Border>
                 <Label Text="★" TextColor="{StaticResource Primary}" FontSize="14" VerticalOptions="Center" IsVisible="{Binding IsFollowed}"
                        SemanticProperties.Description="{l:Translate Item_Followed}" />
             </HorizontalStackLayout>

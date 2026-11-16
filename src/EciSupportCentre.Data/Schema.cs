@@ -79,6 +79,14 @@ internal static class Schema
             value TEXT
         );
         """,
+
+        // v2: the user's own "I signed this" mark. Kept only on the device.
+        """
+        CREATE TABLE signed (
+            initiative_id INTEGER PRIMARY KEY,
+            signed_utc    TEXT NOT NULL
+        );
+        """,
     ];
 
     public static int CurrentVersion => Migrations.Length;

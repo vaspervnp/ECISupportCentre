@@ -124,6 +124,13 @@ public sealed class DataService(EciDatabase database, SyncEngine sync, IConnecti
         DataChanged?.Invoke(this, EventArgs.Empty);
     }
 
+    public async Task SetSignedAsync(long initiativeId, bool hasSigned)
+    {
+        await EnsureReadyAsync().ConfigureAwait(false);
+        await database.SetSignedAsync(initiativeId, hasSigned, DateTimeOffset.UtcNow).ConfigureAwait(false);
+        DataChanged?.Invoke(this, EventArgs.Empty);
+    }
+
     public void Dispose()
     {
         _initLock.Dispose();

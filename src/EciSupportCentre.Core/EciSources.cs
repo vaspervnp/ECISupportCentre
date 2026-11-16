@@ -29,6 +29,29 @@ public static class EciSources
     /// <summary>Logo image of an initiative, served by the register API.</summary>
     public static Uri Logo(long logoId) => new(RegisterApiBase, $"logo/{logoId.ToString(System.Globalization.CultureInfo.InvariantCulture)}");
 
+    /// <summary>
+    /// The official signing page with its <c>lg</c> parameter set to <paramref name="language"/>, e.g.
+    /// <c>https://eci.ec.europa.eu/069/public/?lg=el</c>. Only links to the Commission's collection system
+    /// (<c>eci.ec.europa.eu</c>) are accepted; anything else returns null, so the app never opens an
+    /// unexpected site as a "signing" page.
+    /// </summary>
+    public static Uri? SigningPage(Uri? supportLink, string language)
+    {
+        if (supportLink is not { IsAbsoluteUri: true }
+            || supportLink.Scheme != Uri.UriSchemeHttps
+            || !string.Equals(supportLink.Host, "eci.ec.europa.eu", StringComparison.OrdinalIgnoreCase))
+        {
+            return null;
+        }
+
+        var query = supportLink.Query.TrimStart('?')
+            .Split('&', StringSplitOptions.RemoveEmptyEntries)
+            .Where(p => !p.StartsWith("lg=", StringComparison.OrdinalIgnoreCase))
+            .Append($"lg={Normalize(language)}");
+
+        return new UriBuilder(supportLink) { Query = string.Join('&', query) }.Uri;
+    }
+
     /// <summary>Returns the EU language code for a culture name such as "el-GR", or English when it is not supported.</summary>
     public static string Normalize(string? language)
     {

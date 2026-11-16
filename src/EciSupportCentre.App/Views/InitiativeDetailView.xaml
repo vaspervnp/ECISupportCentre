@@ -40,6 +40,26 @@
             <Label Text="{Binding SupportersText}" FontFamily="OpenSansSemibold" FontSize="16" />
             <Label Text="{Binding DatesText}" Style="{StaticResource Muted}" />
 
+            <!-- Signing: always on the Commission's own website. -->
+            <Border IsVisible="{Binding ShowSignedMark}" Padding="14" StrokeThickness="0" StrokeShape="RoundRectangle 12"
+                    BackgroundColor="{AppThemeBinding Light=#E8F3EC, Dark=#16301F}">
+                <VerticalStackLayout Spacing="8">
+                    <Button Text="{l:Translate Sign_Button}" Command="{Binding SignCommand}" IsVisible="{Binding CanSign}"
+                            BackgroundColor="#1B7F3B" TextColor="White" FontFamily="OpenSansSemibold" FontSize="17"
+                            SemanticProperties.Hint="{l:Translate Sign_Note}" />
+                    <Label Text="{Binding DeadlineText}" FontFamily="OpenSansSemibold" FontSize="14" IsVisible="{Binding CanSign}" />
+                    <Label Text="{l:Translate Sign_Note}" Style="{StaticResource Muted}" IsVisible="{Binding CanSign}" />
+                    <Grid ColumnDefinitions="Auto,*" ColumnSpacing="8">
+                        <CheckBox IsChecked="{Binding IsSigned}" Color="#1B7F3B" VerticalOptions="Center"
+                                  SemanticProperties.Description="{l:Translate Sign_Mark}" />
+                        <VerticalStackLayout Grid.Column="1" VerticalOptions="Center">
+                            <Label Text="{l:Translate Sign_Mark}" FontSize="15" />
+                            <Label Text="{l:Translate Sign_MarkHint}" FontSize="12" Style="{StaticResource Muted}" />
+                        </VerticalStackLayout>
+                    </Grid>
+                </VerticalStackLayout>
+            </Border>
+
             <FlexLayout Wrap="Wrap">
                 <Button Text="{Binding FollowText}" Command="{Binding ToggleFollowCommand}" Margin="0,0,8,8" />
                 <Button Text="{l:Translate Detail_OfficialPage}" Command="{Binding OpenOfficialPageCommand}" Margin="0,0,8,8"

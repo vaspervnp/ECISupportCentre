@@ -106,5 +106,15 @@ public sealed record InitiativeListItem
 
     public bool IsFollowed { get; init; }
 
-    public bool CanBeSigned => Status.CanBeSigned() && SupportLink is not null;
+    /// <summary>The user marked that they signed it (stored only on the device).</summary>
+    public bool IsSigned { get; init; }
+
+    /// <summary>Collecting, with a link to the official collection system.</summary>
+    public bool CanBeSigned => Status.CanBeSigned() && EciSources.SigningPage(SupportLink, TitleLanguage) is not null;
+
+    /// <summary>Whole days from <paramref name="today"/> to the end of collection, while collecting.</summary>
+    public int? DaysLeft(DateOnly today) =>
+        Phase == InitiativePhase.Collecting && CollectionEndDate is { } end && end >= today
+            ? end.DayNumber - today.DayNumber
+            : null;
 }

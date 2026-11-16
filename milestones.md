@@ -101,11 +101,12 @@ tests/
 
 **Done when:** the user can browse, filter and open every initiative offline.
 
-## M4 — Signing
-- [ ] Logos are loaded from `register/logo/{id}` and cached by the image loader; check that they still show offline
-- [ ] **Sign** button on initiatives that are collecting, which opens `supportLink` in a Chrome Custom Tab in the user's language (`?lg=xx`)
-- [ ] Hide or disable the button when collection is closed
-- [ ] Optional "I signed this" mark, stored only on the device
+## M4 — Signing ✅
+- [x] Logos are loaded from `register/logo/{id}` and cached by the image loader; checked that they still show with the network off
+- [x] **Sign** button on initiatives that are collecting, which opens `supportLink` in a Chrome Custom Tab in the user's language (`?lg=xx`). Only links to `https://eci.ec.europa.eu` are opened.
+- [x] The button is hidden when collection is closed; the panel shows the days left and the last day
+- [x] Optional "I signed this" mark (schema v2, table `signed`), stored only on the device and shown as a badge on the card
+- [x] Checked on the emulator: the button opens the official collection page in Chrome
 
 **Done when:** every collecting initiative opens its official collection page.
 
