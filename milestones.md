@@ -48,11 +48,11 @@ tests/
 
 ---
 
-## M0 — Project setup
-- [ ] Solution with the Core, Data and App projects and a test project
-- [ ] `.editorconfig`, `Directory.Build.props`, nullable references on, warnings treated as errors
-- [ ] App icon, splash screen, package id `eu.eci.supportcentre` (placeholder)
-- [ ] CI workflow: restore, build, test, build an Android debug APK
+## M0 — Project setup ✅
+- [x] Solution (`EciSupportCentre.slnx`) with the Core, Data and App projects and a test project
+- [x] `.editorconfig`, `Directory.Build.props`, `global.json`, nullable references on, warnings treated as errors
+- [x] App icon, splash screen, package id `io.github.vaspervnp.ecisupportcentre` (not an `eu.*` id, since the app is not official)
+- [x] CI workflow: restore, build, test, build an installable Android test APK
 
 **Done when:** an empty app runs on an emulator and CI is green.
 

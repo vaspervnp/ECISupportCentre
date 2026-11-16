@@ -1,0 +1,10 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/EciSupportCentre.App/EciSupportCentre.App.csproj" />
+    <Project Path="src/EciSupportCentre.Core/EciSupportCentre.Core.csproj" />
+    <Project Path="src/EciSupportCentre.Data/EciSupportCentre.Data.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/EciSupportCentre.Core.Tests/EciSupportCentre.Core.Tests.csproj" />
+  </Folder>
+</Solution>

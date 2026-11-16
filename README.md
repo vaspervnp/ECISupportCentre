@@ -2,7 +2,20 @@
 
 An Android app (phone and tablet) for following the **European Citizens' Initiatives** published on [citizens-initiative.europa.eu](https://citizens-initiative.europa.eu/index_en).
 
-> Status: **planning**. No code yet. See [milestones.md](milestones.md) for the roadmap.
+> Status: **M0 done**: project skeleton and CI. See [milestones.md](milestones.md) for the roadmap.
+
+## Project structure
+
+```
+EciSupportCentre.slnx
+src/
+  EciSupportCentre.Core/        models, API clients, sync logic (net10.0)
+  EciSupportCentre.Data/        SQLite storage (net10.0)
+  EciSupportCentre.App/         .NET MAUI Android app (net10.0-android)
+tests/
+  EciSupportCentre.Core.Tests/  xUnit tests
+.github/workflows/ci.yml        tests and an installable APK on every push and pull request
+```
 
 ## Features (planned)
 
@@ -39,11 +52,19 @@ All data belongs to the European Commission. The app only reads public data.
 - Android SDK (API 24 or later), an emulator or a device
 - Visual Studio 2026, VS Code with C# Dev Kit, or JetBrains Rider
 
-## Build (from milestone M0 on)
+## Build and run
 
 ```bash
 dotnet build src/EciSupportCentre.App -f net10.0-android
 ```
+
+Run on a connected device or a running emulator:
+
+```bash
+dotnet build src/EciSupportCentre.App -f net10.0-android -t:Run
+```
+
+Run the tests:
 
 ```bash
 dotnet test
