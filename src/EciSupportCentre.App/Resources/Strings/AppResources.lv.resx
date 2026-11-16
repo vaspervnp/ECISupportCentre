@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- English (default). Translations go in AppResources.<lang>.resx with the same keys. -->
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AppName" xml:space="preserve">
+    <value>ECI Support Centre</value>
+  </data>
+  <data name="Disclaimer" xml:space="preserve">
+    <value>Šī nav oficiāla Eiropas Savienības lietotne. Dati: citizens-initiative.europa.eu</value>
+  </data>
+  <data name="Tab_Home" xml:space="preserve">
+    <value>Sākums</value>
+  </data>
+  <data name="Tab_Initiatives" xml:space="preserve">
+    <value>Iniciatīvas</value>
+  </data>
+  <data name="Home_Title" xml:space="preserve">
+    <value>Eiropas pilsoņu iniciatīvas</value>
+  </data>
+  <data name="Home_Intro" xml:space="preserve">
+    <value>Viens miljons parakstu no vismaz septiņām ES valstīm – tas ir aicinājums Eiropas Komisijai ierosināt tiesību aktu.</value>
+  </data>
+  <data name="Home_Registered" xml:space="preserve">
+    <value>Reģistrētas</value>
+  </data>
+  <data name="Home_Collecting" xml:space="preserve">
+    <value>Vāc parakstus</value>
+  </data>
+  <data name="Home_Successful" xml:space="preserve">
+    <value>Sekmīgas</value>
+  </data>
+  <data name="Home_Answered" xml:space="preserve">
+    <value>Saņemta atbilde</value>
+  </data>
+  <data name="Home_Failed" xml:space="preserve">
+    <value>Nepietiekams atbalsts</value>
+  </data>
+  <data name="Home_Withdrawn" xml:space="preserve">
+    <value>Atsauktas</value>
+  </data>
+  <data name="Home_EndingSoon" xml:space="preserve">
+    <value>Notiek parakstu vākšana – tuvākie termiņi</value>
+  </data>
+  <data name="Home_SeeAll" xml:space="preserve">
+    <value>Skatīt visas iniciatīvas</value>
+  </data>
+  <data name="Home_RecentChanges" xml:space="preserve">
+    <value>Nesenās izmaiņas</value>
+  </data>
+  <data name="Sync_Now" xml:space="preserve">
+    <value>Atsvaidzināt</value>
+  </data>
+  <data name="Sync_Running" xml:space="preserve">
+    <value>Notiek atjaunināšana…</value>
+  </data>
+  <data name="Sync_Last" xml:space="preserve">
+    <value>Atjaunināts {0}</value>
+  </data>
+  <data name="Sync_Never" xml:space="preserve">
+    <value>Vēl nav atjaunināts. Velciet uz leju, lai atsvaidzinātu.</value>
+  </data>
+  <data name="Sync_Failed" xml:space="preserve">
+    <value>Neizdevās atjaunināt: {0}</value>
+  </data>
+  <data name="Sync_Offline" xml:space="preserve">
+    <value>Jūs esat bezsaistē. Tiek rādīti saglabātie dati.</value>
+  </data>
+  <data name="List_Search" xml:space="preserve">
+    <value>Meklēt iniciatīvas</value>
+  </data>
+  <data name="List_All" xml:space="preserve">
+    <value>Visas</value>
+  </data>
+  <data name="List_Followed" xml:space="preserve">
+    <value>Sekojamās</value>
+  </data>
+  <data name="List_Sort" xml:space="preserve">
+    <value>Kārtot</value>
+  </data>
+  <data name="List_Empty" xml:space="preserve">
+    <value>Nav atbilstošu iniciatīvu.</value>
+  </data>
+  <data name="List_Count" xml:space="preserve">
+    <value>Iniciatīvu skaits: {0}</value>
+  </data>
+  <data name="List_SelectHint" xml:space="preserve">
+    <value>Atlasiet iniciatīvu, lai skatītu sīkāku informāciju.</value>
+  </data>
+  <data name="Sort_Newest" xml:space="preserve">
+    <value>Jaunākās</value>
+  </data>
+  <data name="Sort_MostSupporters" xml:space="preserve">
+    <value>Visvairāk atbalstītāju</value>
+  </data>
+  <data name="Sort_EndingSoon" xml:space="preserve">
+    <value>Drīz beidzas</value>
+  </data>
+  <data name="Sort_RecentlyUpdated" xml:space="preserve">
+    <value>Nesen atjauninātās</value>
+  </data>
+  <data name="Phase_Unknown" xml:space="preserve">
+    <value>Nezināms</value>
+  </data>
+  <data name="Phase_Upcoming" xml:space="preserve">
+    <value>Drīz sāksies</value>
+  </data>
+  <data name="Phase_Collecting" xml:space="preserve">
+    <value>Notiek parakstu vākšana</value>
+  </data>
+  <data name="Phase_Verification" xml:space="preserve">
+    <value>Notiek parakstu pārbaude</value>
+  </data>
+  <data name="Phase_Submitted" xml:space="preserve">
+    <value>Iesniegta Komisijai</value>
+  </data>
+  <data name="Phase_Answered" xml:space="preserve">
+    <value>Komisija ir atbildējusi</value>
+  </data>
+  <data name="Phase_Failed" xml:space="preserve">
+    <value>Nepietiekams atbalsts</value>
+  </data>
+  <data name="Phase_Withdrawn" xml:space="preserve">
+    <value>Atsaukta</value>
+  </data>
+  <data name="Item_Supporters" xml:space="preserve">
+    <value>Atbalstītāji: {0:N0}</value>
+  </data>
+  <data name="Item_EndsOn" xml:space="preserve">
+    <value>Beidzas {0:d}</value>
+  </data>
+  <data name="Item_EndedOn" xml:space="preserve">
+    <value>Beidzās {0:d}</value>
+  </data>
+  <data name="Item_StartsOn" xml:space="preserve">
+    <value>Sākas {0:d}</value>
+  </data>
+  <data name="Item_LastCall" xml:space="preserve">
+    <value>Pēdējā iespēja</value>
+  </data>
+  <data name="Item_Followed" xml:space="preserve">
+    <value>Sekojama</value>
+  </data>
+  <data name="Detail_Title" xml:space="preserve">
+    <value>Iniciatīva</value>
+  </data>
+  <data name="Detail_Objectives" xml:space="preserve">
+    <value>Mērķi</value>
+  </data>
+  <data name="Detail_Annex" xml:space="preserve">
+    <value>Papildu informācija</value>
+  </data>
+  <data name="Detail_Treaties" xml:space="preserve">
+    <value>Līgumu noteikumi</value>
+  </data>
+  <data name="Detail_Progress" xml:space="preserve">
+    <value>Hronoloģija</value>
+  </data>
+  <data name="Detail_Signatures" xml:space="preserve">
+    <value>Paraksti</value>
+  </data>
+  <data name="Detail_SignaturesVerified" xml:space="preserve">
+    <value>Pārbaudīti paraksti: {0:N0}</value>
+  </data>
+  <data name="Detail_SignaturesCollected" xml:space="preserve">
+    <value>Savākti paraksti: {0:N0}</value>
+  </data>
+  <data name="Detail_TopCountries" xml:space="preserve">
+    <value>Vadošās valstis</value>
+  </data>
+  <data name="Detail_Answer" xml:space="preserve">
+    <value>Komisijas atbilde</value>
+  </data>
+  <data name="Detail_AnswerDate" xml:space="preserve">
+    <value>Lēmuma datums: {0:d}</value>
+  </data>
+  <data name="Detail_Documents" xml:space="preserve">
+    <value>Dokumenti</value>
+  </data>
+  <data name="Detail_OfficialPage" xml:space="preserve">
+    <value>Atvērt oficiālajā tīmekļa vietnē</value>
+  </data>
+  <data name="Detail_Follow" xml:space="preserve">
+    <value>Sekot</value>
+  </data>
+  <data name="Detail_Unfollow" xml:space="preserve">
+    <value>Nesekot</value>
+  </data>
+  <data name="Detail_Loading" xml:space="preserve">
+    <value>Ielādē informāciju…</value>
+  </data>
+  <data name="Detail_Unavailable" xml:space="preserve">
+    <value>Informācija vēl nav lejupielādēta. Izveidojiet savienojumu ar internetu un atsvaidziniet.</value>
+  </data>
+  <data name="Detail_Registered" xml:space="preserve">
+    <value>Reģistrēta {0:d}</value>
+  </data>
+  <data name="Detail_Collection" xml:space="preserve">
+    <value>Parakstu vākšana {0:d} – {1:d}</value>
+  </data>
+  <data name="Detail_CollectionOpen" xml:space="preserve">
+    <value>Parakstu vākšana no {0:d}</value>
+  </data>
+  <data name="Step_REGISTERED" xml:space="preserve">
+    <value>Reģistrēta</value>
+  </data>
+  <data name="Step_COLLECTION_START_DATE" xml:space="preserve">
+    <value>Sākta parakstu vākšana</value>
+  </data>
+  <data name="Step_ONGOING" xml:space="preserve">
+    <value>Notiek parakstu vākšana</value>
+  </data>
+  <data name="Step_CLOSED" xml:space="preserve">
+    <value>Parakstu vākšana slēgta</value>
+  </data>
+  <data name="Step_VERIFICATION" xml:space="preserve">
+    <value>Paraksti pārbaudīti</value>
+  </data>
+  <data name="Step_SUBMITTED" xml:space="preserve">
+    <value>Iesniegta Komisijai</value>
+  </data>
+  <data name="Step_ANSWERED" xml:space="preserve">
+    <value>Komisija atbildēja</value>
+  </data>
+  <data name="Step_INSUFFICIENT_SUPPORT" xml:space="preserve">
+    <value>Nepietiekams atbalsts</value>
+  </data>
+  <data name="Step_INSUFFICIENT_SUPPORT_AFTER_VERIFICATION" xml:space="preserve">
+    <value>Nepietiekami derīgu parakstu</value>
+  </data>
+  <data name="Step_WITHDRAWN" xml:space="preserve">
+    <value>Atsaukta</value>
+  </data>
+  <data name="Doc_COMMUNICATION" xml:space="preserve">
+    <value>Komisijas paziņojums</value>
+  </data>
+  <data name="Doc_PRESS_RELEASE" xml:space="preserve">
+    <value>Paziņojums presei</value>
+  </data>
+  <data name="Doc_EXAMIN_STEPS" xml:space="preserve">
+    <value>Izskatīšanas posmi</value>
+  </data>
+  <data name="Doc_FOLLOW_UP" xml:space="preserve">
+    <value>Turpmākie pasākumi</value>
+  </data>
+  <data name="Doc_ANNEX" xml:space="preserve">
+    <value>Paziņojuma pielikums</value>
+  </data>
+  <data name="Doc_Registration" xml:space="preserve">
+    <value>Komisijas lēmums par reģistrāciju</value>
+  </data>
+  <data name="Doc_Other" xml:space="preserve">
+    <value>Dokuments</value>
+  </data>
+  <data name="Sign_Button" xml:space="preserve">
+    <value>Parakstīt šo iniciatīvu</value>
+  </data>
+  <data name="Sign_DaysLeft" xml:space="preserve">
+    <value>Atlikušās dienas parakstīšanai: {0} (līdz {1:d})</value>
+  </data>
+  <data name="Sign_LastDay" xml:space="preserve">
+    <value>Pēdējā diena parakstīšanai</value>
+  </data>
+  <data name="Sign_Note" xml:space="preserve">
+    <value>Jūs parakstāt Eiropas Komisijas oficiālajā tīmekļa vietnē. Šī lietotne nekad neredz jūsu datus.</value>
+  </data>
+  <data name="Sign_Mark" xml:space="preserve">
+    <value>Es parakstīju šo iniciatīvu</value>
+  </data>
+  <data name="Sign_MarkHint" xml:space="preserve">
+    <value>Saglabāts tikai šajā ierīcē</value>
+  </data>
+  <data name="Item_Signed" xml:space="preserve">
+    <value>Parakstīta</value>
+  </data>
+  <data name="Tab_News" xml:space="preserve">
+    <value>Jaunumi</value>
+  </data>
+  <data name="News_Title" xml:space="preserve">
+    <value>Jaunākās ziņas</value>
+  </data>
+  <data name="News_Empty" xml:space="preserve">
+    <value>Jaunumu vēl nav. Velciet uz leju, lai atsvaidzinātu.</value>
+  </data>
+  <data name="News_New" xml:space="preserve">
+    <value>Jauns</value>
+  </data>
+  <data name="News_OpenHint" xml:space="preserve">
+    <value>Atver visu rakstu oficiālajā tīmekļa vietnē</value>
+  </data>
+  <data name="News_Source" xml:space="preserve">
+    <value>Jaunumi no Eiropas pilsoņu iniciatīvas oficiālās tīmekļa vietnes.</value>
+  </data>
+  <data name="Settings_NotifyAll" xml:space="preserve">
+    <value>Paziņot par visām iniciatīvām</value>
+  </data>
+  <data name="Settings_NotifyAllHint" xml:space="preserve">
+    <value>Ja šī opcija ir izslēgta, paziņojumi par rezultātiem un termiņiem tiek sūtīti tikai par iniciatīvām, kurām sekojat. Par jaunām iniciatīvām un jaunumiem paziņojumi tiek sūtīti vienmēr.</value>
+  </data>
+  <data name="Notif_Channel_New" xml:space="preserve">
+    <value>Jaunas iniciatīvas</value>
+  </data>
+  <data name="Notif_Channel_Ending" xml:space="preserve">
+    <value>Parakstu vākšanas beigas</value>
+  </data>
+  <data name="Notif_Channel_Results" xml:space="preserve">
+    <value>Rezultāti</value>
+  </data>
+  <data name="Notif_Channel_News" xml:space="preserve">
+    <value>Jaunumi</value>
+  </data>
+  <data name="Notif_NewInitiative" xml:space="preserve">
+    <value>Reģistrēta jauna iniciatīva</value>
+  </data>
+  <data name="Notif_CollectionStarted" xml:space="preserve">
+    <value>Sākusies parakstu vākšana</value>
+  </data>
+  <data name="Notif_EndingDays" xml:space="preserve">
+    <value>Atlikušās dienas parakstīšanai: {0}</value>
+  </data>
+  <data name="Notif_EndingTomorrow" xml:space="preserve">
+    <value>Parakstu vākšana beidzas rīt</value>
+  </data>
+  <data name="Notif_EndingToday" xml:space="preserve">
+    <value>Pēdējā diena parakstīšanai</value>
+  </data>
+  <data name="Notif_CollectionEnded" xml:space="preserve">
+    <value>Parakstu vākšana ir beigusies</value>
+  </data>
+  <data name="Notif_Milestone" xml:space="preserve">
+    <value>Sasniegtais parakstu skaits: {0:N0}</value>
+  </data>
+  <data name="Notif_Successful" xml:space="preserve">
+    <value>Sekmīga: iesniegta Eiropas Komisijai</value>
+  </data>
+  <data name="Notif_Answered" xml:space="preserve">
+    <value>Eiropas Komisija ir atbildējusi</value>
+  </data>
+  <data name="Notif_Failed" xml:space="preserve">
+    <value>Nesekmīga: nepietiekams atbalsts</value>
+  </data>
+  <data name="Notif_Withdrawn" xml:space="preserve">
+    <value>Organizatori atsauca iniciatīvu</value>
+  </data>
+  <data name="Notif_NewsOne" xml:space="preserve">
+    <value>Jauns raksts</value>
+  </data>
+  <data name="Notif_NewsMany" xml:space="preserve">
+    <value>Jauni raksti: {0}</value>
+  </data>
+  <data name="Tab_Settings" xml:space="preserve">
+    <value>Iestatījumi</value>
+  </data>
+  <data name="Settings_Language" xml:space="preserve">
+    <value>Valoda</value>
+  </data>
+  <data name="Settings_LanguageHint" xml:space="preserve">
+    <value>Tiek izmantota lietotnē, iniciatīvās un jaunumos. Ja iniciatīvai nav tulkojuma, tā tiek rādīta angļu valodā vai oriģinālvalodā.</value>
+  </data>
+  <data name="Settings_DeviceLanguage" xml:space="preserve">
+    <value>Ierīces valoda ({0})</value>
+  </data>
+  <data name="Settings_Notifications" xml:space="preserve">
+    <value>Paziņojumi</value>
+  </data>
+  <data name="Settings_SystemNotifications" xml:space="preserve">
+    <value>Izvēlēties paziņojumu veidus</value>
+  </data>
+  <data name="Settings_SystemNotificationsHint" xml:space="preserve">
+    <value>Atver sistēmas iestatījumus, kur var izslēgt katru paziņojumu veidu.</value>
+  </data>
+  <data name="Settings_About" xml:space="preserve">
+    <value>Par lietotni</value>
+  </data>
+</root>

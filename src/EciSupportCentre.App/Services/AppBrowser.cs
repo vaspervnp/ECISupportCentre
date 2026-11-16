@@ -11,10 +11,23 @@ internal static class AppBrowser
         PreferredControlColor = Colors.White,
     };
 
-    /// <summary>Opens <paramref name="uri"/> if it is an https address; anything else is ignored.</summary>
+    /// <summary>
+    /// Opens a web address. Plain http is upgraded to https (the register links EUR-Lex documents with http);
+    /// any other scheme is ignored.
+    /// </summary>
     public static async Task OpenAsync(Uri? uri)
     {
-        if (uri is { IsAbsoluteUri: true } && uri.Scheme == Uri.UriSchemeHttps)
+        if (uri is not { IsAbsoluteUri: true })
+        {
+            return;
+        }
+
+        if (uri.Scheme == Uri.UriSchemeHttp)
+        {
+            uri = new UriBuilder(uri) { Scheme = Uri.UriSchemeHttps, Port = -1 }.Uri;
+        }
+
+        if (uri.Scheme == Uri.UriSchemeHttps)
         {
             await Browser.Default.OpenAsync(uri, Options);
         }

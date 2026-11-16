@@ -131,17 +131,18 @@ tests/
 
 **Done when:** a simulated status change in the database triggers the right notification on a device.
 
-## M7 — Localization in the 24 EU languages
-- [ ] Languages: bg, cs, da, de, el, **en (default)**, es, et, fi, fr, ga, hr, hu, it, lt, lv, mt, nl, pl, pt, ro, sk, sl, sv
-- [ ] `.resx` for every UI text; a language picker in Settings, defaulting to the device language when it is supported, else English
-- [ ] Initiative data in the chosen language through the API language code, falling back to English or the original language
-- [ ] Dates and numbers formatted for each locale
-- [ ] Review of the translations (machine translation first, then a review by native speakers)
+## M7 — Localization in the 24 EU languages ✅
+- [x] Languages: bg, cs, da, de, el, **en (default)**, es, et, fi, fr, ga, hr, hu, it, lt, lv, mt, nl, pl, pt, ro, sk, sl, sv
+- [x] `AppResources.{lang}.resx` for every UI text; a test checks that each file has the same keys and placeholders as English
+- [x] A new Settings tab with the language picker ("Device language" first, then the 24 languages in their own names). The device language is used when it is an EU language, else English. The "notify about all initiatives" switch moved there from Home, next to a button that opens the system notification settings
+- [x] Initiative data and news in the chosen language through the API language code, falling back to English or the original language; a sync starts right after a change
+- [x] Dates and numbers formatted for each locale; notification channel names follow the language
+- [ ] Review of the translations by native speakers. The texts are machine translations. Terms the translators were unsure of: `Detail_AnswerDate` (rendered as "decision"), the gendered `Sign_Mark` in hr and sl, and plural forms in ga
 
-**Done when:** the whole UI and the data switch language at run time without a restart.
+**Done when:** the whole UI and the data switch language at run time without a restart. Checked on the emulator in Greek, Italian and Hungarian (the longest tab labels).
 
 ## M8 — Settings, accessibility and polish
-- [ ] Settings: language, sync frequency, Wi-Fi only, notification types, light, dark or system theme
+- [ ] Settings (language and notifications are done in M7): sync frequency, Wi-Fi only, notification types, light, dark or system theme
 - [ ] Accessibility: TalkBack labels, dynamic font size, contrast
 - [ ] Empty, error and offline states
 - [ ] An About page with data sources, a disclaimer (not an official EU app) and the licence

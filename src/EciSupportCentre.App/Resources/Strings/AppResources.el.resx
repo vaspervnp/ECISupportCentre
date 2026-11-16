@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- English (default). Translations go in AppResources.<lang>.resx with the same keys. -->
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AppName" xml:space="preserve">
+    <value>ECI Support Centre</value>
+  </data>
+  <data name="Disclaimer" xml:space="preserve">
+    <value>Δεν είναι επίσημη εφαρμογή της Ευρωπαϊκής Ένωσης. Δεδομένα: citizens-initiative.europa.eu</value>
+  </data>
+  <data name="Tab_Home" xml:space="preserve">
+    <value>Αρχική</value>
+  </data>
+  <data name="Tab_Initiatives" xml:space="preserve">
+    <value>Πρωτοβουλίες</value>
+  </data>
+  <data name="Home_Title" xml:space="preserve">
+    <value>Ευρωπαϊκές πρωτοβουλίες πολιτών</value>
+  </data>
+  <data name="Home_Intro" xml:space="preserve">
+    <value>Ένα εκατομμύριο υπογραφές από τουλάχιστον επτά χώρες της ΕΕ καλούν την Ευρωπαϊκή Επιτροπή να προτείνει νομοθεσία.</value>
+  </data>
+  <data name="Home_Registered" xml:space="preserve">
+    <value>Καταχωρισμένες</value>
+  </data>
+  <data name="Home_Collecting" xml:space="preserve">
+    <value>Σε συλλογή</value>
+  </data>
+  <data name="Home_Successful" xml:space="preserve">
+    <value>Επιτυχείς</value>
+  </data>
+  <data name="Home_Answered" xml:space="preserve">
+    <value>Με απάντηση</value>
+  </data>
+  <data name="Home_Failed" xml:space="preserve">
+    <value>Ανεπαρκής στήριξη</value>
+  </data>
+  <data name="Home_Withdrawn" xml:space="preserve">
+    <value>Αποσυρθείσες</value>
+  </data>
+  <data name="Home_EndingSoon" xml:space="preserve">
+    <value>Σε συλλογή, λήγουν σύντομα</value>
+  </data>
+  <data name="Home_SeeAll" xml:space="preserve">
+    <value>Όλες οι πρωτοβουλίες</value>
+  </data>
+  <data name="Home_RecentChanges" xml:space="preserve">
+    <value>Πρόσφατες αλλαγές</value>
+  </data>
+  <data name="Sync_Now" xml:space="preserve">
+    <value>Ανανέωση</value>
+  </data>
+  <data name="Sync_Running" xml:space="preserve">
+    <value>Ενημέρωση…</value>
+  </data>
+  <data name="Sync_Last" xml:space="preserve">
+    <value>Ενημερώθηκε: {0}</value>
+  </data>
+  <data name="Sync_Never" xml:space="preserve">
+    <value>Δεν έχει ενημερωθεί ακόμη. Σύρετε προς τα κάτω για ανανέωση.</value>
+  </data>
+  <data name="Sync_Failed" xml:space="preserve">
+    <value>Η ενημέρωση απέτυχε: {0}</value>
+  </data>
+  <data name="Sync_Offline" xml:space="preserve">
+    <value>Είστε εκτός σύνδεσης. Εμφανίζονται αποθηκευμένα δεδομένα.</value>
+  </data>
+  <data name="List_Search" xml:space="preserve">
+    <value>Αναζήτηση πρωτοβουλιών</value>
+  </data>
+  <data name="List_All" xml:space="preserve">
+    <value>Όλες</value>
+  </data>
+  <data name="List_Followed" xml:space="preserve">
+    <value>Παρακολουθούμενες</value>
+  </data>
+  <data name="List_Sort" xml:space="preserve">
+    <value>Ταξινόμηση</value>
+  </data>
+  <data name="List_Empty" xml:space="preserve">
+    <value>Δεν βρέθηκαν πρωτοβουλίες.</value>
+  </data>
+  <data name="List_Count" xml:space="preserve">
+    <value>Πρωτοβουλίες: {0}</value>
+  </data>
+  <data name="List_SelectHint" xml:space="preserve">
+    <value>Επιλέξτε μια πρωτοβουλία για να δείτε τις λεπτομέρειες.</value>
+  </data>
+  <data name="Sort_Newest" xml:space="preserve">
+    <value>Νεότερες</value>
+  </data>
+  <data name="Sort_MostSupporters" xml:space="preserve">
+    <value>Περισσότεροι υποστηρικτές</value>
+  </data>
+  <data name="Sort_EndingSoon" xml:space="preserve">
+    <value>Λήγουν σύντομα</value>
+  </data>
+  <data name="Sort_RecentlyUpdated" xml:space="preserve">
+    <value>Πρόσφατα ενημερωμένες</value>
+  </data>
+  <data name="Phase_Unknown" xml:space="preserve">
+    <value>Άγνωστο</value>
+  </data>
+  <data name="Phase_Upcoming" xml:space="preserve">
+    <value>Ξεκινά σύντομα</value>
+  </data>
+  <data name="Phase_Collecting" xml:space="preserve">
+    <value>Συλλογή υπογραφών</value>
+  </data>
+  <data name="Phase_Verification" xml:space="preserve">
+    <value>Επαλήθευση υπογραφών</value>
+  </data>
+  <data name="Phase_Submitted" xml:space="preserve">
+    <value>Υποβλήθηκε στην Επιτροπή</value>
+  </data>
+  <data name="Phase_Answered" xml:space="preserve">
+    <value>Απάντηση της Επιτροπής</value>
+  </data>
+  <data name="Phase_Failed" xml:space="preserve">
+    <value>Ανεπαρκής στήριξη</value>
+  </data>
+  <data name="Phase_Withdrawn" xml:space="preserve">
+    <value>Αποσύρθηκε</value>
+  </data>
+  <data name="Item_Supporters" xml:space="preserve">
+    <value>Υποστηρικτές: {0:N0}</value>
+  </data>
+  <data name="Item_EndsOn" xml:space="preserve">
+    <value>Λήγει στις {0:d}</value>
+  </data>
+  <data name="Item_EndedOn" xml:space="preserve">
+    <value>Έληξε στις {0:d}</value>
+  </data>
+  <data name="Item_StartsOn" xml:space="preserve">
+    <value>Ξεκινά στις {0:d}</value>
+  </data>
+  <data name="Item_LastCall" xml:space="preserve">
+    <value>Τελευταίες μέρες</value>
+  </data>
+  <data name="Item_Followed" xml:space="preserve">
+    <value>Παρακολουθείται</value>
+  </data>
+  <data name="Detail_Title" xml:space="preserve">
+    <value>Πρωτοβουλία</value>
+  </data>
+  <data name="Detail_Objectives" xml:space="preserve">
+    <value>Στόχοι</value>
+  </data>
+  <data name="Detail_Annex" xml:space="preserve">
+    <value>Περισσότερες πληροφορίες</value>
+  </data>
+  <data name="Detail_Treaties" xml:space="preserve">
+    <value>Διατάξεις των Συνθηκών</value>
+  </data>
+  <data name="Detail_Progress" xml:space="preserve">
+    <value>Χρονολόγιο</value>
+  </data>
+  <data name="Detail_Signatures" xml:space="preserve">
+    <value>Υπογραφές</value>
+  </data>
+  <data name="Detail_SignaturesVerified" xml:space="preserve">
+    <value>Επαληθευμένες υπογραφές: {0:N0}</value>
+  </data>
+  <data name="Detail_SignaturesCollected" xml:space="preserve">
+    <value>Υπογραφές που συλλέχθηκαν: {0:N0}</value>
+  </data>
+  <data name="Detail_TopCountries" xml:space="preserve">
+    <value>Κορυφαίες χώρες</value>
+  </data>
+  <data name="Detail_Answer" xml:space="preserve">
+    <value>Απάντηση της Επιτροπής</value>
+  </data>
+  <data name="Detail_AnswerDate" xml:space="preserve">
+    <value>Απόφαση της {0:d}</value>
+  </data>
+  <data name="Detail_Documents" xml:space="preserve">
+    <value>Έγγραφα</value>
+  </data>
+  <data name="Detail_OfficialPage" xml:space="preserve">
+    <value>Άνοιγμα στον επίσημο ιστότοπο</value>
+  </data>
+  <data name="Detail_Follow" xml:space="preserve">
+    <value>Παρακολούθηση</value>
+  </data>
+  <data name="Detail_Unfollow" xml:space="preserve">
+    <value>Διακοπή παρακολούθησης</value>
+  </data>
+  <data name="Detail_Loading" xml:space="preserve">
+    <value>Φόρτωση λεπτομερειών…</value>
+  </data>
+  <data name="Detail_Unavailable" xml:space="preserve">
+    <value>Οι λεπτομέρειες δεν έχουν ληφθεί ακόμη. Συνδεθείτε στο διαδίκτυο και κάντε ανανέωση.</value>
+  </data>
+  <data name="Detail_Registered" xml:space="preserve">
+    <value>Καταχωρίστηκε στις {0:d}</value>
+  </data>
+  <data name="Detail_Collection" xml:space="preserve">
+    <value>Συλλογή {0:d} – {1:d}</value>
+  </data>
+  <data name="Detail_CollectionOpen" xml:space="preserve">
+    <value>Συλλογή από {0:d}</value>
+  </data>
+  <data name="Step_REGISTERED" xml:space="preserve">
+    <value>Καταχώριση</value>
+  </data>
+  <data name="Step_COLLECTION_START_DATE" xml:space="preserve">
+    <value>Έναρξη συλλογής</value>
+  </data>
+  <data name="Step_ONGOING" xml:space="preserve">
+    <value>Συλλογή υπογραφών</value>
+  </data>
+  <data name="Step_CLOSED" xml:space="preserve">
+    <value>Λήξη συλλογής</value>
+  </data>
+  <data name="Step_VERIFICATION" xml:space="preserve">
+    <value>Επαλήθευση υπογραφών</value>
+  </data>
+  <data name="Step_SUBMITTED" xml:space="preserve">
+    <value>Υποβολή στην Επιτροπή</value>
+  </data>
+  <data name="Step_ANSWERED" xml:space="preserve">
+    <value>Απάντηση της Επιτροπής</value>
+  </data>
+  <data name="Step_INSUFFICIENT_SUPPORT" xml:space="preserve">
+    <value>Ανεπαρκής στήριξη</value>
+  </data>
+  <data name="Step_INSUFFICIENT_SUPPORT_AFTER_VERIFICATION" xml:space="preserve">
+    <value>Ανεπαρκείς έγκυρες υπογραφές</value>
+  </data>
+  <data name="Step_WITHDRAWN" xml:space="preserve">
+    <value>Απόσυρση</value>
+  </data>
+  <data name="Doc_COMMUNICATION" xml:space="preserve">
+    <value>Ανακοίνωση της Επιτροπής</value>
+  </data>
+  <data name="Doc_PRESS_RELEASE" xml:space="preserve">
+    <value>Δελτίο Τύπου</value>
+  </data>
+  <data name="Doc_EXAMIN_STEPS" xml:space="preserve">
+    <value>Στάδια εξέτασης</value>
+  </data>
+  <data name="Doc_FOLLOW_UP" xml:space="preserve">
+    <value>Συνέχεια που δόθηκε</value>
+  </data>
+  <data name="Doc_ANNEX" xml:space="preserve">
+    <value>Παράρτημα της ανακοίνωσης</value>
+  </data>
+  <data name="Doc_Registration" xml:space="preserve">
+    <value>Απόφαση καταχώρισης της Επιτροπής</value>
+  </data>
+  <data name="Doc_Other" xml:space="preserve">
+    <value>Έγγραφο</value>
+  </data>
+  <data name="Sign_Button" xml:space="preserve">
+    <value>Υπογράψτε την πρωτοβουλία</value>
+  </data>
+  <data name="Sign_DaysLeft" xml:space="preserve">
+    <value>Ημέρες που απομένουν για υπογραφή: {0} (έως {1:d})</value>
+  </data>
+  <data name="Sign_LastDay" xml:space="preserve">
+    <value>Τελευταία ημέρα για υπογραφή</value>
+  </data>
+  <data name="Sign_Note" xml:space="preserve">
+    <value>Υπογράφετε στον επίσημο ιστότοπο της Ευρωπαϊκής Επιτροπής. Η εφαρμογή δεν βλέπει ποτέ τα δεδομένα σας.</value>
+  </data>
+  <data name="Sign_Mark" xml:space="preserve">
+    <value>Υπέγραψα αυτή την πρωτοβουλία</value>
+  </data>
+  <data name="Sign_MarkHint" xml:space="preserve">
+    <value>Αποθηκεύεται μόνο σε αυτή τη συσκευή</value>
+  </data>
+  <data name="Item_Signed" xml:space="preserve">
+    <value>Υπέγραψα</value>
+  </data>
+  <data name="Tab_News" xml:space="preserve">
+    <value>Νέα</value>
+  </data>
+  <data name="News_Title" xml:space="preserve">
+    <value>Τελευταία νέα</value>
+  </data>
+  <data name="News_Empty" xml:space="preserve">
+    <value>Δεν υπάρχουν ακόμη νέα. Σύρετε προς τα κάτω για ανανέωση.</value>
+  </data>
+  <data name="News_New" xml:space="preserve">
+    <value>Νέο</value>
+  </data>
+  <data name="News_OpenHint" xml:space="preserve">
+    <value>Ανοίγει ολόκληρο το άρθρο στον επίσημο ιστότοπο</value>
+  </data>
+  <data name="News_Source" xml:space="preserve">
+    <value>Νέα από τον επίσημο ιστότοπο της Ευρωπαϊκής πρωτοβουλίας πολιτών.</value>
+  </data>
+  <data name="Settings_NotifyAll" xml:space="preserve">
+    <value>Ειδοποιήσεις για όλες τις πρωτοβουλίες</value>
+  </data>
+  <data name="Settings_NotifyAllHint" xml:space="preserve">
+    <value>Όταν είναι απενεργοποιημένο, λαμβάνετε ειδοποιήσεις για αποτελέσματα και προθεσμίες μόνο για τις πρωτοβουλίες που παρακολουθείτε. Οι νέες πρωτοβουλίες και τα νέα ανακοινώνονται πάντα.</value>
+  </data>
+  <data name="Notif_Channel_New" xml:space="preserve">
+    <value>Νέες πρωτοβουλίες</value>
+  </data>
+  <data name="Notif_Channel_Ending" xml:space="preserve">
+    <value>Λήξη συλλογής</value>
+  </data>
+  <data name="Notif_Channel_Results" xml:space="preserve">
+    <value>Αποτελέσματα</value>
+  </data>
+  <data name="Notif_Channel_News" xml:space="preserve">
+    <value>Νέα</value>
+  </data>
+  <data name="Notif_NewInitiative" xml:space="preserve">
+    <value>Καταχωρίστηκε νέα πρωτοβουλία</value>
+  </data>
+  <data name="Notif_CollectionStarted" xml:space="preserve">
+    <value>Η συλλογή υπογραφών ξεκίνησε</value>
+  </data>
+  <data name="Notif_EndingDays" xml:space="preserve">
+    <value>Απομένουν {0} ημέρες για υπογραφή</value>
+  </data>
+  <data name="Notif_EndingTomorrow" xml:space="preserve">
+    <value>Η συλλογή υπογραφών λήγει αύριο</value>
+  </data>
+  <data name="Notif_EndingToday" xml:space="preserve">
+    <value>Τελευταία ημέρα για υπογραφή</value>
+  </data>
+  <data name="Notif_CollectionEnded" xml:space="preserve">
+    <value>Η συλλογή υπογραφών έληξε</value>
+  </data>
+  <data name="Notif_Milestone" xml:space="preserve">
+    <value>Συγκεντρώθηκαν {0:N0} υπογραφές</value>
+  </data>
+  <data name="Notif_Successful" xml:space="preserve">
+    <value>Επιτυχία: υποβλήθηκε στην Ευρωπαϊκή Επιτροπή</value>
+  </data>
+  <data name="Notif_Answered" xml:space="preserve">
+    <value>Η Ευρωπαϊκή Επιτροπή απάντησε</value>
+  </data>
+  <data name="Notif_Failed" xml:space="preserve">
+    <value>Χωρίς επιτυχία: ανεπαρκής στήριξη</value>
+  </data>
+  <data name="Notif_Withdrawn" xml:space="preserve">
+    <value>Αποσύρθηκε από τους διοργανωτές</value>
+  </data>
+  <data name="Notif_NewsOne" xml:space="preserve">
+    <value>Νέο άρθρο</value>
+  </data>
+  <data name="Notif_NewsMany" xml:space="preserve">
+    <value>{0} νέα άρθρα</value>
+  </data>
+  <data name="Tab_Settings" xml:space="preserve">
+    <value>Ρυθμίσεις</value>
+  </data>
+  <data name="Settings_Language" xml:space="preserve">
+    <value>Γλώσσα</value>
+  </data>
+  <data name="Settings_LanguageHint" xml:space="preserve">
+    <value>Ισχύει για την εφαρμογή, τις πρωτοβουλίες και τα νέα. Όταν μια πρωτοβουλία δεν είναι μεταφρασμένη, εμφανίζεται στα αγγλικά ή στην αρχική της γλώσσα.</value>
+  </data>
+  <data name="Settings_DeviceLanguage" xml:space="preserve">
+    <value>Γλώσσα συσκευής ({0})</value>
+  </data>
+  <data name="Settings_Notifications" xml:space="preserve">
+    <value>Ειδοποιήσεις</value>
+  </data>
+  <data name="Settings_SystemNotifications" xml:space="preserve">
+    <value>Επιλογή τύπων ειδοποιήσεων</value>
+  </data>
+  <data name="Settings_SystemNotificationsHint" xml:space="preserve">
+    <value>Ανοίγει τις ρυθμίσεις συστήματος, όπου μπορείτε να απενεργοποιήσετε κάθε τύπο ειδοποίησης.</value>
+  </data>
+  <data name="Settings_About" xml:space="preserve">
+    <value>Σχετικά</value>
+  </data>
+</root>

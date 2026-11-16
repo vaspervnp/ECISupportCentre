@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- English (default). Translations go in AppResources.<lang>.resx with the same keys. -->
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AppName" xml:space="preserve">
+    <value>ECI Support Centre</value>
+  </data>
+  <data name="Disclaimer" xml:space="preserve">
+    <value>No es una aplicación oficial de la Unión Europea. Datos: citizens-initiative.europa.eu</value>
+  </data>
+  <data name="Tab_Home" xml:space="preserve">
+    <value>Inicio</value>
+  </data>
+  <data name="Tab_Initiatives" xml:space="preserve">
+    <value>Iniciativas</value>
+  </data>
+  <data name="Home_Title" xml:space="preserve">
+    <value>Iniciativas ciudadanas europeas</value>
+  </data>
+  <data name="Home_Intro" xml:space="preserve">
+    <value>Un millón de firmas de al menos siete países de la UE piden a la Comisión Europea que proponga un acto legislativo.</value>
+  </data>
+  <data name="Home_Registered" xml:space="preserve">
+    <value>Registradas</value>
+  </data>
+  <data name="Home_Collecting" xml:space="preserve">
+    <value>En recogida</value>
+  </data>
+  <data name="Home_Successful" xml:space="preserve">
+    <value>Con éxito</value>
+  </data>
+  <data name="Home_Answered" xml:space="preserve">
+    <value>Respondidas</value>
+  </data>
+  <data name="Home_Failed" xml:space="preserve">
+    <value>Sin apoyo suficiente</value>
+  </data>
+  <data name="Home_Withdrawn" xml:space="preserve">
+    <value>Retiradas</value>
+  </data>
+  <data name="Home_EndingSoon" xml:space="preserve">
+    <value>En recogida, próximas a cerrar</value>
+  </data>
+  <data name="Home_SeeAll" xml:space="preserve">
+    <value>Ver todas las iniciativas</value>
+  </data>
+  <data name="Home_RecentChanges" xml:space="preserve">
+    <value>Cambios recientes</value>
+  </data>
+  <data name="Sync_Now" xml:space="preserve">
+    <value>Actualizar</value>
+  </data>
+  <data name="Sync_Running" xml:space="preserve">
+    <value>Actualizando…</value>
+  </data>
+  <data name="Sync_Last" xml:space="preserve">
+    <value>Actualizado: {0}</value>
+  </data>
+  <data name="Sync_Never" xml:space="preserve">
+    <value>Aún no se ha actualizado. Deslice hacia abajo para actualizar.</value>
+  </data>
+  <data name="Sync_Failed" xml:space="preserve">
+    <value>No se ha podido actualizar: {0}</value>
+  </data>
+  <data name="Sync_Offline" xml:space="preserve">
+    <value>Sin conexión. Se muestran los datos guardados.</value>
+  </data>
+  <data name="List_Search" xml:space="preserve">
+    <value>Buscar iniciativas</value>
+  </data>
+  <data name="List_All" xml:space="preserve">
+    <value>Todas</value>
+  </data>
+  <data name="List_Followed" xml:space="preserve">
+    <value>Seguidas</value>
+  </data>
+  <data name="List_Sort" xml:space="preserve">
+    <value>Ordenar</value>
+  </data>
+  <data name="List_Empty" xml:space="preserve">
+    <value>Ninguna iniciativa coincide.</value>
+  </data>
+  <data name="List_Count" xml:space="preserve">
+    <value>Iniciativas: {0}</value>
+  </data>
+  <data name="List_SelectHint" xml:space="preserve">
+    <value>Seleccione una iniciativa para ver sus detalles.</value>
+  </data>
+  <data name="Sort_Newest" xml:space="preserve">
+    <value>Más recientes</value>
+  </data>
+  <data name="Sort_MostSupporters" xml:space="preserve">
+    <value>Más firmantes</value>
+  </data>
+  <data name="Sort_EndingSoon" xml:space="preserve">
+    <value>Próximas a cerrar</value>
+  </data>
+  <data name="Sort_RecentlyUpdated" xml:space="preserve">
+    <value>Actualizadas recientemente</value>
+  </data>
+  <data name="Phase_Unknown" xml:space="preserve">
+    <value>Desconocido</value>
+  </data>
+  <data name="Phase_Upcoming" xml:space="preserve">
+    <value>Próximo inicio</value>
+  </data>
+  <data name="Phase_Collecting" xml:space="preserve">
+    <value>Recogida de firmas</value>
+  </data>
+  <data name="Phase_Verification" xml:space="preserve">
+    <value>Verificación de firmas</value>
+  </data>
+  <data name="Phase_Submitted" xml:space="preserve">
+    <value>Presentada a la Comisión</value>
+  </data>
+  <data name="Phase_Answered" xml:space="preserve">
+    <value>Respondida por la Comisión</value>
+  </data>
+  <data name="Phase_Failed" xml:space="preserve">
+    <value>Sin apoyo suficiente</value>
+  </data>
+  <data name="Phase_Withdrawn" xml:space="preserve">
+    <value>Retirada</value>
+  </data>
+  <data name="Item_Supporters" xml:space="preserve">
+    <value>Firmantes: {0:N0}</value>
+  </data>
+  <data name="Item_EndsOn" xml:space="preserve">
+    <value>Finaliza el {0:d}</value>
+  </data>
+  <data name="Item_EndedOn" xml:space="preserve">
+    <value>Finalizó el {0:d}</value>
+  </data>
+  <data name="Item_StartsOn" xml:space="preserve">
+    <value>Comienza el {0:d}</value>
+  </data>
+  <data name="Item_LastCall" xml:space="preserve">
+    <value>Últimos días</value>
+  </data>
+  <data name="Item_Followed" xml:space="preserve">
+    <value>Seguida</value>
+  </data>
+  <data name="Detail_Title" xml:space="preserve">
+    <value>Iniciativa</value>
+  </data>
+  <data name="Detail_Objectives" xml:space="preserve">
+    <value>Objetivos</value>
+  </data>
+  <data name="Detail_Annex" xml:space="preserve">
+    <value>Más información</value>
+  </data>
+  <data name="Detail_Treaties" xml:space="preserve">
+    <value>Disposiciones de los Tratados</value>
+  </data>
+  <data name="Detail_Progress" xml:space="preserve">
+    <value>Cronología</value>
+  </data>
+  <data name="Detail_Signatures" xml:space="preserve">
+    <value>Firmas</value>
+  </data>
+  <data name="Detail_SignaturesVerified" xml:space="preserve">
+    <value>Firmas verificadas: {0:N0}</value>
+  </data>
+  <data name="Detail_SignaturesCollected" xml:space="preserve">
+    <value>Firmas recogidas: {0:N0}</value>
+  </data>
+  <data name="Detail_TopCountries" xml:space="preserve">
+    <value>Países con más firmas</value>
+  </data>
+  <data name="Detail_Answer" xml:space="preserve">
+    <value>Respuesta de la Comisión</value>
+  </data>
+  <data name="Detail_AnswerDate" xml:space="preserve">
+    <value>Decisión del {0:d}</value>
+  </data>
+  <data name="Detail_Documents" xml:space="preserve">
+    <value>Documentos</value>
+  </data>
+  <data name="Detail_OfficialPage" xml:space="preserve">
+    <value>Abrir en el sitio web oficial</value>
+  </data>
+  <data name="Detail_Follow" xml:space="preserve">
+    <value>Seguir</value>
+  </data>
+  <data name="Detail_Unfollow" xml:space="preserve">
+    <value>Dejar de seguir</value>
+  </data>
+  <data name="Detail_Loading" xml:space="preserve">
+    <value>Cargando detalles…</value>
+  </data>
+  <data name="Detail_Unavailable" xml:space="preserve">
+    <value>Los detalles aún no se han descargado. Conéctese a internet y actualice.</value>
+  </data>
+  <data name="Detail_Registered" xml:space="preserve">
+    <value>Registrada el {0:d}</value>
+  </data>
+  <data name="Detail_Collection" xml:space="preserve">
+    <value>Recogida: {0:d} – {1:d}</value>
+  </data>
+  <data name="Detail_CollectionOpen" xml:space="preserve">
+    <value>Recogida desde el {0:d}</value>
+  </data>
+  <data name="Step_REGISTERED" xml:space="preserve">
+    <value>Registrada</value>
+  </data>
+  <data name="Step_COLLECTION_START_DATE" xml:space="preserve">
+    <value>Inicio de la recogida</value>
+  </data>
+  <data name="Step_ONGOING" xml:space="preserve">
+    <value>Recogida de firmas</value>
+  </data>
+  <data name="Step_CLOSED" xml:space="preserve">
+    <value>Recogida cerrada</value>
+  </data>
+  <data name="Step_VERIFICATION" xml:space="preserve">
+    <value>Firmas verificadas</value>
+  </data>
+  <data name="Step_SUBMITTED" xml:space="preserve">
+    <value>Presentada a la Comisión</value>
+  </data>
+  <data name="Step_ANSWERED" xml:space="preserve">
+    <value>Respuesta de la Comisión</value>
+  </data>
+  <data name="Step_INSUFFICIENT_SUPPORT" xml:space="preserve">
+    <value>Sin apoyo suficiente</value>
+  </data>
+  <data name="Step_INSUFFICIENT_SUPPORT_AFTER_VERIFICATION" xml:space="preserve">
+    <value>Firmas válidas insuficientes</value>
+  </data>
+  <data name="Step_WITHDRAWN" xml:space="preserve">
+    <value>Retirada</value>
+  </data>
+  <data name="Doc_COMMUNICATION" xml:space="preserve">
+    <value>Comunicación de la Comisión</value>
+  </data>
+  <data name="Doc_PRESS_RELEASE" xml:space="preserve">
+    <value>Comunicado de prensa</value>
+  </data>
+  <data name="Doc_EXAMIN_STEPS" xml:space="preserve">
+    <value>Etapas del examen</value>
+  </data>
+  <data name="Doc_FOLLOW_UP" xml:space="preserve">
+    <value>Seguimiento</value>
+  </data>
+  <data name="Doc_ANNEX" xml:space="preserve">
+    <value>Anexo de la comunicación</value>
+  </data>
+  <data name="Doc_Registration" xml:space="preserve">
+    <value>Decisión de registro de la Comisión</value>
+  </data>
+  <data name="Doc_Other" xml:space="preserve">
+    <value>Documento</value>
+  </data>
+  <data name="Sign_Button" xml:space="preserve">
+    <value>Firmar esta iniciativa</value>
+  </data>
+  <data name="Sign_DaysLeft" xml:space="preserve">
+    <value>Días restantes para firmar: {0} (hasta el {1:d})</value>
+  </data>
+  <data name="Sign_LastDay" xml:space="preserve">
+    <value>Último día para firmar</value>
+  </data>
+  <data name="Sign_Note" xml:space="preserve">
+    <value>La firma se realiza en el sitio web oficial de la Comisión Europea. Esta aplicación nunca ve sus datos.</value>
+  </data>
+  <data name="Sign_Mark" xml:space="preserve">
+    <value>He firmado esta iniciativa</value>
+  </data>
+  <data name="Sign_MarkHint" xml:space="preserve">
+    <value>Solo se guarda en este dispositivo</value>
+  </data>
+  <data name="Item_Signed" xml:space="preserve">
+    <value>Firmada</value>
+  </data>
+  <data name="Tab_News" xml:space="preserve">
+    <value>Noticias</value>
+  </data>
+  <data name="News_Title" xml:space="preserve">
+    <value>Últimas noticias</value>
+  </data>
+  <data name="News_Empty" xml:space="preserve">
+    <value>Aún no hay noticias. Deslice hacia abajo para actualizar.</value>
+  </data>
+  <data name="News_New" xml:space="preserve">
+    <value>Nuevo</value>
+  </data>
+  <data name="News_OpenHint" xml:space="preserve">
+    <value>Abre el artículo completo en el sitio web oficial</value>
+  </data>
+  <data name="News_Source" xml:space="preserve">
+    <value>Noticias del sitio web oficial de la iniciativa ciudadana europea.</value>
+  </data>
+  <data name="Settings_NotifyAll" xml:space="preserve">
+    <value>Recibir avisos de todas las iniciativas</value>
+  </data>
+  <data name="Settings_NotifyAllHint" xml:space="preserve">
+    <value>Si está desactivado, solo recibirá avisos sobre resultados y plazos de las iniciativas que siga. Las nuevas iniciativas y las noticias se anuncian siempre.</value>
+  </data>
+  <data name="Notif_Channel_New" xml:space="preserve">
+    <value>Nuevas iniciativas</value>
+  </data>
+  <data name="Notif_Channel_Ending" xml:space="preserve">
+    <value>Fin de la recogida</value>
+  </data>
+  <data name="Notif_Channel_Results" xml:space="preserve">
+    <value>Resultados</value>
+  </data>
+  <data name="Notif_Channel_News" xml:space="preserve">
+    <value>Noticias</value>
+  </data>
+  <data name="Notif_NewInitiative" xml:space="preserve">
+    <value>Nueva iniciativa registrada</value>
+  </data>
+  <data name="Notif_CollectionStarted" xml:space="preserve">
+    <value>Ha comenzado la recogida de firmas</value>
+  </data>
+  <data name="Notif_EndingDays" xml:space="preserve">
+    <value>Quedan {0} días para firmar</value>
+  </data>
+  <data name="Notif_EndingTomorrow" xml:space="preserve">
+    <value>La recogida de firmas termina mañana</value>
+  </data>
+  <data name="Notif_EndingToday" xml:space="preserve">
+    <value>Último día para firmar</value>
+  </data>
+  <data name="Notif_CollectionEnded" xml:space="preserve">
+    <value>Ha terminado la recogida de firmas</value>
+  </data>
+  <data name="Notif_Milestone" xml:space="preserve">
+    <value>Se han alcanzado {0:N0} firmas</value>
+  </data>
+  <data name="Notif_Successful" xml:space="preserve">
+    <value>Con éxito: presentada a la Comisión Europea</value>
+  </data>
+  <data name="Notif_Answered" xml:space="preserve">
+    <value>La Comisión Europea ha respondido</value>
+  </data>
+  <data name="Notif_Failed" xml:space="preserve">
+    <value>Sin éxito: apoyo insuficiente</value>
+  </data>
+  <data name="Notif_Withdrawn" xml:space="preserve">
+    <value>Retirada por los organizadores</value>
+  </data>
+  <data name="Notif_NewsOne" xml:space="preserve">
+    <value>Nuevo artículo</value>
+  </data>
+  <data name="Notif_NewsMany" xml:space="preserve">
+    <value>{0} artículos nuevos</value>
+  </data>
+  <data name="Tab_Settings" xml:space="preserve">
+    <value>Ajustes</value>
+  </data>
+  <data name="Settings_Language" xml:space="preserve">
+    <value>Idioma</value>
+  </data>
+  <data name="Settings_LanguageHint" xml:space="preserve">
+    <value>Se aplica a la aplicación, a las iniciativas y a las noticias. Si una iniciativa no está traducida, se muestra en inglés o en su lengua original.</value>
+  </data>
+  <data name="Settings_DeviceLanguage" xml:space="preserve">
+    <value>Idioma del dispositivo ({0})</value>
+  </data>
+  <data name="Settings_Notifications" xml:space="preserve">
+    <value>Notificaciones</value>
+  </data>
+  <data name="Settings_SystemNotifications" xml:space="preserve">
+    <value>Elegir tipos de notificación</value>
+  </data>
+  <data name="Settings_SystemNotificationsHint" xml:space="preserve">
+    <value>Abre los ajustes del sistema, donde puede desactivar cada tipo de notificación.</value>
+  </data>
+  <data name="Settings_About" xml:space="preserve">
+    <value>Acerca de</value>
+  </data>
+</root>

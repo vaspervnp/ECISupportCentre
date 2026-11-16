@@ -2,7 +2,7 @@
 
 An Android app (phone and tablet) for following the **European Citizens' Initiatives** published on [citizens-initiative.europa.eu](https://citizens-initiative.europa.eu/index_en).
 
-> Status: **M6 done**: Home, Initiatives and News tabs, initiative details, tablet layout, signing on the official collection page, background sync and notifications. The 24 languages follow in M7. See [milestones.md](milestones.md) for the roadmap.
+> Status: **M7 done**: Home, Initiatives, News and Settings tabs, initiative details, tablet layout, signing on the official collection page, background sync and notifications, all in the 24 EU languages (machine translations, not yet reviewed by native speakers). See [milestones.md](milestones.md) for the roadmap.
 
 ## Project structure
 

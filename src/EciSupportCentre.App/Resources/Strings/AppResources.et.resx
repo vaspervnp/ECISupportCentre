@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- English (default). Translations go in AppResources.<lang>.resx with the same keys. -->
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AppName" xml:space="preserve">
+    <value>ECI Support Centre</value>
+  </data>
+  <data name="Disclaimer" xml:space="preserve">
+    <value>Ei ole Euroopa Liidu ametlik rakendus. Andmed: citizens-initiative.europa.eu</value>
+  </data>
+  <data name="Tab_Home" xml:space="preserve">
+    <value>Avaleht</value>
+  </data>
+  <data name="Tab_Initiatives" xml:space="preserve">
+    <value>Algatused</value>
+  </data>
+  <data name="Home_Title" xml:space="preserve">
+    <value>Euroopa kodanikualgatused</value>
+  </data>
+  <data name="Home_Intro" xml:space="preserve">
+    <value>Vähemalt seitsmest ELi riigist kogutud miljon allkirja võimaldab paluda Euroopa Komisjonil esitada õigusakti ettepanek.</value>
+  </data>
+  <data name="Home_Registered" xml:space="preserve">
+    <value>Registreeritud</value>
+  </data>
+  <data name="Home_Collecting" xml:space="preserve">
+    <value>Kogumisel</value>
+  </data>
+  <data name="Home_Successful" xml:space="preserve">
+    <value>Edukad</value>
+  </data>
+  <data name="Home_Answered" xml:space="preserve">
+    <value>Vastatud</value>
+  </data>
+  <data name="Home_Failed" xml:space="preserve">
+    <value>Ebapiisav toetus</value>
+  </data>
+  <data name="Home_Withdrawn" xml:space="preserve">
+    <value>Tagasi võetud</value>
+  </data>
+  <data name="Home_EndingSoon" xml:space="preserve">
+    <value>Praegu kogumisel, varsti lõppevad</value>
+  </data>
+  <data name="Home_SeeAll" xml:space="preserve">
+    <value>Kõik algatused</value>
+  </data>
+  <data name="Home_RecentChanges" xml:space="preserve">
+    <value>Viimased muudatused</value>
+  </data>
+  <data name="Sync_Now" xml:space="preserve">
+    <value>Värskenda</value>
+  </data>
+  <data name="Sync_Running" xml:space="preserve">
+    <value>Uuendamine…</value>
+  </data>
+  <data name="Sync_Last" xml:space="preserve">
+    <value>Uuendatud {0}</value>
+  </data>
+  <data name="Sync_Never" xml:space="preserve">
+    <value>Pole veel uuendatud. Värskendamiseks tõmmake alla.</value>
+  </data>
+  <data name="Sync_Failed" xml:space="preserve">
+    <value>Uuendamine ebaõnnestus: {0}</value>
+  </data>
+  <data name="Sync_Offline" xml:space="preserve">
+    <value>Teil puudub võrguühendus. Kuvatakse salvestatud andmed.</value>
+  </data>
+  <data name="List_Search" xml:space="preserve">
+    <value>Otsi algatusi</value>
+  </data>
+  <data name="List_All" xml:space="preserve">
+    <value>Kõik</value>
+  </data>
+  <data name="List_Followed" xml:space="preserve">
+    <value>Jälgitavad</value>
+  </data>
+  <data name="List_Sort" xml:space="preserve">
+    <value>Sordi</value>
+  </data>
+  <data name="List_Empty" xml:space="preserve">
+    <value>Sobivaid algatusi ei leitud.</value>
+  </data>
+  <data name="List_Count" xml:space="preserve">
+    <value>Algatusi: {0}</value>
+  </data>
+  <data name="List_SelectHint" xml:space="preserve">
+    <value>Üksikasjade nägemiseks valige algatus.</value>
+  </data>
+  <data name="Sort_Newest" xml:space="preserve">
+    <value>Uusimad</value>
+  </data>
+  <data name="Sort_MostSupporters" xml:space="preserve">
+    <value>Enim toetajaid</value>
+  </data>
+  <data name="Sort_EndingSoon" xml:space="preserve">
+    <value>Varsti lõppevad</value>
+  </data>
+  <data name="Sort_RecentlyUpdated" xml:space="preserve">
+    <value>Hiljuti uuendatud</value>
+  </data>
+  <data name="Phase_Unknown" xml:space="preserve">
+    <value>Teadmata</value>
+  </data>
+  <data name="Phase_Upcoming" xml:space="preserve">
+    <value>Algab peagi</value>
+  </data>
+  <data name="Phase_Collecting" xml:space="preserve">
+    <value>Allkirjade kogumine</value>
+  </data>
+  <data name="Phase_Verification" xml:space="preserve">
+    <value>Allkirjade kontroll</value>
+  </data>
+  <data name="Phase_Submitted" xml:space="preserve">
+    <value>Esitatud komisjonile</value>
+  </data>
+  <data name="Phase_Answered" xml:space="preserve">
+    <value>Komisjon on vastanud</value>
+  </data>
+  <data name="Phase_Failed" xml:space="preserve">
+    <value>Ebapiisav toetus</value>
+  </data>
+  <data name="Phase_Withdrawn" xml:space="preserve">
+    <value>Tagasi võetud</value>
+  </data>
+  <data name="Item_Supporters" xml:space="preserve">
+    <value>Toetajaid: {0:N0}</value>
+  </data>
+  <data name="Item_EndsOn" xml:space="preserve">
+    <value>Lõpeb {0:d}</value>
+  </data>
+  <data name="Item_EndedOn" xml:space="preserve">
+    <value>Lõppes {0:d}</value>
+  </data>
+  <data name="Item_StartsOn" xml:space="preserve">
+    <value>Algab {0:d}</value>
+  </data>
+  <data name="Item_LastCall" xml:space="preserve">
+    <value>Viimased päevad</value>
+  </data>
+  <data name="Item_Followed" xml:space="preserve">
+    <value>Jälgitav</value>
+  </data>
+  <data name="Detail_Title" xml:space="preserve">
+    <value>Algatus</value>
+  </data>
+  <data name="Detail_Objectives" xml:space="preserve">
+    <value>Eesmärgid</value>
+  </data>
+  <data name="Detail_Annex" xml:space="preserve">
+    <value>Lisateave</value>
+  </data>
+  <data name="Detail_Treaties" xml:space="preserve">
+    <value>Aluslepingute sätted</value>
+  </data>
+  <data name="Detail_Progress" xml:space="preserve">
+    <value>Ajajoon</value>
+  </data>
+  <data name="Detail_Signatures" xml:space="preserve">
+    <value>Allkirjad</value>
+  </data>
+  <data name="Detail_SignaturesVerified" xml:space="preserve">
+    <value>Kontrollitud allkirju: {0:N0}</value>
+  </data>
+  <data name="Detail_SignaturesCollected" xml:space="preserve">
+    <value>Kogutud allkirju: {0:N0}</value>
+  </data>
+  <data name="Detail_TopCountries" xml:space="preserve">
+    <value>Peamised riigid</value>
+  </data>
+  <data name="Detail_Answer" xml:space="preserve">
+    <value>Komisjoni vastus</value>
+  </data>
+  <data name="Detail_AnswerDate" xml:space="preserve">
+    <value>Otsus {0:d}</value>
+  </data>
+  <data name="Detail_Documents" xml:space="preserve">
+    <value>Dokumendid</value>
+  </data>
+  <data name="Detail_OfficialPage" xml:space="preserve">
+    <value>Ava ametlikul veebisaidil</value>
+  </data>
+  <data name="Detail_Follow" xml:space="preserve">
+    <value>Jälgi</value>
+  </data>
+  <data name="Detail_Unfollow" xml:space="preserve">
+    <value>Lõpeta jälgimine</value>
+  </data>
+  <data name="Detail_Loading" xml:space="preserve">
+    <value>Üksikasjade laadimine…</value>
+  </data>
+  <data name="Detail_Unavailable" xml:space="preserve">
+    <value>Üksikasju pole veel alla laaditud. Looge internetiühendus ja värskendage.</value>
+  </data>
+  <data name="Detail_Registered" xml:space="preserve">
+    <value>Registreeritud {0:d}</value>
+  </data>
+  <data name="Detail_Collection" xml:space="preserve">
+    <value>Kogumine {0:d} – {1:d}</value>
+  </data>
+  <data name="Detail_CollectionOpen" xml:space="preserve">
+    <value>Kogumine alates {0:d}</value>
+  </data>
+  <data name="Step_REGISTERED" xml:space="preserve">
+    <value>Registreeritud</value>
+  </data>
+  <data name="Step_COLLECTION_START_DATE" xml:space="preserve">
+    <value>Kogumine algas</value>
+  </data>
+  <data name="Step_ONGOING" xml:space="preserve">
+    <value>Allkirjade kogumine</value>
+  </data>
+  <data name="Step_CLOSED" xml:space="preserve">
+    <value>Kogumine lõppenud</value>
+  </data>
+  <data name="Step_VERIFICATION" xml:space="preserve">
+    <value>Allkirjad kontrollitud</value>
+  </data>
+  <data name="Step_SUBMITTED" xml:space="preserve">
+    <value>Esitatud komisjonile</value>
+  </data>
+  <data name="Step_ANSWERED" xml:space="preserve">
+    <value>Komisjon vastas</value>
+  </data>
+  <data name="Step_INSUFFICIENT_SUPPORT" xml:space="preserve">
+    <value>Ebapiisav toetus</value>
+  </data>
+  <data name="Step_INSUFFICIENT_SUPPORT_AFTER_VERIFICATION" xml:space="preserve">
+    <value>Kehtivaid allkirju ei olnud piisavalt</value>
+  </data>
+  <data name="Step_WITHDRAWN" xml:space="preserve">
+    <value>Tagasi võetud</value>
+  </data>
+  <data name="Doc_COMMUNICATION" xml:space="preserve">
+    <value>Komisjoni teatis</value>
+  </data>
+  <data name="Doc_PRESS_RELEASE" xml:space="preserve">
+    <value>Pressiteade</value>
+  </data>
+  <data name="Doc_EXAMIN_STEPS" xml:space="preserve">
+    <value>Läbivaatamise etapid</value>
+  </data>
+  <data name="Doc_FOLLOW_UP" xml:space="preserve">
+    <value>Järelmeetmed</value>
+  </data>
+  <data name="Doc_ANNEX" xml:space="preserve">
+    <value>Teatise lisa</value>
+  </data>
+  <data name="Doc_Registration" xml:space="preserve">
+    <value>Komisjoni registreerimisotsus</value>
+  </data>
+  <data name="Doc_Other" xml:space="preserve">
+    <value>Dokument</value>
+  </data>
+  <data name="Sign_Button" xml:space="preserve">
+    <value>Allkirjasta see algatus</value>
+  </data>
+  <data name="Sign_DaysLeft" xml:space="preserve">
+    <value>Allkirjastamiseks jäänud päevi: {0} (kuni {1:d})</value>
+  </data>
+  <data name="Sign_LastDay" xml:space="preserve">
+    <value>Viimane päev allkirjastamiseks</value>
+  </data>
+  <data name="Sign_Note" xml:space="preserve">
+    <value>Allkirjastate Euroopa Komisjoni ametlikul veebisaidil. See rakendus ei näe kunagi teie andmeid.</value>
+  </data>
+  <data name="Sign_Mark" xml:space="preserve">
+    <value>Allkirjastasin selle algatuse</value>
+  </data>
+  <data name="Sign_MarkHint" xml:space="preserve">
+    <value>Salvestatakse ainult selles seadmes</value>
+  </data>
+  <data name="Item_Signed" xml:space="preserve">
+    <value>Allkirjastatud</value>
+  </data>
+  <data name="Tab_News" xml:space="preserve">
+    <value>Uudised</value>
+  </data>
+  <data name="News_Title" xml:space="preserve">
+    <value>Viimased uudised</value>
+  </data>
+  <data name="News_Empty" xml:space="preserve">
+    <value>Uudiseid veel pole. Värskendamiseks tõmmake alla.</value>
+  </data>
+  <data name="News_New" xml:space="preserve">
+    <value>Uus</value>
+  </data>
+  <data name="News_OpenHint" xml:space="preserve">
+    <value>Avab kogu artikli ametlikul veebisaidil</value>
+  </data>
+  <data name="News_Source" xml:space="preserve">
+    <value>Uudised Euroopa kodanikualgatuse ametlikult veebisaidilt.</value>
+  </data>
+  <data name="Settings_NotifyAll" xml:space="preserve">
+    <value>Teavita mind kõigist algatustest</value>
+  </data>
+  <data name="Settings_NotifyAllHint" xml:space="preserve">
+    <value>Kui see on välja lülitatud, saate teateid tulemuste ja tähtaegade kohta ainult jälgitavate algatuste puhul. Uutest algatustest ja uudistest teavitatakse alati.</value>
+  </data>
+  <data name="Notif_Channel_New" xml:space="preserve">
+    <value>Uued algatused</value>
+  </data>
+  <data name="Notif_Channel_Ending" xml:space="preserve">
+    <value>Kogumine lõpeb</value>
+  </data>
+  <data name="Notif_Channel_Results" xml:space="preserve">
+    <value>Tulemused</value>
+  </data>
+  <data name="Notif_Channel_News" xml:space="preserve">
+    <value>Uudised</value>
+  </data>
+  <data name="Notif_NewInitiative" xml:space="preserve">
+    <value>Registreeriti uus algatus</value>
+  </data>
+  <data name="Notif_CollectionStarted" xml:space="preserve">
+    <value>Allkirjade kogumine on alanud</value>
+  </data>
+  <data name="Notif_EndingDays" xml:space="preserve">
+    <value>Allkirjastamiseks on jäänud {0} päeva</value>
+  </data>
+  <data name="Notif_EndingTomorrow" xml:space="preserve">
+    <value>Allkirjade kogumine lõpeb homme</value>
+  </data>
+  <data name="Notif_EndingToday" xml:space="preserve">
+    <value>Viimane päev allkirjastamiseks</value>
+  </data>
+  <data name="Notif_CollectionEnded" xml:space="preserve">
+    <value>Allkirjade kogumine on lõppenud</value>
+  </data>
+  <data name="Notif_Milestone" xml:space="preserve">
+    <value>Kogutud allkirju: {0:N0}</value>
+  </data>
+  <data name="Notif_Successful" xml:space="preserve">
+    <value>Edukas: esitatud Euroopa Komisjonile</value>
+  </data>
+  <data name="Notif_Answered" xml:space="preserve">
+    <value>Euroopa Komisjon on vastanud</value>
+  </data>
+  <data name="Notif_Failed" xml:space="preserve">
+    <value>Ebaõnnestus: ebapiisav toetus</value>
+  </data>
+  <data name="Notif_Withdrawn" xml:space="preserve">
+    <value>Korraldajad võtsid algatuse tagasi</value>
+  </data>
+  <data name="Notif_NewsOne" xml:space="preserve">
+    <value>Uus artikkel</value>
+  </data>
+  <data name="Notif_NewsMany" xml:space="preserve">
+    <value>{0} uut artiklit</value>
+  </data>
+  <data name="Tab_Settings" xml:space="preserve">
+    <value>Seaded</value>
+  </data>
+  <data name="Settings_Language" xml:space="preserve">
+    <value>Keel</value>
+  </data>
+  <data name="Settings_LanguageHint" xml:space="preserve">
+    <value>Kasutatakse rakenduses, algatustes ja uudistes. Kui algatusel tõlge puudub, kuvatakse see inglise keeles või originaalkeeles.</value>
+  </data>
+  <data name="Settings_DeviceLanguage" xml:space="preserve">
+    <value>Seadme keel ({0})</value>
+  </data>
+  <data name="Settings_Notifications" xml:space="preserve">
+    <value>Teavitused</value>
+  </data>
+  <data name="Settings_SystemNotifications" xml:space="preserve">
+    <value>Valige teavituste liigid</value>
+  </data>
+  <data name="Settings_SystemNotificationsHint" xml:space="preserve">
+    <value>Avab süsteemiseaded, kus saab iga teavituse liigi välja lülitada.</value>
+  </data>
+  <data name="Settings_About" xml:space="preserve">
+    <value>Teave</value>
+  </data>
+</root>

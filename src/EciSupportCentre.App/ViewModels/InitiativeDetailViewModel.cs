@@ -28,6 +28,7 @@ public sealed partial class InitiativeDetailViewModel : ObservableObject, IQuery
     private long _id;
     private bool _showing;
     private int _loadVersion;
+    private string? _shownLanguage;
 
     public InitiativeDetailViewModel(DataService data)
     {
@@ -133,6 +134,10 @@ public sealed partial class InitiativeDetailViewModel : ObservableObject, IQuery
         }
     }
 
+    /// <summary>Shows the same initiative again when the app language changed since it was shown.</summary>
+    public Task RefreshIfLanguageChangedAsync() =>
+        _id != 0 && _shownLanguage is not null && _shownLanguage != Loc.Instance.Culture.Name ? LoadAsync(_id) : Task.CompletedTask;
+
     public async Task LoadAsync(long id)
     {
         _id = id;
@@ -204,18 +209,18 @@ public sealed partial class InitiativeDetailViewModel : ObservableObject, IQuery
     {
         if (OfficialPage is not null)
         {
-            await Browser.Default.OpenAsync(OfficialPage, BrowserLaunchMode.SystemPreferred);
+            await AppBrowser.OpenAsync(OfficialPage);
         }
     }
 
     [RelayCommand]
-    private static async Task OpenLinkAsync(LinkEntry link) =>
-        await Browser.Default.OpenAsync(link.Uri, BrowserLaunchMode.SystemPreferred);
+    private static Task OpenLinkAsync(LinkEntry link) => AppBrowser.OpenAsync(link.Uri);
 
     /// <summary>Shows what the database has. Returns false if the initiative is unknown or a newer load started.</summary>
     private async Task<bool> ShowStoredAsync(int version)
     {
         var language = Loc.Instance.Language;
+        _shownLanguage = Loc.Instance.Culture.Name;
         var item = await _data.Database.GetInitiativeAsync(_id, language);
         var details = item?.HasDetails == true ? await _data.Database.GetDetailsAsync(_id) : null;
         if (version != _loadVersion)

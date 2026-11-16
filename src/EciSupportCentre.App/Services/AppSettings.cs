@@ -8,6 +8,14 @@ public static class AppSettings
     private const string FollowAllKey = "notify_follow_all";
     private const string SyncIntervalKey = "sync_interval_hours";
     private const string WifiOnlyKey = "sync_wifi_only";
+    private const string LanguageKey = "app_language";
+
+    /// <summary>EU language code chosen by the user; empty to follow the device language.</summary>
+    public static string Language
+    {
+        get => Preferences.Default.Get(LanguageKey, "");
+        set => Preferences.Default.Set(LanguageKey, value);
+    }
 
     /// <summary>Notify about every initiative (true) or only followed ones (false).</summary>
     public static bool FollowAll

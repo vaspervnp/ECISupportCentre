@@ -13,6 +13,9 @@ public interface INotificationPoster
 
     /// <summary>Shows or replaces the notification with the same <see cref="PlannedNotification.Key"/>.</summary>
     void Post(PlannedNotification notification, string title, string text);
+
+    /// <summary>Opens the system screen where the user turns notification channels on or off.</summary>
+    void OpenSystemSettings();
 }
 
 /// <summary>After each sync: decides what to tell the user, shows it, and records it as handled.</summary>

@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- English (default). Translations go in AppResources.<lang>.resx with the same keys. -->
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AppName" xml:space="preserve">
+    <value>ECI Support Centre</value>
+  </data>
+  <data name="Disclaimer" xml:space="preserve">
+    <value>Tai nėra oficiali Europos Sąjungos programėlė. Duomenys: citizens-initiative.europa.eu</value>
+  </data>
+  <data name="Tab_Home" xml:space="preserve">
+    <value>Pradžia</value>
+  </data>
+  <data name="Tab_Initiatives" xml:space="preserve">
+    <value>Iniciatyvos</value>
+  </data>
+  <data name="Home_Title" xml:space="preserve">
+    <value>Europos piliečių iniciatyvos</value>
+  </data>
+  <data name="Home_Intro" xml:space="preserve">
+    <value>Milijonas parašų iš bent septynių ES šalių – tai prašymas Europos Komisijai pasiūlyti teisės aktą.</value>
+  </data>
+  <data name="Home_Registered" xml:space="preserve">
+    <value>Užregistruotos</value>
+  </data>
+  <data name="Home_Collecting" xml:space="preserve">
+    <value>Renkami parašai</value>
+  </data>
+  <data name="Home_Successful" xml:space="preserve">
+    <value>Sėkmingos</value>
+  </data>
+  <data name="Home_Answered" xml:space="preserve">
+    <value>Atsakyta</value>
+  </data>
+  <data name="Home_Failed" xml:space="preserve">
+    <value>Nepakanka paramos</value>
+  </data>
+  <data name="Home_Withdrawn" xml:space="preserve">
+    <value>Atsiimtos</value>
+  </data>
+  <data name="Home_EndingSoon" xml:space="preserve">
+    <value>Renkami parašai – greičiausiai baigiasi</value>
+  </data>
+  <data name="Home_SeeAll" xml:space="preserve">
+    <value>Visos iniciatyvos</value>
+  </data>
+  <data name="Home_RecentChanges" xml:space="preserve">
+    <value>Naujausi pakeitimai</value>
+  </data>
+  <data name="Sync_Now" xml:space="preserve">
+    <value>Atnaujinti</value>
+  </data>
+  <data name="Sync_Running" xml:space="preserve">
+    <value>Atnaujinama…</value>
+  </data>
+  <data name="Sync_Last" xml:space="preserve">
+    <value>Atnaujinta {0}</value>
+  </data>
+  <data name="Sync_Never" xml:space="preserve">
+    <value>Dar neatnaujinta. Patraukite žemyn, kad atnaujintumėte.</value>
+  </data>
+  <data name="Sync_Failed" xml:space="preserve">
+    <value>Nepavyko atnaujinti: {0}</value>
+  </data>
+  <data name="Sync_Offline" xml:space="preserve">
+    <value>Esate neprisijungę. Rodomi išsaugoti duomenys.</value>
+  </data>
+  <data name="List_Search" xml:space="preserve">
+    <value>Ieškoti iniciatyvų</value>
+  </data>
+  <data name="List_All" xml:space="preserve">
+    <value>Visos</value>
+  </data>
+  <data name="List_Followed" xml:space="preserve">
+    <value>Stebimos</value>
+  </data>
+  <data name="List_Sort" xml:space="preserve">
+    <value>Rūšiuoti</value>
+  </data>
+  <data name="List_Empty" xml:space="preserve">
+    <value>Atitinkančių iniciatyvų nėra.</value>
+  </data>
+  <data name="List_Count" xml:space="preserve">
+    <value>Iniciatyvų: {0}</value>
+  </data>
+  <data name="List_SelectHint" xml:space="preserve">
+    <value>Pasirinkite iniciatyvą, kad pamatytumėte išsamią informaciją.</value>
+  </data>
+  <data name="Sort_Newest" xml:space="preserve">
+    <value>Naujausios</value>
+  </data>
+  <data name="Sort_MostSupporters" xml:space="preserve">
+    <value>Daugiausia rėmėjų</value>
+  </data>
+  <data name="Sort_EndingSoon" xml:space="preserve">
+    <value>Greitai baigiasi</value>
+  </data>
+  <data name="Sort_RecentlyUpdated" xml:space="preserve">
+    <value>Neseniai atnaujintos</value>
+  </data>
+  <data name="Phase_Unknown" xml:space="preserve">
+    <value>Nežinoma</value>
+  </data>
+  <data name="Phase_Upcoming" xml:space="preserve">
+    <value>Netrukus prasidės</value>
+  </data>
+  <data name="Phase_Collecting" xml:space="preserve">
+    <value>Renkami parašai</value>
+  </data>
+  <data name="Phase_Verification" xml:space="preserve">
+    <value>Tikrinami parašai</value>
+  </data>
+  <data name="Phase_Submitted" xml:space="preserve">
+    <value>Pateikta Komisijai</value>
+  </data>
+  <data name="Phase_Answered" xml:space="preserve">
+    <value>Komisija atsakė</value>
+  </data>
+  <data name="Phase_Failed" xml:space="preserve">
+    <value>Nepakanka paramos</value>
+  </data>
+  <data name="Phase_Withdrawn" xml:space="preserve">
+    <value>Atsiimta</value>
+  </data>
+  <data name="Item_Supporters" xml:space="preserve">
+    <value>Rėmėjų: {0:N0}</value>
+  </data>
+  <data name="Item_EndsOn" xml:space="preserve">
+    <value>Baigiasi {0:d}</value>
+  </data>
+  <data name="Item_EndedOn" xml:space="preserve">
+    <value>Baigėsi {0:d}</value>
+  </data>
+  <data name="Item_StartsOn" xml:space="preserve">
+    <value>Prasideda {0:d}</value>
+  </data>
+  <data name="Item_LastCall" xml:space="preserve">
+    <value>Paskutinė proga</value>
+  </data>
+  <data name="Item_Followed" xml:space="preserve">
+    <value>Stebima</value>
+  </data>
+  <data name="Detail_Title" xml:space="preserve">
+    <value>Iniciatyva</value>
+  </data>
+  <data name="Detail_Objectives" xml:space="preserve">
+    <value>Tikslai</value>
+  </data>
+  <data name="Detail_Annex" xml:space="preserve">
+    <value>Daugiau informacijos</value>
+  </data>
+  <data name="Detail_Treaties" xml:space="preserve">
+    <value>Sutarčių nuostatos</value>
+  </data>
+  <data name="Detail_Progress" xml:space="preserve">
+    <value>Eiga</value>
+  </data>
+  <data name="Detail_Signatures" xml:space="preserve">
+    <value>Parašai</value>
+  </data>
+  <data name="Detail_SignaturesVerified" xml:space="preserve">
+    <value>Patikrinta parašų: {0:N0}</value>
+  </data>
+  <data name="Detail_SignaturesCollected" xml:space="preserve">
+    <value>Surinkta parašų: {0:N0}</value>
+  </data>
+  <data name="Detail_TopCountries" xml:space="preserve">
+    <value>Pirmaujančios šalys</value>
+  </data>
+  <data name="Detail_Answer" xml:space="preserve">
+    <value>Komisijos atsakymas</value>
+  </data>
+  <data name="Detail_AnswerDate" xml:space="preserve">
+    <value>Sprendimo data: {0:d}</value>
+  </data>
+  <data name="Detail_Documents" xml:space="preserve">
+    <value>Dokumentai</value>
+  </data>
+  <data name="Detail_OfficialPage" xml:space="preserve">
+    <value>Atidaryti oficialioje svetainėje</value>
+  </data>
+  <data name="Detail_Follow" xml:space="preserve">
+    <value>Stebėti</value>
+  </data>
+  <data name="Detail_Unfollow" xml:space="preserve">
+    <value>Nebestebėti</value>
+  </data>
+  <data name="Detail_Loading" xml:space="preserve">
+    <value>Įkeliama išsami informacija…</value>
+  </data>
+  <data name="Detail_Unavailable" xml:space="preserve">
+    <value>Išsami informacija dar neatsisiųsta. Prisijunkite prie interneto ir atnaujinkite.</value>
+  </data>
+  <data name="Detail_Registered" xml:space="preserve">
+    <value>Užregistruota {0:d}</value>
+  </data>
+  <data name="Detail_Collection" xml:space="preserve">
+    <value>Parašų rinkimas {0:d} – {1:d}</value>
+  </data>
+  <data name="Detail_CollectionOpen" xml:space="preserve">
+    <value>Parašų rinkimas nuo {0:d}</value>
+  </data>
+  <data name="Step_REGISTERED" xml:space="preserve">
+    <value>Užregistruota</value>
+  </data>
+  <data name="Step_COLLECTION_START_DATE" xml:space="preserve">
+    <value>Pradėtas parašų rinkimas</value>
+  </data>
+  <data name="Step_ONGOING" xml:space="preserve">
+    <value>Renkami parašai</value>
+  </data>
+  <data name="Step_CLOSED" xml:space="preserve">
+    <value>Parašų rinkimas baigtas</value>
+  </data>
+  <data name="Step_VERIFICATION" xml:space="preserve">
+    <value>Parašai patikrinti</value>
+  </data>
+  <data name="Step_SUBMITTED" xml:space="preserve">
+    <value>Pateikta Komisijai</value>
+  </data>
+  <data name="Step_ANSWERED" xml:space="preserve">
+    <value>Komisija atsakė</value>
+  </data>
+  <data name="Step_INSUFFICIENT_SUPPORT" xml:space="preserve">
+    <value>Nepakanka paramos</value>
+  </data>
+  <data name="Step_INSUFFICIENT_SUPPORT_AFTER_VERIFICATION" xml:space="preserve">
+    <value>Nepakanka galiojančių parašų</value>
+  </data>
+  <data name="Step_WITHDRAWN" xml:space="preserve">
+    <value>Atsiimta</value>
+  </data>
+  <data name="Doc_COMMUNICATION" xml:space="preserve">
+    <value>Komisijos komunikatas</value>
+  </data>
+  <data name="Doc_PRESS_RELEASE" xml:space="preserve">
+    <value>Pranešimas spaudai</value>
+  </data>
+  <data name="Doc_EXAMIN_STEPS" xml:space="preserve">
+    <value>Nagrinėjimo etapai</value>
+  </data>
+  <data name="Doc_FOLLOW_UP" xml:space="preserve">
+    <value>Tolesni veiksmai</value>
+  </data>
+  <data name="Doc_ANNEX" xml:space="preserve">
+    <value>Komunikato priedas</value>
+  </data>
+  <data name="Doc_Registration" xml:space="preserve">
+    <value>Komisijos sprendimas dėl registracijos</value>
+  </data>
+  <data name="Doc_Other" xml:space="preserve">
+    <value>Dokumentas</value>
+  </data>
+  <data name="Sign_Button" xml:space="preserve">
+    <value>Pasirašyti šią iniciatyvą</value>
+  </data>
+  <data name="Sign_DaysLeft" xml:space="preserve">
+    <value>Liko dienų pasirašyti: {0} (iki {1:d})</value>
+  </data>
+  <data name="Sign_LastDay" xml:space="preserve">
+    <value>Paskutinė diena pasirašyti</value>
+  </data>
+  <data name="Sign_Note" xml:space="preserve">
+    <value>Pasirašote oficialioje Europos Komisijos svetainėje. Ši programėlė niekada nemato jūsų duomenų.</value>
+  </data>
+  <data name="Sign_Mark" xml:space="preserve">
+    <value>Pasirašiau šią iniciatyvą</value>
+  </data>
+  <data name="Sign_MarkHint" xml:space="preserve">
+    <value>Saugoma tik šiame įrenginyje</value>
+  </data>
+  <data name="Item_Signed" xml:space="preserve">
+    <value>Pasirašyta</value>
+  </data>
+  <data name="Tab_News" xml:space="preserve">
+    <value>Naujienos</value>
+  </data>
+  <data name="News_Title" xml:space="preserve">
+    <value>Naujausios naujienos</value>
+  </data>
+  <data name="News_Empty" xml:space="preserve">
+    <value>Naujienų dar nėra. Patraukite žemyn, kad atnaujintumėte.</value>
+  </data>
+  <data name="News_New" xml:space="preserve">
+    <value>Nauja</value>
+  </data>
+  <data name="News_OpenHint" xml:space="preserve">
+    <value>Atidaro visą straipsnį oficialioje svetainėje</value>
+  </data>
+  <data name="News_Source" xml:space="preserve">
+    <value>Naujienos iš oficialios Europos piliečių iniciatyvos svetainės.</value>
+  </data>
+  <data name="Settings_NotifyAll" xml:space="preserve">
+    <value>Pranešti apie visas iniciatyvas</value>
+  </data>
+  <data name="Settings_NotifyAllHint" xml:space="preserve">
+    <value>Išjungus šią parinktį, pranešimai apie rezultatus ir terminus siunčiami tik apie jūsų stebimas iniciatyvas. Apie naujas iniciatyvas ir naujienas pranešama visada.</value>
+  </data>
+  <data name="Notif_Channel_New" xml:space="preserve">
+    <value>Naujos iniciatyvos</value>
+  </data>
+  <data name="Notif_Channel_Ending" xml:space="preserve">
+    <value>Baigiamas parašų rinkimas</value>
+  </data>
+  <data name="Notif_Channel_Results" xml:space="preserve">
+    <value>Rezultatai</value>
+  </data>
+  <data name="Notif_Channel_News" xml:space="preserve">
+    <value>Naujienos</value>
+  </data>
+  <data name="Notif_NewInitiative" xml:space="preserve">
+    <value>Užregistruota nauja iniciatyva</value>
+  </data>
+  <data name="Notif_CollectionStarted" xml:space="preserve">
+    <value>Prasidėjo parašų rinkimas</value>
+  </data>
+  <data name="Notif_EndingDays" xml:space="preserve">
+    <value>Liko dienų pasirašyti: {0}</value>
+  </data>
+  <data name="Notif_EndingTomorrow" xml:space="preserve">
+    <value>Parašų rinkimas baigiasi rytoj</value>
+  </data>
+  <data name="Notif_EndingToday" xml:space="preserve">
+    <value>Paskutinė diena pasirašyti</value>
+  </data>
+  <data name="Notif_CollectionEnded" xml:space="preserve">
+    <value>Parašų rinkimas baigėsi</value>
+  </data>
+  <data name="Notif_Milestone" xml:space="preserve">
+    <value>Surinkta parašų: {0:N0}</value>
+  </data>
+  <data name="Notif_Successful" xml:space="preserve">
+    <value>Sėkminga: pateikta Europos Komisijai</value>
+  </data>
+  <data name="Notif_Answered" xml:space="preserve">
+    <value>Europos Komisija atsakė</value>
+  </data>
+  <data name="Notif_Failed" xml:space="preserve">
+    <value>Nesėkminga: nepakanka paramos</value>
+  </data>
+  <data name="Notif_Withdrawn" xml:space="preserve">
+    <value>Organizatoriai atsiėmė iniciatyvą</value>
+  </data>
+  <data name="Notif_NewsOne" xml:space="preserve">
+    <value>Naujas straipsnis</value>
+  </data>
+  <data name="Notif_NewsMany" xml:space="preserve">
+    <value>Naujų straipsnių: {0}</value>
+  </data>
+  <data name="Tab_Settings" xml:space="preserve">
+    <value>Nustatymai</value>
+  </data>
+  <data name="Settings_Language" xml:space="preserve">
+    <value>Kalba</value>
+  </data>
+  <data name="Settings_LanguageHint" xml:space="preserve">
+    <value>Naudojama programėlei, iniciatyvoms ir naujienoms. Jei iniciatyva neišversta, ji rodoma anglų arba originalo kalba.</value>
+  </data>
+  <data name="Settings_DeviceLanguage" xml:space="preserve">
+    <value>Įrenginio kalba ({0})</value>
+  </data>
+  <data name="Settings_Notifications" xml:space="preserve">
+    <value>Pranešimai</value>
+  </data>
+  <data name="Settings_SystemNotifications" xml:space="preserve">
+    <value>Pasirinkti pranešimų tipus</value>
+  </data>
+  <data name="Settings_SystemNotificationsHint" xml:space="preserve">
+    <value>Atidaro sistemos nustatymus, kuriuose galima išjungti kiekvieną pranešimų tipą.</value>
+  </data>
+  <data name="Settings_About" xml:space="preserve">
+    <value>Apie programėlę</value>
+  </data>
+</root>

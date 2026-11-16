@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- English (default). Translations go in AppResources.<lang>.resx with the same keys. -->
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AppName" xml:space="preserve">
+    <value>ECI Support Centre</value>
+  </data>
+  <data name="Disclaimer" xml:space="preserve">
+    <value>Ikke en officiel app fra Den Europæiske Union. Data: citizens-initiative.europa.eu</value>
+  </data>
+  <data name="Tab_Home" xml:space="preserve">
+    <value>Start</value>
+  </data>
+  <data name="Tab_Initiatives" xml:space="preserve">
+    <value>Initiativer</value>
+  </data>
+  <data name="Home_Title" xml:space="preserve">
+    <value>Europæiske borgerinitiativer</value>
+  </data>
+  <data name="Home_Intro" xml:space="preserve">
+    <value>En million underskrifter fra mindst syv EU-lande opfordrer Europa-Kommissionen til at foreslå ny lovgivning.</value>
+  </data>
+  <data name="Home_Registered" xml:space="preserve">
+    <value>Registreret</value>
+  </data>
+  <data name="Home_Collecting" xml:space="preserve">
+    <value>Indsamler</value>
+  </data>
+  <data name="Home_Successful" xml:space="preserve">
+    <value>Vellykkede</value>
+  </data>
+  <data name="Home_Answered" xml:space="preserve">
+    <value>Besvaret</value>
+  </data>
+  <data name="Home_Failed" xml:space="preserve">
+    <value>Ikke nok støtte</value>
+  </data>
+  <data name="Home_Withdrawn" xml:space="preserve">
+    <value>Trukket tilbage</value>
+  </data>
+  <data name="Home_EndingSoon" xml:space="preserve">
+    <value>Indsamler nu, slutter snart</value>
+  </data>
+  <data name="Home_SeeAll" xml:space="preserve">
+    <value>Se alle initiativer</value>
+  </data>
+  <data name="Home_RecentChanges" xml:space="preserve">
+    <value>Seneste ændringer</value>
+  </data>
+  <data name="Sync_Now" xml:space="preserve">
+    <value>Opdater</value>
+  </data>
+  <data name="Sync_Running" xml:space="preserve">
+    <value>Opdaterer…</value>
+  </data>
+  <data name="Sync_Last" xml:space="preserve">
+    <value>Opdateret {0}</value>
+  </data>
+  <data name="Sync_Never" xml:space="preserve">
+    <value>Ikke opdateret endnu. Træk ned for at opdatere.</value>
+  </data>
+  <data name="Sync_Failed" xml:space="preserve">
+    <value>Kunne ikke opdatere: {0}</value>
+  </data>
+  <data name="Sync_Offline" xml:space="preserve">
+    <value>Du er offline. Viser gemte data.</value>
+  </data>
+  <data name="List_Search" xml:space="preserve">
+    <value>Søg i initiativer</value>
+  </data>
+  <data name="List_All" xml:space="preserve">
+    <value>Alle</value>
+  </data>
+  <data name="List_Followed" xml:space="preserve">
+    <value>Fulgte</value>
+  </data>
+  <data name="List_Sort" xml:space="preserve">
+    <value>Sorter</value>
+  </data>
+  <data name="List_Empty" xml:space="preserve">
+    <value>Ingen initiativer matcher.</value>
+  </data>
+  <data name="List_Count" xml:space="preserve">
+    <value>Initiativer: {0}</value>
+  </data>
+  <data name="List_SelectHint" xml:space="preserve">
+    <value>Vælg et initiativ for at se detaljerne.</value>
+  </data>
+  <data name="Sort_Newest" xml:space="preserve">
+    <value>Nyeste</value>
+  </data>
+  <data name="Sort_MostSupporters" xml:space="preserve">
+    <value>Flest støtter</value>
+  </data>
+  <data name="Sort_EndingSoon" xml:space="preserve">
+    <value>Slutter snart</value>
+  </data>
+  <data name="Sort_RecentlyUpdated" xml:space="preserve">
+    <value>Senest opdateret</value>
+  </data>
+  <data name="Phase_Unknown" xml:space="preserve">
+    <value>Ukendt</value>
+  </data>
+  <data name="Phase_Upcoming" xml:space="preserve">
+    <value>Starter snart</value>
+  </data>
+  <data name="Phase_Collecting" xml:space="preserve">
+    <value>Indsamling af underskrifter</value>
+  </data>
+  <data name="Phase_Verification" xml:space="preserve">
+    <value>Kontrol af underskrifter</value>
+  </data>
+  <data name="Phase_Submitted" xml:space="preserve">
+    <value>Indgivet til Kommissionen</value>
+  </data>
+  <data name="Phase_Answered" xml:space="preserve">
+    <value>Besvaret af Kommissionen</value>
+  </data>
+  <data name="Phase_Failed" xml:space="preserve">
+    <value>Ikke nok støtte</value>
+  </data>
+  <data name="Phase_Withdrawn" xml:space="preserve">
+    <value>Trukket tilbage</value>
+  </data>
+  <data name="Item_Supporters" xml:space="preserve">
+    <value>Støtter: {0:N0}</value>
+  </data>
+  <data name="Item_EndsOn" xml:space="preserve">
+    <value>Slutter {0:d}</value>
+  </data>
+  <data name="Item_EndedOn" xml:space="preserve">
+    <value>Sluttede {0:d}</value>
+  </data>
+  <data name="Item_StartsOn" xml:space="preserve">
+    <value>Starter {0:d}</value>
+  </data>
+  <data name="Item_LastCall" xml:space="preserve">
+    <value>Sidste chance</value>
+  </data>
+  <data name="Item_Followed" xml:space="preserve">
+    <value>Følges</value>
+  </data>
+  <data name="Detail_Title" xml:space="preserve">
+    <value>Initiativ</value>
+  </data>
+  <data name="Detail_Objectives" xml:space="preserve">
+    <value>Mål</value>
+  </data>
+  <data name="Detail_Annex" xml:space="preserve">
+    <value>Flere oplysninger</value>
+  </data>
+  <data name="Detail_Treaties" xml:space="preserve">
+    <value>Traktatbestemmelser</value>
+  </data>
+  <data name="Detail_Progress" xml:space="preserve">
+    <value>Tidslinje</value>
+  </data>
+  <data name="Detail_Signatures" xml:space="preserve">
+    <value>Underskrifter</value>
+  </data>
+  <data name="Detail_SignaturesVerified" xml:space="preserve">
+    <value>Kontrollerede underskrifter: {0:N0}</value>
+  </data>
+  <data name="Detail_SignaturesCollected" xml:space="preserve">
+    <value>Indsamlede underskrifter: {0:N0}</value>
+  </data>
+  <data name="Detail_TopCountries" xml:space="preserve">
+    <value>Førende lande</value>
+  </data>
+  <data name="Detail_Answer" xml:space="preserve">
+    <value>Kommissionens svar</value>
+  </data>
+  <data name="Detail_AnswerDate" xml:space="preserve">
+    <value>Afgørelse af {0:d}</value>
+  </data>
+  <data name="Detail_Documents" xml:space="preserve">
+    <value>Dokumenter</value>
+  </data>
+  <data name="Detail_OfficialPage" xml:space="preserve">
+    <value>Åbn på det officielle websted</value>
+  </data>
+  <data name="Detail_Follow" xml:space="preserve">
+    <value>Følg</value>
+  </data>
+  <data name="Detail_Unfollow" xml:space="preserve">
+    <value>Følg ikke længere</value>
+  </data>
+  <data name="Detail_Loading" xml:space="preserve">
+    <value>Indlæser detaljer…</value>
+  </data>
+  <data name="Detail_Unavailable" xml:space="preserve">
+    <value>Detaljerne er ikke hentet endnu. Opret forbindelse til internettet, og opdater.</value>
+  </data>
+  <data name="Detail_Registered" xml:space="preserve">
+    <value>Registreret {0:d}</value>
+  </data>
+  <data name="Detail_Collection" xml:space="preserve">
+    <value>Indsamling {0:d} – {1:d}</value>
+  </data>
+  <data name="Detail_CollectionOpen" xml:space="preserve">
+    <value>Indsamling fra {0:d}</value>
+  </data>
+  <data name="Step_REGISTERED" xml:space="preserve">
+    <value>Registreret</value>
+  </data>
+  <data name="Step_COLLECTION_START_DATE" xml:space="preserve">
+    <value>Indsamling startet</value>
+  </data>
+  <data name="Step_ONGOING" xml:space="preserve">
+    <value>Indsamling af underskrifter</value>
+  </data>
+  <data name="Step_CLOSED" xml:space="preserve">
+    <value>Indsamling afsluttet</value>
+  </data>
+  <data name="Step_VERIFICATION" xml:space="preserve">
+    <value>Underskrifter kontrolleret</value>
+  </data>
+  <data name="Step_SUBMITTED" xml:space="preserve">
+    <value>Indgivet til Kommissionen</value>
+  </data>
+  <data name="Step_ANSWERED" xml:space="preserve">
+    <value>Kommissionen har svaret</value>
+  </data>
+  <data name="Step_INSUFFICIENT_SUPPORT" xml:space="preserve">
+    <value>Ikke nok støtte</value>
+  </data>
+  <data name="Step_INSUFFICIENT_SUPPORT_AFTER_VERIFICATION" xml:space="preserve">
+    <value>Ikke nok gyldige underskrifter</value>
+  </data>
+  <data name="Step_WITHDRAWN" xml:space="preserve">
+    <value>Trukket tilbage</value>
+  </data>
+  <data name="Doc_COMMUNICATION" xml:space="preserve">
+    <value>Kommissionens meddelelse</value>
+  </data>
+  <data name="Doc_PRESS_RELEASE" xml:space="preserve">
+    <value>Pressemeddelelse</value>
+  </data>
+  <data name="Doc_EXAMIN_STEPS" xml:space="preserve">
+    <value>Trin i behandlingen</value>
+  </data>
+  <data name="Doc_FOLLOW_UP" xml:space="preserve">
+    <value>Opfølgning</value>
+  </data>
+  <data name="Doc_ANNEX" xml:space="preserve">
+    <value>Bilag til meddelelsen</value>
+  </data>
+  <data name="Doc_Registration" xml:space="preserve">
+    <value>Kommissionens afgørelse om registrering</value>
+  </data>
+  <data name="Doc_Other" xml:space="preserve">
+    <value>Dokument</value>
+  </data>
+  <data name="Sign_Button" xml:space="preserve">
+    <value>Skriv under på initiativet</value>
+  </data>
+  <data name="Sign_DaysLeft" xml:space="preserve">
+    <value>Dage tilbage til at skrive under: {0} (til og med {1:d})</value>
+  </data>
+  <data name="Sign_LastDay" xml:space="preserve">
+    <value>Sidste dag for underskrift</value>
+  </data>
+  <data name="Sign_Note" xml:space="preserve">
+    <value>Du skriver under på Europa-Kommissionens officielle websted. Denne app ser aldrig dine data.</value>
+  </data>
+  <data name="Sign_Mark" xml:space="preserve">
+    <value>Jeg har skrevet under på initiativet</value>
+  </data>
+  <data name="Sign_MarkHint" xml:space="preserve">
+    <value>Gemmes kun på denne enhed</value>
+  </data>
+  <data name="Item_Signed" xml:space="preserve">
+    <value>Underskrevet</value>
+  </data>
+  <data name="Tab_News" xml:space="preserve">
+    <value>Nyheder</value>
+  </data>
+  <data name="News_Title" xml:space="preserve">
+    <value>Seneste nyheder</value>
+  </data>
+  <data name="News_Empty" xml:space="preserve">
+    <value>Ingen nyheder endnu. Træk ned for at opdatere.</value>
+  </data>
+  <data name="News_New" xml:space="preserve">
+    <value>Ny</value>
+  </data>
+  <data name="News_OpenHint" xml:space="preserve">
+    <value>Åbner hele artiklen på det officielle websted</value>
+  </data>
+  <data name="News_Source" xml:space="preserve">
+    <value>Nyheder fra det officielle websted for det europæiske borgerinitiativ.</value>
+  </data>
+  <data name="Settings_NotifyAll" xml:space="preserve">
+    <value>Giv besked om alle initiativer</value>
+  </data>
+  <data name="Settings_NotifyAllHint" xml:space="preserve">
+    <value>Når funktionen er slået fra, får du kun besked om resultater og frister for de initiativer, du følger. Nye initiativer og nyheder meddeles altid.</value>
+  </data>
+  <data name="Notif_Channel_New" xml:space="preserve">
+    <value>Nye initiativer</value>
+  </data>
+  <data name="Notif_Channel_Ending" xml:space="preserve">
+    <value>Indsamling slutter</value>
+  </data>
+  <data name="Notif_Channel_Results" xml:space="preserve">
+    <value>Resultater</value>
+  </data>
+  <data name="Notif_Channel_News" xml:space="preserve">
+    <value>Nyheder</value>
+  </data>
+  <data name="Notif_NewInitiative" xml:space="preserve">
+    <value>Nyt initiativ registreret</value>
+  </data>
+  <data name="Notif_CollectionStarted" xml:space="preserve">
+    <value>Indsamlingen af underskrifter er startet</value>
+  </data>
+  <data name="Notif_EndingDays" xml:space="preserve">
+    <value>{0} dage tilbage til at skrive under</value>
+  </data>
+  <data name="Notif_EndingTomorrow" xml:space="preserve">
+    <value>Indsamlingen af underskrifter slutter i morgen</value>
+  </data>
+  <data name="Notif_EndingToday" xml:space="preserve">
+    <value>Sidste dag for underskrift</value>
+  </data>
+  <data name="Notif_CollectionEnded" xml:space="preserve">
+    <value>Indsamlingen af underskrifter er slut</value>
+  </data>
+  <data name="Notif_Milestone" xml:space="preserve">
+    <value>{0:N0} underskrifter nået</value>
+  </data>
+  <data name="Notif_Successful" xml:space="preserve">
+    <value>Vellykket: indgivet til Europa-Kommissionen</value>
+  </data>
+  <data name="Notif_Answered" xml:space="preserve">
+    <value>Europa-Kommissionen har svaret</value>
+  </data>
+  <data name="Notif_Failed" xml:space="preserve">
+    <value>Ikke vellykket: ikke nok støtte</value>
+  </data>
+  <data name="Notif_Withdrawn" xml:space="preserve">
+    <value>Trukket tilbage af organisatorerne</value>
+  </data>
+  <data name="Notif_NewsOne" xml:space="preserve">
+    <value>Ny artikel</value>
+  </data>
+  <data name="Notif_NewsMany" xml:space="preserve">
+    <value>{0} nye artikler</value>
+  </data>
+  <data name="Tab_Settings" xml:space="preserve">
+    <value>Indstillinger</value>
+  </data>
+  <data name="Settings_Language" xml:space="preserve">
+    <value>Sprog</value>
+  </data>
+  <data name="Settings_LanguageHint" xml:space="preserve">
+    <value>Bruges til appen, initiativerne og nyhederne. Hvis et initiativ ikke er oversat, vises det på engelsk eller på originalsproget.</value>
+  </data>
+  <data name="Settings_DeviceLanguage" xml:space="preserve">
+    <value>Enhedens sprog ({0})</value>
+  </data>
+  <data name="Settings_Notifications" xml:space="preserve">
+    <value>Notifikationer</value>
+  </data>
+  <data name="Settings_SystemNotifications" xml:space="preserve">
+    <value>Vælg typer af notifikationer</value>
+  </data>
+  <data name="Settings_SystemNotificationsHint" xml:space="preserve">
+    <value>Åbner systemindstillingerne, hvor hver type notifikation kan slås fra.</value>
+  </data>
+  <data name="Settings_About" xml:space="preserve">
+    <value>Om appen</value>
+  </data>
+</root>

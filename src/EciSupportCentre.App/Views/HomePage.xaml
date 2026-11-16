@@ -94,17 +94,6 @@
 
                 <Button Text="{l:Translate Home_SeeAll}" Command="{Binding SeeAllCommand}" />
 
-                <Border Style="{StaticResource Tile}" WidthRequest="-1" Margin="0,8,0,0">
-                    <Grid ColumnDefinitions="*,Auto" RowDefinitions="Auto,Auto" ColumnSpacing="12">
-                        <Label Text="{l:Translate Home_NotifyAll}" FontFamily="OpenSansSemibold" FontSize="15" VerticalOptions="Center" />
-                        <Switch Grid.Column="1" Grid.RowSpan="2" IsToggled="{Binding NotifyAll}" VerticalOptions="Center"
-                                OnColor="{StaticResource Primary}" ThumbColor="{StaticResource White}"
-                                SemanticProperties.Description="{l:Translate Home_NotifyAll}" />
-                        <Label Grid.Row="1" Text="{l:Translate Home_NotifyAllHint}" FontSize="13"
-                               TextColor="{AppThemeBinding Light={StaticResource Gray600}, Dark={StaticResource Gray200}}" />
-                    </Grid>
-                </Border>
-
                 <Label Text="{l:Translate Disclaimer}" FontSize="12" Margin="0,16,0,0"
                        TextColor="{AppThemeBinding Light={StaticResource Gray500}, Dark={StaticResource Gray300}}" />
             </VerticalStackLayout>

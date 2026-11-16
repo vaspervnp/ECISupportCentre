@@ -14,5 +14,11 @@ public partial class InitiativeDetailPage : ContentPage, IQueryAttributable
         InitializeComponent();
     }
 
+    protected override async void OnAppearing()
+    {
+        base.OnAppearing();
+        await _viewModel.RefreshIfLanguageChangedAsync();
+    }
+
     public void ApplyQueryAttributes(IDictionary<string, object> query) => _viewModel.ApplyQueryAttributes(query);
 }

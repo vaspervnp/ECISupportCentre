@@ -2,6 +2,7 @@ using System.ComponentModel;
 using System.Globalization;
 using System.Resources;
 using EciSupportCentre.Core;
+using EciSupportCentre.Core.Localization;
 using EciSupportCentre.Core.Models;
 
 namespace EciSupportCentre.App.Localization;
@@ -25,6 +26,12 @@ public sealed class Loc : INotifyPropertyChanged
 
     public event PropertyChangedEventHandler? PropertyChanged;
 
+    /// <summary>Raised once after the language changed (on the thread that changed it).</summary>
+    public event EventHandler? LanguageChanged;
+
+    /// <summary>The device's culture, captured before the app changes the current culture.</summary>
+    public static CultureInfo DeviceCulture { get; } = CultureInfo.CurrentUICulture;
+
     /// <summary>EU language code of <see cref="Culture"/>, English when the culture is not an EU language.</summary>
     public string Language => EciSources.Normalize(_culture.Name);
 
@@ -42,13 +49,19 @@ public sealed class Loc : INotifyPropertyChanged
             _culture = value;
             CultureInfo.CurrentUICulture = value;
             CultureInfo.CurrentCulture = value;
+            CultureInfo.DefaultThreadCurrentUICulture = value;
+            CultureInfo.DefaultThreadCurrentCulture = value;
 
-            // "Item[]" refreshes every indexer binding.
-            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("Item[]"));
-            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(Culture)));
-            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(Language)));
+            // An empty name means "everything changed": MAUI then refreshes every binding to this object,
+            // including the indexer ones of {l:Translate}. ("Item[]", WPF's convention, is ignored by MAUI.)
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(string.Empty));
+            LanguageChanged?.Invoke(this, EventArgs.Empty);
         }
     }
+
+    /// <summary>Applies the user's choice (an EU language code, or empty for the device language).</summary>
+    public void Apply(string? preference) =>
+        Culture = CultureInfo.GetCultureInfo(LanguageChoice.Resolve(preference, DeviceCulture.Name));
 
     public string this[string key] => Resources.GetString(key, _culture) ?? key;
 

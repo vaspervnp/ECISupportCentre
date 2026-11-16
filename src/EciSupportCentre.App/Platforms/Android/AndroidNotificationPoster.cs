@@ -73,6 +73,23 @@ public sealed class AndroidNotificationPoster : INotificationPoster
         }
     }
 
+    public void OpenSystemSettings()
+    {
+        Intent intent;
+        if (OperatingSystem.IsAndroidVersionAtLeast(26))
+        {
+            intent = new Intent(Android.Provider.Settings.ActionAppNotificationSettings);
+            intent.PutExtra(Android.Provider.Settings.ExtraAppPackage, Context.PackageName);
+        }
+        else
+        {
+            intent = new Intent(Android.Provider.Settings.ActionApplicationDetailsSettings, Android.Net.Uri.Parse("package:" + Context.PackageName));
+        }
+
+        intent.AddFlags(ActivityFlags.NewTask);
+        Context.StartActivity(intent);
+    }
+
     private static string ChannelId(Channel channel) => channel switch
     {
         Channel.NewInitiatives => "new_initiatives",

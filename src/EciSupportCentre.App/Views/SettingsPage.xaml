@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:EciSupportCentre.App.ViewModels"
+             xmlns:l="clr-namespace:EciSupportCentre.App.Localization"
+             x:Class="EciSupportCentre.App.Views.SettingsPage"
+             x:DataType="vm:SettingsViewModel"
+             Title="{l:Translate Tab_Settings}">
+
+    <ContentPage.Resources>
+        <Style x:Key="SectionHeading" TargetType="Label">
+            <Setter Property="FontFamily" Value="OpenSansSemibold" />
+            <Setter Property="FontSize" Value="18" />
+            <Setter Property="Margin" Value="0,16,0,0" />
+            <Setter Property="SemanticProperties.HeadingLevel" Value="Level2" />
+        </Style>
+        <Style x:Key="Hint" TargetType="Label">
+            <Setter Property="FontSize" Value="13" />
+            <Setter Property="TextColor" Value="{AppThemeBinding Light={StaticResource Gray600}, Dark={StaticResource Gray200}}" />
+        </Style>
+        <Style x:Key="Card" TargetType="Border">
+            <Setter Property="Padding" Value="16,12" />
+            <Setter Property="StrokeShape" Value="RoundRectangle 12" />
+            <Setter Property="StrokeThickness" Value="0" />
+            <Setter Property="BackgroundColor" Value="{AppThemeBinding Light={StaticResource Secondary}, Dark={StaticResource Gray900}}" />
+        </Style>
+    </ContentPage.Resources>
+
+    <ScrollView>
+        <VerticalStackLayout Padding="16" Spacing="8" MaximumWidthRequest="720">
+
+            <Label Text="{l:Translate Settings_Language}" Style="{StaticResource SectionHeading}" Margin="0" />
+            <Border Style="{StaticResource Card}">
+                <VerticalStackLayout Spacing="4">
+                    <Picker ItemsSource="{Binding Languages}"
+                            ItemDisplayBinding="{Binding Name, x:DataType=vm:LanguageOption}"
+                            SelectedItem="{Binding SelectedLanguage}"
+                            Title="{l:Translate Settings_Language}"
+                            FontSize="16"
+                            SemanticProperties.Description="{l:Translate Settings_Language}" />
+                    <Label Text="{l:Translate Settings_LanguageHint}" Style="{StaticResource Hint}" />
+                </VerticalStackLayout>
+            </Border>
+
+            <Label Text="{l:Translate Settings_Notifications}" Style="{StaticResource SectionHeading}" />
+            <Border Style="{StaticResource Card}">
+                <Grid ColumnDefinitions="*,Auto" RowDefinitions="Auto,Auto" ColumnSpacing="12">
+                    <Label Text="{l:Translate Settings_NotifyAll}" FontFamily="OpenSansSemibold" FontSize="15" VerticalOptions="Center" />
+                    <Switch Grid.Column="1" Grid.RowSpan="2" IsToggled="{Binding NotifyAll}" VerticalOptions="Center"
+                            OnColor="{StaticResource Primary}" ThumbColor="{StaticResource White}"
+                            SemanticProperties.Description="{l:Translate Settings_NotifyAll}" />
+                    <Label Grid.Row="1" Text="{l:Translate Settings_NotifyAllHint}" Style="{StaticResource Hint}" />
+                </Grid>
+            </Border>
+            <Border Style="{StaticResource Card}">
+                <VerticalStackLayout Spacing="4">
+                    <Button Text="{l:Translate Settings_SystemNotifications}" Command="{Binding OpenNotificationSettingsCommand}"
+                            HorizontalOptions="Start" />
+                    <Label Text="{l:Translate Settings_SystemNotificationsHint}" Style="{StaticResource Hint}" />
+                </VerticalStackLayout>
+            </Border>
+
+            <Label Text="{l:Translate Settings_About}" Style="{StaticResource SectionHeading}" />
+            <Label Text="{Binding VersionText}" FontSize="15" />
+            <Label Text="{l:Translate Disclaimer}" Style="{StaticResource Hint}" />
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

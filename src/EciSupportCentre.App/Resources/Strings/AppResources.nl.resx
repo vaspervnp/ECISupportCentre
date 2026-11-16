@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- English (default). Translations go in AppResources.<lang>.resx with the same keys. -->
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AppName" xml:space="preserve">
+    <value>ECI Support Centre</value>
+  </data>
+  <data name="Disclaimer" xml:space="preserve">
+    <value>Geen officiële app van de Europese Unie. Gegevens: citizens-initiative.europa.eu</value>
+  </data>
+  <data name="Tab_Home" xml:space="preserve">
+    <value>Start</value>
+  </data>
+  <data name="Tab_Initiatives" xml:space="preserve">
+    <value>Initiatieven</value>
+  </data>
+  <data name="Home_Title" xml:space="preserve">
+    <value>Europese burgerinitiatieven</value>
+  </data>
+  <data name="Home_Intro" xml:space="preserve">
+    <value>Met een miljoen handtekeningen uit minstens zeven EU-landen vragen burgers de Europese Commissie om een wet voor te stellen.</value>
+  </data>
+  <data name="Home_Registered" xml:space="preserve">
+    <value>Geregistreerd</value>
+  </data>
+  <data name="Home_Collecting" xml:space="preserve">
+    <value>Lopend</value>
+  </data>
+  <data name="Home_Successful" xml:space="preserve">
+    <value>Geslaagd</value>
+  </data>
+  <data name="Home_Answered" xml:space="preserve">
+    <value>Beantwoord</value>
+  </data>
+  <data name="Home_Failed" xml:space="preserve">
+    <value>Onvoldoende steun</value>
+  </data>
+  <data name="Home_Withdrawn" xml:space="preserve">
+    <value>Ingetrokken</value>
+  </data>
+  <data name="Home_EndingSoon" xml:space="preserve">
+    <value>Nu lopend, eerst afgesloten</value>
+  </data>
+  <data name="Home_SeeAll" xml:space="preserve">
+    <value>Alle initiatieven bekijken</value>
+  </data>
+  <data name="Home_RecentChanges" xml:space="preserve">
+    <value>Recente wijzigingen</value>
+  </data>
+  <data name="Sync_Now" xml:space="preserve">
+    <value>Vernieuwen</value>
+  </data>
+  <data name="Sync_Running" xml:space="preserve">
+    <value>Bijwerken…</value>
+  </data>
+  <data name="Sync_Last" xml:space="preserve">
+    <value>Bijgewerkt: {0}</value>
+  </data>
+  <data name="Sync_Never" xml:space="preserve">
+    <value>Nog niet bijgewerkt. Trek omlaag om te vernieuwen.</value>
+  </data>
+  <data name="Sync_Failed" xml:space="preserve">
+    <value>Bijwerken mislukt: {0}</value>
+  </data>
+  <data name="Sync_Offline" xml:space="preserve">
+    <value>U bent offline. Opgeslagen gegevens worden getoond.</value>
+  </data>
+  <data name="List_Search" xml:space="preserve">
+    <value>Initiatieven zoeken</value>
+  </data>
+  <data name="List_All" xml:space="preserve">
+    <value>Alle</value>
+  </data>
+  <data name="List_Followed" xml:space="preserve">
+    <value>Gevolgd</value>
+  </data>
+  <data name="List_Sort" xml:space="preserve">
+    <value>Sorteren</value>
+  </data>
+  <data name="List_Empty" xml:space="preserve">
+    <value>Geen initiatieven gevonden.</value>
+  </data>
+  <data name="List_Count" xml:space="preserve">
+    <value>Initiatieven: {0}</value>
+  </data>
+  <data name="List_SelectHint" xml:space="preserve">
+    <value>Selecteer een initiatief om de details te zien.</value>
+  </data>
+  <data name="Sort_Newest" xml:space="preserve">
+    <value>Nieuwste</value>
+  </data>
+  <data name="Sort_MostSupporters" xml:space="preserve">
+    <value>Meeste ondertekenaars</value>
+  </data>
+  <data name="Sort_EndingSoon" xml:space="preserve">
+    <value>Loopt binnenkort af</value>
+  </data>
+  <data name="Sort_RecentlyUpdated" xml:space="preserve">
+    <value>Onlangs bijgewerkt</value>
+  </data>
+  <data name="Phase_Unknown" xml:space="preserve">
+    <value>Onbekend</value>
+  </data>
+  <data name="Phase_Upcoming" xml:space="preserve">
+    <value>Start binnenkort</value>
+  </data>
+  <data name="Phase_Collecting" xml:space="preserve">
+    <value>Inzameling loopt</value>
+  </data>
+  <data name="Phase_Verification" xml:space="preserve">
+    <value>Controle handtekeningen</value>
+  </data>
+  <data name="Phase_Submitted" xml:space="preserve">
+    <value>Ingediend bij de Commissie</value>
+  </data>
+  <data name="Phase_Answered" xml:space="preserve">
+    <value>Beantwoord door de Commissie</value>
+  </data>
+  <data name="Phase_Failed" xml:space="preserve">
+    <value>Onvoldoende steun</value>
+  </data>
+  <data name="Phase_Withdrawn" xml:space="preserve">
+    <value>Ingetrokken</value>
+  </data>
+  <data name="Item_Supporters" xml:space="preserve">
+    <value>Ondertekenaars: {0:N0}</value>
+  </data>
+  <data name="Item_EndsOn" xml:space="preserve">
+    <value>Eindigt op {0:d}</value>
+  </data>
+  <data name="Item_EndedOn" xml:space="preserve">
+    <value>Geëindigd op {0:d}</value>
+  </data>
+  <data name="Item_StartsOn" xml:space="preserve">
+    <value>Begint op {0:d}</value>
+  </data>
+  <data name="Item_LastCall" xml:space="preserve">
+    <value>Laatste kans</value>
+  </data>
+  <data name="Item_Followed" xml:space="preserve">
+    <value>Gevolgd</value>
+  </data>
+  <data name="Detail_Title" xml:space="preserve">
+    <value>Initiatief</value>
+  </data>
+  <data name="Detail_Objectives" xml:space="preserve">
+    <value>Doelstellingen</value>
+  </data>
+  <data name="Detail_Annex" xml:space="preserve">
+    <value>Meer informatie</value>
+  </data>
+  <data name="Detail_Treaties" xml:space="preserve">
+    <value>Verdragsbepalingen</value>
+  </data>
+  <data name="Detail_Progress" xml:space="preserve">
+    <value>Tijdlijn</value>
+  </data>
+  <data name="Detail_Signatures" xml:space="preserve">
+    <value>Handtekeningen</value>
+  </data>
+  <data name="Detail_SignaturesVerified" xml:space="preserve">
+    <value>Gecontroleerde handtekeningen: {0:N0}</value>
+  </data>
+  <data name="Detail_SignaturesCollected" xml:space="preserve">
+    <value>Verzamelde handtekeningen: {0:N0}</value>
+  </data>
+  <data name="Detail_TopCountries" xml:space="preserve">
+    <value>Belangrijkste landen</value>
+  </data>
+  <data name="Detail_Answer" xml:space="preserve">
+    <value>Antwoord van de Commissie</value>
+  </data>
+  <data name="Detail_AnswerDate" xml:space="preserve">
+    <value>Besluit van {0:d}</value>
+  </data>
+  <data name="Detail_Documents" xml:space="preserve">
+    <value>Documenten</value>
+  </data>
+  <data name="Detail_OfficialPage" xml:space="preserve">
+    <value>Openen op de officiële website</value>
+  </data>
+  <data name="Detail_Follow" xml:space="preserve">
+    <value>Volgen</value>
+  </data>
+  <data name="Detail_Unfollow" xml:space="preserve">
+    <value>Niet meer volgen</value>
+  </data>
+  <data name="Detail_Loading" xml:space="preserve">
+    <value>Details laden…</value>
+  </data>
+  <data name="Detail_Unavailable" xml:space="preserve">
+    <value>De details zijn nog niet gedownload. Maak verbinding met internet en vernieuw.</value>
+  </data>
+  <data name="Detail_Registered" xml:space="preserve">
+    <value>Geregistreerd op {0:d}</value>
+  </data>
+  <data name="Detail_Collection" xml:space="preserve">
+    <value>Inzameling {0:d} – {1:d}</value>
+  </data>
+  <data name="Detail_CollectionOpen" xml:space="preserve">
+    <value>Inzameling vanaf {0:d}</value>
+  </data>
+  <data name="Step_REGISTERED" xml:space="preserve">
+    <value>Geregistreerd</value>
+  </data>
+  <data name="Step_COLLECTION_START_DATE" xml:space="preserve">
+    <value>Inzameling gestart</value>
+  </data>
+  <data name="Step_ONGOING" xml:space="preserve">
+    <value>Inzameling loopt</value>
+  </data>
+  <data name="Step_CLOSED" xml:space="preserve">
+    <value>Inzameling afgesloten</value>
+  </data>
+  <data name="Step_VERIFICATION" xml:space="preserve">
+    <value>Handtekeningen gecontroleerd</value>
+  </data>
+  <data name="Step_SUBMITTED" xml:space="preserve">
+    <value>Ingediend bij de Commissie</value>
+  </data>
+  <data name="Step_ANSWERED" xml:space="preserve">
+    <value>Commissie heeft geantwoord</value>
+  </data>
+  <data name="Step_INSUFFICIENT_SUPPORT" xml:space="preserve">
+    <value>Onvoldoende steun</value>
+  </data>
+  <data name="Step_INSUFFICIENT_SUPPORT_AFTER_VERIFICATION" xml:space="preserve">
+    <value>Onvoldoende geldige handtekeningen</value>
+  </data>
+  <data name="Step_WITHDRAWN" xml:space="preserve">
+    <value>Ingetrokken</value>
+  </data>
+  <data name="Doc_COMMUNICATION" xml:space="preserve">
+    <value>Mededeling van de Commissie</value>
+  </data>
+  <data name="Doc_PRESS_RELEASE" xml:space="preserve">
+    <value>Persbericht</value>
+  </data>
+  <data name="Doc_EXAMIN_STEPS" xml:space="preserve">
+    <value>Stappen van het onderzoek</value>
+  </data>
+  <data name="Doc_FOLLOW_UP" xml:space="preserve">
+    <value>Follow-up</value>
+  </data>
+  <data name="Doc_ANNEX" xml:space="preserve">
+    <value>Bijlage bij de mededeling</value>
+  </data>
+  <data name="Doc_Registration" xml:space="preserve">
+    <value>Registratiebesluit van de Commissie</value>
+  </data>
+  <data name="Doc_Other" xml:space="preserve">
+    <value>Document</value>
+  </data>
+  <data name="Sign_Button" xml:space="preserve">
+    <value>Dit initiatief ondertekenen</value>
+  </data>
+  <data name="Sign_DaysLeft" xml:space="preserve">
+    <value>Resterende dagen om te ondertekenen: {0} (tot en met {1:d})</value>
+  </data>
+  <data name="Sign_LastDay" xml:space="preserve">
+    <value>Laatste dag om te ondertekenen</value>
+  </data>
+  <data name="Sign_Note" xml:space="preserve">
+    <value>U ondertekent op de officiële website van de Europese Commissie. Deze app ziet uw gegevens nooit.</value>
+  </data>
+  <data name="Sign_Mark" xml:space="preserve">
+    <value>Ik heb dit initiatief ondertekend</value>
+  </data>
+  <data name="Sign_MarkHint" xml:space="preserve">
+    <value>Alleen op dit apparaat opgeslagen</value>
+  </data>
+  <data name="Item_Signed" xml:space="preserve">
+    <value>Ondertekend</value>
+  </data>
+  <data name="Tab_News" xml:space="preserve">
+    <value>Nieuws</value>
+  </data>
+  <data name="News_Title" xml:space="preserve">
+    <value>Laatste nieuws</value>
+  </data>
+  <data name="News_Empty" xml:space="preserve">
+    <value>Nog geen nieuws. Trek omlaag om te vernieuwen.</value>
+  </data>
+  <data name="News_New" xml:space="preserve">
+    <value>Nieuw</value>
+  </data>
+  <data name="News_OpenHint" xml:space="preserve">
+    <value>Opent het volledige artikel op de officiële website</value>
+  </data>
+  <data name="News_Source" xml:space="preserve">
+    <value>Nieuws van de officiële website van het Europees burgerinitiatief.</value>
+  </data>
+  <data name="Settings_NotifyAll" xml:space="preserve">
+    <value>Meldingen over alle initiatieven</value>
+  </data>
+  <data name="Settings_NotifyAllHint" xml:space="preserve">
+    <value>Als dit uit staat, krijgt u alleen meldingen over resultaten en termijnen van initiatieven die u volgt. Nieuwe initiatieven en nieuws worden altijd gemeld.</value>
+  </data>
+  <data name="Notif_Channel_New" xml:space="preserve">
+    <value>Nieuwe initiatieven</value>
+  </data>
+  <data name="Notif_Channel_Ending" xml:space="preserve">
+    <value>Inzameling loopt af</value>
+  </data>
+  <data name="Notif_Channel_Results" xml:space="preserve">
+    <value>Resultaten</value>
+  </data>
+  <data name="Notif_Channel_News" xml:space="preserve">
+    <value>Nieuws</value>
+  </data>
+  <data name="Notif_NewInitiative" xml:space="preserve">
+    <value>Nieuw initiatief geregistreerd</value>
+  </data>
+  <data name="Notif_CollectionStarted" xml:space="preserve">
+    <value>Inzameling van handtekeningen is begonnen</value>
+  </data>
+  <data name="Notif_EndingDays" xml:space="preserve">
+    <value>Nog {0} dagen om te ondertekenen</value>
+  </data>
+  <data name="Notif_EndingTomorrow" xml:space="preserve">
+    <value>Inzameling van handtekeningen eindigt morgen</value>
+  </data>
+  <data name="Notif_EndingToday" xml:space="preserve">
+    <value>Laatste dag om te ondertekenen</value>
+  </data>
+  <data name="Notif_CollectionEnded" xml:space="preserve">
+    <value>Inzameling van handtekeningen is afgelopen</value>
+  </data>
+  <data name="Notif_Milestone" xml:space="preserve">
+    <value>{0:N0} handtekeningen bereikt</value>
+  </data>
+  <data name="Notif_Successful" xml:space="preserve">
+    <value>Geslaagd: ingediend bij de Europese Commissie</value>
+  </data>
+  <data name="Notif_Answered" xml:space="preserve">
+    <value>De Europese Commissie heeft geantwoord</value>
+  </data>
+  <data name="Notif_Failed" xml:space="preserve">
+    <value>Niet geslaagd: onvoldoende steun</value>
+  </data>
+  <data name="Notif_Withdrawn" xml:space="preserve">
+    <value>Ingetrokken door de organisatoren</value>
+  </data>
+  <data name="Notif_NewsOne" xml:space="preserve">
+    <value>Nieuw artikel</value>
+  </data>
+  <data name="Notif_NewsMany" xml:space="preserve">
+    <value>{0} nieuwe artikelen</value>
+  </data>
+  <data name="Tab_Settings" xml:space="preserve">
+    <value>Instellingen</value>
+  </data>
+  <data name="Settings_Language" xml:space="preserve">
+    <value>Taal</value>
+  </data>
+  <data name="Settings_LanguageHint" xml:space="preserve">
+    <value>Gebruikt voor de app, de initiatieven en het nieuws. Als een initiatief niet vertaald is, wordt het in het Engels of in de oorspronkelijke taal getoond.</value>
+  </data>
+  <data name="Settings_DeviceLanguage" xml:space="preserve">
+    <value>Taal van het apparaat ({0})</value>
+  </data>
+  <data name="Settings_Notifications" xml:space="preserve">
+    <value>Meldingen</value>
+  </data>
+  <data name="Settings_SystemNotifications" xml:space="preserve">
+    <value>Soorten meldingen kiezen</value>
+  </data>
+  <data name="Settings_SystemNotificationsHint" xml:space="preserve">
+    <value>Opent de systeeminstellingen, waar u elk soort melding kunt uitzetten.</value>
+  </data>
+  <data name="Settings_About" xml:space="preserve">
+    <value>Over deze app</value>
+  </data>
+</root>

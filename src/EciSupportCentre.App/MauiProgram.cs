@@ -13,6 +13,9 @@ public static class MauiProgram
 {
     public static MauiApp CreateMauiApp()
     {
+        // Before anything reads a text: the app and background jobs alike.
+        Localization.Loc.Instance.Apply(AppSettings.Language);
+
         var builder = MauiApp.CreateBuilder();
         builder
             .UseMauiApp<App>()
@@ -41,11 +44,13 @@ public static class MauiProgram
         services.AddSingleton<InitiativesViewModel>();
         services.AddTransient<InitiativeDetailViewModel>();
         services.AddSingleton<NewsViewModel>();
+        services.AddSingleton<SettingsViewModel>();
 
         services.AddTransient<HomePage>();
         services.AddTransient<InitiativesPage>();
         services.AddTransient<InitiativeDetailPage>();
         services.AddTransient<NewsPage>();
+        services.AddTransient<SettingsPage>();
 
 #if DEBUG
         builder.Logging.AddDebug();

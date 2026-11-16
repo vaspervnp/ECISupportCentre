@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- English (default). Translations go in AppResources.<lang>.resx with the same keys. -->
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AppName" xml:space="preserve">
+    <value>ECI Support Centre</value>
+  </data>
+  <data name="Disclaimer" xml:space="preserve">
+    <value>Това не е официално приложение на Европейския съюз. Данни: citizens-initiative.europa.eu</value>
+  </data>
+  <data name="Tab_Home" xml:space="preserve">
+    <value>Начало</value>
+  </data>
+  <data name="Tab_Initiatives" xml:space="preserve">
+    <value>Инициативи</value>
+  </data>
+  <data name="Home_Title" xml:space="preserve">
+    <value>Европейски граждански инициативи</value>
+  </data>
+  <data name="Home_Intro" xml:space="preserve">
+    <value>Един милион подписа от поне седем държави от ЕС призовават Европейската комисия да предложи законодателство.</value>
+  </data>
+  <data name="Home_Registered" xml:space="preserve">
+    <value>Регистрирани</value>
+  </data>
+  <data name="Home_Collecting" xml:space="preserve">
+    <value>Събиране</value>
+  </data>
+  <data name="Home_Successful" xml:space="preserve">
+    <value>Успешни</value>
+  </data>
+  <data name="Home_Answered" xml:space="preserve">
+    <value>С отговор</value>
+  </data>
+  <data name="Home_Failed" xml:space="preserve">
+    <value>Недостатъчна подкрепа</value>
+  </data>
+  <data name="Home_Withdrawn" xml:space="preserve">
+    <value>Оттеглени</value>
+  </data>
+  <data name="Home_EndingSoon" xml:space="preserve">
+    <value>Текущо събиране, скоро приключва</value>
+  </data>
+  <data name="Home_SeeAll" xml:space="preserve">
+    <value>Всички инициативи</value>
+  </data>
+  <data name="Home_RecentChanges" xml:space="preserve">
+    <value>Последни промени</value>
+  </data>
+  <data name="Sync_Now" xml:space="preserve">
+    <value>Опресняване</value>
+  </data>
+  <data name="Sync_Running" xml:space="preserve">
+    <value>Актуализиране…</value>
+  </data>
+  <data name="Sync_Last" xml:space="preserve">
+    <value>Актуализирано: {0}</value>
+  </data>
+  <data name="Sync_Never" xml:space="preserve">
+    <value>Все още не е актуализирано. Плъзнете надолу, за да опресните.</value>
+  </data>
+  <data name="Sync_Failed" xml:space="preserve">
+    <value>Неуспешно актуализиране: {0}</value>
+  </data>
+  <data name="Sync_Offline" xml:space="preserve">
+    <value>Няма връзка с интернет. Показват се запазени данни.</value>
+  </data>
+  <data name="List_Search" xml:space="preserve">
+    <value>Търсене на инициативи</value>
+  </data>
+  <data name="List_All" xml:space="preserve">
+    <value>Всички</value>
+  </data>
+  <data name="List_Followed" xml:space="preserve">
+    <value>Следени</value>
+  </data>
+  <data name="List_Sort" xml:space="preserve">
+    <value>Подреждане</value>
+  </data>
+  <data name="List_Empty" xml:space="preserve">
+    <value>Няма съвпадащи инициативи.</value>
+  </data>
+  <data name="List_Count" xml:space="preserve">
+    <value>Инициативи: {0}</value>
+  </data>
+  <data name="List_SelectHint" xml:space="preserve">
+    <value>Изберете инициатива, за да видите подробностите.</value>
+  </data>
+  <data name="Sort_Newest" xml:space="preserve">
+    <value>Най-нови</value>
+  </data>
+  <data name="Sort_MostSupporters" xml:space="preserve">
+    <value>Най-много поддръжници</value>
+  </data>
+  <data name="Sort_EndingSoon" xml:space="preserve">
+    <value>Скоро приключващи</value>
+  </data>
+  <data name="Sort_RecentlyUpdated" xml:space="preserve">
+    <value>Наскоро актуализирани</value>
+  </data>
+  <data name="Phase_Unknown" xml:space="preserve">
+    <value>Неизвестно</value>
+  </data>
+  <data name="Phase_Upcoming" xml:space="preserve">
+    <value>Предстои</value>
+  </data>
+  <data name="Phase_Collecting" xml:space="preserve">
+    <value>Събиране на подписи</value>
+  </data>
+  <data name="Phase_Verification" xml:space="preserve">
+    <value>Проверка на подписите</value>
+  </data>
+  <data name="Phase_Submitted" xml:space="preserve">
+    <value>Внесена в Комисията</value>
+  </data>
+  <data name="Phase_Answered" xml:space="preserve">
+    <value>С отговор от Комисията</value>
+  </data>
+  <data name="Phase_Failed" xml:space="preserve">
+    <value>Недостатъчна подкрепа</value>
+  </data>
+  <data name="Phase_Withdrawn" xml:space="preserve">
+    <value>Оттеглена</value>
+  </data>
+  <data name="Item_Supporters" xml:space="preserve">
+    <value>Поддръжници: {0:N0}</value>
+  </data>
+  <data name="Item_EndsOn" xml:space="preserve">
+    <value>Приключва на {0:d}</value>
+  </data>
+  <data name="Item_EndedOn" xml:space="preserve">
+    <value>Приключила на {0:d}</value>
+  </data>
+  <data name="Item_StartsOn" xml:space="preserve">
+    <value>Започва на {0:d}</value>
+  </data>
+  <data name="Item_LastCall" xml:space="preserve">
+    <value>Последен шанс</value>
+  </data>
+  <data name="Item_Followed" xml:space="preserve">
+    <value>Следена</value>
+  </data>
+  <data name="Detail_Title" xml:space="preserve">
+    <value>Инициатива</value>
+  </data>
+  <data name="Detail_Objectives" xml:space="preserve">
+    <value>Цели</value>
+  </data>
+  <data name="Detail_Annex" xml:space="preserve">
+    <value>Допълнителна информация</value>
+  </data>
+  <data name="Detail_Treaties" xml:space="preserve">
+    <value>Разпоредби на Договорите</value>
+  </data>
+  <data name="Detail_Progress" xml:space="preserve">
+    <value>Хронология</value>
+  </data>
+  <data name="Detail_Signatures" xml:space="preserve">
+    <value>Подписи</value>
+  </data>
+  <data name="Detail_SignaturesVerified" xml:space="preserve">
+    <value>Проверени подписи: {0:N0}</value>
+  </data>
+  <data name="Detail_SignaturesCollected" xml:space="preserve">
+    <value>Събрани подписи: {0:N0}</value>
+  </data>
+  <data name="Detail_TopCountries" xml:space="preserve">
+    <value>Водещи държави</value>
+  </data>
+  <data name="Detail_Answer" xml:space="preserve">
+    <value>Отговор на Комисията</value>
+  </data>
+  <data name="Detail_AnswerDate" xml:space="preserve">
+    <value>Решение от {0:d}</value>
+  </data>
+  <data name="Detail_Documents" xml:space="preserve">
+    <value>Документи</value>
+  </data>
+  <data name="Detail_OfficialPage" xml:space="preserve">
+    <value>Отваряне в официалния уебсайт</value>
+  </data>
+  <data name="Detail_Follow" xml:space="preserve">
+    <value>Следване</value>
+  </data>
+  <data name="Detail_Unfollow" xml:space="preserve">
+    <value>Спиране на следването</value>
+  </data>
+  <data name="Detail_Loading" xml:space="preserve">
+    <value>Зареждане на подробностите…</value>
+  </data>
+  <data name="Detail_Unavailable" xml:space="preserve">
+    <value>Подробностите още не са изтеглени. Свържете се с интернет и опреснете.</value>
+  </data>
+  <data name="Detail_Registered" xml:space="preserve">
+    <value>Регистрирана на {0:d}</value>
+  </data>
+  <data name="Detail_Collection" xml:space="preserve">
+    <value>Събиране {0:d} – {1:d}</value>
+  </data>
+  <data name="Detail_CollectionOpen" xml:space="preserve">
+    <value>Събиране от {0:d}</value>
+  </data>
+  <data name="Step_REGISTERED" xml:space="preserve">
+    <value>Регистрирана</value>
+  </data>
+  <data name="Step_COLLECTION_START_DATE" xml:space="preserve">
+    <value>Начало на събирането</value>
+  </data>
+  <data name="Step_ONGOING" xml:space="preserve">
+    <value>Събиране на подписи</value>
+  </data>
+  <data name="Step_CLOSED" xml:space="preserve">
+    <value>Край на събирането</value>
+  </data>
+  <data name="Step_VERIFICATION" xml:space="preserve">
+    <value>Проверени подписи</value>
+  </data>
+  <data name="Step_SUBMITTED" xml:space="preserve">
+    <value>Внесена в Комисията</value>
+  </data>
+  <data name="Step_ANSWERED" xml:space="preserve">
+    <value>Отговор на Комисията</value>
+  </data>
+  <data name="Step_INSUFFICIENT_SUPPORT" xml:space="preserve">
+    <value>Недостатъчна подкрепа</value>
+  </data>
+  <data name="Step_INSUFFICIENT_SUPPORT_AFTER_VERIFICATION" xml:space="preserve">
+    <value>Недостатъчно валидни подписи</value>
+  </data>
+  <data name="Step_WITHDRAWN" xml:space="preserve">
+    <value>Оттеглена</value>
+  </data>
+  <data name="Doc_COMMUNICATION" xml:space="preserve">
+    <value>Съобщение на Комисията</value>
+  </data>
+  <data name="Doc_PRESS_RELEASE" xml:space="preserve">
+    <value>Съобщение за медиите</value>
+  </data>
+  <data name="Doc_EXAMIN_STEPS" xml:space="preserve">
+    <value>Етапи на разглеждането</value>
+  </data>
+  <data name="Doc_FOLLOW_UP" xml:space="preserve">
+    <value>Последващи действия</value>
+  </data>
+  <data name="Doc_ANNEX" xml:space="preserve">
+    <value>Приложение към съобщението</value>
+  </data>
+  <data name="Doc_Registration" xml:space="preserve">
+    <value>Решение на Комисията за регистрация</value>
+  </data>
+  <data name="Doc_Other" xml:space="preserve">
+    <value>Документ</value>
+  </data>
+  <data name="Sign_Button" xml:space="preserve">
+    <value>Подпишете тази инициатива</value>
+  </data>
+  <data name="Sign_DaysLeft" xml:space="preserve">
+    <value>Оставащи дни за подписване: {0} (до {1:d})</value>
+  </data>
+  <data name="Sign_LastDay" xml:space="preserve">
+    <value>Последен ден за подписване</value>
+  </data>
+  <data name="Sign_Note" xml:space="preserve">
+    <value>Подписвате на официалния уебсайт на Европейската комисия. Това приложение никога не вижда Вашите данни.</value>
+  </data>
+  <data name="Sign_Mark" xml:space="preserve">
+    <value>Подписах тази инициатива</value>
+  </data>
+  <data name="Sign_MarkHint" xml:space="preserve">
+    <value>Съхранява се само на това устройство</value>
+  </data>
+  <data name="Item_Signed" xml:space="preserve">
+    <value>Подписана</value>
+  </data>
+  <data name="Tab_News" xml:space="preserve">
+    <value>Новини</value>
+  </data>
+  <data name="News_Title" xml:space="preserve">
+    <value>Последни новини</value>
+  </data>
+  <data name="News_Empty" xml:space="preserve">
+    <value>Все още няма новини. Плъзнете надолу, за да опресните.</value>
+  </data>
+  <data name="News_New" xml:space="preserve">
+    <value>Ново</value>
+  </data>
+  <data name="News_OpenHint" xml:space="preserve">
+    <value>Отваря цялата статия на официалния уебсайт</value>
+  </data>
+  <data name="News_Source" xml:space="preserve">
+    <value>Новини от официалния уебсайт на Европейската гражданска инициатива.</value>
+  </data>
+  <data name="Settings_NotifyAll" xml:space="preserve">
+    <value>Известия за всички инициативи</value>
+  </data>
+  <data name="Settings_NotifyAllHint" xml:space="preserve">
+    <value>Когато е изключено, ще получавате известия за резултати и срокове само за инициативите, които следите. За нови инициативи и новини винаги се съобщава.</value>
+  </data>
+  <data name="Notif_Channel_New" xml:space="preserve">
+    <value>Нови инициативи</value>
+  </data>
+  <data name="Notif_Channel_Ending" xml:space="preserve">
+    <value>Край на събирането</value>
+  </data>
+  <data name="Notif_Channel_Results" xml:space="preserve">
+    <value>Резултати</value>
+  </data>
+  <data name="Notif_Channel_News" xml:space="preserve">
+    <value>Новини</value>
+  </data>
+  <data name="Notif_NewInitiative" xml:space="preserve">
+    <value>Регистрирана е нова инициатива</value>
+  </data>
+  <data name="Notif_CollectionStarted" xml:space="preserve">
+    <value>Събирането на подписи започна</value>
+  </data>
+  <data name="Notif_EndingDays" xml:space="preserve">
+    <value>Остават {0} дни за подписване</value>
+  </data>
+  <data name="Notif_EndingTomorrow" xml:space="preserve">
+    <value>Събирането на подписи приключва утре</value>
+  </data>
+  <data name="Notif_EndingToday" xml:space="preserve">
+    <value>Последен ден за подписване</value>
+  </data>
+  <data name="Notif_CollectionEnded" xml:space="preserve">
+    <value>Събирането на подписи приключи</value>
+  </data>
+  <data name="Notif_Milestone" xml:space="preserve">
+    <value>Събрани са {0:N0} подписа</value>
+  </data>
+  <data name="Notif_Successful" xml:space="preserve">
+    <value>Успешна: внесена в Европейската комисия</value>
+  </data>
+  <data name="Notif_Answered" xml:space="preserve">
+    <value>Европейската комисия отговори</value>
+  </data>
+  <data name="Notif_Failed" xml:space="preserve">
+    <value>Неуспешна: недостатъчна подкрепа</value>
+  </data>
+  <data name="Notif_Withdrawn" xml:space="preserve">
+    <value>Оттеглена от организаторите</value>
+  </data>
+  <data name="Notif_NewsOne" xml:space="preserve">
+    <value>Нова статия</value>
+  </data>
+  <data name="Notif_NewsMany" xml:space="preserve">
+    <value>Нови статии: {0}</value>
+  </data>
+  <data name="Tab_Settings" xml:space="preserve">
+    <value>Настройки</value>
+  </data>
+  <data name="Settings_Language" xml:space="preserve">
+    <value>Език</value>
+  </data>
+  <data name="Settings_LanguageHint" xml:space="preserve">
+    <value>Използва се за приложението, инициативите и новините. Ако дадена инициатива няма превод, тя се показва на английски или на оригиналния си език.</value>
+  </data>
+  <data name="Settings_DeviceLanguage" xml:space="preserve">
+    <value>Език на устройството ({0})</value>
+  </data>
+  <data name="Settings_Notifications" xml:space="preserve">
+    <value>Известия</value>
+  </data>
+  <data name="Settings_SystemNotifications" xml:space="preserve">
+    <value>Избор на видове известия</value>
+  </data>
+  <data name="Settings_SystemNotificationsHint" xml:space="preserve">
+    <value>Отваря системните настройки, където всеки вид известие може да бъде изключен.</value>
+  </data>
+  <data name="Settings_About" xml:space="preserve">
+    <value>За приложението</value>
+  </data>
+</root>

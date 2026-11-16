@@ -301,11 +301,11 @@
   <data name="News_Source" xml:space="preserve">
     <value>News from the official European Citizens’ Initiative website.</value>
   </data>
-  <data name="Home_NotifyAll" xml:space="preserve">
+  <data name="Settings_NotifyAll" xml:space="preserve">
     <value>Notify me about every initiative</value>
   </data>
-  <data name="Home_NotifyAllHint" xml:space="preserve">
-    <value>When off, only initiatives you follow notify you about results and deadlines. New initiatives and news are always announced; turn any kind off in the system notification settings.</value>
+  <data name="Settings_NotifyAllHint" xml:space="preserve">
+    <value>When off, only the initiatives you follow notify you about results and deadlines. New initiatives and news are always announced.</value>
   </data>
   <data name="Notif_Channel_New" xml:space="preserve">
     <value>New initiatives</value>
@@ -357,5 +357,29 @@
   </data>
   <data name="Notif_NewsMany" xml:space="preserve">
     <value>{0} new articles</value>
+  </data>
+  <data name="Tab_Settings" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+  <data name="Settings_Language" xml:space="preserve">
+    <value>Language</value>
+  </data>
+  <data name="Settings_LanguageHint" xml:space="preserve">
+    <value>Used for the app, the initiatives and the news. Where an initiative has no translation, it is shown in English or in its original language.</value>
+  </data>
+  <data name="Settings_DeviceLanguage" xml:space="preserve">
+    <value>Device language ({0})</value>
+  </data>
+  <data name="Settings_Notifications" xml:space="preserve">
+    <value>Notifications</value>
+  </data>
+  <data name="Settings_SystemNotifications" xml:space="preserve">
+    <value>Choose notification types</value>
+  </data>
+  <data name="Settings_SystemNotificationsHint" xml:space="preserve">
+    <value>Opens the system settings, where each kind of notification can be turned off.</value>
+  </data>
+  <data name="Settings_About" xml:space="preserve">
+    <value>About</value>
   </data>
 </root>

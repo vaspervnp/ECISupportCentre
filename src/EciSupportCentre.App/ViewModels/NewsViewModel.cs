@@ -18,7 +18,7 @@ public sealed partial class NewsViewModel : ObservableObject
         _data = data;
         _data.DataChanged += (_, _) => MainThread.BeginInvokeOnMainThread(() => _ = LoadAsync());
         _data.SyncStateChanged += (_, _) => MainThread.BeginInvokeOnMainThread(() => ErrorText = _data.LastError);
-        Loc.Instance.PropertyChanged += (_, _) => _ = LoadAsync();
+        Loc.Instance.LanguageChanged += (_, _) => MainThread.BeginInvokeOnMainThread(() => _ = LoadAsync());
     }
 
     public ObservableCollection<NewsItemViewModel> Items { get; } = [];

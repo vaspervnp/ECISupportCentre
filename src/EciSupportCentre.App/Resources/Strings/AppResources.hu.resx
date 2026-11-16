@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- English (default). Translations go in AppResources.<lang>.resx with the same keys. -->
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AppName" xml:space="preserve">
+    <value>ECI Support Centre</value>
+  </data>
+  <data name="Disclaimer" xml:space="preserve">
+    <value>Nem az Európai Unió hivatalos alkalmazása. Adatok: citizens-initiative.europa.eu</value>
+  </data>
+  <data name="Tab_Home" xml:space="preserve">
+    <value>Kezdőlap</value>
+  </data>
+  <data name="Tab_Initiatives" xml:space="preserve">
+    <value>Kezdeményezések</value>
+  </data>
+  <data name="Home_Title" xml:space="preserve">
+    <value>Európai polgári kezdeményezések</value>
+  </data>
+  <data name="Home_Intro" xml:space="preserve">
+    <value>Legalább hét uniós országból származó egymillió aláírással fel lehet kérni az Európai Bizottságot, hogy terjesszen elő jogszabályjavaslatot.</value>
+  </data>
+  <data name="Home_Registered" xml:space="preserve">
+    <value>Nyilvántartásba vett</value>
+  </data>
+  <data name="Home_Collecting" xml:space="preserve">
+    <value>Gyűjtés folyamatban</value>
+  </data>
+  <data name="Home_Successful" xml:space="preserve">
+    <value>Sikeres</value>
+  </data>
+  <data name="Home_Answered" xml:space="preserve">
+    <value>Megválaszolt</value>
+  </data>
+  <data name="Home_Failed" xml:space="preserve">
+    <value>Elégtelen támogatás</value>
+  </data>
+  <data name="Home_Withdrawn" xml:space="preserve">
+    <value>Visszavont</value>
+  </data>
+  <data name="Home_EndingSoon" xml:space="preserve">
+    <value>Gyűjtés folyamatban, hamarosan záruló</value>
+  </data>
+  <data name="Home_SeeAll" xml:space="preserve">
+    <value>Összes kezdeményezés</value>
+  </data>
+  <data name="Home_RecentChanges" xml:space="preserve">
+    <value>Legutóbbi változások</value>
+  </data>
+  <data name="Sync_Now" xml:space="preserve">
+    <value>Frissítés</value>
+  </data>
+  <data name="Sync_Running" xml:space="preserve">
+    <value>Frissítés…</value>
+  </data>
+  <data name="Sync_Last" xml:space="preserve">
+    <value>Frissítve: {0}</value>
+  </data>
+  <data name="Sync_Never" xml:space="preserve">
+    <value>Még nem történt frissítés. A frissítéshez húzza lefelé.</value>
+  </data>
+  <data name="Sync_Failed" xml:space="preserve">
+    <value>A frissítés nem sikerült: {0}</value>
+  </data>
+  <data name="Sync_Offline" xml:space="preserve">
+    <value>Nincs internetkapcsolat. A mentett adatok láthatók.</value>
+  </data>
+  <data name="List_Search" xml:space="preserve">
+    <value>Kezdeményezések keresése</value>
+  </data>
+  <data name="List_All" xml:space="preserve">
+    <value>Összes</value>
+  </data>
+  <data name="List_Followed" xml:space="preserve">
+    <value>Követett</value>
+  </data>
+  <data name="List_Sort" xml:space="preserve">
+    <value>Rendezés</value>
+  </data>
+  <data name="List_Empty" xml:space="preserve">
+    <value>Nincs a keresésnek megfelelő kezdeményezés.</value>
+  </data>
+  <data name="List_Count" xml:space="preserve">
+    <value>{0} kezdeményezés</value>
+  </data>
+  <data name="List_SelectHint" xml:space="preserve">
+    <value>A részletek megtekintéséhez válasszon egy kezdeményezést.</value>
+  </data>
+  <data name="Sort_Newest" xml:space="preserve">
+    <value>Legújabb</value>
+  </data>
+  <data name="Sort_MostSupporters" xml:space="preserve">
+    <value>Legtöbb támogató</value>
+  </data>
+  <data name="Sort_EndingSoon" xml:space="preserve">
+    <value>Hamarosan záruló</value>
+  </data>
+  <data name="Sort_RecentlyUpdated" xml:space="preserve">
+    <value>Nemrég frissített</value>
+  </data>
+  <data name="Phase_Unknown" xml:space="preserve">
+    <value>Ismeretlen</value>
+  </data>
+  <data name="Phase_Upcoming" xml:space="preserve">
+    <value>Hamarosan indul</value>
+  </data>
+  <data name="Phase_Collecting" xml:space="preserve">
+    <value>Aláírásgyűjtés</value>
+  </data>
+  <data name="Phase_Verification" xml:space="preserve">
+    <value>Aláírások ellenőrzése</value>
+  </data>
+  <data name="Phase_Submitted" xml:space="preserve">
+    <value>Benyújtva a Bizottsághoz</value>
+  </data>
+  <data name="Phase_Answered" xml:space="preserve">
+    <value>A Bizottság válaszolt</value>
+  </data>
+  <data name="Phase_Failed" xml:space="preserve">
+    <value>Elégtelen támogatás</value>
+  </data>
+  <data name="Phase_Withdrawn" xml:space="preserve">
+    <value>Visszavonva</value>
+  </data>
+  <data name="Item_Supporters" xml:space="preserve">
+    <value>{0:N0} támogató</value>
+  </data>
+  <data name="Item_EndsOn" xml:space="preserve">
+    <value>Zárul: {0:d}</value>
+  </data>
+  <data name="Item_EndedOn" xml:space="preserve">
+    <value>Lezárult: {0:d}</value>
+  </data>
+  <data name="Item_StartsOn" xml:space="preserve">
+    <value>Kezdés: {0:d}</value>
+  </data>
+  <data name="Item_LastCall" xml:space="preserve">
+    <value>Utolsó esély</value>
+  </data>
+  <data name="Item_Followed" xml:space="preserve">
+    <value>Követett</value>
+  </data>
+  <data name="Detail_Title" xml:space="preserve">
+    <value>Kezdeményezés</value>
+  </data>
+  <data name="Detail_Objectives" xml:space="preserve">
+    <value>Célkitűzések</value>
+  </data>
+  <data name="Detail_Annex" xml:space="preserve">
+    <value>További információk</value>
+  </data>
+  <data name="Detail_Treaties" xml:space="preserve">
+    <value>Szerződési rendelkezések</value>
+  </data>
+  <data name="Detail_Progress" xml:space="preserve">
+    <value>Idővonal</value>
+  </data>
+  <data name="Detail_Signatures" xml:space="preserve">
+    <value>Aláírások</value>
+  </data>
+  <data name="Detail_SignaturesVerified" xml:space="preserve">
+    <value>{0:N0} ellenőrzött aláírás</value>
+  </data>
+  <data name="Detail_SignaturesCollected" xml:space="preserve">
+    <value>{0:N0} összegyűjtött aláírás</value>
+  </data>
+  <data name="Detail_TopCountries" xml:space="preserve">
+    <value>Élen járó országok</value>
+  </data>
+  <data name="Detail_Answer" xml:space="preserve">
+    <value>A Bizottság válasza</value>
+  </data>
+  <data name="Detail_AnswerDate" xml:space="preserve">
+    <value>Döntés: {0:d}</value>
+  </data>
+  <data name="Detail_Documents" xml:space="preserve">
+    <value>Dokumentumok</value>
+  </data>
+  <data name="Detail_OfficialPage" xml:space="preserve">
+    <value>Megnyitás a hivatalos weboldalon</value>
+  </data>
+  <data name="Detail_Follow" xml:space="preserve">
+    <value>Követés</value>
+  </data>
+  <data name="Detail_Unfollow" xml:space="preserve">
+    <value>Követés leállítása</value>
+  </data>
+  <data name="Detail_Loading" xml:space="preserve">
+    <value>Részletek betöltése…</value>
+  </data>
+  <data name="Detail_Unavailable" xml:space="preserve">
+    <value>A részletek még nincsenek letöltve. Csatlakozzon az internethez, és frissítsen.</value>
+  </data>
+  <data name="Detail_Registered" xml:space="preserve">
+    <value>Nyilvántartásba vétel: {0:d}</value>
+  </data>
+  <data name="Detail_Collection" xml:space="preserve">
+    <value>Gyűjtés: {0:d} – {1:d}</value>
+  </data>
+  <data name="Detail_CollectionOpen" xml:space="preserve">
+    <value>Gyűjtés kezdete: {0:d}</value>
+  </data>
+  <data name="Step_REGISTERED" xml:space="preserve">
+    <value>Nyilvántartásba vétel</value>
+  </data>
+  <data name="Step_COLLECTION_START_DATE" xml:space="preserve">
+    <value>Elindult a gyűjtés</value>
+  </data>
+  <data name="Step_ONGOING" xml:space="preserve">
+    <value>Aláírásgyűjtés</value>
+  </data>
+  <data name="Step_CLOSED" xml:space="preserve">
+    <value>Lezárult a gyűjtés</value>
+  </data>
+  <data name="Step_VERIFICATION" xml:space="preserve">
+    <value>Aláírások ellenőrizve</value>
+  </data>
+  <data name="Step_SUBMITTED" xml:space="preserve">
+    <value>Benyújtva a Bizottsághoz</value>
+  </data>
+  <data name="Step_ANSWERED" xml:space="preserve">
+    <value>A Bizottság válaszolt</value>
+  </data>
+  <data name="Step_INSUFFICIENT_SUPPORT" xml:space="preserve">
+    <value>Elégtelen támogatás</value>
+  </data>
+  <data name="Step_INSUFFICIENT_SUPPORT_AFTER_VERIFICATION" xml:space="preserve">
+    <value>Nincs elég érvényes aláírás</value>
+  </data>
+  <data name="Step_WITHDRAWN" xml:space="preserve">
+    <value>Visszavonva</value>
+  </data>
+  <data name="Doc_COMMUNICATION" xml:space="preserve">
+    <value>Bizottsági közlemény</value>
+  </data>
+  <data name="Doc_PRESS_RELEASE" xml:space="preserve">
+    <value>Sajtóközlemény</value>
+  </data>
+  <data name="Doc_EXAMIN_STEPS" xml:space="preserve">
+    <value>A vizsgálat lépései</value>
+  </data>
+  <data name="Doc_FOLLOW_UP" xml:space="preserve">
+    <value>Nyomon követés</value>
+  </data>
+  <data name="Doc_ANNEX" xml:space="preserve">
+    <value>A közlemény melléklete</value>
+  </data>
+  <data name="Doc_Registration" xml:space="preserve">
+    <value>A Bizottság nyilvántartásba vételi határozata</value>
+  </data>
+  <data name="Doc_Other" xml:space="preserve">
+    <value>Dokumentum</value>
+  </data>
+  <data name="Sign_Button" xml:space="preserve">
+    <value>A kezdeményezés aláírása</value>
+  </data>
+  <data name="Sign_DaysLeft" xml:space="preserve">
+    <value>Még {0} nap az aláírásra (határidő: {1:d})</value>
+  </data>
+  <data name="Sign_LastDay" xml:space="preserve">
+    <value>Az aláírás utolsó napja</value>
+  </data>
+  <data name="Sign_Note" xml:space="preserve">
+    <value>Az aláírás az Európai Bizottság hivatalos weboldalán történik. Ez az alkalmazás soha nem látja az Ön adatait.</value>
+  </data>
+  <data name="Sign_Mark" xml:space="preserve">
+    <value>Aláírtam ezt a kezdeményezést</value>
+  </data>
+  <data name="Sign_MarkHint" xml:space="preserve">
+    <value>Csak ezen az eszközön tárolódik</value>
+  </data>
+  <data name="Item_Signed" xml:space="preserve">
+    <value>Aláírva</value>
+  </data>
+  <data name="Tab_News" xml:space="preserve">
+    <value>Hírek</value>
+  </data>
+  <data name="News_Title" xml:space="preserve">
+    <value>Legfrissebb hírek</value>
+  </data>
+  <data name="News_Empty" xml:space="preserve">
+    <value>Még nincsenek hírek. A frissítéshez húzza lefelé.</value>
+  </data>
+  <data name="News_New" xml:space="preserve">
+    <value>Új</value>
+  </data>
+  <data name="News_OpenHint" xml:space="preserve">
+    <value>Megnyitja a teljes cikket a hivatalos weboldalon</value>
+  </data>
+  <data name="News_Source" xml:space="preserve">
+    <value>Hírek az európai polgári kezdeményezés hivatalos weboldaláról.</value>
+  </data>
+  <data name="Settings_NotifyAll" xml:space="preserve">
+    <value>Értesítés minden kezdeményezésről</value>
+  </data>
+  <data name="Settings_NotifyAllHint" xml:space="preserve">
+    <value>Kikapcsolt állapotban csak a követett kezdeményezések eredményeiről és határidejéről kap értesítést. Az új kezdeményezésekről és a hírekről mindig kap értesítést.</value>
+  </data>
+  <data name="Notif_Channel_New" xml:space="preserve">
+    <value>Új kezdeményezések</value>
+  </data>
+  <data name="Notif_Channel_Ending" xml:space="preserve">
+    <value>Záruló gyűjtések</value>
+  </data>
+  <data name="Notif_Channel_Results" xml:space="preserve">
+    <value>Eredmények</value>
+  </data>
+  <data name="Notif_Channel_News" xml:space="preserve">
+    <value>Hírek</value>
+  </data>
+  <data name="Notif_NewInitiative" xml:space="preserve">
+    <value>Új kezdeményezést vettek nyilvántartásba</value>
+  </data>
+  <data name="Notif_CollectionStarted" xml:space="preserve">
+    <value>Elindult az aláírásgyűjtés</value>
+  </data>
+  <data name="Notif_EndingDays" xml:space="preserve">
+    <value>Még {0} nap az aláírásra</value>
+  </data>
+  <data name="Notif_EndingTomorrow" xml:space="preserve">
+    <value>Holnap zárul az aláírásgyűjtés</value>
+  </data>
+  <data name="Notif_EndingToday" xml:space="preserve">
+    <value>Az aláírás utolsó napja</value>
+  </data>
+  <data name="Notif_CollectionEnded" xml:space="preserve">
+    <value>Lezárult az aláírásgyűjtés</value>
+  </data>
+  <data name="Notif_Milestone" xml:space="preserve">
+    <value>{0:N0} aláírás összegyűlt</value>
+  </data>
+  <data name="Notif_Successful" xml:space="preserve">
+    <value>Sikeres: benyújtották az Európai Bizottsághoz</value>
+  </data>
+  <data name="Notif_Answered" xml:space="preserve">
+    <value>Az Európai Bizottság válaszolt</value>
+  </data>
+  <data name="Notif_Failed" xml:space="preserve">
+    <value>Sikertelen: elégtelen támogatás</value>
+  </data>
+  <data name="Notif_Withdrawn" xml:space="preserve">
+    <value>A szervezők visszavonták</value>
+  </data>
+  <data name="Notif_NewsOne" xml:space="preserve">
+    <value>Új cikk</value>
+  </data>
+  <data name="Notif_NewsMany" xml:space="preserve">
+    <value>{0} új cikk</value>
+  </data>
+  <data name="Tab_Settings" xml:space="preserve">
+    <value>Beállítások</value>
+  </data>
+  <data name="Settings_Language" xml:space="preserve">
+    <value>Nyelv</value>
+  </data>
+  <data name="Settings_LanguageHint" xml:space="preserve">
+    <value>Az alkalmazás, a kezdeményezések és a hírek nyelve. Ha egy kezdeményezésnek nincs fordítása, angolul vagy az eredeti nyelvén jelenik meg.</value>
+  </data>
+  <data name="Settings_DeviceLanguage" xml:space="preserve">
+    <value>Az eszköz nyelve ({0})</value>
+  </data>
+  <data name="Settings_Notifications" xml:space="preserve">
+    <value>Értesítések</value>
+  </data>
+  <data name="Settings_SystemNotifications" xml:space="preserve">
+    <value>Értesítéstípusok kiválasztása</value>
+  </data>
+  <data name="Settings_SystemNotificationsHint" xml:space="preserve">
+    <value>Megnyitja a rendszerbeállításokat, ahol az egyes értesítéstípusok kikapcsolhatók.</value>
+  </data>
+  <data name="Settings_About" xml:space="preserve">
+    <value>Névjegy</value>
+  </data>
+</root>

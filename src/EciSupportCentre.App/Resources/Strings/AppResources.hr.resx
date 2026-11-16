@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- English (default). Translations go in AppResources.<lang>.resx with the same keys. -->
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AppName" xml:space="preserve">
+    <value>ECI Support Centre</value>
+  </data>
+  <data name="Disclaimer" xml:space="preserve">
+    <value>Ovo nije službena aplikacija Europske unije. Podaci: citizens-initiative.europa.eu</value>
+  </data>
+  <data name="Tab_Home" xml:space="preserve">
+    <value>Početna</value>
+  </data>
+  <data name="Tab_Initiatives" xml:space="preserve">
+    <value>Inicijative</value>
+  </data>
+  <data name="Home_Title" xml:space="preserve">
+    <value>Europske građanske inicijative</value>
+  </data>
+  <data name="Home_Intro" xml:space="preserve">
+    <value>Milijun potpisa iz najmanje sedam zemalja EU-a traži od Europske komisije da predloži pravni akt.</value>
+  </data>
+  <data name="Home_Registered" xml:space="preserve">
+    <value>Registrirane</value>
+  </data>
+  <data name="Home_Collecting" xml:space="preserve">
+    <value>Prikupljanje u tijeku</value>
+  </data>
+  <data name="Home_Successful" xml:space="preserve">
+    <value>Uspješne</value>
+  </data>
+  <data name="Home_Answered" xml:space="preserve">
+    <value>S odgovorom</value>
+  </data>
+  <data name="Home_Failed" xml:space="preserve">
+    <value>Nedovoljna potpora</value>
+  </data>
+  <data name="Home_Withdrawn" xml:space="preserve">
+    <value>Povučene</value>
+  </data>
+  <data name="Home_EndingSoon" xml:space="preserve">
+    <value>Prikupljanje u tijeku, najskorije završavaju</value>
+  </data>
+  <data name="Home_SeeAll" xml:space="preserve">
+    <value>Prikaži sve inicijative</value>
+  </data>
+  <data name="Home_RecentChanges" xml:space="preserve">
+    <value>Nedavne promjene</value>
+  </data>
+  <data name="Sync_Now" xml:space="preserve">
+    <value>Osvježi</value>
+  </data>
+  <data name="Sync_Running" xml:space="preserve">
+    <value>Ažuriranje…</value>
+  </data>
+  <data name="Sync_Last" xml:space="preserve">
+    <value>Ažurirano: {0}</value>
+  </data>
+  <data name="Sync_Never" xml:space="preserve">
+    <value>Još nije ažurirano. Povucite prema dolje za osvježavanje.</value>
+  </data>
+  <data name="Sync_Failed" xml:space="preserve">
+    <value>Ažuriranje nije uspjelo: {0}</value>
+  </data>
+  <data name="Sync_Offline" xml:space="preserve">
+    <value>Niste povezani s internetom. Prikazuju se spremljeni podaci.</value>
+  </data>
+  <data name="List_Search" xml:space="preserve">
+    <value>Pretraži inicijative</value>
+  </data>
+  <data name="List_All" xml:space="preserve">
+    <value>Sve</value>
+  </data>
+  <data name="List_Followed" xml:space="preserve">
+    <value>Praćene</value>
+  </data>
+  <data name="List_Sort" xml:space="preserve">
+    <value>Poredaj</value>
+  </data>
+  <data name="List_Empty" xml:space="preserve">
+    <value>Nema odgovarajućih inicijativa.</value>
+  </data>
+  <data name="List_Count" xml:space="preserve">
+    <value>Inicijative: {0}</value>
+  </data>
+  <data name="List_SelectHint" xml:space="preserve">
+    <value>Odaberite inicijativu za prikaz pojedinosti.</value>
+  </data>
+  <data name="Sort_Newest" xml:space="preserve">
+    <value>Najnovije</value>
+  </data>
+  <data name="Sort_MostSupporters" xml:space="preserve">
+    <value>Najviše potpisnika</value>
+  </data>
+  <data name="Sort_EndingSoon" xml:space="preserve">
+    <value>Uskoro završavaju</value>
+  </data>
+  <data name="Sort_RecentlyUpdated" xml:space="preserve">
+    <value>Nedavno ažurirane</value>
+  </data>
+  <data name="Phase_Unknown" xml:space="preserve">
+    <value>Nepoznato</value>
+  </data>
+  <data name="Phase_Upcoming" xml:space="preserve">
+    <value>Uskoro počinje</value>
+  </data>
+  <data name="Phase_Collecting" xml:space="preserve">
+    <value>Prikupljanje potpisa</value>
+  </data>
+  <data name="Phase_Verification" xml:space="preserve">
+    <value>Provjera potpisa</value>
+  </data>
+  <data name="Phase_Submitted" xml:space="preserve">
+    <value>Podnesena Komisiji</value>
+  </data>
+  <data name="Phase_Answered" xml:space="preserve">
+    <value>Komisija odgovorila</value>
+  </data>
+  <data name="Phase_Failed" xml:space="preserve">
+    <value>Nedovoljna potpora</value>
+  </data>
+  <data name="Phase_Withdrawn" xml:space="preserve">
+    <value>Povučena</value>
+  </data>
+  <data name="Item_Supporters" xml:space="preserve">
+    <value>Potpisnici: {0:N0}</value>
+  </data>
+  <data name="Item_EndsOn" xml:space="preserve">
+    <value>Završava {0:d}</value>
+  </data>
+  <data name="Item_EndedOn" xml:space="preserve">
+    <value>Završila {0:d}</value>
+  </data>
+  <data name="Item_StartsOn" xml:space="preserve">
+    <value>Počinje {0:d}</value>
+  </data>
+  <data name="Item_LastCall" xml:space="preserve">
+    <value>Posljednja prilika</value>
+  </data>
+  <data name="Item_Followed" xml:space="preserve">
+    <value>Praćeno</value>
+  </data>
+  <data name="Detail_Title" xml:space="preserve">
+    <value>Inicijativa</value>
+  </data>
+  <data name="Detail_Objectives" xml:space="preserve">
+    <value>Ciljevi</value>
+  </data>
+  <data name="Detail_Annex" xml:space="preserve">
+    <value>Više informacija</value>
+  </data>
+  <data name="Detail_Treaties" xml:space="preserve">
+    <value>Odredbe Ugovorâ</value>
+  </data>
+  <data name="Detail_Progress" xml:space="preserve">
+    <value>Vremenski slijed</value>
+  </data>
+  <data name="Detail_Signatures" xml:space="preserve">
+    <value>Potpisi</value>
+  </data>
+  <data name="Detail_SignaturesVerified" xml:space="preserve">
+    <value>Provjereni potpisi: {0:N0}</value>
+  </data>
+  <data name="Detail_SignaturesCollected" xml:space="preserve">
+    <value>Prikupljeni potpisi: {0:N0}</value>
+  </data>
+  <data name="Detail_TopCountries" xml:space="preserve">
+    <value>Vodeće zemlje</value>
+  </data>
+  <data name="Detail_Answer" xml:space="preserve">
+    <value>Odgovor Komisije</value>
+  </data>
+  <data name="Detail_AnswerDate" xml:space="preserve">
+    <value>Odluka od {0:d}</value>
+  </data>
+  <data name="Detail_Documents" xml:space="preserve">
+    <value>Dokumenti</value>
+  </data>
+  <data name="Detail_OfficialPage" xml:space="preserve">
+    <value>Otvori na službenim mrežnim stranicama</value>
+  </data>
+  <data name="Detail_Follow" xml:space="preserve">
+    <value>Prati</value>
+  </data>
+  <data name="Detail_Unfollow" xml:space="preserve">
+    <value>Prestani pratiti</value>
+  </data>
+  <data name="Detail_Loading" xml:space="preserve">
+    <value>Učitavanje pojedinosti…</value>
+  </data>
+  <data name="Detail_Unavailable" xml:space="preserve">
+    <value>Pojedinosti još nisu preuzete. Povežite se s internetom i osvježite.</value>
+  </data>
+  <data name="Detail_Registered" xml:space="preserve">
+    <value>Registrirana {0:d}</value>
+  </data>
+  <data name="Detail_Collection" xml:space="preserve">
+    <value>Prikupljanje {0:d} – {1:d}</value>
+  </data>
+  <data name="Detail_CollectionOpen" xml:space="preserve">
+    <value>Prikupljanje od {0:d}</value>
+  </data>
+  <data name="Step_REGISTERED" xml:space="preserve">
+    <value>Registrirana</value>
+  </data>
+  <data name="Step_COLLECTION_START_DATE" xml:space="preserve">
+    <value>Početak prikupljanja</value>
+  </data>
+  <data name="Step_ONGOING" xml:space="preserve">
+    <value>Prikupljanje potpisa</value>
+  </data>
+  <data name="Step_CLOSED" xml:space="preserve">
+    <value>Prikupljanje završeno</value>
+  </data>
+  <data name="Step_VERIFICATION" xml:space="preserve">
+    <value>Potpisi provjereni</value>
+  </data>
+  <data name="Step_SUBMITTED" xml:space="preserve">
+    <value>Podnesena Komisiji</value>
+  </data>
+  <data name="Step_ANSWERED" xml:space="preserve">
+    <value>Komisija je odgovorila</value>
+  </data>
+  <data name="Step_INSUFFICIENT_SUPPORT" xml:space="preserve">
+    <value>Nedovoljna potpora</value>
+  </data>
+  <data name="Step_INSUFFICIENT_SUPPORT_AFTER_VERIFICATION" xml:space="preserve">
+    <value>Nedovoljno valjanih potpisa</value>
+  </data>
+  <data name="Step_WITHDRAWN" xml:space="preserve">
+    <value>Povučena</value>
+  </data>
+  <data name="Doc_COMMUNICATION" xml:space="preserve">
+    <value>Komunikacija Komisije</value>
+  </data>
+  <data name="Doc_PRESS_RELEASE" xml:space="preserve">
+    <value>Priopćenje za medije</value>
+  </data>
+  <data name="Doc_EXAMIN_STEPS" xml:space="preserve">
+    <value>Koraci razmatranja</value>
+  </data>
+  <data name="Doc_FOLLOW_UP" xml:space="preserve">
+    <value>Daljnje mjere</value>
+  </data>
+  <data name="Doc_ANNEX" xml:space="preserve">
+    <value>Prilog komunikaciji</value>
+  </data>
+  <data name="Doc_Registration" xml:space="preserve">
+    <value>Odluka Komisije o registraciji</value>
+  </data>
+  <data name="Doc_Other" xml:space="preserve">
+    <value>Dokument</value>
+  </data>
+  <data name="Sign_Button" xml:space="preserve">
+    <value>Potpišite ovu inicijativu</value>
+  </data>
+  <data name="Sign_DaysLeft" xml:space="preserve">
+    <value>Preostalo dana za potpisivanje: {0} (do {1:d})</value>
+  </data>
+  <data name="Sign_LastDay" xml:space="preserve">
+    <value>Posljednji dan za potpisivanje</value>
+  </data>
+  <data name="Sign_Note" xml:space="preserve">
+    <value>Potpisujete na službenim mrežnim stranicama Europske komisije. Ova aplikacija nikada ne vidi vaše podatke.</value>
+  </data>
+  <data name="Sign_Mark" xml:space="preserve">
+    <value>Potpisao/la sam ovu inicijativu</value>
+  </data>
+  <data name="Sign_MarkHint" xml:space="preserve">
+    <value>Sprema se samo na ovom uređaju</value>
+  </data>
+  <data name="Item_Signed" xml:space="preserve">
+    <value>Potpisano</value>
+  </data>
+  <data name="Tab_News" xml:space="preserve">
+    <value>Vijesti</value>
+  </data>
+  <data name="News_Title" xml:space="preserve">
+    <value>Najnovije vijesti</value>
+  </data>
+  <data name="News_Empty" xml:space="preserve">
+    <value>Još nema vijesti. Povucite prema dolje za osvježavanje.</value>
+  </data>
+  <data name="News_New" xml:space="preserve">
+    <value>Novo</value>
+  </data>
+  <data name="News_OpenHint" xml:space="preserve">
+    <value>Otvara cijeli članak na službenim mrežnim stranicama</value>
+  </data>
+  <data name="News_Source" xml:space="preserve">
+    <value>Vijesti sa službenih mrežnih stranica europske građanske inicijative.</value>
+  </data>
+  <data name="Settings_NotifyAll" xml:space="preserve">
+    <value>Obavijesti me o svim inicijativama</value>
+  </data>
+  <data name="Settings_NotifyAllHint" xml:space="preserve">
+    <value>Kada je isključeno, obavijesti o rezultatima i rokovima primate samo za inicijative koje pratite. Nove inicijative i vijesti uvijek se najavljuju.</value>
+  </data>
+  <data name="Notif_Channel_New" xml:space="preserve">
+    <value>Nove inicijative</value>
+  </data>
+  <data name="Notif_Channel_Ending" xml:space="preserve">
+    <value>Kraj prikupljanja</value>
+  </data>
+  <data name="Notif_Channel_Results" xml:space="preserve">
+    <value>Rezultati</value>
+  </data>
+  <data name="Notif_Channel_News" xml:space="preserve">
+    <value>Vijesti</value>
+  </data>
+  <data name="Notif_NewInitiative" xml:space="preserve">
+    <value>Registrirana je nova inicijativa</value>
+  </data>
+  <data name="Notif_CollectionStarted" xml:space="preserve">
+    <value>Počelo je prikupljanje potpisa</value>
+  </data>
+  <data name="Notif_EndingDays" xml:space="preserve">
+    <value>Još {0} dana za potpisivanje</value>
+  </data>
+  <data name="Notif_EndingTomorrow" xml:space="preserve">
+    <value>Prikupljanje potpisa završava sutra</value>
+  </data>
+  <data name="Notif_EndingToday" xml:space="preserve">
+    <value>Posljednji dan za potpisivanje</value>
+  </data>
+  <data name="Notif_CollectionEnded" xml:space="preserve">
+    <value>Prikupljanje potpisa je završeno</value>
+  </data>
+  <data name="Notif_Milestone" xml:space="preserve">
+    <value>Prikupljeno potpisa: {0:N0}</value>
+  </data>
+  <data name="Notif_Successful" xml:space="preserve">
+    <value>Uspješna: podnesena Europskoj komisiji</value>
+  </data>
+  <data name="Notif_Answered" xml:space="preserve">
+    <value>Europska komisija je odgovorila</value>
+  </data>
+  <data name="Notif_Failed" xml:space="preserve">
+    <value>Neuspješna: nedovoljna potpora</value>
+  </data>
+  <data name="Notif_Withdrawn" xml:space="preserve">
+    <value>Organizatori su povukli inicijativu</value>
+  </data>
+  <data name="Notif_NewsOne" xml:space="preserve">
+    <value>Novi članak</value>
+  </data>
+  <data name="Notif_NewsMany" xml:space="preserve">
+    <value>Novi članci: {0}</value>
+  </data>
+  <data name="Tab_Settings" xml:space="preserve">
+    <value>Postavke</value>
+  </data>
+  <data name="Settings_Language" xml:space="preserve">
+    <value>Jezik</value>
+  </data>
+  <data name="Settings_LanguageHint" xml:space="preserve">
+    <value>Upotrebljava se za aplikaciju, inicijative i vijesti. Ako inicijativa nema prijevod, prikazuje se na engleskom ili na izvornom jeziku.</value>
+  </data>
+  <data name="Settings_DeviceLanguage" xml:space="preserve">
+    <value>Jezik uređaja ({0})</value>
+  </data>
+  <data name="Settings_Notifications" xml:space="preserve">
+    <value>Obavijesti</value>
+  </data>
+  <data name="Settings_SystemNotifications" xml:space="preserve">
+    <value>Odaberite vrste obavijesti</value>
+  </data>
+  <data name="Settings_SystemNotificationsHint" xml:space="preserve">
+    <value>Otvara postavke sustava u kojima se svaka vrsta obavijesti može isključiti.</value>
+  </data>
+  <data name="Settings_About" xml:space="preserve">
+    <value>O aplikaciji</value>
+  </data>
+</root>

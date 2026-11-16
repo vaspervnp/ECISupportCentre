@@ -55,7 +55,7 @@ public sealed partial class InitiativesViewModel : ObservableObject
         SortOptions = [.. SortValues.Select(s => Loc.Get($"Sort_{s}"))];
 
         _data.DataChanged += (_, _) => MainThread.BeginInvokeOnMainThread(() => _ = LoadAsync());
-        Loc.Instance.PropertyChanged += (_, _) => MainThread.BeginInvokeOnMainThread(OnLanguageChanged);
+        Loc.Instance.LanguageChanged += (_, _) => MainThread.BeginInvokeOnMainThread(OnLanguageChanged);
     }
 
     public ObservableCollection<InitiativeItemViewModel> Items { get; } = [];
@@ -184,5 +184,6 @@ public sealed partial class InitiativesViewModel : ObservableObject
         SortOptions = [.. SortValues.Select(s => Loc.Get($"Sort_{s}"))];
         SortIndex = sort;
         _ = LoadAsync();
+        _ = Detail.RefreshIfLanguageChangedAsync();
     }
 }

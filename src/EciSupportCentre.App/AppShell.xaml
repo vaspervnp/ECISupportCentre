@@ -24,6 +24,10 @@
                       Icon="tab_news.png"
                       Route="news"
                       ContentTemplate="{DataTemplate views:NewsPage}" />
+        <ShellContent Title="{l:Translate Tab_Settings}"
+                      Icon="tab_settings.png"
+                      Route="settings"
+                      ContentTemplate="{DataTemplate views:SettingsPage}" />
     </TabBar>
 
 </Shell>

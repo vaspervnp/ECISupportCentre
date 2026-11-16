@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- English (default). Translations go in AppResources.<lang>.resx with the same keys. -->
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AppName" xml:space="preserve">
+    <value>ECI Support Centre</value>
+  </data>
+  <data name="Disclaimer" xml:space="preserve">
+    <value>Nu este o aplicație oficială a Uniunii Europene. Date: citizens-initiative.europa.eu</value>
+  </data>
+  <data name="Tab_Home" xml:space="preserve">
+    <value>Acasă</value>
+  </data>
+  <data name="Tab_Initiatives" xml:space="preserve">
+    <value>Inițiative</value>
+  </data>
+  <data name="Home_Title" xml:space="preserve">
+    <value>Inițiative cetățenești europene</value>
+  </data>
+  <data name="Home_Intro" xml:space="preserve">
+    <value>Un milion de semnături din cel puțin șapte țări ale UE cer Comisiei Europene să propună un act legislativ.</value>
+  </data>
+  <data name="Home_Registered" xml:space="preserve">
+    <value>Înregistrate</value>
+  </data>
+  <data name="Home_Collecting" xml:space="preserve">
+    <value>În colectare</value>
+  </data>
+  <data name="Home_Successful" xml:space="preserve">
+    <value>Reușite</value>
+  </data>
+  <data name="Home_Answered" xml:space="preserve">
+    <value>Cu răspuns</value>
+  </data>
+  <data name="Home_Failed" xml:space="preserve">
+    <value>Sprijin insuficient</value>
+  </data>
+  <data name="Home_Withdrawn" xml:space="preserve">
+    <value>Retrase</value>
+  </data>
+  <data name="Home_EndingSoon" xml:space="preserve">
+    <value>În colectare, cu termen apropiat</value>
+  </data>
+  <data name="Home_SeeAll" xml:space="preserve">
+    <value>Vedeți toate inițiativele</value>
+  </data>
+  <data name="Home_RecentChanges" xml:space="preserve">
+    <value>Modificări recente</value>
+  </data>
+  <data name="Sync_Now" xml:space="preserve">
+    <value>Actualizați</value>
+  </data>
+  <data name="Sync_Running" xml:space="preserve">
+    <value>Se actualizează…</value>
+  </data>
+  <data name="Sync_Last" xml:space="preserve">
+    <value>Actualizat: {0}</value>
+  </data>
+  <data name="Sync_Never" xml:space="preserve">
+    <value>Nicio actualizare încă. Trageți în jos pentru a actualiza.</value>
+  </data>
+  <data name="Sync_Failed" xml:space="preserve">
+    <value>Actualizarea nu a reușit: {0}</value>
+  </data>
+  <data name="Sync_Offline" xml:space="preserve">
+    <value>Sunteți offline. Se afișează datele salvate.</value>
+  </data>
+  <data name="List_Search" xml:space="preserve">
+    <value>Căutați inițiative</value>
+  </data>
+  <data name="List_All" xml:space="preserve">
+    <value>Toate</value>
+  </data>
+  <data name="List_Followed" xml:space="preserve">
+    <value>Urmărite</value>
+  </data>
+  <data name="List_Sort" xml:space="preserve">
+    <value>Sortare</value>
+  </data>
+  <data name="List_Empty" xml:space="preserve">
+    <value>Nicio inițiativă corespunzătoare.</value>
+  </data>
+  <data name="List_Count" xml:space="preserve">
+    <value>Inițiative: {0}</value>
+  </data>
+  <data name="List_SelectHint" xml:space="preserve">
+    <value>Selectați o inițiativă pentru a vedea detaliile.</value>
+  </data>
+  <data name="Sort_Newest" xml:space="preserve">
+    <value>Cele mai noi</value>
+  </data>
+  <data name="Sort_MostSupporters" xml:space="preserve">
+    <value>Cei mai mulți susținători</value>
+  </data>
+  <data name="Sort_EndingSoon" xml:space="preserve">
+    <value>Se încheie în curând</value>
+  </data>
+  <data name="Sort_RecentlyUpdated" xml:space="preserve">
+    <value>Actualizate recent</value>
+  </data>
+  <data name="Phase_Unknown" xml:space="preserve">
+    <value>Necunoscut</value>
+  </data>
+  <data name="Phase_Upcoming" xml:space="preserve">
+    <value>Începe în curând</value>
+  </data>
+  <data name="Phase_Collecting" xml:space="preserve">
+    <value>Colectare de semnături</value>
+  </data>
+  <data name="Phase_Verification" xml:space="preserve">
+    <value>Verificarea semnăturilor</value>
+  </data>
+  <data name="Phase_Submitted" xml:space="preserve">
+    <value>Prezentată Comisiei</value>
+  </data>
+  <data name="Phase_Answered" xml:space="preserve">
+    <value>Cu răspunsul Comisiei</value>
+  </data>
+  <data name="Phase_Failed" xml:space="preserve">
+    <value>Sprijin insuficient</value>
+  </data>
+  <data name="Phase_Withdrawn" xml:space="preserve">
+    <value>Retrasă</value>
+  </data>
+  <data name="Item_Supporters" xml:space="preserve">
+    <value>Susținători: {0:N0}</value>
+  </data>
+  <data name="Item_EndsOn" xml:space="preserve">
+    <value>Se încheie la {0:d}</value>
+  </data>
+  <data name="Item_EndedOn" xml:space="preserve">
+    <value>Încheiată la {0:d}</value>
+  </data>
+  <data name="Item_StartsOn" xml:space="preserve">
+    <value>Începe la {0:d}</value>
+  </data>
+  <data name="Item_LastCall" xml:space="preserve">
+    <value>Ultimele zile</value>
+  </data>
+  <data name="Item_Followed" xml:space="preserve">
+    <value>Urmărită</value>
+  </data>
+  <data name="Detail_Title" xml:space="preserve">
+    <value>Inițiativă</value>
+  </data>
+  <data name="Detail_Objectives" xml:space="preserve">
+    <value>Obiective</value>
+  </data>
+  <data name="Detail_Annex" xml:space="preserve">
+    <value>Mai multe informații</value>
+  </data>
+  <data name="Detail_Treaties" xml:space="preserve">
+    <value>Dispoziții din tratate</value>
+  </data>
+  <data name="Detail_Progress" xml:space="preserve">
+    <value>Cronologie</value>
+  </data>
+  <data name="Detail_Signatures" xml:space="preserve">
+    <value>Semnături</value>
+  </data>
+  <data name="Detail_SignaturesVerified" xml:space="preserve">
+    <value>Semnături verificate: {0:N0}</value>
+  </data>
+  <data name="Detail_SignaturesCollected" xml:space="preserve">
+    <value>Semnături colectate: {0:N0}</value>
+  </data>
+  <data name="Detail_TopCountries" xml:space="preserve">
+    <value>Principalele țări</value>
+  </data>
+  <data name="Detail_Answer" xml:space="preserve">
+    <value>Răspunsul Comisiei</value>
+  </data>
+  <data name="Detail_AnswerDate" xml:space="preserve">
+    <value>Decizia din {0:d}</value>
+  </data>
+  <data name="Detail_Documents" xml:space="preserve">
+    <value>Documente</value>
+  </data>
+  <data name="Detail_OfficialPage" xml:space="preserve">
+    <value>Deschideți pe site-ul oficial</value>
+  </data>
+  <data name="Detail_Follow" xml:space="preserve">
+    <value>Urmăriți</value>
+  </data>
+  <data name="Detail_Unfollow" xml:space="preserve">
+    <value>Nu mai urmăriți</value>
+  </data>
+  <data name="Detail_Loading" xml:space="preserve">
+    <value>Se încarcă detaliile…</value>
+  </data>
+  <data name="Detail_Unavailable" xml:space="preserve">
+    <value>Detaliile nu au fost încă descărcate. Conectați-vă la internet și actualizați.</value>
+  </data>
+  <data name="Detail_Registered" xml:space="preserve">
+    <value>Înregistrată la {0:d}</value>
+  </data>
+  <data name="Detail_Collection" xml:space="preserve">
+    <value>Colectare: {0:d} – {1:d}</value>
+  </data>
+  <data name="Detail_CollectionOpen" xml:space="preserve">
+    <value>Colectare începând cu {0:d}</value>
+  </data>
+  <data name="Step_REGISTERED" xml:space="preserve">
+    <value>Înregistrată</value>
+  </data>
+  <data name="Step_COLLECTION_START_DATE" xml:space="preserve">
+    <value>Începutul colectării</value>
+  </data>
+  <data name="Step_ONGOING" xml:space="preserve">
+    <value>Colectare de semnături</value>
+  </data>
+  <data name="Step_CLOSED" xml:space="preserve">
+    <value>Colectare încheiată</value>
+  </data>
+  <data name="Step_VERIFICATION" xml:space="preserve">
+    <value>Semnături verificate</value>
+  </data>
+  <data name="Step_SUBMITTED" xml:space="preserve">
+    <value>Prezentată Comisiei</value>
+  </data>
+  <data name="Step_ANSWERED" xml:space="preserve">
+    <value>Răspunsul Comisiei</value>
+  </data>
+  <data name="Step_INSUFFICIENT_SUPPORT" xml:space="preserve">
+    <value>Sprijin insuficient</value>
+  </data>
+  <data name="Step_INSUFFICIENT_SUPPORT_AFTER_VERIFICATION" xml:space="preserve">
+    <value>Semnături valabile insuficiente</value>
+  </data>
+  <data name="Step_WITHDRAWN" xml:space="preserve">
+    <value>Retrasă</value>
+  </data>
+  <data name="Doc_COMMUNICATION" xml:space="preserve">
+    <value>Comunicarea Comisiei</value>
+  </data>
+  <data name="Doc_PRESS_RELEASE" xml:space="preserve">
+    <value>Comunicat de presă</value>
+  </data>
+  <data name="Doc_EXAMIN_STEPS" xml:space="preserve">
+    <value>Etapele examinării</value>
+  </data>
+  <data name="Doc_FOLLOW_UP" xml:space="preserve">
+    <value>Acțiuni ulterioare</value>
+  </data>
+  <data name="Doc_ANNEX" xml:space="preserve">
+    <value>Anexa la comunicare</value>
+  </data>
+  <data name="Doc_Registration" xml:space="preserve">
+    <value>Decizia Comisiei privind înregistrarea</value>
+  </data>
+  <data name="Doc_Other" xml:space="preserve">
+    <value>Document</value>
+  </data>
+  <data name="Sign_Button" xml:space="preserve">
+    <value>Semnați această inițiativă</value>
+  </data>
+  <data name="Sign_DaysLeft" xml:space="preserve">
+    <value>Zile rămase pentru semnare: {0} (până la {1:d})</value>
+  </data>
+  <data name="Sign_LastDay" xml:space="preserve">
+    <value>Ultima zi pentru semnare</value>
+  </data>
+  <data name="Sign_Note" xml:space="preserve">
+    <value>Semnați pe site-ul oficial al Comisiei Europene. Această aplicație nu vede niciodată datele dumneavoastră.</value>
+  </data>
+  <data name="Sign_Mark" xml:space="preserve">
+    <value>Am semnat această inițiativă</value>
+  </data>
+  <data name="Sign_MarkHint" xml:space="preserve">
+    <value>Stocat doar pe acest dispozitiv</value>
+  </data>
+  <data name="Item_Signed" xml:space="preserve">
+    <value>Semnată</value>
+  </data>
+  <data name="Tab_News" xml:space="preserve">
+    <value>Știri</value>
+  </data>
+  <data name="News_Title" xml:space="preserve">
+    <value>Ultimele știri</value>
+  </data>
+  <data name="News_Empty" xml:space="preserve">
+    <value>Încă nu există știri. Trageți în jos pentru a actualiza.</value>
+  </data>
+  <data name="News_New" xml:space="preserve">
+    <value>Nou</value>
+  </data>
+  <data name="News_OpenHint" xml:space="preserve">
+    <value>Deschide articolul complet pe site-ul oficial</value>
+  </data>
+  <data name="News_Source" xml:space="preserve">
+    <value>Știri de pe site-ul oficial al inițiativei cetățenești europene.</value>
+  </data>
+  <data name="Settings_NotifyAll" xml:space="preserve">
+    <value>Notificări pentru toate inițiativele</value>
+  </data>
+  <data name="Settings_NotifyAllHint" xml:space="preserve">
+    <value>Când opțiunea este dezactivată, primiți notificări despre rezultate și termene doar pentru inițiativele pe care le urmăriți. Inițiativele noi și știrile sunt anunțate întotdeauna.</value>
+  </data>
+  <data name="Notif_Channel_New" xml:space="preserve">
+    <value>Inițiative noi</value>
+  </data>
+  <data name="Notif_Channel_Ending" xml:space="preserve">
+    <value>Încheierea colectării</value>
+  </data>
+  <data name="Notif_Channel_Results" xml:space="preserve">
+    <value>Rezultate</value>
+  </data>
+  <data name="Notif_Channel_News" xml:space="preserve">
+    <value>Știri</value>
+  </data>
+  <data name="Notif_NewInitiative" xml:space="preserve">
+    <value>Inițiativă nouă înregistrată</value>
+  </data>
+  <data name="Notif_CollectionStarted" xml:space="preserve">
+    <value>Colectarea semnăturilor a început</value>
+  </data>
+  <data name="Notif_EndingDays" xml:space="preserve">
+    <value>Mai sunt {0} zile pentru semnare</value>
+  </data>
+  <data name="Notif_EndingTomorrow" xml:space="preserve">
+    <value>Colectarea semnăturilor se încheie mâine</value>
+  </data>
+  <data name="Notif_EndingToday" xml:space="preserve">
+    <value>Ultima zi pentru semnare</value>
+  </data>
+  <data name="Notif_CollectionEnded" xml:space="preserve">
+    <value>Colectarea semnăturilor s-a încheiat</value>
+  </data>
+  <data name="Notif_Milestone" xml:space="preserve">
+    <value>Prag atins – semnături: {0:N0}</value>
+  </data>
+  <data name="Notif_Successful" xml:space="preserve">
+    <value>Reușită: prezentată Comisiei Europene</value>
+  </data>
+  <data name="Notif_Answered" xml:space="preserve">
+    <value>Comisia Europeană a răspuns</value>
+  </data>
+  <data name="Notif_Failed" xml:space="preserve">
+    <value>Nereușită: sprijin insuficient</value>
+  </data>
+  <data name="Notif_Withdrawn" xml:space="preserve">
+    <value>Retrasă de organizatori</value>
+  </data>
+  <data name="Notif_NewsOne" xml:space="preserve">
+    <value>Articol nou</value>
+  </data>
+  <data name="Notif_NewsMany" xml:space="preserve">
+    <value>Articole noi: {0}</value>
+  </data>
+  <data name="Tab_Settings" xml:space="preserve">
+    <value>Setări</value>
+  </data>
+  <data name="Settings_Language" xml:space="preserve">
+    <value>Limbă</value>
+  </data>
+  <data name="Settings_LanguageHint" xml:space="preserve">
+    <value>Se folosește pentru aplicație, inițiative și știri. Dacă o inițiativă nu are traducere, aceasta este afișată în engleză sau în limba originală.</value>
+  </data>
+  <data name="Settings_DeviceLanguage" xml:space="preserve">
+    <value>Limba dispozitivului ({0})</value>
+  </data>
+  <data name="Settings_Notifications" xml:space="preserve">
+    <value>Notificări</value>
+  </data>
+  <data name="Settings_SystemNotifications" xml:space="preserve">
+    <value>Alegeți tipurile de notificări</value>
+  </data>
+  <data name="Settings_SystemNotificationsHint" xml:space="preserve">
+    <value>Deschide setările sistemului, unde fiecare tip de notificare poate fi dezactivat.</value>
+  </data>
+  <data name="Settings_About" xml:space="preserve">
+    <value>Despre</value>
+  </data>
+</root>

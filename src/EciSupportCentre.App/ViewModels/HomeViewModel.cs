@@ -18,7 +18,7 @@ public sealed partial class HomeViewModel : ObservableObject
         _data = data;
         _data.DataChanged += (_, _) => MainThread.BeginInvokeOnMainThread(() => _ = LoadAsync());
         _data.SyncStateChanged += (_, _) => MainThread.BeginInvokeOnMainThread(UpdateSyncState);
-        Loc.Instance.PropertyChanged += (_, _) => _ = LoadAsync();
+        Loc.Instance.LanguageChanged += (_, _) => MainThread.BeginInvokeOnMainThread(() => _ = LoadAsync());
     }
 
     public ObservableCollection<InitiativeItemViewModel> EndingSoon { get; } = [];
@@ -49,12 +49,6 @@ public sealed partial class HomeViewModel : ObservableObject
 
     [ObservableProperty]
     public partial bool IsRefreshing { get; set; }
-
-    /// <summary>Notify about every initiative; off means only followed ones.</summary>
-    [ObservableProperty]
-    public partial bool NotifyAll { get; set; } = AppSettings.FollowAll;
-
-    partial void OnNotifyAllChanged(bool value) => AppSettings.FollowAll = value;
 
     public async Task OnAppearingAsync()
     {

@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- English (default). Translations go in AppResources.<lang>.resx with the same keys. -->
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AppName" xml:space="preserve">
+    <value>ECI Support Centre</value>
+  </data>
+  <data name="Disclaimer" xml:space="preserve">
+    <value>Inte en officiell app från Europeiska unionen. Data: citizens-initiative.europa.eu</value>
+  </data>
+  <data name="Tab_Home" xml:space="preserve">
+    <value>Hem</value>
+  </data>
+  <data name="Tab_Initiatives" xml:space="preserve">
+    <value>Initiativ</value>
+  </data>
+  <data name="Home_Title" xml:space="preserve">
+    <value>Europeiska medborgarinitiativ</value>
+  </data>
+  <data name="Home_Intro" xml:space="preserve">
+    <value>En miljon namnunderskrifter från minst sju EU-länder uppmanar Europeiska kommissionen att föreslå en lag.</value>
+  </data>
+  <data name="Home_Registered" xml:space="preserve">
+    <value>Registrerade</value>
+  </data>
+  <data name="Home_Collecting" xml:space="preserve">
+    <value>Insamling pågår</value>
+  </data>
+  <data name="Home_Successful" xml:space="preserve">
+    <value>Lyckade</value>
+  </data>
+  <data name="Home_Answered" xml:space="preserve">
+    <value>Besvarade</value>
+  </data>
+  <data name="Home_Failed" xml:space="preserve">
+    <value>För lite stöd</value>
+  </data>
+  <data name="Home_Withdrawn" xml:space="preserve">
+    <value>Tillbakadragna</value>
+  </data>
+  <data name="Home_EndingSoon" xml:space="preserve">
+    <value>Insamling pågår, slutar snart</value>
+  </data>
+  <data name="Home_SeeAll" xml:space="preserve">
+    <value>Visa alla initiativ</value>
+  </data>
+  <data name="Home_RecentChanges" xml:space="preserve">
+    <value>Senaste ändringar</value>
+  </data>
+  <data name="Sync_Now" xml:space="preserve">
+    <value>Uppdatera</value>
+  </data>
+  <data name="Sync_Running" xml:space="preserve">
+    <value>Uppdaterar…</value>
+  </data>
+  <data name="Sync_Last" xml:space="preserve">
+    <value>Uppdaterat {0}</value>
+  </data>
+  <data name="Sync_Never" xml:space="preserve">
+    <value>Inte uppdaterat än. Dra nedåt för att uppdatera.</value>
+  </data>
+  <data name="Sync_Failed" xml:space="preserve">
+    <value>Kunde inte uppdatera: {0}</value>
+  </data>
+  <data name="Sync_Offline" xml:space="preserve">
+    <value>Du är offline. Sparade data visas.</value>
+  </data>
+  <data name="List_Search" xml:space="preserve">
+    <value>Sök initiativ</value>
+  </data>
+  <data name="List_All" xml:space="preserve">
+    <value>Alla</value>
+  </data>
+  <data name="List_Followed" xml:space="preserve">
+    <value>Följda</value>
+  </data>
+  <data name="List_Sort" xml:space="preserve">
+    <value>Sortera</value>
+  </data>
+  <data name="List_Empty" xml:space="preserve">
+    <value>Inga matchande initiativ.</value>
+  </data>
+  <data name="List_Count" xml:space="preserve">
+    <value>{0} initiativ</value>
+  </data>
+  <data name="List_SelectHint" xml:space="preserve">
+    <value>Välj ett initiativ för att se detaljerna.</value>
+  </data>
+  <data name="Sort_Newest" xml:space="preserve">
+    <value>Nyaste</value>
+  </data>
+  <data name="Sort_MostSupporters" xml:space="preserve">
+    <value>Flest undertecknare</value>
+  </data>
+  <data name="Sort_EndingSoon" xml:space="preserve">
+    <value>Slutar snart</value>
+  </data>
+  <data name="Sort_RecentlyUpdated" xml:space="preserve">
+    <value>Nyligen uppdaterade</value>
+  </data>
+  <data name="Phase_Unknown" xml:space="preserve">
+    <value>Okänd</value>
+  </data>
+  <data name="Phase_Upcoming" xml:space="preserve">
+    <value>Startar snart</value>
+  </data>
+  <data name="Phase_Collecting" xml:space="preserve">
+    <value>Insamling pågår</value>
+  </data>
+  <data name="Phase_Verification" xml:space="preserve">
+    <value>Kontroll av underskrifter</value>
+  </data>
+  <data name="Phase_Submitted" xml:space="preserve">
+    <value>Inlämnat till kommissionen</value>
+  </data>
+  <data name="Phase_Answered" xml:space="preserve">
+    <value>Besvarat av kommissionen</value>
+  </data>
+  <data name="Phase_Failed" xml:space="preserve">
+    <value>För lite stöd</value>
+  </data>
+  <data name="Phase_Withdrawn" xml:space="preserve">
+    <value>Tillbakadraget</value>
+  </data>
+  <data name="Item_Supporters" xml:space="preserve">
+    <value>{0:N0} undertecknare</value>
+  </data>
+  <data name="Item_EndsOn" xml:space="preserve">
+    <value>Slutar {0:d}</value>
+  </data>
+  <data name="Item_EndedOn" xml:space="preserve">
+    <value>Slutade {0:d}</value>
+  </data>
+  <data name="Item_StartsOn" xml:space="preserve">
+    <value>Startar {0:d}</value>
+  </data>
+  <data name="Item_LastCall" xml:space="preserve">
+    <value>Sista chansen</value>
+  </data>
+  <data name="Item_Followed" xml:space="preserve">
+    <value>Följs</value>
+  </data>
+  <data name="Detail_Title" xml:space="preserve">
+    <value>Initiativ</value>
+  </data>
+  <data name="Detail_Objectives" xml:space="preserve">
+    <value>Mål</value>
+  </data>
+  <data name="Detail_Annex" xml:space="preserve">
+    <value>Mer information</value>
+  </data>
+  <data name="Detail_Treaties" xml:space="preserve">
+    <value>Fördragsbestämmelser</value>
+  </data>
+  <data name="Detail_Progress" xml:space="preserve">
+    <value>Tidslinje</value>
+  </data>
+  <data name="Detail_Signatures" xml:space="preserve">
+    <value>Underskrifter</value>
+  </data>
+  <data name="Detail_SignaturesVerified" xml:space="preserve">
+    <value>Kontrollerade underskrifter: {0:N0}</value>
+  </data>
+  <data name="Detail_SignaturesCollected" xml:space="preserve">
+    <value>Insamlade underskrifter: {0:N0}</value>
+  </data>
+  <data name="Detail_TopCountries" xml:space="preserve">
+    <value>Ledande länder</value>
+  </data>
+  <data name="Detail_Answer" xml:space="preserve">
+    <value>Kommissionens svar</value>
+  </data>
+  <data name="Detail_AnswerDate" xml:space="preserve">
+    <value>Beslut {0:d}</value>
+  </data>
+  <data name="Detail_Documents" xml:space="preserve">
+    <value>Dokument</value>
+  </data>
+  <data name="Detail_OfficialPage" xml:space="preserve">
+    <value>Öppna på den officiella webbplatsen</value>
+  </data>
+  <data name="Detail_Follow" xml:space="preserve">
+    <value>Följ</value>
+  </data>
+  <data name="Detail_Unfollow" xml:space="preserve">
+    <value>Sluta följa</value>
+  </data>
+  <data name="Detail_Loading" xml:space="preserve">
+    <value>Läser in detaljer…</value>
+  </data>
+  <data name="Detail_Unavailable" xml:space="preserve">
+    <value>Detaljerna har inte hämtats än. Anslut till internet och uppdatera.</value>
+  </data>
+  <data name="Detail_Registered" xml:space="preserve">
+    <value>Registrerat {0:d}</value>
+  </data>
+  <data name="Detail_Collection" xml:space="preserve">
+    <value>Insamling {0:d} – {1:d}</value>
+  </data>
+  <data name="Detail_CollectionOpen" xml:space="preserve">
+    <value>Insamling från {0:d}</value>
+  </data>
+  <data name="Step_REGISTERED" xml:space="preserve">
+    <value>Registrerat</value>
+  </data>
+  <data name="Step_COLLECTION_START_DATE" xml:space="preserve">
+    <value>Insamlingen startade</value>
+  </data>
+  <data name="Step_ONGOING" xml:space="preserve">
+    <value>Insamling pågår</value>
+  </data>
+  <data name="Step_CLOSED" xml:space="preserve">
+    <value>Insamlingen avslutad</value>
+  </data>
+  <data name="Step_VERIFICATION" xml:space="preserve">
+    <value>Underskrifter kontrollerade</value>
+  </data>
+  <data name="Step_SUBMITTED" xml:space="preserve">
+    <value>Inlämnat till kommissionen</value>
+  </data>
+  <data name="Step_ANSWERED" xml:space="preserve">
+    <value>Kommissionen svarade</value>
+  </data>
+  <data name="Step_INSUFFICIENT_SUPPORT" xml:space="preserve">
+    <value>För lite stöd</value>
+  </data>
+  <data name="Step_INSUFFICIENT_SUPPORT_AFTER_VERIFICATION" xml:space="preserve">
+    <value>För få giltiga underskrifter</value>
+  </data>
+  <data name="Step_WITHDRAWN" xml:space="preserve">
+    <value>Tillbakadraget</value>
+  </data>
+  <data name="Doc_COMMUNICATION" xml:space="preserve">
+    <value>Kommissionens meddelande</value>
+  </data>
+  <data name="Doc_PRESS_RELEASE" xml:space="preserve">
+    <value>Pressmeddelande</value>
+  </data>
+  <data name="Doc_EXAMIN_STEPS" xml:space="preserve">
+    <value>Granskningssteg</value>
+  </data>
+  <data name="Doc_FOLLOW_UP" xml:space="preserve">
+    <value>Uppföljning</value>
+  </data>
+  <data name="Doc_ANNEX" xml:space="preserve">
+    <value>Bilaga till meddelandet</value>
+  </data>
+  <data name="Doc_Registration" xml:space="preserve">
+    <value>Kommissionens registreringsbeslut</value>
+  </data>
+  <data name="Doc_Other" xml:space="preserve">
+    <value>Dokument</value>
+  </data>
+  <data name="Sign_Button" xml:space="preserve">
+    <value>Skriv under initiativet</value>
+  </data>
+  <data name="Sign_DaysLeft" xml:space="preserve">
+    <value>Dagar kvar att skriva under: {0} (till och med {1:d})</value>
+  </data>
+  <data name="Sign_LastDay" xml:space="preserve">
+    <value>Sista dagen att skriva under</value>
+  </data>
+  <data name="Sign_Note" xml:space="preserve">
+    <value>Du skriver under på Europeiska kommissionens officiella webbplats. Appen ser aldrig dina uppgifter.</value>
+  </data>
+  <data name="Sign_Mark" xml:space="preserve">
+    <value>Jag har skrivit under initiativet</value>
+  </data>
+  <data name="Sign_MarkHint" xml:space="preserve">
+    <value>Sparas bara på den här enheten</value>
+  </data>
+  <data name="Item_Signed" xml:space="preserve">
+    <value>Underskrivet</value>
+  </data>
+  <data name="Tab_News" xml:space="preserve">
+    <value>Nyheter</value>
+  </data>
+  <data name="News_Title" xml:space="preserve">
+    <value>Senaste nytt</value>
+  </data>
+  <data name="News_Empty" xml:space="preserve">
+    <value>Inga nyheter än. Dra nedåt för att uppdatera.</value>
+  </data>
+  <data name="News_New" xml:space="preserve">
+    <value>Ny</value>
+  </data>
+  <data name="News_OpenHint" xml:space="preserve">
+    <value>Öppnar hela artikeln på den officiella webbplatsen</value>
+  </data>
+  <data name="News_Source" xml:space="preserve">
+    <value>Nyheter från den officiella webbplatsen för europeiska medborgarinitiativ.</value>
+  </data>
+  <data name="Settings_NotifyAll" xml:space="preserve">
+    <value>Meddela mig om alla initiativ</value>
+  </data>
+  <data name="Settings_NotifyAllHint" xml:space="preserve">
+    <value>När inställningen är av får du bara aviseringar om resultat och tidsfrister för initiativ som du följer. Nya initiativ och nyheter meddelas alltid.</value>
+  </data>
+  <data name="Notif_Channel_New" xml:space="preserve">
+    <value>Nya initiativ</value>
+  </data>
+  <data name="Notif_Channel_Ending" xml:space="preserve">
+    <value>Insamling slutar</value>
+  </data>
+  <data name="Notif_Channel_Results" xml:space="preserve">
+    <value>Resultat</value>
+  </data>
+  <data name="Notif_Channel_News" xml:space="preserve">
+    <value>Nyheter</value>
+  </data>
+  <data name="Notif_NewInitiative" xml:space="preserve">
+    <value>Nytt initiativ registrerat</value>
+  </data>
+  <data name="Notif_CollectionStarted" xml:space="preserve">
+    <value>Insamlingen av underskrifter har startat</value>
+  </data>
+  <data name="Notif_EndingDays" xml:space="preserve">
+    <value>{0} dagar kvar att skriva under</value>
+  </data>
+  <data name="Notif_EndingTomorrow" xml:space="preserve">
+    <value>Insamlingen av underskrifter slutar i morgon</value>
+  </data>
+  <data name="Notif_EndingToday" xml:space="preserve">
+    <value>Sista dagen att skriva under</value>
+  </data>
+  <data name="Notif_CollectionEnded" xml:space="preserve">
+    <value>Insamlingen av underskrifter har avslutats</value>
+  </data>
+  <data name="Notif_Milestone" xml:space="preserve">
+    <value>{0:N0} underskrifter har nåtts</value>
+  </data>
+  <data name="Notif_Successful" xml:space="preserve">
+    <value>Lyckat: inlämnat till Europeiska kommissionen</value>
+  </data>
+  <data name="Notif_Answered" xml:space="preserve">
+    <value>Europeiska kommissionen har svarat</value>
+  </data>
+  <data name="Notif_Failed" xml:space="preserve">
+    <value>Misslyckat: för lite stöd</value>
+  </data>
+  <data name="Notif_Withdrawn" xml:space="preserve">
+    <value>Tillbakadraget av organisatörerna</value>
+  </data>
+  <data name="Notif_NewsOne" xml:space="preserve">
+    <value>Ny artikel</value>
+  </data>
+  <data name="Notif_NewsMany" xml:space="preserve">
+    <value>{0} nya artiklar</value>
+  </data>
+  <data name="Tab_Settings" xml:space="preserve">
+    <value>Inställningar</value>
+  </data>
+  <data name="Settings_Language" xml:space="preserve">
+    <value>Språk</value>
+  </data>
+  <data name="Settings_LanguageHint" xml:space="preserve">
+    <value>Används för appen, initiativen och nyheterna. Om ett initiativ saknar översättning visas det på engelska eller på originalspråket.</value>
+  </data>
+  <data name="Settings_DeviceLanguage" xml:space="preserve">
+    <value>Enhetens språk ({0})</value>
+  </data>
+  <data name="Settings_Notifications" xml:space="preserve">
+    <value>Aviseringar</value>
+  </data>
+  <data name="Settings_SystemNotifications" xml:space="preserve">
+    <value>Välj typer av aviseringar</value>
+  </data>
+  <data name="Settings_SystemNotificationsHint" xml:space="preserve">
+    <value>Öppnar systeminställningarna där du kan stänga av varje typ av avisering.</value>
+  </data>
+  <data name="Settings_About" xml:space="preserve">
+    <value>Om appen</value>
+  </data>
+</root>
