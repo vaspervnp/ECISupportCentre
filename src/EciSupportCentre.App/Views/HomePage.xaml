@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:EciSupportCentre.App.ViewModels"
+             xmlns:views="clr-namespace:EciSupportCentre.App.Views"
+             xmlns:l="clr-namespace:EciSupportCentre.App.Localization"
+             x:Class="EciSupportCentre.App.Views.HomePage"
+             x:DataType="vm:HomeViewModel"
+             Title="{l:Translate AppName}">
+
+    <ContentPage.Resources>
+        <Style x:Key="TileNumber" TargetType="Label">
+            <Setter Property="FontFamily" Value="OpenSansSemibold" />
+            <Setter Property="FontSize" Value="28" />
+            <Setter Property="TextColor" Value="{AppThemeBinding Light={StaticResource Primary}, Dark={StaticResource PrimaryDark}}" />
+        </Style>
+        <Style x:Key="TileLabel" TargetType="Label">
+            <Setter Property="FontSize" Value="13" />
+        </Style>
+        <Style x:Key="Tile" TargetType="Border">
+            <Setter Property="Padding" Value="12" />
+            <Setter Property="Margin" Value="0,0,8,8" />
+            <Setter Property="WidthRequest" Value="150" />
+            <Setter Property="StrokeShape" Value="RoundRectangle 12" />
+            <Setter Property="StrokeThickness" Value="0" />
+            <Setter Property="BackgroundColor" Value="{AppThemeBinding Light={StaticResource Secondary}, Dark={StaticResource Gray900}}" />
+        </Style>
+    </ContentPage.Resources>
+
+    <RefreshView IsRefreshing="{Binding IsRefreshing}" Command="{Binding RefreshCommand}">
+        <ScrollView>
+            <VerticalStackLayout Padding="16" Spacing="12" MaximumWidthRequest="900">
+                <Label Text="{l:Translate Home_Title}" Style="{StaticResource Headline}" HorizontalTextAlignment="Start"
+                       SemanticProperties.HeadingLevel="Level1" />
+                <Label Text="{l:Translate Home_Intro}" FontSize="15" />
+
+                <Label Text="{Binding SyncText}" FontSize="13" TextColor="{AppThemeBinding Light={StaticResource Gray500}, Dark={StaticResource Gray300}}" />
+                <Label Text="{Binding ErrorText}" FontSize="13" TextColor="#B42318">
+                    <Label.Triggers>
+                        <DataTrigger TargetType="Label" Binding="{Binding ErrorText}" Value="{x:Null}">
+                            <Setter Property="IsVisible" Value="False" />
+                        </DataTrigger>
+                    </Label.Triggers>
+                </Label>
+
+                <FlexLayout Wrap="Wrap" JustifyContent="Start">
+                    <Border Style="{StaticResource Tile}">
+                        <VerticalStackLayout>
+                            <Label Text="{Binding Registered}" Style="{StaticResource TileNumber}" />
+                            <Label Text="{l:Translate Home_Registered}" Style="{StaticResource TileLabel}" />
+                        </VerticalStackLayout>
+                    </Border>
+                    <Border Style="{StaticResource Tile}">
+                        <VerticalStackLayout>
+                            <Label Text="{Binding Collecting}" Style="{StaticResource TileNumber}" TextColor="#1B7F3B" />
+                            <Label Text="{l:Translate Home_Collecting}" Style="{StaticResource TileLabel}" />
+                        </VerticalStackLayout>
+                    </Border>
+                    <Border Style="{StaticResource Tile}">
+                        <VerticalStackLayout>
+                            <Label Text="{Binding Successful}" Style="{StaticResource TileNumber}" />
+                            <Label Text="{l:Translate Home_Successful}" Style="{StaticResource TileLabel}" />
+                        </VerticalStackLayout>
+                    </Border>
+                    <Border Style="{StaticResource Tile}">
+                        <VerticalStackLayout>
+                            <Label Text="{Binding Answered}" Style="{StaticResource TileNumber}" />
+                            <Label Text="{l:Translate Home_Answered}" Style="{StaticResource TileLabel}" />
+                        </VerticalStackLayout>
+                    </Border>
+                    <Border Style="{StaticResource Tile}">
+                        <VerticalStackLayout>
+                            <Label Text="{Binding Failed}" Style="{StaticResource TileNumber}" TextColor="#B42318" />
+                            <Label Text="{l:Translate Home_Failed}" Style="{StaticResource TileLabel}" />
+                        </VerticalStackLayout>
+                    </Border>
+                    <Border Style="{StaticResource Tile}">
+                        <VerticalStackLayout>
+                            <Label Text="{Binding Withdrawn}" Style="{StaticResource TileNumber}" TextColor="#5F6368" />
+                            <Label Text="{l:Translate Home_Withdrawn}" Style="{StaticResource TileLabel}" />
+                        </VerticalStackLayout>
+                    </Border>
+                </FlexLayout>
+
+                <Label Text="{l:Translate Home_EndingSoon}" FontFamily="OpenSansSemibold" FontSize="18" Margin="0,8,0,0"
+                       SemanticProperties.HeadingLevel="Level2" />
+                <VerticalStackLayout BindableLayout.ItemsSource="{Binding EndingSoon}">
+                    <BindableLayout.ItemTemplate>
+                        <DataTemplate x:DataType="vm:InitiativeItemViewModel">
+                            <views:InitiativeCard />
+                        </DataTemplate>
+                    </BindableLayout.ItemTemplate>
+                </VerticalStackLayout>
+
+                <Button Text="{l:Translate Home_SeeAll}" Command="{Binding SeeAllCommand}" />
+
+                <Label Text="{l:Translate Disclaimer}" FontSize="12" Margin="0,16,0,0"
+                       TextColor="{AppThemeBinding Light={StaticResource Gray500}, Dark={StaticResource Gray300}}" />
+            </VerticalStackLayout>
+        </ScrollView>
+    </RefreshView>
+</ContentPage>

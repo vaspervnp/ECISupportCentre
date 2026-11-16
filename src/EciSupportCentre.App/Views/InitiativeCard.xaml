@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:EciSupportCentre.App.ViewModels"
+             xmlns:l="clr-namespace:EciSupportCentre.App.Localization"
+             x:Class="EciSupportCentre.App.Views.InitiativeCard"
+             x:DataType="vm:InitiativeItemViewModel">
+
+    <Border Padding="12"
+            Margin="0,4"
+            StrokeThickness="1"
+            Stroke="{AppThemeBinding Light={StaticResource Gray100}, Dark={StaticResource Gray600}}"
+            StrokeShape="RoundRectangle 12"
+            SemanticProperties.Description="{Binding Title}">
+        <Border.Triggers>
+            <DataTrigger TargetType="Border" Binding="{Binding IsSelected}" Value="True">
+                <Setter Property="Stroke" Value="{StaticResource Primary}" />
+                <Setter Property="StrokeThickness" Value="2" />
+            </DataTrigger>
+        </Border.Triggers>
+        <Border.GestureRecognizers>
+            <TapGestureRecognizer Command="{Binding OpenCommand}" />
+        </Border.GestureRecognizers>
+
+        <Grid ColumnDefinitions="64,*" ColumnSpacing="12" RowDefinitions="Auto,Auto,Auto" RowSpacing="4">
+            <Border Grid.RowSpan="3"
+                    WidthRequest="64" HeightRequest="64"
+                    VerticalOptions="Start"
+                    StrokeThickness="0"
+                    StrokeShape="RoundRectangle 8"
+                    BackgroundColor="{AppThemeBinding Light={StaticResource Secondary}, Dark={StaticResource Gray600}}">
+                <Image Source="{Binding Logo}" Aspect="AspectFit" IsVisible="{Binding HasLogo}" />
+            </Border>
+
+            <Label Grid.Column="1"
+                   Text="{Binding Title}"
+                   FontFamily="OpenSansSemibold"
+                   FontSize="16"
+                   MaxLines="3"
+                   LineBreakMode="TailTruncation" />
+
+            <HorizontalStackLayout Grid.Column="1" Grid.Row="1" Spacing="6">
+                <Border BackgroundColor="{Binding PhaseColor}" StrokeThickness="0" StrokeShape="RoundRectangle 10" Padding="8,2">
+                    <Label Text="{Binding PhaseText}" TextColor="White" FontSize="12" />
+                </Border>
+                <Border BackgroundColor="#B42318" StrokeThickness="0" StrokeShape="RoundRectangle 10" Padding="8,2" IsVisible="{Binding LastCall}">
+                    <Label Text="{l:Translate Item_LastCall}" TextColor="White" FontSize="12" />
+                </Border>
+                <Label Text="★" TextColor="{StaticResource Primary}" FontSize="14" VerticalOptions="Center" IsVisible="{Binding IsFollowed}"
+                       SemanticProperties.Description="{l:Translate Item_Followed}" />
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout Grid.Column="1" Grid.Row="2" Spacing="12">
+                <Label Text="{Binding SupportersText}" FontSize="13" TextColor="{AppThemeBinding Light={StaticResource Gray600}, Dark={StaticResource Gray200}}" />
+                <Label Text="{Binding DateText}" FontSize="13" IsVisible="{Binding HasDateText}"
+                       TextColor="{AppThemeBinding Light={StaticResource Gray600}, Dark={StaticResource Gray200}}" />
+            </HorizontalStackLayout>
+        </Grid>
+    </Border>
+</ContentView>

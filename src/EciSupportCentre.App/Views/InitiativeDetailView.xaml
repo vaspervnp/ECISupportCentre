@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Details of one initiative. Used by InitiativeDetailPage (phone) and next to the list (tablet). -->
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:EciSupportCentre.App.ViewModels"
+             xmlns:l="clr-namespace:EciSupportCentre.App.Localization"
+             x:Class="EciSupportCentre.App.Views.InitiativeDetailView"
+             x:DataType="vm:InitiativeDetailViewModel">
+
+    <ContentView.Resources>
+        <Style x:Key="Section" TargetType="Label">
+            <Setter Property="FontFamily" Value="OpenSansSemibold" />
+            <Setter Property="FontSize" Value="18" />
+            <Setter Property="Margin" Value="0,12,0,0" />
+            <Setter Property="SemanticProperties.HeadingLevel" Value="Level2" />
+        </Style>
+        <Style x:Key="Muted" TargetType="Label">
+            <Setter Property="FontSize" Value="14" />
+            <Setter Property="TextColor" Value="{AppThemeBinding Light={StaticResource Gray600}, Dark={StaticResource Gray200}}" />
+        </Style>
+    </ContentView.Resources>
+
+    <ScrollView>
+        <VerticalStackLayout Padding="16" Spacing="8" IsVisible="{Binding HasItem}">
+
+            <Grid ColumnDefinitions="88,*" ColumnSpacing="12">
+                <Border WidthRequest="88" HeightRequest="88" StrokeThickness="0" StrokeShape="RoundRectangle 10" VerticalOptions="Start"
+                        BackgroundColor="{AppThemeBinding Light={StaticResource Secondary}, Dark={StaticResource Gray600}}">
+                    <Image Source="{Binding Logo}" Aspect="AspectFit" />
+                </Border>
+                <VerticalStackLayout Grid.Column="1" Spacing="6">
+                    <Label Text="{Binding Title}" FontFamily="OpenSansSemibold" FontSize="20" SemanticProperties.HeadingLevel="Level1" />
+                    <Label Text="{Binding RegNumber}" Style="{StaticResource Muted}" />
+                    <Border BackgroundColor="{Binding PhaseColor}" StrokeThickness="0" StrokeShape="RoundRectangle 10" Padding="10,3" HorizontalOptions="Start">
+                        <Label Text="{Binding PhaseText}" TextColor="White" FontSize="13" />
+                    </Border>
+                </VerticalStackLayout>
+            </Grid>
+
+            <Label Text="{Binding SupportersText}" FontFamily="OpenSansSemibold" FontSize="16" />
+            <Label Text="{Binding DatesText}" Style="{StaticResource Muted}" />
+
+            <FlexLayout Wrap="Wrap">
+                <Button Text="{Binding FollowText}" Command="{Binding ToggleFollowCommand}" Margin="0,0,8,8" />
+                <Button Text="{l:Translate Detail_OfficialPage}" Command="{Binding OpenOfficialPageCommand}" Margin="0,0,8,8"
+                        BackgroundColor="Transparent" BorderColor="{StaticResource Primary}" BorderWidth="1"
+                        TextColor="{AppThemeBinding Light={StaticResource Primary}, Dark={StaticResource PrimaryDark}}" />
+            </FlexLayout>
+
+            <HorizontalStackLayout Spacing="8" IsVisible="{Binding IsLoadingDetails}">
+                <ActivityIndicator IsRunning="{Binding IsLoadingDetails}" HeightRequest="20" WidthRequest="20" />
+                <Label Text="{l:Translate Detail_Loading}" Style="{StaticResource Muted}" VerticalOptions="Center" />
+            </HorizontalStackLayout>
+            <Label Text="{Binding DetailsMessage}" Style="{StaticResource Muted}" />
+
+            <VerticalStackLayout IsVisible="{Binding HasDetails}" Spacing="8">
+                <Label Text="{l:Translate Detail_Objectives}" Style="{StaticResource Section}" />
+                <Label Text="{Binding Objectives}" TextType="Html" FontSize="15" />
+
+                <Label Text="{l:Translate Detail_Progress}" Style="{StaticResource Section}" />
+                <VerticalStackLayout BindableLayout.ItemsSource="{Binding Timeline}" Spacing="6">
+                    <BindableLayout.ItemTemplate>
+                        <DataTemplate x:DataType="vm:TimelineEntry">
+                            <Grid ColumnDefinitions="16,*,Auto" ColumnSpacing="8">
+                                <Ellipse WidthRequest="10" HeightRequest="10" Fill="{Binding Dot}" VerticalOptions="Center" />
+                                <Label Grid.Column="1" Text="{Binding Text}" FontAttributes="{Binding Font}" FontSize="15" />
+                                <Label Grid.Column="2" Text="{Binding Date}" Style="{StaticResource Muted}" />
+                            </Grid>
+                        </DataTemplate>
+                    </BindableLayout.ItemTemplate>
+                </VerticalStackLayout>
+
+                <VerticalStackLayout IsVisible="{Binding HasCountries}" Spacing="6">
+                    <Label Text="{l:Translate Detail_Signatures}" Style="{StaticResource Section}" />
+                    <Label Text="{Binding SignaturesText}" FontSize="15" />
+                    <Label Text="{l:Translate Detail_TopCountries}" Style="{StaticResource Muted}" />
+                    <VerticalStackLayout BindableLayout.ItemsSource="{Binding Countries}" Spacing="4">
+                        <BindableLayout.ItemTemplate>
+                            <DataTemplate x:DataType="vm:CountryEntry">
+                                <Grid ColumnDefinitions="2*,3*,96" ColumnSpacing="8">
+                                    <Label Text="{Binding Name}" FontSize="14" LineBreakMode="TailTruncation" />
+                                    <ProgressBar Grid.Column="1" Progress="{Binding Fraction}" ProgressColor="{StaticResource Primary}" VerticalOptions="Center" />
+                                    <Label Grid.Column="2" Text="{Binding Count}" FontSize="14" HorizontalTextAlignment="End" />
+                                </Grid>
+                            </DataTemplate>
+                        </BindableLayout.ItemTemplate>
+                    </VerticalStackLayout>
+                </VerticalStackLayout>
+
+                <VerticalStackLayout IsVisible="{Binding HasAnswer}" Spacing="6">
+                    <Label Text="{l:Translate Detail_Answer}" Style="{StaticResource Section}" />
+                    <Label Text="{Binding AnswerText}" FontSize="15" />
+                </VerticalStackLayout>
+
+                <VerticalStackLayout IsVisible="{Binding HasDocuments}" Spacing="4">
+                    <Label Text="{l:Translate Detail_Documents}" Style="{StaticResource Section}" />
+                    <VerticalStackLayout BindableLayout.ItemsSource="{Binding Documents}">
+                        <BindableLayout.ItemTemplate>
+                            <DataTemplate x:DataType="vm:LinkEntry">
+                                <Label Text="{Binding Label}" FontSize="15" TextDecorations="Underline" Padding="0,6"
+                                       TextColor="{AppThemeBinding Light={StaticResource Primary}, Dark={StaticResource PrimaryDark}}">
+                                    <Label.GestureRecognizers>
+                                        <TapGestureRecognizer Command="{Binding OpenLinkCommand, Source={RelativeSource AncestorType={x:Type vm:InitiativeDetailViewModel}}, x:DataType=vm:InitiativeDetailViewModel}"
+                                                              CommandParameter="{Binding .}" />
+                                    </Label.GestureRecognizers>
+                                </Label>
+                            </DataTemplate>
+                        </BindableLayout.ItemTemplate>
+                    </VerticalStackLayout>
+                </VerticalStackLayout>
+
+                <VerticalStackLayout IsVisible="{Binding HasAnnex}" Spacing="6">
+                    <Label Text="{l:Translate Detail_Annex}" Style="{StaticResource Section}" />
+                    <Label Text="{Binding Annex}" TextType="Html" FontSize="15" />
+                </VerticalStackLayout>
+
+                <VerticalStackLayout IsVisible="{Binding HasTreaties}" Spacing="6">
+                    <Label Text="{l:Translate Detail_Treaties}" Style="{StaticResource Section}" />
+                    <Label Text="{Binding Treaties}" Style="{StaticResource Muted}" />
+                </VerticalStackLayout>
+            </VerticalStackLayout>
+
+            <Label Text="{l:Translate Disclaimer}" FontSize="12" Margin="0,24,0,0"
+                   TextColor="{AppThemeBinding Light={StaticResource Gray500}, Dark={StaticResource Gray300}}" />
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentView>

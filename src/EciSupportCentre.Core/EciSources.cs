@@ -22,6 +22,13 @@ public static class EciSources
     public static Uri Website(string language) =>
         new($"https://citizens-initiative.europa.eu/index_{Normalize(language)}");
 
+    /// <summary>The initiative's page on the official website, e.g. <c>.../initiatives/details/2026/000009_el</c>.</summary>
+    public static Uri InitiativePage(string year, string number, string language) =>
+        new($"https://citizens-initiative.europa.eu/initiatives/details/{Uri.EscapeDataString(year)}/{Uri.EscapeDataString(number)}_{Normalize(language)}");
+
+    /// <summary>Logo image of an initiative, served by the register API.</summary>
+    public static Uri Logo(long logoId) => new(RegisterApiBase, $"logo/{logoId.ToString(System.Globalization.CultureInfo.InvariantCulture)}");
+
     /// <summary>Returns the EU language code for a culture name such as "el-GR", or English when it is not supported.</summary>
     public static string Normalize(string? language)
     {

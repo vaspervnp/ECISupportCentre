@@ -1,4 +1,7 @@
-﻿using EciSupportCentre.Core.Api;
+﻿using EciSupportCentre.App.Services;
+using EciSupportCentre.App.ViewModels;
+using EciSupportCentre.App.Views;
+using EciSupportCentre.Core.Api;
 using EciSupportCentre.Core.Storage;
 using EciSupportCentre.Core.Sync;
 using EciSupportCentre.Data;
@@ -29,7 +32,16 @@ public static class MauiProgram
             sp.GetRequiredService<IRegisterApiClient>(),
             sp.GetRequiredService<INewsFeedClient>(),
             sp.GetRequiredService<IEciStore>()));
-        services.AddTransient<MainPage>();
+        services.AddSingleton(Connectivity.Current);
+        services.AddSingleton<DataService>();
+
+        services.AddSingleton<HomeViewModel>();
+        services.AddSingleton<InitiativesViewModel>();
+        services.AddTransient<InitiativeDetailViewModel>();
+
+        services.AddTransient<HomePage>();
+        services.AddTransient<InitiativesPage>();
+        services.AddTransient<InitiativeDetailPage>();
 
 #if DEBUG
         builder.Logging.AddDebug();

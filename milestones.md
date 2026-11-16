@@ -90,16 +90,19 @@ tests/
 
 **Done when:** a sync fills the database, and a second sync records only the real changes.
 
-## M3 — Initiative list and details
-- [ ] Home tab with register totals (registered, ongoing, successful, answered)
-- [ ] List with search, status filters and sorting (newest, most supporters, ending soon)
-- [ ] Detail page: title, logo, status, supporters, dates, objectives, status history and a link to the official page
-- [ ] Pull to refresh
-- [ ] Tablet layout with a list and the details side by side
+## M3 — Initiative list and details ✅
+- [x] Shell with two tabs (Home, Initiatives); MVVM with `CommunityToolkit.Mvvm`; every UI text in `AppResources.resx` (bound through a `Translate` markup extension, so M7 only adds translations and the language can change at run time)
+- [x] Home tab with totals (registered, collecting, successful, answered, not enough support), the five collecting initiatives that end soonest, and a background refresh when the data is older than six hours
+- [x] List with accent-insensitive search, filter chips (all, collecting, starting soon, successful, not enough support, withdrawn, followed) and sorting (newest, most supporters, ending soon, recently updated)
+- [x] Detail page: logo, title, number, phase, supporters, dates, objectives (HTML), timeline, signatures per country (names in the app language), Commission answer and documents, more information, treaty provisions, Follow, and a link to the official page. Missing or outdated details are fetched when the page opens.
+- [x] Pull to refresh on Home and on the list
+- [x] Tablet layout (from 840 dp): list and details side by side, selected card highlighted
+- [x] Checked on the emulator in portrait (phone) and landscape (915 dp, tablet layout)
 
 **Done when:** the user can browse, filter and open every initiative offline.
 
 ## M4 — Signing
+- [ ] Logos are loaded from `register/logo/{id}` and cached by the image loader; check that they still show offline
 - [ ] **Sign** button on initiatives that are collecting, which opens `supportLink` in a Chrome Custom Tab in the user's language (`?lg=xx`)
 - [ ] Hide or disable the button when collection is closed
 - [ ] Optional "I signed this" mark, stored only on the device

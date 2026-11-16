@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:EciSupportCentre.App.ViewModels"
+             xmlns:views="clr-namespace:EciSupportCentre.App.Views"
+             xmlns:l="clr-namespace:EciSupportCentre.App.Localization"
+             x:Class="EciSupportCentre.App.Views.InitiativesPage"
+             x:DataType="vm:InitiativesViewModel"
+             Title="{l:Translate Tab_Initiatives}">
+
+    <!-- One column on phones; list and details side by side when the page is wide (set in code-behind). -->
+    <Grid x:Name="Root" ColumnDefinitions="*,0">
+
+        <Grid RowDefinitions="Auto,Auto,Auto,*" Padding="12,8,12,0" RowSpacing="8">
+            <SearchBar Placeholder="{l:Translate List_Search}" Text="{Binding SearchText}" />
+
+            <ScrollView Grid.Row="1" Orientation="Horizontal" HorizontalScrollBarVisibility="Never">
+                <HorizontalStackLayout BindableLayout.ItemsSource="{Binding Filters}" Spacing="8">
+                    <BindableLayout.ItemTemplate>
+                        <DataTemplate x:DataType="vm:FilterOption">
+                            <Button Text="{Binding Label}"
+                                    BackgroundColor="{Binding Background}"
+                                    TextColor="{Binding Foreground}"
+                                    BorderColor="{StaticResource Primary}"
+                                    BorderWidth="1"
+                                    CornerRadius="16"
+                                    Padding="14,4"
+                                    MinimumHeightRequest="36"
+                                    FontSize="13"
+                                    Command="{Binding SelectFilterCommand, Source={RelativeSource AncestorType={x:Type vm:InitiativesViewModel}}, x:DataType=vm:InitiativesViewModel}"
+                                    CommandParameter="{Binding .}" />
+                        </DataTemplate>
+                    </BindableLayout.ItemTemplate>
+                </HorizontalStackLayout>
+            </ScrollView>
+
+            <Grid Grid.Row="2" ColumnDefinitions="*,Auto" ColumnSpacing="8">
+                <Label Text="{Binding CountText}" VerticalOptions="Center" FontSize="13"
+                       TextColor="{AppThemeBinding Light={StaticResource Gray500}, Dark={StaticResource Gray300}}" />
+                <Picker Grid.Column="1" Title="{l:Translate List_Sort}" ItemsSource="{Binding SortOptions}"
+                        SelectedIndex="{Binding SortIndex}" MinimumWidthRequest="160" FontSize="14" />
+            </Grid>
+
+            <RefreshView Grid.Row="3" IsRefreshing="{Binding IsRefreshing}" Command="{Binding RefreshCommand}">
+                <CollectionView ItemsSource="{Binding Items}" SelectionMode="None">
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate x:DataType="vm:InitiativeItemViewModel">
+                            <views:InitiativeCard />
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                    <CollectionView.EmptyView>
+                        <Label Text="{l:Translate List_Empty}" HorizontalTextAlignment="Center" Margin="24" />
+                    </CollectionView.EmptyView>
+                    <CollectionView.Footer>
+                        <BoxView HeightRequest="16" Color="Transparent" />
+                    </CollectionView.Footer>
+                </CollectionView>
+            </RefreshView>
+        </Grid>
+
+        <!-- Details pane (wide screens only). -->
+        <Grid x:Name="DetailPane" Grid.Column="1" IsVisible="False"
+              BackgroundColor="{AppThemeBinding Light={StaticResource White}, Dark={StaticResource OffBlack}}">
+            <BoxView WidthRequest="1" HorizontalOptions="Start"
+                     Color="{AppThemeBinding Light={StaticResource Gray100}, Dark={StaticResource Gray600}}" />
+            <views:InitiativeDetailView BindingContext="{Binding Detail}" />
+            <Label Text="{l:Translate List_SelectHint}" IsVisible="{Binding ShowDetailPlaceholder}"
+                   HorizontalOptions="Center" VerticalOptions="Center" Margin="24"
+                   BackgroundColor="{AppThemeBinding Light={StaticResource White}, Dark={StaticResource OffBlack}}" />
+        </Grid>
+    </Grid>
+</ContentPage>

@@ -2,7 +2,7 @@
 
 An Android app (phone and tablet) for following the **European Citizens' Initiatives** published on [citizens-initiative.europa.eu](https://citizens-initiative.europa.eu/index_en).
 
-> Status: **M2 done**: local SQLite database and sync engine. The app has a temporary screen with a *Sync now* button. See [milestones.md](milestones.md) for the roadmap.
+> Status: **M3 done**: Home and Initiatives tabs, initiative details, tablet layout. Signing, news and notifications follow in M4–M6. See [milestones.md](milestones.md) for the roadmap.
 
 ## Project structure
 
@@ -32,7 +32,7 @@ tests/
 | Area | Choice |
 |---|---|
 | Platform | .NET 10 MAUI (`net10.0-android`), C# |
-| Architecture | MVVM (`CommunityToolkit.Mvvm`) |
+| Architecture | MVVM (`CommunityToolkit.Mvvm`), .NET MAUI Shell |
 | Local database | SQLite (`Microsoft.Data.Sqlite`) |
 | Network | `HttpClient`, `System.Text.Json` (source-generated), built-in retry handler |
 | Background work | AndroidX WorkManager |

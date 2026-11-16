@@ -3,12 +3,23 @@
     x:Class="EciSupportCentre.App.AppShell"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:local="clr-namespace:EciSupportCentre.App"
-    Title="ECI Support Centre">
+    xmlns:views="clr-namespace:EciSupportCentre.App.Views"
+    xmlns:l="clr-namespace:EciSupportCentre.App.Localization"
+    Title="{l:Translate AppName}"
+    Shell.TabBarBackgroundColor="{AppThemeBinding Light={StaticResource White}, Dark={StaticResource OffBlack}}"
+    Shell.TabBarForegroundColor="{AppThemeBinding Light={StaticResource Primary}, Dark={StaticResource PrimaryDark}}"
+    Shell.TabBarTitleColor="{AppThemeBinding Light={StaticResource Primary}, Dark={StaticResource PrimaryDark}}"
+    Shell.TabBarUnselectedColor="{AppThemeBinding Light={StaticResource Gray500}, Dark={StaticResource Gray300}}">
 
-    <ShellContent
-        Title="ECI Support Centre"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+    <TabBar>
+        <ShellContent Title="{l:Translate Tab_Home}"
+                      Icon="tab_home.png"
+                      Route="home"
+                      ContentTemplate="{DataTemplate views:HomePage}" />
+        <ShellContent Title="{l:Translate Tab_Initiatives}"
+                      Icon="tab_list.png"
+                      Route="initiatives"
+                      ContentTemplate="{DataTemplate views:InitiativesPage}" />
+    </TabBar>
 
 </Shell>

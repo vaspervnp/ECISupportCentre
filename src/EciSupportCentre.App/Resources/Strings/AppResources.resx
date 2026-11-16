@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- English (default). Translations go in AppResources.<lang>.resx with the same keys. -->
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AppName" xml:space="preserve">
+    <value>ECI Support Centre</value>
+  </data>
+  <data name="Disclaimer" xml:space="preserve">
+    <value>Not an official app of the European Union. Data: citizens-initiative.europa.eu</value>
+  </data>
+  <data name="Tab_Home" xml:space="preserve">
+    <value>Home</value>
+  </data>
+  <data name="Tab_Initiatives" xml:space="preserve">
+    <value>Initiatives</value>
+  </data>
+  <data name="Home_Title" xml:space="preserve">
+    <value>European Citizens' Initiatives</value>
+  </data>
+  <data name="Home_Intro" xml:space="preserve">
+    <value>One million signatures from at least seven EU countries ask the European Commission to propose a law.</value>
+  </data>
+  <data name="Home_Registered" xml:space="preserve">
+    <value>Registered</value>
+  </data>
+  <data name="Home_Collecting" xml:space="preserve">
+    <value>Collecting</value>
+  </data>
+  <data name="Home_Successful" xml:space="preserve">
+    <value>Successful</value>
+  </data>
+  <data name="Home_Answered" xml:space="preserve">
+    <value>Answered</value>
+  </data>
+  <data name="Home_Failed" xml:space="preserve">
+    <value>Not enough support</value>
+  </data>
+  <data name="Home_Withdrawn" xml:space="preserve">
+    <value>Withdrawn</value>
+  </data>
+  <data name="Home_EndingSoon" xml:space="preserve">
+    <value>Collecting now, ending soonest</value>
+  </data>
+  <data name="Home_SeeAll" xml:space="preserve">
+    <value>See all initiatives</value>
+  </data>
+  <data name="Home_RecentChanges" xml:space="preserve">
+    <value>Recent changes</value>
+  </data>
+  <data name="Sync_Now" xml:space="preserve">
+    <value>Refresh</value>
+  </data>
+  <data name="Sync_Running" xml:space="preserve">
+    <value>Updating…</value>
+  </data>
+  <data name="Sync_Last" xml:space="preserve">
+    <value>Updated {0}</value>
+  </data>
+  <data name="Sync_Never" xml:space="preserve">
+    <value>Not updated yet. Pull down to refresh.</value>
+  </data>
+  <data name="Sync_Failed" xml:space="preserve">
+    <value>Could not update: {0}</value>
+  </data>
+  <data name="Sync_Offline" xml:space="preserve">
+    <value>You are offline. Showing saved data.</value>
+  </data>
+  <data name="List_Search" xml:space="preserve">
+    <value>Search initiatives</value>
+  </data>
+  <data name="List_All" xml:space="preserve">
+    <value>All</value>
+  </data>
+  <data name="List_Followed" xml:space="preserve">
+    <value>Followed</value>
+  </data>
+  <data name="List_Sort" xml:space="preserve">
+    <value>Sort</value>
+  </data>
+  <data name="List_Empty" xml:space="preserve">
+    <value>No initiatives match.</value>
+  </data>
+  <data name="List_Count" xml:space="preserve">
+    <value>{0} initiatives</value>
+  </data>
+  <data name="List_SelectHint" xml:space="preserve">
+    <value>Select an initiative to see its details.</value>
+  </data>
+  <data name="Sort_Newest" xml:space="preserve">
+    <value>Newest</value>
+  </data>
+  <data name="Sort_MostSupporters" xml:space="preserve">
+    <value>Most supporters</value>
+  </data>
+  <data name="Sort_EndingSoon" xml:space="preserve">
+    <value>Ending soon</value>
+  </data>
+  <data name="Sort_RecentlyUpdated" xml:space="preserve">
+    <value>Recently updated</value>
+  </data>
+  <data name="Phase_Unknown" xml:space="preserve">
+    <value>Unknown</value>
+  </data>
+  <data name="Phase_Upcoming" xml:space="preserve">
+    <value>Starting soon</value>
+  </data>
+  <data name="Phase_Collecting" xml:space="preserve">
+    <value>Collecting signatures</value>
+  </data>
+  <data name="Phase_Verification" xml:space="preserve">
+    <value>Verifying signatures</value>
+  </data>
+  <data name="Phase_Submitted" xml:space="preserve">
+    <value>Submitted to the Commission</value>
+  </data>
+  <data name="Phase_Answered" xml:space="preserve">
+    <value>Answered by the Commission</value>
+  </data>
+  <data name="Phase_Failed" xml:space="preserve">
+    <value>Not enough support</value>
+  </data>
+  <data name="Phase_Withdrawn" xml:space="preserve">
+    <value>Withdrawn</value>
+  </data>
+  <data name="Item_Supporters" xml:space="preserve">
+    <value>{0:N0} supporters</value>
+  </data>
+  <data name="Item_EndsOn" xml:space="preserve">
+    <value>Ends {0:d}</value>
+  </data>
+  <data name="Item_EndedOn" xml:space="preserve">
+    <value>Ended {0:d}</value>
+  </data>
+  <data name="Item_StartsOn" xml:space="preserve">
+    <value>Starts {0:d}</value>
+  </data>
+  <data name="Item_LastCall" xml:space="preserve">
+    <value>Last call</value>
+  </data>
+  <data name="Item_Followed" xml:space="preserve">
+    <value>Followed</value>
+  </data>
+  <data name="Detail_Title" xml:space="preserve">
+    <value>Initiative</value>
+  </data>
+  <data name="Detail_Objectives" xml:space="preserve">
+    <value>Objectives</value>
+  </data>
+  <data name="Detail_Annex" xml:space="preserve">
+    <value>More information</value>
+  </data>
+  <data name="Detail_Treaties" xml:space="preserve">
+    <value>Treaty provisions</value>
+  </data>
+  <data name="Detail_Progress" xml:space="preserve">
+    <value>Timeline</value>
+  </data>
+  <data name="Detail_Signatures" xml:space="preserve">
+    <value>Signatures</value>
+  </data>
+  <data name="Detail_SignaturesVerified" xml:space="preserve">
+    <value>{0:N0} verified signatures</value>
+  </data>
+  <data name="Detail_SignaturesCollected" xml:space="preserve">
+    <value>{0:N0} signatures collected</value>
+  </data>
+  <data name="Detail_TopCountries" xml:space="preserve">
+    <value>Top countries</value>
+  </data>
+  <data name="Detail_Answer" xml:space="preserve">
+    <value>Commission's answer</value>
+  </data>
+  <data name="Detail_AnswerDate" xml:space="preserve">
+    <value>Decision of {0:d}</value>
+  </data>
+  <data name="Detail_Documents" xml:space="preserve">
+    <value>Documents</value>
+  </data>
+  <data name="Detail_OfficialPage" xml:space="preserve">
+    <value>Open on the official website</value>
+  </data>
+  <data name="Detail_Follow" xml:space="preserve">
+    <value>Follow</value>
+  </data>
+  <data name="Detail_Unfollow" xml:space="preserve">
+    <value>Unfollow</value>
+  </data>
+  <data name="Detail_Loading" xml:space="preserve">
+    <value>Loading details…</value>
+  </data>
+  <data name="Detail_Unavailable" xml:space="preserve">
+    <value>Details are not downloaded yet. Connect to the internet and refresh.</value>
+  </data>
+  <data name="Detail_Registered" xml:space="preserve">
+    <value>Registered {0:d}</value>
+  </data>
+  <data name="Detail_Collection" xml:space="preserve">
+    <value>Collection {0:d} – {1:d}</value>
+  </data>
+  <data name="Detail_CollectionOpen" xml:space="preserve">
+    <value>Collection from {0:d}</value>
+  </data>
+  <data name="Step_REGISTERED" xml:space="preserve">
+    <value>Registered</value>
+  </data>
+  <data name="Step_COLLECTION_START_DATE" xml:space="preserve">
+    <value>Collection started</value>
+  </data>
+  <data name="Step_ONGOING" xml:space="preserve">
+    <value>Collecting signatures</value>
+  </data>
+  <data name="Step_CLOSED" xml:space="preserve">
+    <value>Collection closed</value>
+  </data>
+  <data name="Step_VERIFICATION" xml:space="preserve">
+    <value>Signatures verified</value>
+  </data>
+  <data name="Step_SUBMITTED" xml:space="preserve">
+    <value>Submitted to the Commission</value>
+  </data>
+  <data name="Step_ANSWERED" xml:space="preserve">
+    <value>Commission answered</value>
+  </data>
+  <data name="Step_INSUFFICIENT_SUPPORT" xml:space="preserve">
+    <value>Not enough support</value>
+  </data>
+  <data name="Step_INSUFFICIENT_SUPPORT_AFTER_VERIFICATION" xml:space="preserve">
+    <value>Not enough valid signatures</value>
+  </data>
+  <data name="Step_WITHDRAWN" xml:space="preserve">
+    <value>Withdrawn</value>
+  </data>
+  <data name="Doc_COMMUNICATION" xml:space="preserve">
+    <value>Commission communication</value>
+  </data>
+  <data name="Doc_PRESS_RELEASE" xml:space="preserve">
+    <value>Press release</value>
+  </data>
+  <data name="Doc_EXAMIN_STEPS" xml:space="preserve">
+    <value>Examination steps</value>
+  </data>
+  <data name="Doc_FOLLOW_UP" xml:space="preserve">
+    <value>Follow-up</value>
+  </data>
+  <data name="Doc_ANNEX" xml:space="preserve">
+    <value>Annex to the communication</value>
+  </data>
+  <data name="Doc_Registration" xml:space="preserve">
+    <value>Commission registration decision</value>
+  </data>
+  <data name="Doc_Other" xml:space="preserve">
+    <value>Document</value>
+  </data>
+</root>
