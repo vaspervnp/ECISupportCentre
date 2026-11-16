@@ -28,8 +28,12 @@ jobs:
         with:
           global-json-file: global.json
 
+      # The solution also holds the Android app, which needs the MAUI workload, so test projects run one by one.
       - name: Test
-        run: dotnet test tests/EciSupportCentre.Core.Tests -c Release --logger trx --results-directory TestResults
+        run: |
+          for project in tests/*/*.Tests.csproj; do
+            dotnet test "$project" -c Release --logger "trx;LogFilePrefix=$(basename "$project" .csproj)" --results-directory TestResults
+          done
 
       - name: Upload test results
         if: always()

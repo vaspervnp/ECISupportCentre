@@ -40,7 +40,7 @@ The servers rate-limit with **429** and a fractional `Retry-After` (e.g. `0.809`
 
 - **.NET 10 MAUI**, target `net10.0-android` (minimum API 24). Layouts adapt to phones and tablets.
 - **MVVM** with `CommunityToolkit.Mvvm`, and `CommunityToolkit.Maui` for UI helpers.
-- **SQLite** through `sqlite-net-pcl` for the local database.
+- **SQLite** through `Microsoft.Data.Sqlite` with hand-written SQL (no reflection, so it is safe with trimming and AOT).
 - `HttpClient` with `System.Text.Json` source generators, and a small built-in retry handler (429 / `Retry-After`, 5xx, network errors) instead of Polly.
 - **AndroidX WorkManager** for periodic background sync.
 - **Local notifications** through `NotificationCompat` with notification channels (Android 13+ asks for `POST_NOTIFICATIONS`).
@@ -48,15 +48,16 @@ The servers rate-limit with **429** and a fractional `Retry-After` (e.g. `0.809`
 - **xUnit** tests for the core library.
 - **GitHub Actions** CI that builds and tests and produces a signed APK/AAB.
 
-## Solution layout (planned)
+## Solution layout
 
 ```
 src/
-  EciSupportCentre.Core/      # models, API client, RSS parser, sync engine, status logic (net10.0)
-  EciSupportCentre.Data/      # SQLite repositories, migrations
+  EciSupportCentre.Core/      # models, API clients, RSS parser, storage contracts, sync engine, status logic (net10.0)
+  EciSupportCentre.Data/      # SQLite database, schema migrations (net10.0)
   EciSupportCentre.App/       # MAUI app (net10.0-android): views, view models, platform services
 tests/
-  EciSupportCentre.Core.Tests/
+  EciSupportCentre.Core.Tests/  # API clients against recorded samples
+  EciSupportCentre.Data.Tests/  # database and sync scenarios on real SQLite files
 ```
 
 ---
@@ -79,12 +80,13 @@ tests/
 
 **Done when:** the Core library downloads and parses all initiatives and the news, and the tests pass offline.
 
-## M2 — Local database and sync engine
-- [ ] SQLite schema: `Initiative`, `InitiativeTranslation` (per language), `StatusHistory`, `NewsItem`, `UserFollow`, `SyncState`
-- [ ] Repositories and schema migrations
-- [ ] Sync engine: full sync on first run, then incremental sync based on `latestUpdateDate`
-- [ ] Detect changes (new initiative, status change, signature milestone, `lastCall`, collection ended) and record them in `StatusHistory`
-- [ ] The app works offline: it always reads from the local database
+## M2 — Local database and sync engine ✅
+- [x] SQLite schema: `initiative`, `initiative_text` (title and signing link per language), `initiative_details` (full record as JSON), `initiative_change`, `news_item`, `follow`, `sync_state`
+- [x] `EciDatabase` with schema migrations (`PRAGMA user_version`); refuses a database written by a newer app version
+- [x] Sync engine: the list on every sync; details only for active initiatives and for any whose `latestUpdateDate` or status changed (at most 30 per sync); details of finished initiatives on demand
+- [x] Detect changes (new initiative, status change, signature milestone 100k/250k/500k/750k/1M, `lastCall`) and keep them until notified. The first sync records none. Collection ending soon is time-based and belongs to M6.
+- [x] The app works offline: it always reads from the local database. Search ignores case and accents (e.g. Greek tonos).
+- [x] Checked on the emulator: first sync 136 initiatives, 17 with details, 30 news in 48 s (Debug build); second sync 0 changes, 0 details, 12 s
 
 **Done when:** a sync fills the database, and a second sync records only the real changes.
 
@@ -140,7 +142,7 @@ tests/
 
 ## M9 — Quality and release
 - [ ] Unit tests for Core and Data, UI smoke tests on an emulator
-- [ ] Performance check: first sync under 10 seconds on 4G, smooth scrolling of the list
+- [ ] Performance check: first sync under 10 seconds on 4G (48 s in a Debug build on the emulator in M2; fetch details in parallel or after the list is shown), smooth scrolling of the list
 - [ ] Release build with trimming and AOT where it is stable, and a signed AAB
 - [ ] Privacy policy (no personal data, no tracking)
 - [ ] Google Play listing (store texts in the 24 languages), internal testing, then production

@@ -2,18 +2,19 @@
 
 An Android app (phone and tablet) for following the **European Citizens' Initiatives** published on [citizens-initiative.europa.eu](https://citizens-initiative.europa.eu/index_en).
 
-> Status: **M1 done**: API clients for the register and the news feed. See [milestones.md](milestones.md) for the roadmap.
+> Status: **M2 done**: local SQLite database and sync engine. The app has a temporary screen with a *Sync now* button. See [milestones.md](milestones.md) for the roadmap.
 
 ## Project structure
 
 ```
 EciSupportCentre.slnx
 src/
-  EciSupportCentre.Core/        models, API clients, sync logic (net10.0)
-  EciSupportCentre.Data/        SQLite storage (net10.0)
+  EciSupportCentre.Core/        models, API clients, sync engine (net10.0)
+  EciSupportCentre.Data/        SQLite database and migrations (net10.0)
   EciSupportCentre.App/         .NET MAUI Android app (net10.0-android)
 tests/
-  EciSupportCentre.Core.Tests/  xUnit tests
+  EciSupportCentre.Core.Tests/  API client tests on recorded samples
+  EciSupportCentre.Data.Tests/  database and sync tests
 .github/workflows/ci.yml        tests and an installable APK on every push and pull request
 ```
 
@@ -32,7 +33,7 @@ tests/
 |---|---|
 | Platform | .NET 10 MAUI (`net10.0-android`), C# |
 | Architecture | MVVM (`CommunityToolkit.Mvvm`) |
-| Local database | SQLite (`sqlite-net-pcl`) |
+| Local database | SQLite (`Microsoft.Data.Sqlite`) |
 | Network | `HttpClient`, `System.Text.Json` (source-generated), built-in retry handler |
 | Background work | AndroidX WorkManager |
 | Localization | `.resx` resources (bg, cs, da, de, el, en, es, et, fi, fr, ga, hr, hu, it, lt, lv, mt, nl, pl, pt, ro, sk, sl, sv) |
@@ -69,16 +70,20 @@ Run on a connected device or a running emulator:
 dotnet build src/EciSupportCentre.App -f net10.0-android -t:Run
 ```
 
-Run the tests (offline, using recorded samples):
+Run the tests (offline, using recorded samples and temporary SQLite files):
 
 ```bash
-dotnet test
+dotnet test tests/EciSupportCentre.Core.Tests
+```
+
+```bash
+dotnet test tests/EciSupportCentre.Data.Tests
 ```
 
 Run the live tests against the real ECI services (bash):
 
 ```bash
-ECI_LIVE_TESTS=1 dotnet test --filter Category=Live
+ECI_LIVE_TESTS=1 dotnet test tests/EciSupportCentre.Core.Tests --filter Category=Live
 ```
 
 ## Disclaimer

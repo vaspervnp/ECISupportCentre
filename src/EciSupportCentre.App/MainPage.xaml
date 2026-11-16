@@ -4,18 +4,27 @@
              x:Class="EciSupportCentre.App.MainPage"
              Title="ECI Support Centre">
 
+    <!-- Temporary page to check storage and sync on a device; replaced by the real screens in M3. -->
     <ScrollView>
-        <VerticalStackLayout Padding="24" Spacing="16" MaximumWidthRequest="640">
+        <VerticalStackLayout Padding="24" Spacing="16" MaximumWidthRequest="720">
             <Label Text="European Citizens' Initiatives"
                    Style="{StaticResource Headline}"
                    SemanticProperties.HeadingLevel="Level1" />
 
-            <Label Text="Follow every initiative, sign the ones you support and get notified when they end."
-                   Style="{StaticResource SubHeadline}" />
-
             <Label Text="This app is under development. It is not an official app of the European Union."
                    FontSize="14"
                    HorizontalTextAlignment="Center" />
+
+            <Button x:Name="SyncButton"
+                    Text="Sync now"
+                    Clicked="OnSyncClicked"
+                    SemanticProperties.Hint="Downloads the register and the news into the local database" />
+
+            <ActivityIndicator x:Name="Busy" IsRunning="False" IsVisible="False" />
+
+            <Label x:Name="StatusLabel" FontSize="14" />
+
+            <Label x:Name="OngoingLabel" FontSize="14" />
 
             <Button Text="Open the official website"
                     Clicked="OnOpenWebsiteClicked"
