@@ -493,4 +493,13 @@
   <data name="A11y_Selected" xml:space="preserve">
     <value>{0}, atlasīts</value>
   </data>
+  <data name="About_CreatedBy" xml:space="preserve">
+    <value>Izveidoja Pirate Party of Greece</value>
+  </data>
+  <data name="Detail_Share" xml:space="preserve">
+    <value>Kopīgot</value>
+  </data>
+  <data name="Detail_ShareHint" xml:space="preserve">
+    <value>Nosūta saiti uz šīs iniciatīvas oficiālo lapu</value>
+  </data>
 </root>

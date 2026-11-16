@@ -1,0 +1,26 @@
+Eine Million Unterschriften aus mindestens sieben EU-Ländern können die Europäische Kommission auffordern, einen neuen Rechtsakt vorzuschlagen. ECI Support Centre hilft Ihnen, jede Europäische Bürgerinitiative zu verfolgen, die zu unterzeichnen, die Sie unterstützen, und zu erfahren, wie sie ausgehen.
+
+• Alle Initiativen an einem Ort
+Durchsuchen Sie jede registrierte Initiative: Sammlung läuft, beginnt bald, erfolgreich, von der Kommission beantwortet, nicht genug Unterstützung oder zurückgezogen. Suchen, filtern und sortieren Sie sie und folgen Sie denen, die Ihnen wichtig sind.
+
+• Unterzeichnen auf der offiziellen Website
+„Diese Initiative unterzeichnen“ führt Sie direkt zur offiziellen Sammelseite der Europäischen Kommission. Die App sammelt weder Unterschriften noch personenbezogene Daten.
+
+• Keine Frist verpassen
+Sie erhalten eine Benachrichtigung eine Woche und einen Tag vor Ende einer Sammlung, wenn eine Initiative 100.000, 250.000, 500.000 oder eine Million Unterstützer erreicht, und wenn sie erfolgreich ist, scheitert oder die Antwort der Kommission erhält. Sie entscheiden: alle Initiativen oder nur die, denen Sie folgen.
+
+• Aktuelles
+Die neuesten Meldungen von der offiziellen Website der Europäischen Bürgerinitiative.
+
+• Funktioniert offline
+Alles wird auf Ihrem Gerät gespeichert und im Hintergrund aktualisiert, so oft Sie möchten oder nur über WLAN.
+
+• In Ihrer Sprache
+Die App ist in allen 24 Amtssprachen der EU verfügbar und zeigt jede Initiative in Ihrer Sprache an, sofern eine Übersetzung vorliegt.
+
+• Datenschutz von Grund auf
+Kein Konto, keine Werbung, kein Tracking. Was Sie verfolgen oder als unterzeichnet markieren, bleibt auf Ihrem Gerät.
+
+Außerdem: helles und dunkles Design, TalkBack-Unterstützung, große Schrift und ein Layout für Tablets.
+
+ECI Support Centre wurde von der Pirate Party of Greece entwickelt und ist Open Source unter der MIT-Lizenz. Es ist keine offizielle App der Europäischen Union oder der Europäischen Kommission. Daten: citizens-initiative.europa.eu, © Europäische Union.

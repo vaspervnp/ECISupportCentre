@@ -1,0 +1,26 @@
+Un million de signatures issues d'au moins sept pays de l'UE peuvent demander à la Commission européenne de proposer une nouvelle loi. ECI Support Centre vous aide à suivre chaque initiative citoyenne européenne, à signer celles que vous soutenez et à découvrir comment elles se terminent.
+
+• Toutes les initiatives au même endroit
+Parcourez toutes les initiatives enregistrées : collecte en cours, bientôt ouverte, abouties, avec réponse de la Commission, soutien insuffisant ou retirées. Recherchez, filtrez et triez-les, et suivez celles qui vous tiennent à cœur.
+
+• Signez sur le site officiel
+« Signer cette initiative » vous mène directement à la page de collecte officielle de la Commission européenne. L'application ne recueille jamais de signatures ni de données personnelles.
+
+• Ne manquez aucune échéance
+Recevez une notification une semaine et un jour avant la fin d'une collecte, lorsqu'une initiative atteint 100 000, 250 000, 500 000 ou un million de soutiens, et lorsqu'elle aboutit, échoue ou obtient la réponse de la Commission. Vous choisissez : toutes les initiatives, ou seulement celles que vous suivez.
+
+• Actualités
+Les dernières actualités du site officiel de l'initiative citoyenne européenne.
+
+• Fonctionne hors ligne
+Tout est conservé sur votre appareil et mis à jour en arrière-plan, aussi souvent que vous le souhaitez, ou uniquement en Wi-Fi.
+
+• Dans votre langue
+L'application est disponible dans les 24 langues officielles de l'UE et affiche chaque initiative dans votre langue lorsqu'une traduction existe.
+
+• Confidentialité dès la conception
+Pas de compte, pas de publicité, pas de suivi. Les initiatives que vous suivez ou marquez comme signées restent sur votre appareil.
+
+Également : thèmes clair et sombre, prise en charge de TalkBack, texte agrandi et mise en page pour tablettes.
+
+ECI Support Centre est créée par le Pirate Party of Greece et est open source sous licence MIT. Ce n'est pas une application officielle de l'Union européenne ni de la Commission européenne. Données : citizens-initiative.europa.eu, © Union européenne.

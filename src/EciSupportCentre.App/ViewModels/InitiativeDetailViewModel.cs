@@ -211,6 +211,24 @@ public sealed partial class InitiativeDetailViewModel : ObservableObject, IQuery
         }
     }
 
+    /// <summary>Opens the system share sheet with the title and the official page, in the app language.</summary>
+    [RelayCommand]
+    private async Task ShareAsync()
+    {
+        if (OfficialPage is null)
+        {
+            return;
+        }
+
+        await Share.Default.RequestAsync(new ShareTextRequest
+        {
+            Title = Loc.Get("Detail_Share"),
+            Subject = Title,
+            Text = Title,
+            Uri = OfficialPage.AbsoluteUri,
+        });
+    }
+
     [RelayCommand]
     private static Task OpenLinkAsync(LinkEntry link) => AppBrowser.OpenAsync(link.Uri);
 

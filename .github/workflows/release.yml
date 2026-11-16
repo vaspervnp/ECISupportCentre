@@ -1,0 +1,85 @@
+name: Release
+
+# Builds the signed Google Play bundle (AAB) and an APK for direct install when a version tag is pushed,
+# e.g. `git tag v1.0.0 && git push origin v1.0.0`. Needs three repository secrets:
+#   ANDROID_KEYSTORE_BASE64  the upload keystore, base64-encoded
+#   ANDROID_KEYSTORE_PASSWORD  its password (store and key)
+#   ANDROID_KEY_ALIAS        the key alias, e.g. "upload"
+on:
+  push:
+    tags: ['v*']
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+env:
+  DOTNET_NOLOGO: true
+  DOTNET_CLI_TELEMETRY_OPTOUT: true
+
+jobs:
+  release:
+    name: Build signed AAB and APK
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-dotnet@v5
+        with:
+          global-json-file: global.json
+
+      - uses: actions/setup-java@v5
+        with:
+          distribution: microsoft
+          java-version: '17'
+
+      - name: Install MAUI Android workload
+        run: dotnet workload install maui-android
+
+      - name: Test
+        run: |
+          for project in tests/*/*.Tests.csproj; do
+            dotnet test "$project" -c Release
+          done
+
+      - name: Restore keystore
+        env:
+          KEYSTORE_BASE64: ${{ secrets.ANDROID_KEYSTORE_BASE64 }}
+        run: |
+          if [ -z "$KEYSTORE_BASE64" ]; then
+            echo "::error::The ANDROID_KEYSTORE_BASE64 secret is not set."
+            exit 1
+          fi
+          echo "$KEYSTORE_BASE64" | base64 --decode > "$RUNNER_TEMP/upload.keystore"
+
+      - name: Build AAB (Google Play)
+        env:
+          ECI_KEYSTORE_PASSWORD: ${{ secrets.ANDROID_KEYSTORE_PASSWORD }}
+        run: >
+          dotnet publish src/EciSupportCentre.App -f net10.0-android -c Release
+          -p:AndroidPackageFormat=aab
+          -p:EciKeystore="$RUNNER_TEMP/upload.keystore"
+          -p:EciKeyAlias="${{ secrets.ANDROID_KEY_ALIAS }}"
+          -o artifacts/aab
+
+      - name: Build APK (direct install)
+        env:
+          ECI_KEYSTORE_PASSWORD: ${{ secrets.ANDROID_KEYSTORE_PASSWORD }}
+        run: >
+          dotnet publish src/EciSupportCentre.App -f net10.0-android -c Release
+          -p:AndroidPackageFormat=apk
+          -p:EciKeystore="$RUNNER_TEMP/upload.keystore"
+          -p:EciKeyAlias="${{ secrets.ANDROID_KEY_ALIAS }}"
+          -o artifacts/apk
+
+      - name: Remove keystore
+        if: always()
+        run: rm -f "$RUNNER_TEMP/upload.keystore"
+
+      - uses: actions/upload-artifact@v6
+        with:
+          name: eci-support-centre-release
+          path: |
+            artifacts/aab/*-Signed.aab
+            artifacts/apk/*-Signed.apk
+          if-no-files-found: error

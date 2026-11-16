@@ -1,0 +1,26 @@
+Legalább hét uniós országból összegyűjtött egymillió aláírás felkérheti az Európai Bizottságot egy új jogszabály javaslatára. Az ECI Support Centre segít nyomon követni minden európai polgári kezdeményezést, aláírni a támogatottakat, és megtudni, hogyan végződnek.
+
+• Minden kezdeményezés egy helyen
+Böngéssze az összes nyilvántartásba vett kezdeményezést: aláírásgyűjtés, hamarosan indul, sikeres, a Bizottság válaszolt, elégtelen támogatás vagy visszavont. Keressen, szűrjön és rendezzen közöttük, és kövesse azokat, amelyek fontosak Önnek.
+
+• Aláírás a hivatalos weboldalon
+Az „A kezdeményezés aláírása” gomb közvetlenül az Európai Bizottság hivatalos gyűjtőoldalára visz. Az alkalmazás soha nem gyűjt aláírást vagy személyes adatot.
+
+• Ne maradjon le a határidőkről
+Értesítést kap a gyűjtés vége előtt egy héttel és egy nappal, amikor egy kezdeményezés eléri a 100 000, 250 000, 500 000 vagy egymillió támogatót, valamint amikor sikeres, sikertelen lesz, vagy megkapja a Bizottság válaszát. Ön választ: minden kezdeményezés, vagy csak a követettek.
+
+• Hírek
+A legfrissebb hírek az európai polgári kezdeményezés hivatalos weboldaláról.
+
+• Offline is működik
+Minden az eszközén tárolódik, és a háttérben frissül, olyan gyakran, ahogyan szeretné, vagy csak Wi-Fi-n.
+
+• Az Ön nyelvén
+Az alkalmazás az EU mind a 24 hivatalos nyelvén elérhető, és minden kezdeményezést az Ön nyelvén jelenít meg, ha létezik fordítás.
+
+• Tervezésből adódó adatvédelem
+Nincs fiók, nincs hirdetés, nincs követés. Az Ön által követett vagy aláírtként megjelölt kezdeményezések az eszközén maradnak.
+
+Emellett: világos és sötét téma, TalkBack-támogatás, nagy szöveg és táblagépekre szabott elrendezés.
+
+Az ECI Support Centre-t a Pirate Party of Greece készítette, nyílt forráskódú, MIT licenc alatt. Nem az Európai Unió vagy az Európai Bizottság hivatalos alkalmazása. Adatok: citizens-initiative.europa.eu, © Európai Unió.

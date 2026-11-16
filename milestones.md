@@ -152,11 +152,13 @@ tests/
 **Done when:** the accessibility scanner reports nothing serious and all settings take effect. Checked on the emulator with the accessibility tree (`uiautomator dump`), font scale 1.5, light and dark theme, and the job's interval and network constraint in `dumpsys jobscheduler`. The Accessibility Scanner app itself was not run (it needs a Play Store device); to do before the release in M9.
 
 ## M9 — Quality and release
-- [ ] Unit tests for Core and Data, UI smoke tests on an emulator
-- [ ] Performance check: first sync under 10 seconds on 4G (48 s in a Debug build on the emulator in M2; fetch details in parallel or after the list is shown), smooth scrolling of the list
-- [ ] Release build with trimming and AOT where it is stable, and a signed AAB
-- [ ] Privacy policy (no personal data, no tracking)
-- [ ] Google Play listing (store texts in the 24 languages), internal testing, then production
+- [x] Unit tests for Core (167) and Data (50); `scripts/smoke-test.sh` for an APK on an emulator. Its full run is still to do: the shared emulator was in use by another app at the time
+- [x] Performance: the list is saved and shown before the details, which download 4 at a time (`SyncEngine.DetailsConcurrency`). Still to measure on a real 4G phone
+- [x] Release build (trimmed) at version 1.0.0 (code 2), signed AAB and APK from the `release.yml` workflow; signing checked locally with a throwaway keystore
+- [x] Privacy policy: `docs/privacy-policy.md`
+- [x] Google Play texts in the 24 languages: `fastlane/metadata/android/`
+- [x] Share button on the initiative page; "Created by the Pirate Party of Greece" on the About page
+- [ ] Owner: create the upload keystore, add the three GitHub secrets, run Accessibility Scanner on a device, create the Play Console listing, internal testing, then production
 
 **Done when:** version 1.0 is on Google Play.
 

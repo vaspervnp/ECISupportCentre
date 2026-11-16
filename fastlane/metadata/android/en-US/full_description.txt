@@ -1,0 +1,26 @@
+One million signatures from at least seven EU countries can ask the European Commission to propose a new law. ECI Support Centre helps you follow every European Citizens' Initiative, sign the ones you support and find out how they end.
+
+• All initiatives in one place
+Browse every registered initiative: collecting signatures, starting soon, successful, answered by the Commission, not enough support or withdrawn. Search, filter and sort them, and follow the ones you care about.
+
+• Sign on the official website
+"Sign this initiative" takes you straight to the European Commission's official collection page. The app never collects signatures or personal data.
+
+• Never miss a deadline
+Get a notification a week and a day before a collection ends, when an initiative reaches 100,000, 250,000, 500,000 or one million supporters, and when it succeeds, fails or gets the Commission's answer. You choose: every initiative, or only the ones you follow.
+
+• News
+The latest news from the official European Citizens' Initiative website.
+
+• Works offline
+Everything is kept on your device and updated in the background, as often as you like, or only on Wi-Fi.
+
+• In your language
+The app is available in all 24 official EU languages, and shows each initiative in your language when a translation exists.
+
+• Private by design
+No account, no ads, no tracking. What you follow or mark as signed stays on your device.
+
+Also: light and dark theme, TalkBack support, large text, and a layout for tablets.
+
+ECI Support Centre is created by the Pirate Party of Greece and is open source under the MIT licence. It is not an official app of the European Union or the European Commission. Data: citizens-initiative.europa.eu, © European Union.

@@ -30,7 +30,21 @@ public sealed class SyncEngine(
     /// <summary>Most details fetched in one sync; the rest follow in later syncs. Keeps a sync short and polite.</summary>
     public int MaxDetailsPerSync { get; init; } = 30;
 
-    public async Task<SyncReport> SyncAsync(string language, bool includeNews = true, CancellationToken cancellationToken = default)
+    /// <summary>Details downloaded at the same time. Saving stays one at a time.</summary>
+    public int DetailsConcurrency { get; init; } = 4;
+
+    /// <param name="language">EU language code of the titles and texts to store.</param>
+    /// <param name="includeNews">Also fetch the news feed.</param>
+    /// <param name="progress">
+    /// Told when the list is saved (<see cref="SyncStage.ListSaved"/>), so the app can show it while the details
+    /// still download.
+    /// </param>
+    /// <param name="cancellationToken">Cancels the sync; what was saved stays saved.</param>
+    public async Task<SyncReport> SyncAsync(
+        string language,
+        bool includeNews = true,
+        IProgress<SyncStage>? progress = null,
+        CancellationToken cancellationToken = default)
     {
         var lang = EciSources.Normalize(language);
         var started = _time.GetUtcNow();
@@ -62,6 +76,7 @@ public sealed class SyncEngine(
 
         await store.SaveSummariesAsync(lang, summaries, changes, now, cancellationToken).ConfigureAwait(false);
         await store.SetStateAsync(StateKeys.Statistics, JsonSerializer.Serialize(statistics, EciJsonContext.Default.RegisterStatistics), cancellationToken).ConfigureAwait(false);
+        progress?.Report(SyncStage.ListSaved);
 
         // 3. Details: active initiatives first, most recently updated first.
         var queue = needDetails
@@ -71,20 +86,20 @@ public sealed class SyncEngine(
 
         var fetched = 0;
         var failed = new List<long>();
-        foreach (var summary in queue.Take(MaxDetailsPerSync))
+        foreach (var (summary, details) in await DownloadDetailsAsync(queue.Take(MaxDetailsPerSync), cancellationToken).ConfigureAwait(false))
         {
-            try
-            {
-                var details = await register.GetDetailsAsync(summary.Year, summary.Number, cancellationToken).ConfigureAwait(false);
-                await store.SaveDetailsAsync(details, _time.GetUtcNow(), cancellationToken).ConfigureAwait(false);
-                fetched++;
-            }
-            catch (Exception ex) when (ex is EciApiException or HttpRequestException)
+            if (details is null)
             {
                 // One broken record must not stop the sync; it is retried next time.
                 failed.Add(summary.Id);
+                continue;
             }
+
+            await store.SaveDetailsAsync(details, _time.GetUtcNow(), cancellationToken).ConfigureAwait(false);
+            fetched++;
         }
+
+        progress?.Report(SyncStage.DetailsSaved);
 
         // 4. News. A failure is reported, not thrown: the register data is already saved.
         IReadOnlyList<NewsItem>? newArticles = null;
@@ -121,6 +136,33 @@ public sealed class SyncEngine(
             NewArticles = newArticles,
             NewsError = newsError,
         };
+    }
+
+    /// <summary>Downloads details a few at a time; null for a record that failed. Results keep the queue order.</summary>
+    private async Task<(InitiativeSummary Summary, InitiativeDetails? Details)[]> DownloadDetailsAsync(
+        IEnumerable<InitiativeSummary> summaries, CancellationToken cancellationToken)
+    {
+        using var gate = new SemaphoreSlim(Math.Max(1, DetailsConcurrency));
+
+        async Task<(InitiativeSummary, InitiativeDetails?)> DownloadAsync(InitiativeSummary summary)
+        {
+            await gate.WaitAsync(cancellationToken).ConfigureAwait(false);
+            try
+            {
+                return (summary, await register.GetDetailsAsync(summary.Year, summary.Number, cancellationToken).ConfigureAwait(false));
+            }
+            catch (Exception ex) when (ex is EciApiException or HttpRequestException)
+            {
+                return (summary, null);
+            }
+            finally
+            {
+                gate.Release();
+            }
+        }
+
+        // All downloads have finished when WhenAll returns, so the semaphore is not disposed under them.
+        return await Task.WhenAll(summaries.Select(DownloadAsync).ToList()).ConfigureAwait(false);
     }
 
     /// <summary>
@@ -212,6 +254,16 @@ public sealed class SyncEngine(
     };
 
     private static string Iso(DateTimeOffset value) => value.ToUniversalTime().ToString("O", CultureInfo.InvariantCulture);
+}
+
+/// <summary>Points in a <see cref="SyncEngine.SyncAsync"/> at which stored data changed.</summary>
+public enum SyncStage
+{
+    /// <summary>The list and statistics are saved; details and news follow.</summary>
+    ListSaved,
+
+    /// <summary>The details of this sync are saved; the news follow.</summary>
+    DetailsSaved,
 }
 
 /// <summary>Result of one <see cref="SyncEngine.SyncAsync"/>.</summary>

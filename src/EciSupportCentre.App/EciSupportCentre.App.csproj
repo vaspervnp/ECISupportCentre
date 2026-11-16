@@ -13,11 +13,25 @@
     <!-- App identity -->
     <ApplicationTitle>ECI Support Centre</ApplicationTitle>
     <ApplicationId>io.github.vaspervnp.ecisupportcentre</ApplicationId>
-    <ApplicationDisplayVersion>0.1.0</ApplicationDisplayVersion>
-    <ApplicationVersion>1</ApplicationVersion>
+    <ApplicationDisplayVersion>1.0.0</ApplicationDisplayVersion>
+    <!-- versionCode: must grow with every upload to Google Play. -->
+    <ApplicationVersion>2</ApplicationVersion>
 
     <!-- Android 7.0 (API 24) and later -->
     <SupportedOSPlatformVersion>24.0</SupportedOSPlatformVersion>
+  </PropertyGroup>
+
+  <!--
+    Release signing for Google Play. Pass the keystore with -p:EciKeystore=path/to/upload.keystore -p:EciKeyAlias=upload
+    and the password in the environment variable ECI_KEYSTORE_PASSWORD (never on the command line or in a file here).
+    Without EciKeystore, Release builds are signed with the local debug key, which is fine for testing only.
+  -->
+  <PropertyGroup Condition="'$(Configuration)' == 'Release' and '$(EciKeystore)' != ''">
+    <AndroidKeyStore>true</AndroidKeyStore>
+    <AndroidSigningKeyStore>$(EciKeystore)</AndroidSigningKeyStore>
+    <AndroidSigningKeyAlias>$(EciKeyAlias)</AndroidSigningKeyAlias>
+    <AndroidSigningStorePass>env:ECI_KEYSTORE_PASSWORD</AndroidSigningStorePass>
+    <AndroidSigningKeyPass>env:ECI_KEYSTORE_PASSWORD</AndroidSigningKeyPass>
   </PropertyGroup>
 
   <ItemGroup>

@@ -1,0 +1,26 @@
+Milión podpisov aspoň zo siedmich krajín EÚ môže vyzvať Európsku komisiu, aby navrhla nový právny predpis. ECI Support Centre vám pomáha sledovať každú európsku iniciatívu občanov, podpísať tie, ktoré podporujete, a zistiť, ako skončia.
+
+• Všetky iniciatívy na jednom mieste
+Prezerajte si všetky zaregistrované iniciatívy: zber podpisov, čoskoro sa začne, úspešné, Komisia odpovedala, nedostatočná podpora alebo stiahnuté. Vyhľadávajte, filtrujte a zoraďujte ich a sledujte tie, na ktorých vám záleží.
+
+• Podpisujte na oficiálnom webovom sídle
+Tlačidlo „Podpísať túto iniciatívu“ vás zavedie priamo na oficiálnu stránku zberu Európskej komisie. Aplikácia nikdy nezbiera podpisy ani osobné údaje.
+
+• Žiadny termín vám neujde
+Dostanete upozornenie týždeň a deň pred koncom zberu, keď iniciatíva dosiahne 100 000, 250 000, 500 000 alebo milión podporovateľov, a keď uspeje, neuspeje alebo dostane odpoveď Komisie. Vy si vyberiete: všetky iniciatívy, alebo len tie, ktoré sledujete.
+
+• Novinky
+Najnovšie správy z oficiálneho webového sídla európskej iniciatívy občanov.
+
+• Funguje offline
+Všetko sa ukladá vo vašom zariadení a aktualizuje sa na pozadí, tak často, ako chcete, alebo len cez Wi-Fi.
+
+• Vo vašom jazyku
+Aplikácia je dostupná vo všetkých 24 úradných jazykoch EÚ a každú iniciatívu zobrazuje vo vašom jazyku, ak existuje preklad.
+
+• Súkromie od základu
+Bez účtu, bez reklám, bez sledovania. To, čo sledujete alebo označíte ako podpísané, zostáva v tomto zariadení.
+
+Navyše: svetlý a tmavý motív, podpora TalkBack, veľké písmo a rozloženie pre tablety.
+
+ECI Support Centre vytvorila strana Pirate Party of Greece a je open source pod licenciou MIT. Nie je oficiálnou aplikáciou Európskej únie ani Európskej komisie. Údaje: citizens-initiative.europa.eu, © Európska únia.

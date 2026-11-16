@@ -31,6 +31,7 @@
             <Label Text="{Binding VersionText}" Style="{StaticResource SubHeadline}" HorizontalTextAlignment="Start" HorizontalOptions="Start"
                    SemanticProperties.HeadingLevel="Level1" />
             <Label Text="{l:Translate About_Intro}" Style="{StaticResource Body}" />
+            <Label Text="{l:Translate About_CreatedBy}" FontFamily="OpenSansSemibold" FontSize="15" />
 
             <Label Text="{l:Translate About_NotOfficial}" Style="{StaticResource SectionHeading}" />
             <Label Text="{l:Translate About_NotOfficialText}" Style="{StaticResource Body}" />

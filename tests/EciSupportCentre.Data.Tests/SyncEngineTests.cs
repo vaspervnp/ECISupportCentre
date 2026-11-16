@@ -228,4 +228,45 @@ public class SyncEngineTests : DatabaseTest
 
         Assert.Empty(SyncEngine.DetectChanges(snapshot, Make.Summary(1, "SOMETHING_NEW"), Time.Now));
     }
+
+    [Fact]
+    public async Task Details_download_in_parallel_up_to_the_limit_and_are_all_saved()
+    {
+        _register.Set(
+            Make.Summary(1, "ONGOING"),
+            Make.Summary(2, "ONGOING"),
+            Make.Summary(3, "ONGOING"),
+            Make.Summary(4, "REGISTERED"),
+            Make.Summary(5, "ONGOING"));
+        _register.BrokenDetails.Add(3);
+        _register.DetailDelay = TimeSpan.FromMilliseconds(50);
+
+        var report = await new SyncEngine(_register, _news, Db, Time) { DetailsConcurrency = 2 }.SyncAsync("en");
+
+        Assert.Equal(2, _register.MaxConcurrentDetails);
+        Assert.Equal(4, report.DetailsFetched);
+        Assert.Equal([3L], report.DetailsFailed);
+        var snapshots = await Db.GetSnapshotsAsync();
+        Assert.All(new long[] { 1, 2, 4, 5 }, id => Assert.True(snapshots[id].HasDetails));
+        Assert.False(snapshots[3].HasDetails);
+    }
+
+    [Fact]
+    public async Task Progress_reports_the_saved_list_before_any_detail_is_requested()
+    {
+        SeedRegister();
+        var progress = new RecordingProgress(_register);
+
+        await Engine().SyncAsync("en", progress: progress);
+
+        Assert.Equal([(SyncStage.ListSaved, 0), (SyncStage.DetailsSaved, 3)], progress.Reports);
+    }
+
+    /// <summary>Records each stage with the number of detail requests made by then (synchronously, unlike Progress&lt;T&gt;).</summary>
+    private sealed class RecordingProgress(FakeRegister register) : IProgress<SyncStage>
+    {
+        public List<(SyncStage Stage, int DetailRequests)> Reports { get; } = [];
+
+        public void Report(SyncStage value) => Reports.Add((value, register.DetailRequests.Count));
+    }
 }

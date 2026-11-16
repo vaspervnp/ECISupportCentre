@@ -493,4 +493,13 @@
   <data name="A11y_Selected" xml:space="preserve">
     <value>{0}, roghnaithe</value>
   </data>
+  <data name="About_CreatedBy" xml:space="preserve">
+    <value>Cruthaithe ag Pirate Party of Greece</value>
+  </data>
+  <data name="Detail_Share" xml:space="preserve">
+    <value>Comhroinn</value>
+  </data>
+  <data name="Detail_ShareHint" xml:space="preserve">
+    <value>Seolann sé nasc chuig leathanach oifigiúil an tionscnaimh seo</value>
+  </data>
 </root>

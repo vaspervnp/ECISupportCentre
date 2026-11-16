@@ -493,4 +493,13 @@
   <data name="A11y_Selected" xml:space="preserve">
     <value>{0}, odabrano</value>
   </data>
+  <data name="About_CreatedBy" xml:space="preserve">
+    <value>Izradila stranka Pirate Party of Greece</value>
+  </data>
+  <data name="Detail_Share" xml:space="preserve">
+    <value>Podijeli</value>
+  </data>
+  <data name="Detail_ShareHint" xml:space="preserve">
+    <value>Šalje poveznicu na službenu stranicu ove inicijative</value>
+  </data>
 </root>

@@ -1,0 +1,26 @@
+Milion podpisów z co najmniej siedmiu państw UE może wezwać Komisję Europejską do zaproponowania nowego prawa. ECI Support Centre pomaga obserwować każdą europejską inicjatywę obywatelską, podpisywać te, które popierasz, i sprawdzać, jak się kończą.
+
+• Wszystkie inicjatywy w jednym miejscu
+Przeglądaj wszystkie zarejestrowane inicjatywy: zbieranie podpisów, wkrótce start, udane, z odpowiedzią Komisji, niewystarczające poparcie lub wycofane. Wyszukuj, filtruj i sortuj je oraz obserwuj te, na których Ci zależy.
+
+• Podpisz na oficjalnej stronie
+„Podpisz tę inicjatywę” prowadzi prosto na oficjalną stronę zbierania podpisów Komisji Europejskiej. Aplikacja nigdy nie zbiera podpisów ani danych osobowych.
+
+• Nie przegap żadnego terminu
+Otrzymuj powiadomienie na tydzień i na dzień przed końcem zbierania podpisów, gdy inicjatywa osiągnie 100 000, 250 000, 500 000 lub milion zwolenników, a także gdy zakończy się powodzeniem, niepowodzeniem lub otrzyma odpowiedź Komisji. Ty decydujesz: wszystkie inicjatywy albo tylko te, które obserwujesz.
+
+• Aktualności
+Najnowsze aktualności z oficjalnej strony europejskiej inicjatywy obywatelskiej.
+
+• Działa offline
+Wszystko jest przechowywane na Twoim urządzeniu i aktualizowane w tle tak często, jak chcesz, albo tylko przez Wi-Fi.
+
+• W Twoim języku
+Aplikacja jest dostępna we wszystkich 24 językach urzędowych UE i pokazuje każdą inicjatywę w Twoim języku, jeśli istnieje tłumaczenie.
+
+• Prywatność w standardzie
+Bez konta, bez reklam, bez śledzenia. To, co obserwujesz lub oznaczasz jako podpisane, zostaje na Twoim urządzeniu.
+
+Dodatkowo: jasny i ciemny motyw, obsługa TalkBack, duży tekst i układ dla tabletów.
+
+ECI Support Centre została stworzona przez Pirate Party of Greece i jest oprogramowaniem open source na licencji MIT. To nie jest oficjalna aplikacja Unii Europejskiej ani Komisji Europejskiej. Dane: citizens-initiative.europa.eu, © Unia Europejska.

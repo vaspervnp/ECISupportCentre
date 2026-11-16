@@ -493,4 +493,13 @@
   <data name="A11y_Selected" xml:space="preserve">
     <value>{0}, valitud</value>
   </data>
+  <data name="About_CreatedBy" xml:space="preserve">
+    <value>Loonud Pirate Party of Greece</value>
+  </data>
+  <data name="Detail_Share" xml:space="preserve">
+    <value>Jaga</value>
+  </data>
+  <data name="Detail_ShareHint" xml:space="preserve">
+    <value>Saadab lingi selle algatuse ametlikule lehele</value>
+  </data>
 </root>

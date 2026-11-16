@@ -493,4 +493,13 @@
   <data name="A11y_Selected" xml:space="preserve">
     <value>{0}, valgt</value>
   </data>
+  <data name="About_CreatedBy" xml:space="preserve">
+    <value>Lavet af Pirate Party of Greece</value>
+  </data>
+  <data name="Detail_Share" xml:space="preserve">
+    <value>Del</value>
+  </data>
+  <data name="Detail_ShareHint" xml:space="preserve">
+    <value>Sender et link til initiativets officielle side</value>
+  </data>
 </root>

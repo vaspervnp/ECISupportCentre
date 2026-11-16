@@ -62,6 +62,10 @@
 
             <FlexLayout Wrap="Wrap">
                 <Button Text="{Binding FollowText}" Command="{Binding ToggleFollowCommand}" Margin="0,0,8,8" />
+                <Button Text="{l:Translate Detail_Share}" Command="{Binding ShareCommand}" Margin="0,0,8,8"
+                        SemanticProperties.Hint="{l:Translate Detail_ShareHint}"
+                        BackgroundColor="Transparent" BorderColor="{AppThemeBinding Light={StaticResource Primary}, Dark={StaticResource PrimaryDark}}" BorderWidth="1"
+                        TextColor="{AppThemeBinding Light={StaticResource Primary}, Dark={StaticResource PrimaryDark}}" />
                 <Button Text="{l:Translate Detail_OfficialPage}" Command="{Binding OpenOfficialPageCommand}" Margin="0,0,8,8"
                         BackgroundColor="Transparent" BorderColor="{AppThemeBinding Light={StaticResource Primary}, Dark={StaticResource PrimaryDark}}" BorderWidth="1"
                         TextColor="{AppThemeBinding Light={StaticResource Primary}, Dark={StaticResource PrimaryDark}}" />

@@ -82,7 +82,9 @@ public sealed class DataService(EciDatabase database, SyncEngine sync, Notificat
             }
 
             SetState(true, null);
-            var report = await sync.SyncAsync(Loc.Instance.Language, cancellationToken: cancellationToken).ConfigureAwait(false);
+            // Pages reload as soon as the list is saved, while the details still download.
+            var progress = new ActionProgress<SyncStage>(_ => DataChanged?.Invoke(this, EventArgs.Empty));
+            var report = await sync.SyncAsync(Loc.Instance.Language, progress: progress, cancellationToken: cancellationToken).ConfigureAwait(false);
             await notifications.NotifyAsync(report, cancellationToken).ConfigureAwait(false);
             SetState(false, null);
             DataChanged?.Invoke(this, EventArgs.Empty);
@@ -165,4 +167,10 @@ public sealed class DataService(EciDatabase database, SyncEngine sync, Notificat
         LastErrorIsOffline = offline;
         SyncStateChanged?.Invoke(this, EventArgs.Empty);
     }
+}
+
+/// <summary>Runs the action on the reporting thread (unlike <see cref="Progress{T}"/>, which posts to a captured context).</summary>
+internal sealed class ActionProgress<T>(Action<T> action) : IProgress<T>
+{
+    public void Report(T value) => action(value);
 }

@@ -493,4 +493,13 @@
   <data name="A11y_Selected" xml:space="preserve">
     <value>{0}, sélectionné</value>
   </data>
+  <data name="About_CreatedBy" xml:space="preserve">
+    <value>Créé par le Pirate Party of Greece</value>
+  </data>
+  <data name="Detail_Share" xml:space="preserve">
+    <value>Partager</value>
+  </data>
+  <data name="Detail_ShareHint" xml:space="preserve">
+    <value>Envoie un lien vers la page officielle de cette initiative</value>
+  </data>
 </root>

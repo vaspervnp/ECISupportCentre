@@ -24,6 +24,7 @@ tests/
 - **Works offline**: a local SQLite database is kept in sync with the official register in the background.
 - **News** from the official ECI news feed.
 - **Sign**: opens the official online collection page of the initiative. The app never collects signatures or personal data.
+- **Share** an initiative's title and official link with any app.
 - **Notifications** for new initiatives, collection periods ending, success or failure, and the European Commission's answer.
 - **24 EU languages**, with English as the default.
 - **Settings**: language, light or dark theme, how often to sync, Wi-Fi only.
@@ -93,6 +94,28 @@ Run the live tests against the real ECI services (bash):
 ```bash
 ECI_LIVE_TESTS=1 dotnet test tests/EciSupportCentre.Core.Tests --filter Category=Live
 ```
+
+Smoke test of an APK on a connected emulator or device (bash; installs from scratch, waits for the first sync, opens every tab and an initiative, and fails on a crash, an ANR or an empty list):
+
+```bash
+scripts/smoke-test.sh path/to/io.github.vaspervnp.ecisupportcentre-Signed.apk
+```
+
+## Release
+
+Version numbers are `ApplicationDisplayVersion` and `ApplicationVersion` in the app's csproj. Pushing a `v*` tag (or running the **Release** workflow by hand) runs the tests and builds a signed AAB for Google Play and a signed APK, uploaded as workflow artifacts. The workflow needs three repository secrets:
+
+- `ANDROID_KEYSTORE_BASE64`: the upload keystore, base64-encoded
+- `ANDROID_KEYSTORE_PASSWORD`: its password (used for the store and the key)
+- `ANDROID_KEY_ALIAS`: the key alias
+
+A local signed build reads the password from the `ECI_KEYSTORE_PASSWORD` environment variable; never commit the keystore.
+
+```bash
+dotnet publish src/EciSupportCentre.App -f net10.0-android -c Release -p:EciKeystore=/path/to/upload.jks -p:EciKeyAlias=upload
+```
+
+The Google Play texts in the 24 languages are in `fastlane/metadata/android/<locale>/` and the privacy policy is [docs/privacy-policy.md](docs/privacy-policy.md).
 
 ## Disclaimer
 

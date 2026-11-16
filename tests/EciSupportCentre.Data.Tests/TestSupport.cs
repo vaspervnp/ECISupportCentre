@@ -113,6 +113,14 @@ internal sealed class FakeRegister : IRegisterApiClient
 
     public List<long> DetailRequests { get; } = [];
 
+    /// <summary>When set, details answer asynchronously after this delay, so downloads really overlap.</summary>
+    public TimeSpan DetailDelay { get; set; }
+
+    /// <summary>Most detail requests that were running at the same time.</summary>
+    public int MaxConcurrentDetails { get; private set; }
+
+    private int _runningDetails;
+
     public void Set(params InitiativeSummary[] summaries)
     {
         Summaries.Clear();
@@ -134,10 +142,40 @@ internal sealed class FakeRegister : IRegisterApiClient
     public Task<InitiativeDetails> GetDetailsAsync(string year, string number, CancellationToken cancellationToken = default)
     {
         var id = Summaries.First(s => s.Year == year && s.Number == number).Id;
-        DetailRequests.Add(id);
+        lock (DetailRequests)
+        {
+            DetailRequests.Add(id);
+        }
+
+        if (DetailDelay > TimeSpan.Zero)
+        {
+            return DelayedDetailsAsync(id, cancellationToken);
+        }
+
         return BrokenDetails.Contains(id)
             ? throw new EciApiException(HttpStatusCode.InternalServerError, null)
             : Task.FromResult(Details[id]());
+    }
+
+    private async Task<InitiativeDetails> DelayedDetailsAsync(long id, CancellationToken cancellationToken)
+    {
+        var running = Interlocked.Increment(ref _runningDetails);
+        lock (DetailRequests)
+        {
+            MaxConcurrentDetails = Math.Max(MaxConcurrentDetails, running);
+        }
+
+        try
+        {
+            await Task.Delay(DetailDelay, cancellationToken);
+            return BrokenDetails.Contains(id)
+                ? throw new EciApiException(HttpStatusCode.InternalServerError, null)
+                : Details[id]();
+        }
+        finally
+        {
+            Interlocked.Decrement(ref _runningDetails);
+        }
     }
 
     public Task<RegisterStatistics> GetStatisticsAsync(CancellationToken cancellationToken = default) =>

@@ -62,7 +62,7 @@ jobs:
         run: dotnet workload install maui-android
 
       # Release, so the assemblies are inside the APK (Debug relies on Fast Deployment).
-      # Signed with the default debug key until release signing is set up in M9.
+      # Signed with the default debug key; signed release builds come from release.yml.
       - name: Build test APK
         run: >
           dotnet publish src/EciSupportCentre.App
