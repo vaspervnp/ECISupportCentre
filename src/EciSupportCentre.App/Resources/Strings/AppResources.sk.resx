@@ -445,6 +445,9 @@
   <data name="About_Website" xml:space="preserve">
     <value>Oficiálne webové sídlo</value>
   </data>
+  <data name="Source_Link" xml:space="preserve">
+    <value>Zdroj: {0}</value>
+  </data>
   <data name="About_Privacy" xml:space="preserve">
     <value>Súkromie</value>
   </data>

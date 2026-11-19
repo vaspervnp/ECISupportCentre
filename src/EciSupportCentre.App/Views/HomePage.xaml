@@ -108,7 +108,8 @@
 
                 <Button Text="{l:Translate Home_SeeAll}" Command="{Binding SeeAllCommand}" IsVisible="{Binding HasData}" />
 
-                <Label Text="{l:Translate Disclaimer}" FontSize="12" Margin="0,16,0,0"
+                <views:SourceLink Page="Initiatives" />
+                <Label Text="{l:Translate Disclaimer}" FontSize="12"
                        TextColor="{AppThemeBinding Light={StaticResource Gray500}, Dark={StaticResource Gray300}}" />
             </VerticalStackLayout>
         </ScrollView>

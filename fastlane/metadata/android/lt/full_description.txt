@@ -23,4 +23,9 @@ Jokios paskyros, jokių reklamų, jokio sekimo. Tai, ką stebite arba pažymite 
 
 Taip pat: šviesi ir tamsi tema, TalkBack palaikymas, didelis tekstas ir planšetėms pritaikytas išdėstymas.
 
-ECI Support Centre sukūrė Pirate Party of Greece, ji yra atvirojo kodo, licencijuota pagal MIT licenciją. Tai nėra oficiali Europos Sąjungos ar Europos Komisijos programėlė. Duomenys: citizens-initiative.europa.eu, © Europos Sąjunga.
+ECI Support Centre sukūrė Pirate Party of Greece, ji yra atvirojo kodo, licencijuota pagal MIT licenciją. Tai nėra oficiali Europos Sąjungos ar Europos Komisijos programėlė.
+
+Duomenys:
+• https://citizens-initiative.europa.eu/find-initiative_lt
+• https://citizens-initiative.europa.eu/news_lt
+© Europos Sąjunga.

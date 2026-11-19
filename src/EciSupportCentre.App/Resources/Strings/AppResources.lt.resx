@@ -445,6 +445,9 @@
   <data name="About_Website" xml:space="preserve">
     <value>Oficiali svetainė</value>
   </data>
+  <data name="Source_Link" xml:space="preserve">
+    <value>Šaltinis: {0}</value>
+  </data>
   <data name="About_Privacy" xml:space="preserve">
     <value>Privatumas</value>
   </data>

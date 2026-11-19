@@ -76,8 +76,11 @@
                     </DataTemplate>
                 </CollectionView.ItemTemplate>
                 <CollectionView.Footer>
-                    <Label Text="{l:Translate News_Source}" FontSize="12" Margin="0,12,0,16"
-                           TextColor="{AppThemeBinding Light={StaticResource Gray500}, Dark={StaticResource Gray300}}" />
+                    <VerticalStackLayout Margin="0,12,0,16">
+                        <Label Text="{l:Translate News_Source}" FontSize="12"
+                               TextColor="{AppThemeBinding Light={StaticResource Gray500}, Dark={StaticResource Gray300}}" />
+                        <views:SourceLink Page="News" />
+                    </VerticalStackLayout>
                 </CollectionView.Footer>
             </CollectionView>
     </RefreshView>

@@ -13,9 +13,9 @@
     <!-- App identity -->
     <ApplicationTitle>ECI Support Centre</ApplicationTitle>
     <ApplicationId>io.github.vaspervnp.ecisupportcentre</ApplicationId>
-    <ApplicationDisplayVersion>1.0.0</ApplicationDisplayVersion>
+    <ApplicationDisplayVersion>1.0.1</ApplicationDisplayVersion>
     <!-- versionCode: must grow with every upload to Google Play. -->
-    <ApplicationVersion>2</ApplicationVersion>
+    <ApplicationVersion>3</ApplicationVersion>
 
     <!-- Android 7.0 (API 24) and later -->
     <SupportedOSPlatformVersion>24.0</SupportedOSPlatformVersion>

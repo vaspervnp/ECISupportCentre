@@ -22,6 +22,14 @@ public static class EciSources
     public static Uri Website(string language) =>
         new($"https://citizens-initiative.europa.eu/index_{Normalize(language)}");
 
+    /// <summary>The official list of all initiatives, the source of the app's initiative data.</summary>
+    public static Uri InitiativesPage(string language) =>
+        new($"https://citizens-initiative.europa.eu/find-initiative_{Normalize(language)}");
+
+    /// <summary>The official news page, the source of the app's news.</summary>
+    public static Uri NewsPage(string language) =>
+        new($"https://citizens-initiative.europa.eu/news_{Normalize(language)}");
+
     /// <summary>The initiative's page on the official website, e.g. <c>.../initiatives/details/2026/000009_el</c>.</summary>
     public static Uri InitiativePage(string year, string number, string language) =>
         new($"https://citizens-initiative.europa.eu/initiatives/details/{Uri.EscapeDataString(year)}/{Uri.EscapeDataString(number)}_{Normalize(language)}");

@@ -40,4 +40,13 @@ public class EciSourcesTests
     [Fact]
     public void Website_uses_language_suffix() =>
         Assert.Equal("https://citizens-initiative.europa.eu/index_fr", EciSources.Website("fr-BE").ToString());
+
+    [Theory]
+    [InlineData("el", "https://citizens-initiative.europa.eu/find-initiative_el", "https://citizens-initiative.europa.eu/news_el")]
+    [InlineData("ja", "https://citizens-initiative.europa.eu/find-initiative_en", "https://citizens-initiative.europa.eu/news_en")]
+    public void Source_pages_use_language_suffix(string language, string initiatives, string news)
+    {
+        Assert.Equal(initiatives, EciSources.InitiativesPage(language).ToString());
+        Assert.Equal(news, EciSources.NewsPage(language).ToString());
+    }
 }

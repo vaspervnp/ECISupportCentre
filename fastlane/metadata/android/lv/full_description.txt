@@ -23,4 +23,9 @@ Nav konta, nav reklāmu, nav izsekošanas. Tas, kam sekojat vai ko atzīmējat k
 
 Turklāt: gaišs un tumšs motīvs, TalkBack atbalsts, liels teksts un izkārtojums planšetdatoriem.
 
-ECI Support Centre ir izveidojusi Pirate Party of Greece, un tā ir atvērtā koda lietotne ar MIT licenci. Tā nav oficiāla Eiropas Savienības vai Eiropas Komisijas lietotne. Dati: citizens-initiative.europa.eu, © Eiropas Savienība.
+ECI Support Centre ir izveidojusi Pirate Party of Greece, un tā ir atvērtā koda lietotne ar MIT licenci. Tā nav oficiāla Eiropas Savienības vai Eiropas Komisijas lietotne.
+
+Dati:
+• https://citizens-initiative.europa.eu/find-initiative_lv
+• https://citizens-initiative.europa.eu/news_lv
+© Eiropas Savienība.

@@ -23,4 +23,9 @@ Sem conta, sem anúncios, sem rastreamento. O que segue ou marca como assinado f
 
 Além disso: tema claro e escuro, suporte para TalkBack, texto grande e um esquema para tablets.
 
-A ECI Support Centre é criada pelo Pirate Party of Greece e é de código aberto sob a licença MIT. Não é uma aplicação oficial da União Europeia nem da Comissão Europeia. Dados: citizens-initiative.europa.eu, © União Europeia.
+A ECI Support Centre é criada pelo Pirate Party of Greece e é de código aberto sob a licença MIT. Não é uma aplicação oficial da União Europeia nem da Comissão Europeia.
+
+Dados:
+• https://citizens-initiative.europa.eu/find-initiative_pt
+• https://citizens-initiative.europa.eu/news_pt
+© União Europeia.

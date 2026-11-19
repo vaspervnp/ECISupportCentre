@@ -23,4 +23,9 @@ L-ebda kont, l-ebda reklami, l-ebda traċċar. Dak li tisegwi jew timmarka bħal
 
 U wkoll: tema ċara u skura, appoġġ għal TalkBack, test kbir u disinn għat-tablets.
 
-ECI Support Centre inħolqot mill-Pirate Party of Greece u hija open source taħt il-liċenzja MIT. Mhijiex app uffiċjali tal-Unjoni Ewropea jew tal-Kummissjoni Ewropea. Data: citizens-initiative.europa.eu, © L-Unjoni Ewropea.
+ECI Support Centre inħolqot mill-Pirate Party of Greece u hija open source taħt il-liċenzja MIT. Mhijiex app uffiċjali tal-Unjoni Ewropea jew tal-Kummissjoni Ewropea.
+
+Data:
+• https://citizens-initiative.europa.eu/find-initiative_mt
+• https://citizens-initiative.europa.eu/news_mt
+© L-Unjoni Ewropea.

@@ -23,4 +23,9 @@ Kontot, reklaame ega jälgimist ei ole. Algatused, mida jälgite või märgite a
 
 Lisaks: hele ja tume teema, TalkBacki tugi, suur tekst ja tahvelarvutitele sobiv paigutus.
 
-ECI Support Centre on loonud Pirate Party of Greece ning see on avatud lähtekoodiga MIT-litsentsi alusel. See ei ole Euroopa Liidu ega Euroopa Komisjoni ametlik rakendus. Andmed: citizens-initiative.europa.eu, © Euroopa Liit.
+ECI Support Centre on loonud Pirate Party of Greece ning see on avatud lähtekoodiga MIT-litsentsi alusel. See ei ole Euroopa Liidu ega Euroopa Komisjoni ametlik rakendus.
+
+Andmed:
+• https://citizens-initiative.europa.eu/find-initiative_et
+• https://citizens-initiative.europa.eu/news_et
+© Euroopa Liit.

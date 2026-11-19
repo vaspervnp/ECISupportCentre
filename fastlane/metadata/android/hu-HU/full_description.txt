@@ -23,4 +23,9 @@ Nincs fiók, nincs hirdetés, nincs követés. Az Ön által követett vagy alá
 
 Emellett: világos és sötét téma, TalkBack-támogatás, nagy szöveg és táblagépekre szabott elrendezés.
 
-Az ECI Support Centre-t a Pirate Party of Greece készítette, nyílt forráskódú, MIT licenc alatt. Nem az Európai Unió vagy az Európai Bizottság hivatalos alkalmazása. Adatok: citizens-initiative.europa.eu, © Európai Unió.
+Az ECI Support Centre-t a Pirate Party of Greece készítette, nyílt forráskódú, MIT licenc alatt. Nem az Európai Unió vagy az Európai Bizottság hivatalos alkalmazása.
+
+Adatok:
+• https://citizens-initiative.europa.eu/find-initiative_hu
+• https://citizens-initiative.europa.eu/news_hu
+© Európai Unió.

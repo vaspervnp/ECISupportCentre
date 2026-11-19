@@ -23,4 +23,9 @@
 
 Επίσης: φωτεινό και σκούρο θέμα, υποστήριξη TalkBack, μεγάλο κείμενο και διάταξη για tablet.
 
-Το ECI Support Centre δημιουργήθηκε από το Pirate Party of Greece και είναι ανοιχτού κώδικα με άδεια MIT. Δεν είναι επίσημη εφαρμογή της Ευρωπαϊκής Ένωσης ή της Ευρωπαϊκής Επιτροπής. Δεδομένα: citizens-initiative.europa.eu, © Ευρωπαϊκή Ένωση.
+Το ECI Support Centre δημιουργήθηκε από το Pirate Party of Greece και είναι ανοιχτού κώδικα με άδεια MIT. Δεν είναι επίσημη εφαρμογή της Ευρωπαϊκής Ένωσης ή της Ευρωπαϊκής Επιτροπής.
+
+Δεδομένα:
+• https://citizens-initiative.europa.eu/find-initiative_el
+• https://citizens-initiative.europa.eu/news_el
+© Ευρωπαϊκή Ένωση.

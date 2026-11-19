@@ -23,4 +23,9 @@ Ei tiliä, ei mainoksia, ei seurantaa. Seuraamasi ja allekirjoitetuiksi merkitse
 
 Lisäksi: vaalea ja tumma teema, TalkBack-tuki, suuri teksti ja tablettien asettelu.
 
-ECI Support Centren on luonut Pirate Party of Greece, ja se on avointa lähdekoodia MIT-lisenssillä. Se ei ole Euroopan unionin tai Euroopan komission virallinen sovellus. Tiedot: citizens-initiative.europa.eu, © Euroopan unioni.
+ECI Support Centren on luonut Pirate Party of Greece, ja se on avointa lähdekoodia MIT-lisenssillä. Se ei ole Euroopan unionin tai Euroopan komission virallinen sovellus.
+
+Tiedot:
+• https://citizens-initiative.europa.eu/find-initiative_fi
+• https://citizens-initiative.europa.eu/news_fi
+© Euroopan unioni.

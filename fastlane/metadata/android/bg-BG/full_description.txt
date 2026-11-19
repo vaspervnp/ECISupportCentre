@@ -23,4 +23,9 @@
 
 Освен това: светла и тъмна тема, поддръжка на TalkBack, голям текст и оформление за таблети.
 
-ECI Support Centre е създадено от Pirate Party of Greece и е с отворен код под лиценза MIT. То не е официално приложение на Европейския съюз или на Европейската комисия. Данни: citizens-initiative.europa.eu, © Европейски съюз.
+ECI Support Centre е създадено от Pirate Party of Greece и е с отворен код под лиценза MIT. То не е официално приложение на Европейския съюз или на Европейската комисия.
+
+Данни:
+• https://citizens-initiative.europa.eu/find-initiative_bg
+• https://citizens-initiative.europa.eu/news_bg
+© Европейски съюз.

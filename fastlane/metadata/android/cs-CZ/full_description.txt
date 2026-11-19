@@ -23,4 +23,9 @@ Aplikace je k dispozici ve všech 24 úředních jazycích EU a každou iniciati
 
 Dále: světlý a tmavý motiv, podpora TalkBack, velké písmo a rozvržení pro tablety.
 
-ECI Support Centre vytvořila Pirate Party of Greece a jde o open source pod licencí MIT. Není to oficiální aplikace Evropské unie ani Evropské komise. Data: citizens-initiative.europa.eu, © Evropská unie.
+ECI Support Centre vytvořila Pirate Party of Greece a jde o open source pod licencí MIT. Není to oficiální aplikace Evropské unie ani Evropské komise.
+
+Data:
+• https://citizens-initiative.europa.eu/find-initiative_cs
+• https://citizens-initiative.europa.eu/news_cs
+© Evropská unie.

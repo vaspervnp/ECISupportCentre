@@ -23,4 +23,9 @@ No account, no ads, no tracking. What you follow or mark as signed stays on your
 
 Also: light and dark theme, TalkBack support, large text, and a layout for tablets.
 
-ECI Support Centre is created by the Pirate Party of Greece and is open source under the MIT licence. It is not an official app of the European Union or the European Commission. Data: citizens-initiative.europa.eu, © European Union.
+ECI Support Centre is created by the Pirate Party of Greece and is open source under the MIT licence. It is not an official app of the European Union or the European Commission.
+
+Official sources (European Commission):
+• https://citizens-initiative.europa.eu/find-initiative_en
+• https://citizens-initiative.europa.eu/news_en
+© European Union.

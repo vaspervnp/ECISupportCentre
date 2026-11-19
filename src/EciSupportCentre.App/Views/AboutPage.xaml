@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:vm="clr-namespace:EciSupportCentre.App.ViewModels"
              xmlns:l="clr-namespace:EciSupportCentre.App.Localization"
+             xmlns:views="clr-namespace:EciSupportCentre.App.Views"
              x:Class="EciSupportCentre.App.Views.AboutPage"
              x:DataType="vm:AboutViewModel"
              Title="{l:Translate Settings_About}">
@@ -38,6 +39,8 @@
 
             <Label Text="{l:Translate About_Sources}" Style="{StaticResource SectionHeading}" />
             <Label Text="{l:Translate About_SourcesText}" Style="{StaticResource Body}" />
+            <views:SourceLink Page="Initiatives" />
+            <views:SourceLink Page="News" />
             <Button Text="{l:Translate About_Website}" Command="{Binding OpenWebsiteCommand}" Style="{StaticResource Link}" />
 
             <Label Text="{l:Translate About_Privacy}" Style="{StaticResource SectionHeading}" />

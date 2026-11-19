@@ -63,7 +63,7 @@
                                HorizontalTextAlignment="Center" Margin="24" />
                     </CollectionView.EmptyView>
                     <CollectionView.Footer>
-                        <BoxView HeightRequest="16" Color="Transparent" />
+                        <views:SourceLink Page="Initiatives" Margin="4,0,4,16" />
                     </CollectionView.Footer>
                 </CollectionView>
             </RefreshView>

@@ -23,4 +23,9 @@ Bez računa, bez oglasa, bez praćenja. Inicijative koje pratite ili označite k
 
 Također: svijetla i tamna tema, podrška za TalkBack, veliki tekst i raspored za tablete.
 
-ECI Support Centre izradila je Pirate Party of Greece, a otvorenog je koda pod licencijom MIT. Nije službena aplikacija Europske unije ni Europske komisije. Podaci: citizens-initiative.europa.eu, © Europska unija.
+ECI Support Centre izradila je Pirate Party of Greece, a otvorenog je koda pod licencijom MIT. Nije službena aplikacija Europske unije ni Europske komisije.
+
+Podaci:
+• https://citizens-initiative.europa.eu/find-initiative_hr
+• https://citizens-initiative.europa.eu/news_hr
+© Europska unija.

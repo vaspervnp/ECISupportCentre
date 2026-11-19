@@ -445,6 +445,9 @@
   <data name="About_Website" xml:space="preserve">
     <value>Sit uffiċjali</value>
   </data>
+  <data name="Source_Link" xml:space="preserve">
+    <value>Sors: {0}</value>
+  </data>
   <data name="About_Privacy" xml:space="preserve">
     <value>Privatezza</value>
   </data>

@@ -23,4 +23,9 @@ Inget konto, inga annonser, ingen spårning. Det du följer eller markerar som u
 
 Dessutom: ljust och mörkt tema, stöd för TalkBack, stor text och en layout för surfplattor.
 
-ECI Support Centre är skapad av Pirate Party of Greece och är öppen källkod under MIT-licensen. Det är inte en officiell app från Europeiska unionen eller Europeiska kommissionen. Data: citizens-initiative.europa.eu, © Europeiska unionen.
+ECI Support Centre är skapad av Pirate Party of Greece och är öppen källkod under MIT-licensen. Det är inte en officiell app från Europeiska unionen eller Europeiska kommissionen.
+
+Data:
+• https://citizens-initiative.europa.eu/find-initiative_sv
+• https://citizens-initiative.europa.eu/news_sv
+© Europeiska unionen.
