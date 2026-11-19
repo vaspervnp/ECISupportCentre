@@ -1,3 +1,5 @@
+⚠ Nu este o aplicație oficială a Uniunii Europene sau a Comisiei Europene.
+
 Un milion de semnături din cel puțin șapte țări ale UE pot cere Comisiei Europene să propună un nou act legislativ. ECI Support Centre vă ajută să urmăriți fiecare inițiativă cetățenească europeană, să le semnați pe cele pe care le susțineți și să aflați cum se încheie.
 
 • Toate inițiativele într-un singur loc
@@ -23,7 +25,7 @@ Fără cont, fără reclame, fără urmărire. Ce urmăriți sau marcați ca sem
 
 De asemenea: temă luminoasă și întunecată, suport TalkBack, text mare și un aspect pentru tablete.
 
-ECI Support Centre este creată de Pirate Party of Greece și este open source sub licența MIT. Nu este o aplicație oficială a Uniunii Europene sau a Comisiei Europene.
+ECI Support Centre este creată de Pirate Party of Greece și este open source sub licența MIT.
 
 Date:
 • https://citizens-initiative.europa.eu/find-initiative_ro

@@ -1,3 +1,5 @@
+⚠ Se ei ole Euroopan unionin tai Euroopan komission virallinen sovellus.
+
 Miljoona allekirjoitusta vähintään seitsemästä EU-maasta voi pyytää Euroopan komissiota ehdottamaan uutta lakia. ECI Support Centre auttaa seuraamaan kaikkia eurooppalaisia kansalaisaloitteita, allekirjoittamaan tukemasi aloitteet ja näkemään, miten ne päättyvät.
 
 • Kaikki aloitteet yhdessä paikassa
@@ -23,7 +25,7 @@ Ei tiliä, ei mainoksia, ei seurantaa. Seuraamasi ja allekirjoitetuiksi merkitse
 
 Lisäksi: vaalea ja tumma teema, TalkBack-tuki, suuri teksti ja tablettien asettelu.
 
-ECI Support Centren on luonut Pirate Party of Greece, ja se on avointa lähdekoodia MIT-lisenssillä. Se ei ole Euroopan unionin tai Euroopan komission virallinen sovellus.
+ECI Support Centren on luonut Pirate Party of Greece, ja se on avointa lähdekoodia MIT-lisenssillä.
 
 Tiedot:
 • https://citizens-initiative.europa.eu/find-initiative_fi

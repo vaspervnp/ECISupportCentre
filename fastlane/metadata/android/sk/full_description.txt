@@ -1,3 +1,5 @@
+⚠ Nie je oficiálnou aplikáciou Európskej únie ani Európskej komisie.
+
 Milión podpisov aspoň zo siedmich krajín EÚ môže vyzvať Európsku komisiu, aby navrhla nový právny predpis. ECI Support Centre vám pomáha sledovať každú európsku iniciatívu občanov, podpísať tie, ktoré podporujete, a zistiť, ako skončia.
 
 • Všetky iniciatívy na jednom mieste
@@ -23,7 +25,7 @@ Bez účtu, bez reklám, bez sledovania. To, čo sledujete alebo označíte ako 
 
 Navyše: svetlý a tmavý motív, podpora TalkBack, veľké písmo a rozloženie pre tablety.
 
-ECI Support Centre vytvorila strana Pirate Party of Greece a je open source pod licenciou MIT. Nie je oficiálnou aplikáciou Európskej únie ani Európskej komisie.
+ECI Support Centre vytvorila strana Pirate Party of Greece a je open source pod licenciou MIT.
 
 Údaje:
 • https://citizens-initiative.europa.eu/find-initiative_sk

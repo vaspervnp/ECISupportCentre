@@ -1,3 +1,5 @@
+⚠ Nem az Európai Unió vagy az Európai Bizottság hivatalos alkalmazása.
+
 Legalább hét uniós országból összegyűjtött egymillió aláírás felkérheti az Európai Bizottságot egy új jogszabály javaslatára. Az ECI Support Centre segít nyomon követni minden európai polgári kezdeményezést, aláírni a támogatottakat, és megtudni, hogyan végződnek.
 
 • Minden kezdeményezés egy helyen
@@ -23,7 +25,7 @@ Nincs fiók, nincs hirdetés, nincs követés. Az Ön által követett vagy alá
 
 Emellett: világos és sötét téma, TalkBack-támogatás, nagy szöveg és táblagépekre szabott elrendezés.
 
-Az ECI Support Centre-t a Pirate Party of Greece készítette, nyílt forráskódú, MIT licenc alatt. Nem az Európai Unió vagy az Európai Bizottság hivatalos alkalmazása.
+Az ECI Support Centre-t a Pirate Party of Greece készítette, nyílt forráskódú, MIT licenc alatt.
 
 Adatok:
 • https://citizens-initiative.europa.eu/find-initiative_hu

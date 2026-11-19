@@ -1,3 +1,5 @@
+⚠ Tā nav oficiāla Eiropas Savienības vai Eiropas Komisijas lietotne.
+
 Viens miljons parakstu no vismaz septiņām ES valstīm var aicināt Eiropas Komisiju ierosināt jaunu tiesību aktu. ECI Support Centre palīdz sekot katrai Eiropas pilsoņu iniciatīvai, parakstīt tās, kuras atbalstāt, un uzzināt, kā tās noslēdzas.
 
 • Visas iniciatīvas vienuviet
@@ -23,7 +25,7 @@ Nav konta, nav reklāmu, nav izsekošanas. Tas, kam sekojat vai ko atzīmējat k
 
 Turklāt: gaišs un tumšs motīvs, TalkBack atbalsts, liels teksts un izkārtojums planšetdatoriem.
 
-ECI Support Centre ir izveidojusi Pirate Party of Greece, un tā ir atvērtā koda lietotne ar MIT licenci. Tā nav oficiāla Eiropas Savienības vai Eiropas Komisijas lietotne.
+ECI Support Centre ir izveidojusi Pirate Party of Greece, un tā ir atvērtā koda lietotne ar MIT licenci.
 
 Dati:
 • https://citizens-initiative.europa.eu/find-initiative_lv

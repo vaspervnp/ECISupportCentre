@@ -1,3 +1,5 @@
+⚠ Det är inte en officiell app från Europeiska unionen eller Europeiska kommissionen.
+
 En miljon namnunderskrifter från minst sju EU-länder kan uppmana Europeiska kommissionen att föreslå en ny lag. ECI Support Centre hjälper dig att följa varje europeiskt medborgarinitiativ, skriva under dem du stöder och ta reda på hur de slutar.
 
 • Alla initiativ på ett ställe
@@ -23,7 +25,7 @@ Inget konto, inga annonser, ingen spårning. Det du följer eller markerar som u
 
 Dessutom: ljust och mörkt tema, stöd för TalkBack, stor text och en layout för surfplattor.
 
-ECI Support Centre är skapad av Pirate Party of Greece och är öppen källkod under MIT-licensen. Det är inte en officiell app från Europeiska unionen eller Europeiska kommissionen.
+ECI Support Centre är skapad av Pirate Party of Greece och är öppen källkod under MIT-licensen.
 
 Data:
 • https://citizens-initiative.europa.eu/find-initiative_sv

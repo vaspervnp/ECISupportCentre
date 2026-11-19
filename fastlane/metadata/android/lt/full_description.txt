@@ -1,3 +1,5 @@
+⚠ Tai nėra oficiali Europos Sąjungos ar Europos Komisijos programėlė.
+
 Milijonas parašų iš bent septynių ES šalių gali paprašyti Europos Komisijos pasiūlyti naują teisės aktą. ECI Support Centre padeda sekti kiekvieną Europos piliečių iniciatyvą, pasirašyti jums artimas ir sužinoti, kaip jos baigiasi.
 
 • Visos iniciatyvos vienoje vietoje
@@ -23,7 +25,7 @@ Jokios paskyros, jokių reklamų, jokio sekimo. Tai, ką stebite arba pažymite 
 
 Taip pat: šviesi ir tamsi tema, TalkBack palaikymas, didelis tekstas ir planšetėms pritaikytas išdėstymas.
 
-ECI Support Centre sukūrė Pirate Party of Greece, ji yra atvirojo kodo, licencijuota pagal MIT licenciją. Tai nėra oficiali Europos Sąjungos ar Europos Komisijos programėlė.
+ECI Support Centre sukūrė Pirate Party of Greece, ji yra atvirojo kodo, licencijuota pagal MIT licenciją.
 
 Duomenys:
 • https://citizens-initiative.europa.eu/find-initiative_lt

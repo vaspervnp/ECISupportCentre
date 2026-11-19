@@ -1,3 +1,5 @@
+⚠ Det er ikke en officiel app fra Den Europæiske Union eller Europa-Kommissionen.
+
 En million underskrifter fra mindst syv EU-lande kan opfordre Europa-Kommissionen til at foreslå en ny lov. ECI Support Centre hjælper dig med at følge hvert eneste europæiske borgerinitiativ, skrive under på dem, du støtter, og se, hvordan de ender.
 
 • Alle initiativer samlet ét sted
@@ -23,7 +25,7 @@ Ingen konto, ingen reklamer, ingen sporing. Det, du følger eller markerer som u
 
 Desuden: lyst og mørkt tema, understøttelse af TalkBack, stor tekst og et layout til tablets.
 
-ECI Support Centre er lavet af Pirate Party of Greece og er open source under MIT-licensen. Det er ikke en officiel app fra Den Europæiske Union eller Europa-Kommissionen.
+ECI Support Centre er lavet af Pirate Party of Greece og er open source under MIT-licensen.
 
 Data:
 • https://citizens-initiative.europa.eu/find-initiative_da

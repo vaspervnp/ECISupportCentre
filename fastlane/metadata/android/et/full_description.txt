@@ -1,3 +1,5 @@
+⚠ See ei ole Euroopa Liidu ega Euroopa Komisjoni ametlik rakendus.
+
 Miljon allkirja vähemalt seitsmest ELi riigist võib paluda Euroopa Komisjonil teha ettepanek uue õigusakti kohta. ECI Support Centre aitab jälgida kõiki Euroopa kodanikualgatusi, allkirjastada need, mida toetate, ja teada saada, kuidas need lõppevad.
 
 • Kõik algatused ühes kohas
@@ -23,7 +25,7 @@ Kontot, reklaame ega jälgimist ei ole. Algatused, mida jälgite või märgite a
 
 Lisaks: hele ja tume teema, TalkBacki tugi, suur tekst ja tahvelarvutitele sobiv paigutus.
 
-ECI Support Centre on loonud Pirate Party of Greece ning see on avatud lähtekoodiga MIT-litsentsi alusel. See ei ole Euroopa Liidu ega Euroopa Komisjoni ametlik rakendus.
+ECI Support Centre on loonud Pirate Party of Greece ning see on avatud lähtekoodiga MIT-litsentsi alusel.
 
 Andmed:
 • https://citizens-initiative.europa.eu/find-initiative_et

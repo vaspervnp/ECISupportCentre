@@ -1,3 +1,5 @@
+⚠ Es ist keine offizielle App der Europäischen Union oder der Europäischen Kommission.
+
 Eine Million Unterschriften aus mindestens sieben EU-Ländern können die Europäische Kommission auffordern, einen neuen Rechtsakt vorzuschlagen. ECI Support Centre hilft Ihnen, jede Europäische Bürgerinitiative zu verfolgen, die zu unterzeichnen, die Sie unterstützen, und zu erfahren, wie sie ausgehen.
 
 • Alle Initiativen an einem Ort
@@ -23,7 +25,7 @@ Kein Konto, keine Werbung, kein Tracking. Was Sie verfolgen oder als unterzeichn
 
 Außerdem: helles und dunkles Design, TalkBack-Unterstützung, große Schrift und ein Layout für Tablets.
 
-ECI Support Centre wurde von der Pirate Party of Greece entwickelt und ist Open Source unter der MIT-Lizenz. Es ist keine offizielle App der Europäischen Union oder der Europäischen Kommission.
+ECI Support Centre wurde von der Pirate Party of Greece entwickelt und ist Open Source unter der MIT-Lizenz.
 
 Daten:
 • https://citizens-initiative.europa.eu/find-initiative_de

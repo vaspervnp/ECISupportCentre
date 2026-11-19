@@ -1,3 +1,5 @@
+⚠ Ni uradna aplikacija Evropske unije ali Evropske komisije.
+
 Milijon podpisov iz vsaj sedmih držav EU lahko Evropsko komisijo pozove, naj predlaga novo zakonodajo. ECI Support Centre vam pomaga spremljati vsako evropsko državljansko pobudo, podpisati tiste, ki jih podpirate, in izvedeti, kako se končajo.
 
 • Vse pobude na enem mestu
@@ -23,7 +25,7 @@ Brez računa, brez oglasov, brez sledenja. Kar spremljate ali označite kot podp
 
 Poleg tega: svetla in temna tema, podpora za TalkBack, velika pisava in postavitev za tablične računalnike.
 
-ECI Support Centre je ustvarila stranka Pirate Party of Greece in je odprtokodna pod licenco MIT. Ni uradna aplikacija Evropske unije ali Evropske komisije.
+ECI Support Centre je ustvarila stranka Pirate Party of Greece in je odprtokodna pod licenco MIT.
 
 Podatki:
 • https://citizens-initiative.europa.eu/find-initiative_sl

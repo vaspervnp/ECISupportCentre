@@ -1,3 +1,5 @@
+⚠ Mhijiex app uffiċjali tal-Unjoni Ewropea jew tal-Kummissjoni Ewropea.
+
 Miljun firma minn mill-inqas seba' pajjiżi tal-UE jistgħu jitolbu lill-Kummissjoni Ewropea tipproponi liġi ġdida. ECI Support Centre tgħinek issegwi kull Inizjattiva taċ-Ċittadini Ewropej, tiffirma dawk li tappoġġa u tkun taf kif jintemmu.
 
 • L-inizjattivi kollha f'post wieħed
@@ -23,7 +25,7 @@ L-ebda kont, l-ebda reklami, l-ebda traċċar. Dak li tisegwi jew timmarka bħal
 
 U wkoll: tema ċara u skura, appoġġ għal TalkBack, test kbir u disinn għat-tablets.
 
-ECI Support Centre inħolqot mill-Pirate Party of Greece u hija open source taħt il-liċenzja MIT. Mhijiex app uffiċjali tal-Unjoni Ewropea jew tal-Kummissjoni Ewropea.
+ECI Support Centre inħolqot mill-Pirate Party of Greece u hija open source taħt il-liċenzja MIT.
 
 Data:
 • https://citizens-initiative.europa.eu/find-initiative_mt
