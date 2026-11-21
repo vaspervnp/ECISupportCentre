@@ -13,9 +13,9 @@
     <!-- App identity -->
     <ApplicationTitle>ECI Support Centre</ApplicationTitle>
     <ApplicationId>io.github.vaspervnp.ecisupportcentre</ApplicationId>
-    <ApplicationDisplayVersion>1.0.1</ApplicationDisplayVersion>
+    <ApplicationDisplayVersion>1.0.2</ApplicationDisplayVersion>
     <!-- versionCode: must grow with every upload to Google Play. -->
-    <ApplicationVersion>3</ApplicationVersion>
+    <ApplicationVersion>4</ApplicationVersion>
 
     <!-- Android 7.0 (API 24) and later -->
     <SupportedOSPlatformVersion>24.0</SupportedOSPlatformVersion>
@@ -35,8 +35,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <MauiIcon Include="Resources\AppIcon\appicon.svg" ForegroundFile="Resources\AppIcon\appiconfg.svg" Color="#003399" />
-    <MauiSplashScreen Include="Resources\Splash\splash.svg" Color="#003399" BaseSize="128,128" />
+    <MauiIcon Include="Resources\AppIcon\appicon.svg" ForegroundFile="Resources\AppIcon\appiconfg.svg" Color="#00695C" />
+    <MauiSplashScreen Include="Resources\Splash\splash.svg" Color="#00695C" BaseSize="128,128" />
     <MauiImage Include="Resources\Images\*" />
     <MauiFont Include="Resources\Fonts\*" />
     <MauiAsset Include="Resources\Raw\**" LogicalName="%(RecursiveDir)%(Filename)%(Extension)" />
